@@ -1,0 +1,93 @@
+[
+    {
+        "x": 132,
+        "y": 113,
+        "name": "connector",
+        "Powerable": {
+            "energy": 0,
+            "parents": []
+        }
+    },
+    {
+        "x": 143,
+        "y": 114,
+        "name": "lead_1"
+    },
+    {
+        "x": 150,
+        "y": 113,
+        "name": "base",
+        "Storable": {
+            "storage": {
+                "coal": 9,
+                "lead": 999
+            }
+        }
+    },
+    {
+        "x": 144,
+        "y": 114,
+        "name": "lead_2"
+    },
+    {
+        "x": 143,
+        "y": 115,
+        "name": "lead_3"
+    },
+    {
+        "x": 145,
+        "y": 114,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 115,
+        "name": "lead_1"
+    },
+    {
+        "x": 144,
+        "y": 115,
+        "name": "lead_1"
+    },
+    {
+        "x": 143,
+        "y": 116,
+        "name": "lead_1"
+    },
+    {
+        "x": 144,
+        "y": 116,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 116,
+        "name": "lead_1"
+    },
+    {
+        "x": 143,
+        "y": 114,
+        "name": "drill",
+        "Storable": {
+            "storage": {
+                "lead": 6
+            }
+        },
+        "Switchable": {
+            "state": false
+        }
+    },
+    {
+        "x": 155,
+        "y": 115,
+        "name": "launch_pad",
+        "Storable": {
+            "storage": {}
+        }
+    },
+    {
+        "x": 161,
+        "y": 116,
+        "name": "pipe"
+    }
+]

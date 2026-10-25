@@ -1,0 +1,15 @@
+{
+    "version": "Alpha 0.2.22",
+    "time": "[2026-10-25] 23:43",
+    "ambient": 20,
+    "sizeX": 256,
+    "sizeY": 256,
+    "opened": [
+        "generator",
+        "battery",
+        "connector"
+    ],
+    "camX": 5294.739441181087,
+    "camY": 3612.151191662393,
+    "camZoom": 1.7086770936516384
+}

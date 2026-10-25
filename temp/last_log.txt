@@ -1,0 +1,42 @@
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\air.png> (32x32)
+[StartInfo] All systems online. Start lasted 251 milliseconds. Smoke tests completed in 20 milliseconds.
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\icon.png> (64x64)
+[TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\sand_1.png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\sand_2.png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\water.png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\stone_1.png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\stone_2.png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\stone_3.png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\stone_4.png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\snow_block(2x2).png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\drill.png> (96x96)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\conveyor_left.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\conveyor_right.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\conveyor_up.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\conveyor_down.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\base.png> (96x96)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\lead_1.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\lead_2.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\lead_3.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\turrel_base(32x32).png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\turrel_base(64x64).png> (64x64)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\generator.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\coal_1.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\coal_2.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\coal_3.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\connector.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\battery.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\healer.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\processor.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\memory_block.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\peltier.png> (32x32)
+[TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\launch_pad.png> (96x96)
+[TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\flask.png> (32x32)
+Playing: <d:\Payload\Assets\Music\game9.ogg>
+Playing: <d:\Payload\Assets\Music\game8.ogg>
+Playing: <d:\Payload\Assets\Music\game5.ogg>
+[EXIT] 0

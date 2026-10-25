@@ -1,0 +1,214 @@
+:root {
+    --bg: #12141a;
+    --bg-soft: #1a1d26;
+    --fg: #e8e8ec;
+    --muted: #8a8f9e;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --green: #22c55e;
+    --green-hover: #16a34a;
+    --border: #2a2e3a;
+    --radius: 10px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex: 1;
+    width: 100%;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-soft);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.logo img { width: 28px; height: 28px; }
+.site-header nav { display: flex; gap: 20px; }
+.site-header nav a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.site-header nav a:hover { color: var(--fg); }
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 0 40px;
+}
+.hero h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+.version {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.version span {
+    background: var(--bg-soft);
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-left: 6px;
+}
+.tagline {
+    font-size: 1.15rem;
+    color: var(--muted);
+    max-width: 600px;
+    margin: 0 auto 32px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--bg-soft);
+    color: var(--fg);
+    text-decoration: none;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    font-weight: 600;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.btn:hover { background: var(--border); }
+
+.btn.primary {
+    background: var(--green);
+    color: #052e16;
+    border-color: transparent;
+}
+.btn.primary:hover { background: var(--green-hover); }
+
+.btn.big {
+    padding: 18px 40px;
+    font-size: 1.15rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.btn.big small {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.hint {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 12px;
+}
+
+/* Секции */
+section { margin: 60px 0; }
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+/* Скриншоты */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    display: block;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.grid a:hover img {
+    transform: scale(1.02);
+    border-color: var(--accent);
+}
+
+/* Фичи */
+.features-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+}
+.features-list li {
+    background: var(--bg-soft);
+    padding: 16px 20px;
+    border-radius: var(--radius);
+    border-left: 3px solid var(--accent);
+}
+
+/* Требования */
+.requirements table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-soft);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+.requirements td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+}
+.requirements tr:last-child td { border-bottom: none; }
+.requirements td:first-child {
+    color: var(--muted);
+    width: 140px;
+}
+
+/* Ссылки */
+.links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Мобилка */
+@media (max-width: 600px) {
+    .site-header { padding: 12px 20px; flex-wrap: wrap; gap: 12px; }
+    .site-header nav { gap: 14px; font-size: 0.9rem; }
+    .hero { padding: 40px 0 20px; }
+    .btn.big { width: 100%; }
+}

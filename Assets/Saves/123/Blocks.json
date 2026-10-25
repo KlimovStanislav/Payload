@@ -1,0 +1,11 @@
+[
+    {
+        "x": 132,
+        "y": 113,
+        "name": "connector",
+        "Powerable": {
+            "energy": 0,
+            "parents": []
+        }
+    }
+]

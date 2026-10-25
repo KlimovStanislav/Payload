@@ -1,0 +1,52 @@
+[
+    {
+        "x": 154,
+        "y": 200,
+        "name": "lead_1"
+    },
+    {
+        "x": 122,
+        "y": 72,
+        "name": "base",
+        "Storable": {
+            "storage": {
+                "lead": 4,
+                "coal": 85
+            }
+        }
+    },
+    {
+        "x": 126,
+        "y": 74,
+        "name": "coal_1"
+    },
+    {
+        "x": 127,
+        "y": 74,
+        "name": "coal_1"
+    },
+    {
+        "x": 127,
+        "y": 75,
+        "name": "coal_1"
+    },
+    {
+        "x": 126,
+        "y": 75,
+        "name": "lead_1"
+    },
+    {
+        "x": 126,
+        "y": 74,
+        "name": "drill",
+        "Storable": {
+            "storage": {
+                "coal": 1,
+                "lead": 0
+            }
+        },
+        "Switchable": {
+            "state": false
+        }
+    }
+]
