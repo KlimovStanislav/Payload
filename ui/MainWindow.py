@@ -20,7 +20,7 @@ from ui.CampaignWindow import CampaignWindow
 
 from ui.Widgets import Labels, Buttons, Sliders
 
-GITHUB_PATH = "https://github.com/Stanislafv/Low-Level"
+GITHUB_PATH = "https://github.com/KlimovStanislav/Payload"
 
 @safe_class
 class SectorChoiceWindow(QWidget):
@@ -107,63 +107,6 @@ class SettingsWindow(QWidget):
             self.MainWindow = window
             super().__init__(window, *args, **kwargs)
             
-            layout = QtWidgets.QVBoxLayout(self)
-            
-            title = Labels.Title("Settings")
-            title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            
-            self.fullscreen_check = Buttons.Toggle("Fullscreen")
-    
-            self.music_check = Buttons.Toggle("Music")
-            self.music_check.setChecked(folder.config["music_volume"] == 0)
-            
-            volume_label = Labels.Body("Volume:")
-            self.volume_slider = Sliders.Horizontal()
-            self.volume_slider.setRange(0, 100)
-            self.volume_slider.setValue(int(folder.config["volume"]*100))
-    
-            music_volume_label = Labels.Body("Music Volume:")
-            self.music_volume_slider = Sliders.Horizontal()
-            self.music_volume_slider.setRange(0, 100)
-            self.music_volume_slider.setValue(int(folder.config["music_volume"]*100))
-    
-            fps_label = Labels.Body("FPS:")
-            self.fps_slider = Sliders.Horizontal()
-            self.fps_slider.setRange(10, 240)
-            self.fps_slider.setValue(0)
-            
-            btn_back = Buttons.Secondary("Back")
-            btn_back.clicked.connect(lambda: self.Back())
-            
-            btn_save = Buttons.Secondary("Save")
-            btn_save.clicked.connect(lambda: self.save_settings())
-            
-            layout.addWidget(title)
-            layout.addWidget(self.fullscreen_check)
-            layout.addWidget(self.music_check)
-            layout.addSpacing(5)
-    
-            layout.addWidget(volume_label)
-            layout.addWidget(self.volume_slider)
-            layout.addSpacing(5)
-    
-            layout.addWidget(music_volume_label)
-            layout.addWidget(self.music_volume_slider)
-            layout.addSpacing(5)
-    
-            layout.addWidget(fps_label)
-            layout.addWidget(self.fps_slider)
-            layout.addSpacing(20)
-    
-            layout.addWidget(btn_save)
-            layout.addWidget(btn_back)
-            
-            self.setFixedSize(300, 400)
-    
-    def save_settings(self):
-        music_volume = self.music_volume_slider.value()/100 if self.music_check.isChecked() else 0
-        folder.config.write({"devmode": folder.config["devmode"], "volume": self.volume_slider.value()/100, "music_volume": music_volume, "craft_coef": folder.config["craft_coef"], "fps": self.fps_slider.value()})
-
     def show(self):
         self.MainWindow.widget.setCurrentIndex(4)
 

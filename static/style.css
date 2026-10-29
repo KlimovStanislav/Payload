@@ -205,10 +205,41 @@ section h2 {
     border-top: 1px solid var(--border);
 }
 
-/* Мобилка */
 @media (max-width: 600px) {
     .site-header { padding: 12px 20px; flex-wrap: wrap; gap: 12px; }
     .site-header nav { gap: 14px; font-size: 0.9rem; }
     .hero { padding: 40px 0 20px; }
     .btn.big { width: 100%; }
+}
+
+.changelog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Расстояние между версиями */
+    max-width: 800px;
+}
+
+.changelog-item {
+    background-color: #1e1e1e; /* Темный фон как в игре */
+    border: 1px solid #333;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #ddd;
+}
+
+.changelog-item h3 {
+    color: #fff;
+    margin-top: 0;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.changelog-item ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.changelog-item li {
+    color: #aaa;
+    font-size: 14px;
 }

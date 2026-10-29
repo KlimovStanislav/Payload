@@ -98,6 +98,9 @@ class VersionViewer(QtWidgets.QWidget):
             self.move(x, y)
         self.show()
 
+class Preview(QGraphicsItem):
+    
+
 class MapScene(QGraphicsScene):
     def __init__(self, intensity, window:SandboxWindow, *args, **kwargs):
         super().__init__(*args, **kwargs)

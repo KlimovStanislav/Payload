@@ -1,0 +1,20 @@
+{% block content %}
+<section class="changelog-section">
+    <h2>Changelog</h2>
+    <div class="changelog-list">
+        {% for item in changelog %}
+            <div class="changelog-item">
+                <h3>Version: {{ item.version }}</h3>
+                <p>Date: {{ item.date }}</p>
+                <ul>
+                    {% for change in item.changes %}
+                        <li>{{ change }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% else %}
+            <p>...</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

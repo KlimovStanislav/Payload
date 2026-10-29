@@ -10,15 +10,20 @@ class Network:
         self.w = w
         self.nodes: list[SceneObject] = []
         self.w.append_network(self)
+        self.exists = True
 
     def add(self, node: SceneObject):
         self.nodes.append(node)
         node.networks[self.__class__] = self
 
-    def remove(self, node: SceneObject):
+    def remove(self, node:SceneObject):
         if node in self.nodes:
             self.nodes.remove(node)
             node.networks.pop(self.__class__, None)
+
+        if not self.nodes:
+            self.w.remove_network(self)
+            self.exists = False
 
     def __contains__(self, obj: SceneObject):
         return obj in self.nodes
@@ -28,6 +33,9 @@ class Network:
             if node.cell in obj.get_around():
                 return True
         return False
+
+    def update(self, dt):
+        raise NotImplementedError(f"{self.__class__.__name__} lacks a update method")
 
     def merge_into(self, other: Network) -> None:
         for node in other.nodes:

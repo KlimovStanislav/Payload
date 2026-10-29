@@ -51,15 +51,15 @@ class InstallPage(Page):
             with zipfile.ZipFile(os.path.join(sys._MEIPASS, "archive-win64.zip")) as z:
                 z.extractall(self.w.install_path)
 
-            exe_path = os.path.join(self.w.install_path, "Lows.exe")
-            shortcut_path = os.path.join(os.path.expanduser("~"), "Desktop", "Low-Level.lnk")
+            exe_path = os.path.join(self.w.install_path, "Pays.exe")
+            shortcut_path = os.path.join(os.path.expanduser("~"), "Desktop", "Payload.lnk")
 
             shell = win32com.client.Dispatch("WScript.Shell")
             shortcut = shell.CreateShortCut(shortcut_path)
             shortcut.TargetPath = exe_path
             shortcut.WorkingDirectory = os.path.dirname(exe_path)
             shortcut.IconLocation = exe_path 
-            shortcut.Description = "Low-Level"
+            shortcut.Description = "Payload"
             shortcut.Save()
 
             self.w.close()

@@ -20,6 +20,9 @@ from world.TempField import TempField
 
 from components.SceneObject import SceneObject, Cell, Size
 from components.Network import Network
+from components.PipeNetwork import PipeNetwork
+
+from composites.Pipe import Pipe
 
 import applib, random
 from functools import partialmethod
@@ -76,6 +79,18 @@ class Operator:
         self.name = name
         self.inventory = Storage(100)
 
+class NetworkGenerator:
+    def __init__(self, world:World, clss:list[SceneObject], network_type:Network):
+        self.w = world
+        self.clss = clss
+        self.network_type = network_type
+
+    def __call__(self, obj:SceneObject):
+        for cls in self.clss:
+            if isinstance(obj, cls):
+                network:Network = self.network_type(self.w)
+                network.add(obj)
+
 @safe_class
 class World:
     def __init__(self, size:Size=Size(256, 256), scene:QGraphicsScene|None=None, window=None, devmode:bool=folder.config.get("devmode"), temperature=20):
@@ -91,6 +106,7 @@ class World:
         self.unit_map:dict[Cell, list[Unit]] = {}
     
         self.networks:list[Network] = []
+        self.networks_generators:list[NetworkGenerator] = [NetworkGenerator(self, [Pipe], PipeNetwork)]
         self.projectiles:list[Projectile] = []
 
         self.exported:Storage[str, int] = Storage(9999)
@@ -124,6 +140,9 @@ class World:
         for proj in self.projectiles.copy():
             if Updatable in proj.components:
                 proj.components[Updatable](dt*1000)
+
+        for network in self.networks.copy():
+            network.update(dt*1000)
 
         self.temperature.update(dt)
 
@@ -159,6 +178,9 @@ class World:
             scene.removeItem(block.pixmap_item)
             scene.update()
 
+        for network in [*block.networks.values()]:
+            network.remove(block)
+
     def append_block(self, block:Block):
         self.blocks.append(block)
 
@@ -171,6 +193,10 @@ class World:
         for network in self.networks:
             if network.suability(block):
                 network.add(block)
+                
+        if len(block.networks)==0:
+            for ng in self.networks_generators:
+                ng(block)
 
     def remove_unit(self, unit:Unit):
         if unit in self.units:

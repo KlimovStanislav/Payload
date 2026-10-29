@@ -1,615 +1,4 @@
-[2026-10-25 | 23:32:43] >>> [SYSTEM] File was truncated to 10000 lines
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:28] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:28] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Conveyor.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:29] >>> [EXIT] 1
-
-[2026-10-05 | 22:15:41] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 22:15:42] >>> [SaveError] File of sector not found
-[2026-10-05 | 22:15:42] >>> [StartInfo] All systems online
-[2026-10-05 | 22:15:42] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 22:15:42] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 22:15:44] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:45] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:46] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:47] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:48] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:49] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:50] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Base.upd() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 22:15:50] >>> [EXIT] 1
-
-[2026-10-05 | 22:16:05] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 22:16:05] >>> [SaveError] File of sector not found
-[2026-10-05 | 22:16:05] >>> [StartInfo] All systems online
-[2026-10-05 | 22:16:05] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 22:16:05] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 22:16:46] >>> [EXIT] 0
-
-[2026-10-05 | 22:49:30] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 22:49:30] >>> [SaveError] File of sector not found
-[2026-10-05 | 22:49:30] >>> [StartInfo] All systems online
-[2026-10-05 | 22:49:30] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 22:49:30] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 22:49:36] >>> [EXIT] 0
-
-[2026-10-05 | 23:35:49] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-
-[2026-10-05 | 23:36:03] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:36:03] >>> [WARNING] The previous launch failed
-
-[2026-10-05 | 23:36:27] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:36:27] >>> [WARNING] The previous launch failed
-
-[2026-10-05 | 23:36:50] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:36:50] >>> [WARNING] The previous launch failed
-[2026-10-05 | 23:36:50] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:36:50] >>> [StartInfo] All systems online
-[2026-10-05 | 23:36:50] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 23:36:50] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 23:36:51] >>> [EXIT] 0
-
-[2026-10-05 | 23:40:20] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:40:21] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:40:21] >>> [StartInfo] All systems online
-[2026-10-05 | 23:40:21] >>> [TextureCache] Texture <C:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 23:40:21] >>> [TextureCache] Texture <C:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 23:40:42] >>> [EXIT] 0
-
-[2026-10-05 | 23:46:25] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:46:26] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:46:26] >>> [StartInfo] All systems online
-[2026-10-05 | 23:46:26] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:46:26] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 23:46:26] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 23:46:26] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:46:28] >>> [EXIT] 0
-
-[2026-10-05 | 23:47:10] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:47:10] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:47:10] >>> [StartInfo] All systems online
-[2026-10-05 | 23:47:10] >>> [TextureCache] Texture <C:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 23:47:10] >>> [TextureCache] Texture <C:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 23:48:34] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Powerable.update() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 23:48:35] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Powerable.update() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 23:48:36] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Powerable.update() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 23:48:37] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "components\Updatable.py", line 36, in __call__
-                    >>>     task.func(self.owner, task)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: Powerable.update() takes 1 positional argument but 2 were given
-                    >>> 
-[2026-10-05 | 23:48:41] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "components\Clickable.py", line 21, in __call__
-                    >>>     self.func(self.owner)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^
-                    >>> AttributeError: 'Base' object has no attribute 'tree'
-                    >>> 
-
-[2026-10-05 | 23:57:24] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:57:24] >>> [WARNING] The previous launch failed
-[2026-10-05 | 23:57:24] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:24] >>> [StartInfo] All systems online
-[2026-10-05 | 23:57:24] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:24] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 23:57:24] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 23:57:24] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:29] >>> [EXIT] 0
-
-[2026-10-05 | 23:57:29] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:29] >>> [StartInfo] All systems online
-[2026-10-05 | 23:57:29] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:29] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:37] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:57:37] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:37] >>> [StartInfo] All systems online
-[2026-10-05 | 23:57:37] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:37] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 23:57:37] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 23:57:37] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:57:40] >>> [EXIT] 0
-
-[2026-10-05 | 23:58:11] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-05 | 23:58:12] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:58:12] >>> [StartInfo] All systems online
-[2026-10-05 | 23:58:12] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:58:12] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-05 | 23:58:12] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-05 | 23:58:12] >>> [SaveError] File of sector not found
-[2026-10-05 | 23:58:14] >>> [EXIT] 0
-
-[2026-10-06 | 00:01:05] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 00:01:05] >>> [SaveError] File of sector not found
-[2026-10-06 | 00:01:05] >>> [StartInfo] All systems online
-[2026-10-06 | 00:01:05] >>> [SaveError] File of sector not found
-[2026-10-06 | 00:01:05] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 00:01:05] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 00:01:05] >>> [SaveError] File of sector not found
-[2026-10-06 | 00:01:10] >>> [EXIT] 0
-
-[2026-10-06 | 11:30:26] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 11:30:27] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:30:27] >>> [StartInfo] All systems online
-[2026-10-06 | 11:30:27] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:30:27] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 11:30:28] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 11:30:28] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:30:43] >>> [EXIT] 0
-
-[2026-10-06 | 11:39:17] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 11:39:17] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:39:17] >>> [StartInfo] All systems online
-[2026-10-06 | 11:39:17] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:39:17] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 11:39:17] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 11:39:17] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:39:25] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\selected(2x2).png> not found
-[2026-10-06 | 11:39:25] >>> [RuntimeError]
-                    >>> <World.click> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 18, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\world\World.py", line 134, in click
-                    >>>     self.selected_scene_item.setPos(QRectF(existing.x, existing.y))
-                    >>>                                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: arguments did not match any overloaded call:
-                    >>>   QRectF(): too many arguments
-                    >>>   QRectF(atopLeft: QPointF, asize: QSizeF): argument 1 has unexpected type 'int'
-                    >>>   QRectF(atopLeft: QPointF, abottomRight: QPointF): argument 1 has unexpected type 'int'
-                    >>>   QRectF(aleft: float, atop: float, awidth: float, aheight: float): not enough arguments
-                    >>>   QRectF(r: QRect): argument 1 has unexpected type 'int'
-                    >>>   QRectF(a0: QRectF): argument 1 has unexpected type 'int'
-                    >>> 
-[2026-10-06 | 11:39:28] >>> [EXIT] 1
-
-[2026-10-06 | 11:39:53] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 11:39:53] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:39:53] >>> [StartInfo] All systems online
-[2026-10-06 | 11:39:53] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:39:53] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 11:39:53] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 11:39:53] >>> [SaveError] File of sector not found
-[2026-10-06 | 11:39:59] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\selected(2x2).png> not found
-[2026-10-06 | 11:40:11] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\selected(1x1).png> not found
-[2026-10-06 | 11:40:25] >>> [EXIT] 0
-
-[2026-10-06 | 20:35:28] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 20:35:29] >>> [SaveError] File of sector not found
-[2026-10-06 | 20:35:29] >>> [StartInfo] All systems online
-[2026-10-06 | 20:35:30] >>> [SaveError] File of sector not found
-[2026-10-06 | 20:35:30] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 20:35:30] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 20:35:30] >>> [SaveError] File of sector not found
-[2026-10-06 | 20:35:43] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\selected(2x2).png> not found
-[2026-10-06 | 20:35:51] >>> [EXIT] 0
-
-[2026-10-06 | 20:45:59] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 20:45:59] >>> [SaveError] File of sector not found
-[2026-10-06 | 20:45:59] >>> [StartInfo] All systems online
-[2026-10-06 | 20:46:00] >>> [SaveError] File of sector not found
-[2026-10-06 | 20:46:00] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 20:46:00] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 20:46:00] >>> [SaveError] File of sector not found
-[2026-10-06 | 20:46:05] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\selected(2x2).png> not found
-[2026-10-06 | 20:46:15] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\selected(3x3).png> not found
-[2026-10-06 | 20:46:24] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\selected(1x1).png> not found
-[2026-10-06 | 20:46:35] >>> [EXIT] 0
-
-[2026-10-06 | 21:03:09] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:03:09] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:03:09] >>> [StartInfo] All systems online
-[2026-10-06 | 21:03:09] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:03:09] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:03:09] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:03:09] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:03:17] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\outline(2x2).png> not found
-
-[2026-10-06 | 21:06:28] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:06:28] >>> [WARNING] The previous launch failed
-[2026-10-06 | 21:06:28] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:06:28] >>> [StartInfo] All systems online
-[2026-10-06 | 21:06:28] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:06:28] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:06:28] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:06:28] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:06:50] >>> [EXIT] 0
-
-[2026-10-06 | 21:10:45] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:10:45] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:10:45] >>> [StartInfo] All systems online
-[2026-10-06 | 21:10:45] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:10:45] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:10:45] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:10:45] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:11:17] >>> [EXIT] 0
-
-[2026-10-06 | 21:11:53] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:11:53] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:11:53] >>> [StartInfo] All systems online
-[2026-10-06 | 21:11:53] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:11:53] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:11:53] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:11:53] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:12:16] >>> [EXIT] 0
-
-[2026-10-06 | 21:12:33] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:12:33] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:12:33] >>> [StartInfo] All systems online
-[2026-10-06 | 21:12:33] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:12:33] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:12:33] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:12:33] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:12:57] >>> [EXIT] 0
-
-[2026-10-06 | 21:13:20] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:13:20] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:13:20] >>> [StartInfo] All systems online
-[2026-10-06 | 21:13:20] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:13:20] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:13:20] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:13:21] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:13:37] >>> [EXIT] 0
-
-[2026-10-06 | 21:14:57] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:14:57] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:14:57] >>> [StartInfo] All systems online
-[2026-10-06 | 21:14:57] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:14:57] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:14:57] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:14:58] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:15:12] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\outline(2x2).png> not found
-[2026-10-06 | 21:15:24] >>> [EXIT] 0
-
-[2026-10-06 | 21:16:51] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:16:51] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:16:51] >>> [StartInfo] All systems online
-[2026-10-06 | 21:16:51] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:16:51] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:16:51] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:16:51] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:17:00] >>> [EXIT] 0
-
-[2026-10-06 | 21:17:20] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:17:20] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:17:20] >>> [StartInfo] All systems online
-[2026-10-06 | 21:17:20] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:17:20] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:17:20] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:17:20] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:17:31] >>> [EXIT] 0
-
-[2026-10-06 | 21:18:00] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:18:01] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:18:01] >>> [StartInfo] All systems online
-[2026-10-06 | 21:18:01] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:18:01] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:18:01] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:18:01] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:18:13] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\outline(2x2).png> not found
-[2026-10-06 | 21:18:17] >>> [EXIT] 0
-
-[2026-10-06 | 21:20:24] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-06 | 21:20:24] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:20:24] >>> [StartInfo] All systems online
-[2026-10-06 | 21:20:24] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:20:24] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-06 | 21:20:24] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-06 | 21:20:24] >>> [SaveError] File of sector not found
-[2026-10-06 | 21:20:26] >>> [EXIT] 0
+[2026-10-28 | 23:09:31] >>> [SYSTEM] File was truncated to 10000 lines
 
 [2026-10-06 | 21:21:22] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
 [2026-10-06 | 21:21:22] >>> [SaveError] File of sector not found
@@ -10007,4 +9396,615 @@
 [2026-10-25 | 23:32:43] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
 [2026-10-25 | 23:32:43] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
 [2026-10-25 | 23:43:37] >>> [EXIT] 0
+
+[2026-10-26 | 00:28:16] >>> [START] Alpha 0.2.22
+[2026-10-26 | 00:28:16] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 00:28:17] >>> [StartInfo] All systems online. Start lasted 246 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-26 | 00:28:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-26 | 00:28:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-26 | 00:28:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-26 | 00:28:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-26 | 00:28:23] >>> [EXIT] 0
+
+[2026-10-26 | 00:29:03] >>> [START] Alpha 0.2.22
+[2026-10-26 | 00:29:03] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 00:29:04] >>> [StartInfo] All systems online. Start lasted 224 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-26 | 00:29:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-26 | 00:29:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-26 | 00:29:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-26 | 00:29:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-26 | 00:29:35] >>> [EXIT] 0
+
+[2026-10-26 | 00:35:32] >>> [START] Alpha 0.2.22
+[2026-10-26 | 00:35:32] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 00:35:33] >>> [StartInfo] All systems online. Start lasted 207 milliseconds. Smoke tests completed in 21 milliseconds.
+[2026-10-26 | 00:35:39] >>> [EXIT] 0
+
+[2026-10-26 | 00:37:18] >>> [START] Alpha 0.2.22
+[2026-10-26 | 00:37:18] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 00:37:18] >>> [StartInfo] All systems online. Start lasted 236 milliseconds. Smoke tests completed in 23 milliseconds.
+[2026-10-26 | 00:37:33] >>> [EXIT] 0
+
+[2026-10-26 | 00:50:15] >>> [START] Alpha 0.2.22
+[2026-10-26 | 00:50:15] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 00:50:15] >>> [StartInfo] All systems online. Start lasted 217 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-26 | 00:50:39] >>> [EXIT] 0
+
+[2026-10-26 | 00:53:15] >>> [START] Alpha 0.2.22
+[2026-10-26 | 00:53:15] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 00:53:15] >>> [StartInfo] All systems online. Start lasted 214 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-10-26 | 00:53:20] >>> [EXIT] 0
+
+[2026-10-26 | 21:30:32] >>> [START] Alpha 0.2.22
+[2026-10-26 | 21:30:32] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 21:30:34] >>> [StartInfo] All systems online. Start lasted 1593 milliseconds. Smoke tests completed in 40 milliseconds.
+[2026-10-26 | 21:30:40] >>> [EXIT] 0
+
+[2026-10-26 | 22:09:51] >>> [START] Alpha 0.2.22
+[2026-10-26 | 22:09:51] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 22:09:52] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-26 | 22:09:53] >>> [EXIT] 0
+
+[2026-10-26 | 22:20:47] >>> [START] Alpha 0.2.22
+[2026-10-26 | 22:20:47] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-10-26 | 22:23:40] >>> [START] Alpha 0.2.22
+[2026-10-26 | 22:23:40] >>> [WARNING] The previous launch failed
+[2026-10-26 | 22:23:40] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 22:23:40] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 21 milliseconds.
+[2026-10-26 | 22:23:49] >>> [EXIT] 0
+
+[2026-10-26 | 22:24:06] >>> [START] Alpha 0.2.22
+[2026-10-26 | 22:24:06] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-26 | 22:24:06] >>> [StartInfo] All systems online. Start lasted 243 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-26 | 22:24:12] >>> [EXIT] 0
+
+[2026-10-27 | 20:29:59] >>> [START] Alpha 0.2.22
+[2026-10-27 | 20:29:59] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 20:30:01] >>> [StartInfo] All systems online. Start lasted 1612 milliseconds. Smoke tests completed in 39 milliseconds.
+[2026-10-27 | 20:30:03] >>> [EXIT] 0
+
+[2026-10-27 | 20:57:06] >>> [START] Alpha 0.2.22
+[2026-10-27 | 20:57:06] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 20:57:06] >>> [StartInfo] All systems online. Start lasted 300 milliseconds. Smoke tests completed in 23 milliseconds.
+[2026-10-27 | 20:58:47] >>> [EXIT] 0
+
+[2026-10-27 | 21:48:18] >>> [START] Alpha 0.2.22
+[2026-10-27 | 21:48:18] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 21:48:19] >>> [StartInfo] All systems online. Start lasted 272 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-27 | 21:48:23] >>> [EXIT] 0
+
+[2026-10-27 | 21:56:35] >>> [START] Alpha 0.2.22
+[2026-10-27 | 21:56:35] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 21:56:36] >>> [StartInfo] All systems online. Start lasted 228 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-10-27 | 21:56:56] >>> [EXIT] 0
+
+[2026-10-27 | 21:57:19] >>> [START] Alpha 0.2.22
+[2026-10-27 | 21:57:19] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 21:57:19] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-27 | 21:57:40] >>> [EXIT] 0
+
+[2026-10-27 | 21:57:47] >>> [START] Alpha 0.2.22
+[2026-10-27 | 21:57:47] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 21:57:47] >>> [StartInfo] All systems online. Start lasted 221 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-10-27 | 21:57:54] >>> [EXIT] 0
+
+[2026-10-27 | 21:58:00] >>> [START] Alpha 0.2.22
+[2026-10-27 | 21:58:00] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 21:58:00] >>> [StartInfo] All systems online. Start lasted 235 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-27 | 21:58:08] >>> [EXIT] 0
+
+[2026-10-27 | 23:27:35] >>> [START] Alpha 0.2.22
+[2026-10-27 | 23:27:35] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 23:27:36] >>> [StartInfo] All systems online. Start lasted 1273 milliseconds. Smoke tests completed in 29 milliseconds.
+[2026-10-27 | 23:27:47] >>> [EXIT] 0
+
+[2026-10-27 | 23:27:50] >>> [START] Alpha 0.2.22
+[2026-10-27 | 23:27:50] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 23:27:50] >>> [StartInfo] All systems online. Start lasted 218 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-10-27 | 23:27:51] >>> [EXIT] 0
+
+[2026-10-27 | 23:27:52] >>> [START] Alpha 0.2.22
+[2026-10-27 | 23:27:52] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 23:27:52] >>> [StartInfo] All systems online. Start lasted 244 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-10-27 | 23:27:53] >>> [EXIT] 0
+
+[2026-10-27 | 23:28:10] >>> [START] Alpha 0.2.22
+[2026-10-27 | 23:28:10] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-27 | 23:28:11] >>> [StartInfo] All systems online. Start lasted 243 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-10-27 | 23:29:07] >>> [EXIT] 0
+
+[2026-10-28 | 19:16:55] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:16:55] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:16:56] >>> [StartInfo] All systems online. Start lasted 1571 milliseconds. Smoke tests completed in 39 milliseconds.
+[2026-10-28 | 19:17:10] >>> [EXIT] 0
+
+[2026-10-28 | 19:17:23] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:17:23] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:17:23] >>> [StartInfo] All systems online. Start lasted 225 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-10-28 | 19:17:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:17:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:17:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:17:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:17:23] >>> [RuntimeError]
+                    >>> <SettingsWindow.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\MainWindow.py", line 123, in __init__
+                    >>>     self.volume_slider.setValue(int(folder.config["volume"]*100))
+                    >>>                                     ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+                    >>> TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+                    >>> 
+[2026-10-28 | 19:17:24] >>> [EXIT] 1
+
+[2026-10-28 | 19:18:36] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:18:36] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:18:36] >>> [StartInfo] All systems online. Start lasted 233 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-10-28 | 19:18:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:18:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:18:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:18:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:19:05] >>> [RuntimeError]
+                    >>> <World.click> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 296, in click
+                    >>>     obj:SceneObject = block_class(self, cell=Cell(x, y), name=self.placing_block)
+                    >>>                       ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\composites\Pipe.py", line 22, in __init__
+                    >>>     self.components[Liquidable] = Liquidable(self)
+                    >>>                                   ~~~~~~~~~~^^^^^^
+                    >>> TypeError: Liquidable.__init__() missing 1 required positional argument: 'type'
+                    >>> 
+[2026-10-28 | 19:19:15] >>> [EXIT] 1
+
+[2026-10-28 | 19:22:34] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:22:34] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:22:34] >>> [StartInfo] All systems online. Start lasted 234 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-10-28 | 19:22:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:22:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:22:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:22:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:22:46] >>> [EXIT] 0
+
+[2026-10-28 | 19:23:25] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:23:25] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:23:26] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-28 | 19:23:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:23:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:23:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:23:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:23:50] >>> [EXIT] 0
+
+[2026-10-28 | 19:24:29] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:24:29] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:24:30] >>> [StartInfo] All systems online. Start lasted 252 milliseconds. Smoke tests completed in 22 milliseconds.
+[2026-10-28 | 19:24:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:24:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:24:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:24:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:24:39] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 179, in remove_block
+                    >>>     scene.removeItem(block.pixmap_item)
+                    >>>     ^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'removeItem'
+                    >>> 
+[2026-10-28 | 19:24:49] >>> [EXIT] 1
+
+[2026-10-28 | 19:25:09] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:25:09] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:25:09] >>> [StartInfo] All systems online. Start lasted 249 milliseconds. Smoke tests completed in 22 milliseconds.
+[2026-10-28 | 19:25:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:25:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:25:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:25:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:25:20] >>> [EXIT] 0
+
+[2026-10-28 | 19:28:32] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:28:32] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:28:32] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 194, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 19:28:32] >>> [StartInfo] All systems online. Start lasted 228 milliseconds. Smoke tests completed in 26 milliseconds.
+[2026-10-28 | 19:28:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:28:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:28:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:28:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:28:43] >>> [EXIT] 1
+
+[2026-10-28 | 19:30:47] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:30:47] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:30:47] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 19:30:47] >>> [StartInfo] All systems online. Start lasted 258 milliseconds. Smoke tests completed in 28 milliseconds.
+[2026-10-28 | 19:30:47] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:30:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:30:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:30:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:30:54] >>> [EXIT] 1
+
+[2026-10-28 | 19:31:08] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:31:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:31:09] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 19:31:09] >>> [StartInfo] All systems online. Start lasted 259 milliseconds. Smoke tests completed in 28 milliseconds.
+[2026-10-28 | 19:31:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 19:31:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 19:31:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 19:31:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 19:31:12] >>> [EXIT] 1
+
+[2026-10-28 | 19:34:17] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:34:17] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:34:17] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 19:34:17] >>> [EXIT] 1
+
+[2026-10-28 | 19:37:33] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:37:33] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:37:34] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 19:37:34] >>> [EXIT] 1
+
+[2026-10-28 | 19:37:42] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:37:42] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:37:42] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 19:37:43] >>> [EXIT] 1
+
+[2026-10-28 | 19:38:13] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:38:13] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:38:14] >>> [EXIT] 0
+
+[2026-10-28 | 19:40:14] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:40:14] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:40:14] >>> [EXIT] 0
+
+[2026-10-28 | 19:41:05] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:41:05] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:41:05] >>> [EXIT] 1
+
+[2026-10-28 | 19:41:17] >>> [START] Alpha 0.2.22
+[2026-10-28 | 19:41:17] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 19:41:17] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 19:41:17] >>> [EXIT] 1
+
+[2026-10-28 | 22:33:46] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:33:46] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:33:46] >>> [ERROR] Traceback (most recent call last):
+[2026-10-28 | 22:33:46] >>> [ERROR]
+                    >>>   File "d:\Payload\testing.py", line 113, in <module>
+                    >>>     failed, critical, time = start(Mode.FULL)
+                    >>>                              ~~~~~^^^^^^^^^^^
+[2026-10-28 | 22:33:46] >>> [ERROR]
+                    >>>   File "d:\Payload\testing.py", line 108, in start
+                    >>>     critical.extend(safe.errors.values())
+                    >>>                     ^^^^^^^^^^^^^^^^^^
+[2026-10-28 | 22:33:46] >>> [ERROR] AttributeError: 'set' object has no attribute 'values'
+[2026-10-28 | 22:33:46] >>> [EXIT] 1
+
+[2026-10-28 | 22:34:01] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:34:01] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:34:01] >>> [EXIT] 0
+
+[2026-10-28 | 22:34:11] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:34:11] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:34:11] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 22:34:12] >>> [EXIT] 1
+
+[2026-10-28 | 22:34:31] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:34:31] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:34:31] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 22:34:31] >>> [StartError] ('World.append_block', TypeError("object of type 'type' has no len()"))
+[2026-10-28 | 22:34:33] >>> [EXIT] 1
+
+[2026-10-28 | 22:35:49] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:35:49] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:35:50] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 195, in append_block
+                    >>>     if len(block.networks)==0:
+                    >>>        ~~~^^^^^^^^^^^^^^^^
+                    >>> TypeError: object of type 'type' has no len()
+                    >>> 
+[2026-10-28 | 22:35:50] >>> [StartError] ('World.append_block', TypeError("object of type 'type' has no len()"))
+[2026-10-28 | 22:35:58] >>> [EXIT] 1
+
+[2026-10-28 | 22:38:01] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:38:01] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:38:01] >>> [StartInfo] All systems online. Start lasted 242 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-10-28 | 22:38:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:38:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:38:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:38:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:38:17] >>> [EXIT] 0
+
+[2026-10-28 | 22:46:40] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:46:40] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:46:40] >>> [StartInfo] All systems online. Start lasted 224 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-10-28 | 22:46:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:46:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:46:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:46:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:47:15] >>> [EXIT] 0
+
+[2026-10-28 | 22:54:33] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:54:33] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:54:34] >>> [StartInfo] All systems online. Start lasted 1216 milliseconds. Smoke tests completed in 27 milliseconds.
+[2026-10-28 | 22:54:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:54:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:54:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:54:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:55:00] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 183, in remove_block
+                    >>>     network.remove(block)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^
+                    >>> TypeError: Network.remove() missing 1 required positional argument: 'node'
+                    >>> 
+[2026-10-28 | 22:55:05] >>> [EXIT] 1
+
+[2026-10-28 | 22:56:21] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:56:21] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:56:21] >>> [StartInfo] All systems online. Start lasted 244 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-10-28 | 22:56:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:56:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:56:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:56:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:56:32] >>> [EXIT] 0
+
+[2026-10-28 | 22:56:56] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:56:56] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:56:57] >>> [StartInfo] All systems online. Start lasted 230 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-10-28 | 22:56:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:56:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:56:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:56:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:57:01] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 182, in remove_block
+                    >>>     network.remove(block)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^
+                    >>> TypeError: Network.remove() missing 1 required positional argument: 'node'
+                    >>> 
+[2026-10-28 | 22:57:02] >>> [EXIT] 1
+
+[2026-10-28 | 22:57:14] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:57:14] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:57:14] >>> [StartInfo] All systems online. Start lasted 239 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-28 | 22:57:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:57:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:57:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:57:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:57:26] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 182, in remove_block
+                    >>>     network.remove(block)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^
+                    >>> TypeError: Network.remove() missing 1 required positional argument: 'node'
+                    >>> 
+[2026-10-28 | 22:57:35] >>> [EXIT] 1
+
+[2026-10-28 | 22:59:11] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:59:11] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:59:11] >>> [StartInfo] All systems online. Start lasted 259 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-28 | 22:59:12] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:59:12] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:59:12] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:59:12] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:59:15] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 182, in remove_block
+                    >>>     network.remove(block)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^
+                    >>> TypeError: Network.remove() missing 1 required positional argument: 'node'
+                    >>> 
+[2026-10-28 | 22:59:18] >>> [EXIT] 1
+
+[2026-10-28 | 22:59:37] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:59:37] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:59:37] >>> [StartInfo] All systems online. Start lasted 223 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-10-28 | 22:59:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:59:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:59:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:59:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:59:41] >>> [EXIT] 0
+
+[2026-10-28 | 22:59:42] >>> [START] Alpha 0.2.22
+[2026-10-28 | 22:59:42] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 22:59:42] >>> [StartInfo] All systems online. Start lasted 228 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-10-28 | 22:59:43] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 22:59:43] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 22:59:43] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 22:59:43] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 22:59:48] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 184, in remove_block
+                    >>>     network.remove(block)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^
+                    >>> TypeError: Network.remove() missing 1 required positional argument: 'node'
+                    >>> 
+[2026-10-28 | 23:00:09] >>> [EXIT] 1
+
+[2026-10-28 | 23:03:33] >>> [START] Alpha 0.2.22
+[2026-10-28 | 23:03:33] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 23:03:33] >>> [StartInfo] All systems online. Start lasted 243 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-28 | 23:03:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 23:03:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 23:03:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 23:03:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 23:03:47] >>> [EXIT] 0
+
+[2026-10-28 | 23:04:52] >>> [START] Alpha 0.2.22
+[2026-10-28 | 23:04:52] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 23:04:52] >>> [StartInfo] All systems online. Start lasted 223 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-10-28 | 23:04:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 23:04:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 23:04:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 23:04:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 23:04:55] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 183, in remove_block
+                    >>>     network.remove(block)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^
+                    >>> TypeError: Network.remove() missing 1 required positional argument: 'node'
+                    >>> 
+[2026-10-28 | 23:05:03] >>> [EXIT] 1
+
+[2026-10-28 | 23:05:52] >>> [START] Alpha 0.2.22
+[2026-10-28 | 23:05:52] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 23:05:52] >>> [StartInfo] All systems online. Start lasted 222 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-28 | 23:05:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 23:05:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 23:05:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 23:05:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 23:05:59] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 182, in remove_block
+                    >>>     network.remove(block, block)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\components\Network.py", line 20, in remove
+                    >>>     if node in self.nodes:
+                    >>>                ^^^^^^^^^^
+                    >>> AttributeError: 'Pipe' object has no attribute 'nodes'
+                    >>> 
+[2026-10-28 | 23:06:17] >>> [EXIT] 1
+
+[2026-10-28 | 23:07:32] >>> [START] Alpha 0.2.22
+[2026-10-28 | 23:07:32] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 23:07:32] >>> [StartInfo] All systems online. Start lasted 235 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-10-28 | 23:07:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 23:07:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 23:07:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 23:07:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 23:07:40] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 181, in remove_block
+                    >>>     for network in block.networks.values():
+                    >>>                    ~~~~~~~~~~~~~~~~~~~~~^^
+                    >>> RuntimeError: dictionary changed size during iteration
+                    >>> 
+[2026-10-28 | 23:07:41] >>> [EXIT] 1
+
+[2026-10-28 | 23:08:18] >>> [START] Alpha 0.2.22
+[2026-10-28 | 23:08:18] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 23:08:19] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-10-28 | 23:08:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 23:08:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 23:08:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 23:08:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 23:08:26] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 181, in remove_block
+                    >>>     for network in list(*block.networks.values()):
+                    >>>                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> TypeError: 'PipeNetwork' object is not iterable
+                    >>> 
+[2026-10-28 | 23:08:28] >>> [EXIT] 1
+
+[2026-10-28 | 23:09:05] >>> [START] Alpha 0.2.22
+[2026-10-28 | 23:09:05] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 23:09:05] >>> [StartInfo] All systems online. Start lasted 246 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-10-28 | 23:09:05] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 23:09:05] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 23:09:05] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 23:09:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 23:09:17] >>> [EXIT] 0
+
+[2026-10-28 | 23:09:31] >>> [START] Alpha 0.2.22
+[2026-10-28 | 23:09:31] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-10-28 | 23:09:31] >>> [StartInfo] All systems online. Start lasted 219 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-10-28 | 23:09:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-10-28 | 23:09:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-10-28 | 23:09:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-10-28 | 23:09:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-10-28 | 23:09:54] >>> [EXIT] 0
 

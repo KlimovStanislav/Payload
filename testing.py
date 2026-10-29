@@ -8,10 +8,11 @@ from enum import Enum, auto
 
 from time import perf_counter
 
-import pyclr, applib, importlib, traceback, sys
+import applib, importlib, traceback, sys
 
 from PyQt6.QtWidgets import QApplication
 import base.font
+from base.functions import safe
 import base.cursors
     
 application = QApplication(sys.argv)
@@ -104,17 +105,19 @@ def start(mode:Mode) -> list:
                 critical.append(f"{func.__name__.replace("_", " ").title()}: {traceback.format_exc()}")
                 break
 
+    critical.extend(safe.errors)
+
     return failed, critical, (perf_counter()-start_time)*1000
 
 if __name__ == "__main__":
     failed, critical, time = start(Mode.FULL)
-    pyclr.cprint(f"Full tests completed in {time:.0f} miliseconds", style=pyclr.Bold)
+    print(f"Full tests completed in {time:.0f} miliseconds")
     if critical:
-        pyclr.cprint(f"Found {len(critical)} critical:", *critical, sep="\n---", style=pyclr.Bold, color="red")
+        print(f"Found {len(critical)} critical:", *critical, sep="\n---")
         sys.exit(1)
     if failed:
-        pyclr.cprint(f"Found {len(failed)} failed tests:", *failed, sep="\n---", style=pyclr.Bold, color="red")
+        print(f"Found {len(failed)} failed tests:", *failed, sep="\n---")
         sys.exit(1)
     else:
-        pyclr.cprint("All systems online", style=pyclr.Bold, color="#2aa7f0")
+        print("All systems online")
         

@@ -12,7 +12,7 @@ class Side(Enum):
     DOWN = auto()
 
 class Rotatable:
-    def __init__(self, owner:SceneObject, min:int, opt:int, max:int):
+    def __init__(self, owner:SceneObject):
         self.owner = owner
         self.value = Side.UP
 

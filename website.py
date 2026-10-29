@@ -3,23 +3,24 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 GAME = {
-    "name": "LOW-LEVEL",
-    "version": "Alpha 0.2.21",
+    "name": "PAYLOAD",
+    "version": "Alpha 0.2.22",
     "codename": "Game",
     "size": "85 MB",
-    "description": "Фабрико-Строй",
+    "description": "Factory",
     "long_description": (
-        "Стройте, изучайте, короче играйте"
+        "Build, study, and, in short, play."
     ),
     "features": [
-        "Тепло",
-        "Блоки",
-        "Буры, конвейера и т.д."
+        "Head",
+        "Tiles",
+        "Drills, campaign, etc"
     ],
     "screenshots": ["1.png", "2.png", "3.png", "4.png"],
-    "github": "https://github.com/Stanislafv/Low-Level",
-    "download_win": "https://github.com/Stanislafv/Low-Level/releases/latest/download/launcher-win64.exe",
+    "github": "https://github.com/KlimovStanislav/Payload",
+    "download_win": "https://github.com/KlimovStanislav/Payload/releases/latest/download/installer-win64.exe",
 }
+
 
 CHANGELOG = [
     {

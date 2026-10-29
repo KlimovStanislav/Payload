@@ -1,7 +1,5 @@
 {
   "devmode": true,
   "craft_coef": 1,
-  "campaign_step": 3,
-  "music_volume": 1.0,
-  "volume": 1.0
+  "campaign_step": 3
 }

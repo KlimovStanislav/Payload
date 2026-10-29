@@ -67,7 +67,7 @@ class WorldLoader:
                 else:
                     view.centerOn(cam_x, cam_y)
 
-                window.scale = cam_zoom
+                window.scale = cam_zoom*1.1
                 window.target_scale = cam_zoom
 
             if scene is not None:

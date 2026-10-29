@@ -34,6 +34,9 @@ except Exception:
     print(traceback.format_exc())
     __import__("os").abort()
 
+if sys.stderr is None:
+    sys.stderr = open('NUL', 'w')
+
 def main()->int:
     try:
         failed, critical, time = testing.start(testing.Mode.SMOKE)

@@ -12,6 +12,11 @@ class Dict(dict[type, object]):
     def __getitem__(self, key: Type[T]) -> T:
         return super().__getitem__(key) 
 
+    def __setitem__(self, key, value):
+        if key != value.__class__:
+            raise KeyError("Types of keys and values not match")
+        return super().__setitem__(key, value)
+
 class Cell(NamedTuple):
     x:int
     y:int
@@ -29,7 +34,7 @@ class SceneObject:
     integrity:int|float
 
     components:Dict[Type[T], Type[T]] = field(default_factory=Dict)
-    networks:Dict[Type[T], Type[T]] = field(default=Dict)
+    networks:Dict[Type[T], Type[T]] = field(default_factory=Dict)
     exists:bool=True
     
     def get_occupied_cells(self) -> set[Cell]:
