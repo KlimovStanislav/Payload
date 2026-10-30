@@ -65,16 +65,10 @@ class SettingsMenu(Menu):
         self.setFixedSize(300, 400)
 
     def check(self):
-        if self.Window.main_window.fullscreen:
-            self.Window.main_window.showMaximized()
-            self.Window.main_window.fullscreen = False
-            settings.set("fullscreen", False)
-            self.fullscreen_check.setCheckState(Qt.CheckState.Unchecked)
-        else:
-            self.Window.main_window.showFullScreen() 
-            self.Window.main_window.fullscreen = True
-            settings.set("fullscreen", True)
+        if self.Window.main_window.switch_fullscreen():
             self.fullscreen_check.setCheckState(Qt.CheckState.Checked)
+        else:
+            self.fullscreen_check.setCheckState(Qt.CheckState.Unchecked)
         self.Window.resizeEvent(None)
 
     def reposition(self):

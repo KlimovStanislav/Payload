@@ -45,14 +45,13 @@ class Temperaturable:
                 layout = QtWidgets.QVBoxLayout(self)  
 
                 self.caution = Labels.Danger()
-                self.label = Labels.Body(f"Temperature: {self.obj.value:.0f}℃\n Efficiency: {self.obj.coef:.2f}")
+                self.label = Labels.Body(f"Temperature: {self.obj.value:.0f}℃\n Efficiency: {self.obj.coef*100:.0f}%")
 
                 layout.addWidget(self.label)
                 layout.addWidget(self.caution)
         
             def refresh(self):
-                coef = self.obj.coef
-                self.label.setText(f"Temperature: {self.obj.value:.0f}℃\n Efficiency: {coef*100:.0f}%")
+                self.label.setText(f"Temperature: {self.obj.value:.0f}℃\n Efficiency: {self.obj.coef*100:.0f}%")
                 self.caution.setText(f"OVERHEATING" if self.obj.value/self.obj.max >= 0.75 else "")
         
         return w(self)

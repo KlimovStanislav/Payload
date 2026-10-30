@@ -1,7 +1,6 @@
 from __future__ import annotations
 
-from ui.Widgets import Labels, Buttons, AutoUI
-from ui.Menu import Menu
+from ui.Widgets import Buttons, AutoUI
 from PyQt6 import QtWidgets
 
 from typing import TYPE_CHECKING, Callable

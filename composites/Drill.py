@@ -21,7 +21,7 @@ def generate_ore_upd(name) -> Callable:
         if obj.components[Switchable].state is False:
             return
 
-        task.ms /= max(obj.components[Temperaturable].coef, 0.05)
+        task.ms /= max(obj.components[Temperaturable].coef, 0.25)
 
         if obj.components[Storable].add(name, 1):   
             obj.components[Temperaturable].value += 25

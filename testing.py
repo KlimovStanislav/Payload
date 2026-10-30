@@ -76,10 +76,12 @@ def test_world_creates(world:World):
 
 @smoke
 def test_scene_objects(world:World):
-    block = Block(world, Cell(128, 128), "air")
+    block = Block(world, Cell(world.size.w, world.size.h), "air")
+    assert world.block_map.get(Cell(world.size.w, world.size.h)) is not None
     assert block.exists
     block.remove()
     assert not block.exists
+    assert world.block_map.get(Cell(world.size.w, world.size.h)) is None
 
 def start(mode:Mode) -> list:
     start_time = perf_counter()

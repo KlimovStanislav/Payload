@@ -1,13 +1,15 @@
 from __future__ import annotations
 
 from PyQt6 import QtWidgets
-from PyQt6.QtGui import QPixmap, QIcon
+from PyQt6.QtGui import QPixmap, QIcon, QShortcut, QKeySequence
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtWidgets import QMainWindow, QStackedWidget, QWidget
 
 import webbrowser
 
 from ui.Widgets import Labels, Buttons
+
+from terminal import init
 
 from base.functions import get_texture, safe_class
 from base.MusicPlayer import MusicPlayer
@@ -18,7 +20,7 @@ from ui.SandboxWindow import SandboxWindow
 from ui.EditorWindow import EditorWindow
 from ui.CampaignWindow import CampaignWindow
 
-from ui.Widgets import Labels, Buttons, Sliders
+from ui.Widgets import Labels, Buttons
 
 GITHUB_PATH = "https://github.com/KlimovStanislav/Payload"
 
@@ -199,6 +201,63 @@ class MainWindow(QMainWindow):
         self.widget.addWidget(self.SectorChoiceWindow)
         self.widget.addWidget(self.SettingsWindow)
         self.widget.addWidget(self.CampaignWindow)
+
+        self.terminal = init(self, lambda cmd: self.parsing(cmd))
+        self.terminal("Enter <help> to get assistance and information")
+
+        QShortcut(QKeySequence("F11"), self).activated.connect(lambda: self.switch_fullscreen())
+
+    def switch_fullscreen(self):
+        if self.fullscreen:
+            self.showMaximized()
+            self.fullscreen = False
+        else:
+            self.showFullScreen() 
+            self.fullscreen = True
+        settings.set("fullscreen", self.fullscreen)
+        return self.fullscreen
+
+    def parsing(self, cmd:str):
+        match cmd.lower().split():
+            case ["current", *args]:
+                window:SandboxWindow|CampaignWindow = self.widget.currentWidget()
+                if window not in [self.SandboxWindow, self.CampaignWindow]:
+                    self.terminal("not a chance")
+                    return
+                match args:
+                    case ["status"]:
+                        self.terminal(repr(window.manager.current))
+
+                    case ["pause"]:
+                        window.timer.stop()
+                        self.terminal("paused")
+
+                    case ["resume"]:
+                        window.timer.start()
+                        self.terminal("resumed")
+
+                    case ["tick", num]:
+                        if not num.isnumeric():
+                            self.terminal("not a chance")
+                            return
+                        window.manager.current.update(int(num))
+                        self.terminal(f"played {num} ticks")
+
+                    case ["give", name, value]:
+                        if not value.isnumeric():
+                            self.terminal("not a chance")
+                            return
+                        window.manager.current.operator.inventory.add(name, int(value))
+                        self.terminal(f"gived to operator {value} of {name}")
+
+                    case ["quota", num]:
+                        if window != self.CampaignWindow or not num.isnumeric(): 
+                            self.terminal("not a chance")
+                            return
+                        window.campaign.active = int(num)
+                        self.terminal(f"quota changed to {num}")
+            case _:
+                self.terminal(f"cmd <{cmd}> not found")
 
     def resizeEvent(self, event):
         super().resizeEvent(event)

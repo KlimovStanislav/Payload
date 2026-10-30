@@ -83,7 +83,7 @@ class Campaign:
                       Step("No tasks more", "Empty", lambda w: False)
                       ]
         
-        self.active=folder.config.get("campaign_step", 0)
+        self.active:int=folder.config.get("campaign_step", 0)
         self.viewer.refresh(self.steps[self.active])
 
     def update(self):

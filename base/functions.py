@@ -42,7 +42,6 @@ def safe_class(cls):
             
     return cls
 
-@safe
 def get_texture(name) -> QPixmap:
     if name not in TEXTURE_CACHE:
         path = folders.textures.path(f"{name}.png")

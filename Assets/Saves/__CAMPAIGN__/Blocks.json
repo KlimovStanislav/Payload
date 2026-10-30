@@ -50,11 +50,11 @@
         "name": "drill",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 10
             }
         },
         "Switchable": {
-            "state": false
+            "state": true
         }
     },
     {
@@ -71,8 +71,136 @@
         "name": "base",
         "Storable": {
             "storage": {
-                "lead": 15
+                "lead": 8
             }
         }
+    },
+    {
+        "x": 162,
+        "y": 118,
+        "name": "air"
+    },
+    {
+        "x": 163,
+        "y": 119,
+        "name": "air"
+    },
+    {
+        "x": 162,
+        "y": 116,
+        "name": "air"
+    },
+    {
+        "x": 151,
+        "y": 121,
+        "name": "air"
+    },
+    {
+        "x": 163,
+        "y": 116,
+        "name": "air"
+    },
+    {
+        "x": 163,
+        "y": 115,
+        "name": "air"
+    },
+    {
+        "x": 163,
+        "y": 116,
+        "name": "air"
+    },
+    {
+        "x": 159,
+        "y": 117,
+        "name": "air"
+    },
+    {
+        "x": 183,
+        "y": 107,
+        "name": "air"
+    },
+    {
+        "x": 143,
+        "y": 117,
+        "name": "lead_1"
+    },
+    {
+        "x": 144,
+        "y": 117,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 117,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 118,
+        "name": "lead_1"
+    },
+    {
+        "x": 144,
+        "y": 118,
+        "name": "lead_1"
+    },
+    {
+        "x": 143,
+        "y": 118,
+        "name": "lead_1"
+    },
+    {
+        "x": 143,
+        "y": 119,
+        "name": "lead_1"
+    },
+    {
+        "x": 144,
+        "y": 119,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 119,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 120,
+        "name": "lead_1"
+    },
+    {
+        "x": 144,
+        "y": 120,
+        "name": "lead_1"
+    },
+    {
+        "x": 143,
+        "y": 120,
+        "name": "lead_1"
+    },
+    {
+        "x": 143,
+        "y": 117,
+        "name": "drill",
+        "Storable": {
+            "storage": {
+                "lead": 10
+            }
+        },
+        "Switchable": {
+            "state": true
+        }
+    },
+    {
+        "x": 158,
+        "y": 118,
+        "name": "air"
+    },
+    {
+        "x": 161,
+        "y": 122,
+        "name": "air"
     }
 ]

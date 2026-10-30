@@ -225,15 +225,23 @@ class StdoutLogger:
         self.log = log
         self.target = target or _sys.__stdout__
         self.encoding = encoding
+        self._file = open(log.temp_path, "a", encoding=encoding) 
 
     def write(self, s: str):
         if self.target is not None:
-            self.target.write(s)         
-        with open(self.log.temp_path, "a", encoding="utf-8") as f:
-            f.write(s)          
+            self.target.write(s)
+        self._file.write(s)
 
     def flush(self):
-        self.target.flush()
+        if self.target is not None:
+            self.target.flush()
+        self._file.flush()
+
+    def fileno(self):
+        return self._file.fileno()  
+
+    def close(self):
+        self._file.close()
     
 class Log:
     def __init__(self, path, tempfolder=None, version="", tee=False, max_lines = 10000):
@@ -260,8 +268,6 @@ class Log:
 
         _warn.showwarning = self._warning_handler
         _sys.exit = self._custom_exit
-        _sys.stderr = StderrLogger(self)
-        _sys.stdout = StdoutLogger(self)
         _atexitregister(self._log_exit)
         self.tee = tee
 
@@ -306,6 +312,9 @@ class Log:
                                 self.write(f"Deleted {len(_os.listdir(self.tempfolder))} files from temp folder", type=SYSTEM)
                             shutil.rmtree(self.tempfolder)
                             _os.makedirs(self.tempfolder, exist_ok=True)
+
+        _sys.stderr = StderrLogger(self)
+        _sys.stdout = StdoutLogger(self)
 
     def dump(self, **kwargs):
         for k, v in kwargs.items():

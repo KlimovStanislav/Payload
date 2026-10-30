@@ -1,11 +1,9 @@
 from __future__ import annotations
 
 from PyQt6 import QtWidgets
-from PyQt6.QtGui import QBrush, QColor, QPainter, QIcon, QPixmap, QRadialGradient, QPen
+from PyQt6.QtGui import QBrush, QColor, QPainter, QIcon
 from PyQt6.QtCore import Qt, QRectF, QTimer
-from PyQt6.QtWidgets import QWidget, QGraphicsScene, QGraphicsView, QListWidget, QListWidgetItem, QGraphicsItem
-
-from PyQt6.QtOpenGLWidgets import QOpenGLWidget
+from PyQt6.QtWidgets import QWidget, QGraphicsScene, QGraphicsView, QListWidget, QListWidgetItem, QGraphicsItem, QGraphicsPixmapItem
 
 from PyQt6 import QtCore
 
@@ -27,6 +25,7 @@ from world.World import World
 from ui.ResourcePanel import ResourcePanel
 
 from components.Storable import Storable
+from components.SceneObject import Cell
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -35,6 +34,7 @@ if TYPE_CHECKING:
 
 round = math.floor
 
+@safe_class
 class FPSViewer(QtWidgets.QWidget):
     def __init__(self, window:SandboxWindow):
         self._frame_count = 0
@@ -81,6 +81,7 @@ class FPSViewer(QtWidgets.QWidget):
             self._frame_times.clear()
             self._last_report = now
 
+@safe_class
 class VersionViewer(QtWidgets.QWidget):
     def __init__(self, window):
         super().__init__(window)
@@ -98,38 +99,19 @@ class VersionViewer(QtWidgets.QWidget):
             self.move(x, y)
         self.show()
 
-class Preview(QGraphicsItem):
-    
-
+@safe_class
 class MapScene(QGraphicsScene):
     def __init__(self, intensity, window:SandboxWindow, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.window=window
         self.intensity = intensity
 
-    def drawForeground(self, painter: QPainter, rect: QRectF):
-        super().drawForeground(painter, rect)
-        
-        view = self.views()[0]
-        viewport_rect = view.mapToScene(view.viewport().rect()).boundingRect()
-
-        center = viewport_rect.center()
-        radius = max(viewport_rect.width(), viewport_rect.height()) * 0.7
-
-        grad = QRadialGradient(center, radius)
-        grad.setColorAt(0.0, QColor(0, 0, 0, 0))
-        grad.setColorAt(0.3, QColor(0, 0, 0, 0))
-        grad.setColorAt(0.75, QColor(0, 0, 0, int(180*self.intensity)))
-        grad.setColorAt(1.0, QColor(0, 0, 0, int(255*self.intensity)))
-
-        painter.fillRect(viewport_rect, QBrush(grad))
-
+@safe_class
 class MapView(QGraphicsView):
     def __init__(self, window:SandboxWindow, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.w=window
 
-        self.setViewport(QOpenGLWidget())
         self.setRenderHint(QPainter.RenderHint.Antialiasing, False)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
@@ -139,6 +121,51 @@ class MapView(QGraphicsView):
         self.setCacheMode(QGraphicsView.CacheModeFlag.CacheBackground)
         self.setOptimizationFlag(QGraphicsView.OptimizationFlag.DontSavePainterState, True)
         self.setOptimizationFlag(QGraphicsView.OptimizationFlag.DontAdjustForAntialiasing, True)
+
+        self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
+
+        self.item:QGraphicsPixmapItem = None
+
+    def remove_item(self):
+        if self.item is not None and self.scene() is not None:
+            self.item.setVisible(False)
+
+    def leaveEvent(self, a0):
+        super().leaveEvent(a0)
+        self.remove_item()
+    
+    def mouseMoveEvent(self, event):
+        super().mouseMoveEvent(event)
+
+        if self.scene() is None:
+            return
+        
+        scene_pos = self.mapToScene(event.pos())
+        _x, _y = round(scene_pos.x()), round(scene_pos.y())
+        x, y = math.floor((_x/32)), math.floor(_y/32)
+
+        size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+
+        for dx in range(size[0]):
+            for dy in range(size[1]):
+                blocks = self.w.manager.current.block_map.get(Cell(dx+x, dy+y))
+                if blocks is None:
+                    continue
+                for block in blocks:
+                    if block_config[block.name]["z"] < 20:
+                        continue
+                    self.remove_item()
+                    return
+
+        if self.item is None:
+            self.item = self.scene().addPixmap(get_texture(self.w.manager.current.placing_block))
+            self.item.setZValue(100)
+            self.item.setOpacity(0.5)
+        else:   
+            self.item.setPixmap(get_texture(self.w.manager.current.placing_block))
+
+        self.item.setVisible(True)
+        self.item.setPos(x*32, y*32)
 
 @safe_class
 class SandboxWindow(QWidget):
@@ -167,7 +194,6 @@ class SandboxWindow(QWidget):
         self.keys_pressed:set[int] = set()
 
         self.view.wheelEvent = self.wheelEvent
-        #self.view.mouseMoveEvent = self.mouseMoveEvent
 
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.update)
@@ -297,15 +323,6 @@ class SandboxWindow(QWidget):
             self.manager.current.click("right", x, y)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_F11:
-            if self.main_window.fullscreen:
-                self.main_window.showMaximized()
-                self.main_window.fullscreen = False
-            else:
-                self.main_window.showFullScreen() 
-                self.main_window.fullscreen = True
-            settings.set("fullscreen", self.main_window.fullscreen)
-
         if event.key() == Qt.Key.Key_Escape:
             MusicPlayer.play("click_2")
             if self.menu_active is not None:
@@ -329,20 +346,6 @@ class SandboxWindow(QWidget):
             self.sprint = False
             self.max_speed//=2
             self.acceleration//=2
-
-    def mouseMoveEvent(self, event):
-        super().mouseMoveEvent(event)
-        if self.manager.current.placing_block is None:
-            return
-                    
-        scene_pos = self.view.mapToScene(event.pos())
-        x, y = round(scene_pos.x()), round(scene_pos.y())
-            
-        pixmap = get_texture(self.manager.current.placing_block)
-        self.pixmap_item = self.scene.addPixmap(pixmap)
-        self.pixmap_item.setPos(math.floor((x/32))*32, math.floor(y/32)*32)
-        self.pixmap_item.setZValue(50)  
-        self.pixmap_item.setOpacity(0.5)
 
     def update(self):
             self.now = time.time()

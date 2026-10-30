@@ -6,9 +6,12 @@ except Exception:
 from time import perf_counter
 start = perf_counter()
 
+import sys
+import faulthandler
+
 try:
     import traceback
-    import os, applib, sys
+    import os, applib, faulthandler
     import testing
 
     from PyQt6.QtWidgets import QApplication
@@ -29,13 +32,12 @@ try:
 
     from ui.MainWindow import MainWindow
 
+    faulthandler.enable(sys.stdout)
+
 except Exception:
     pymsgbox.alert(f"Critical StartError:\n{traceback.format_exc()}", "C1", icon=pymsgbox.STOP)
-    print(traceback.format_exc())
+    traceback.print_exc()
     __import__("os").abort()
-
-if sys.stderr is None:
-    sys.stderr = open('NUL', 'w')
 
 def main()->int:
     try:
@@ -74,6 +76,7 @@ def main()->int:
 
 if __name__ == "__main__":
     code = max(main(), applib._exit_code)
+    faulthandler.disable()
     folder.config.save()
     settings.save()
     application.exit(code)

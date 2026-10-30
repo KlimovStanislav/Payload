@@ -5,8 +5,7 @@ from PyQt6.QtGui import QShortcut, QKeySequence
 from PyQt6.QtCore import Qt, QEvent
 import sys, os, subprocess
 
-if __name__ != "__main__":
-    class DevConsole(QDialog):
+class DevConsole(QDialog):
         def __init__(self, parent, cmd):
             super().__init__(parent)
             self.setWindowTitle("Dev Console")
@@ -62,6 +61,13 @@ if __name__ != "__main__":
         def write(self, text):
             self.buffer.append(text)
             self._original_stdout.write(text)
+            self.flush()
+
+        def clear(self):
+            self.output.setText("")
+
+        def __call__(self, text):
+            self.buffer.append(f"{text}\n")
             self.flush()
 
         def flush(self):
@@ -153,17 +159,15 @@ if __name__ != "__main__":
             sys.stderr = self._original_stderr
             super().closeEvent(event)
 
-    def init(parent_window, cmd=None) -> DevConsole:
+def init(parent_window, cmd=None) -> DevConsole:
         try:
             console = DevConsole(parent_window, cmd)
-
-            QShortcut(QKeySequence("F5"), parent_window).activated.connect(
-                lambda: console.show() if console.isHidden() else console.hide())
+            QShortcut(QKeySequence("F5"), parent_window).activated.connect(lambda: console.show() if console.isHidden() else console.hide())
             return console
         except Exception as e:
             print(e, file=sys.stderr)
 
-    def show(parent_window, cmd=None):
+def show(parent_window, cmd=None) -> DevConsole:
         console = DevConsole(parent_window, cmd)
         console.show()
         return console

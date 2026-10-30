@@ -121,7 +121,7 @@ class World:
 
         self.temperature = TempField(size.h, size.w, temperature)
 
-        self.placing_block:str = None
+        self.placing_block:str = "air"
         self.opened:list[str] = []
 
         self.scene = scene
@@ -324,6 +324,9 @@ class World:
         unit = self.unit_map.get(Cell(x, y), None)
         if unit is not None:
             return max(unit, key=lambda ex: ex.integrity)
+
+    def __repr__(self):
+        return f"Blocks len: {len(self.blocks)}"
     
     place = partialmethod(click, "left")
     remove = partialmethod(click, "right")

@@ -3,10 +3,7 @@ from __future__ import annotations
 from components.Updatable import Updatable
 
 import math, random
-from base.folders import folder
-from base.MusicPlayer import MusicPlayer
-from base.functions import safe_class, get_texture
-from base.folders import unit_config
+from base.functions import safe_class
 
 from components.SceneObject import SceneObject, Cell
 
