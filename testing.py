@@ -2,7 +2,7 @@ from world.World import World
 from world.WorldLoader import WorldLoader
 
 from composites.Block import Block
-from components.SceneObject import SceneObject, Cell
+from components.SceneObject import SceneObject, Cell, Angle
 
 from enum import Enum, auto
 
@@ -76,12 +76,12 @@ def test_world_creates(world:World):
 
 @smoke
 def test_scene_objects(world:World):
-    block = Block(world, Cell(world.size.w, world.size.h), "air")
-    assert world.block_map.get(Cell(world.size.w, world.size.h)) is not None
+    block = Block(world, Cell(world.size.w//2, world.size.h//2), "air", angle=Angle.UP.value)
+    assert world.block_map.get(Cell(world.size.w//2, world.size.h//2)) is not None
     assert block.exists
     block.remove()
     assert not block.exists
-    assert world.block_map.get(Cell(world.size.w, world.size.h)) is None
+    assert world.block_map.get(Cell(world.size.w//2, world.size.h//2)) is None
 
 def start(mode:Mode) -> list:
     start_time = perf_counter()

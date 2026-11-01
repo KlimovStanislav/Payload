@@ -1,48 +1,63 @@
+from __future__ import annotations
+import sys
 from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QMessageBox, QRadioButton
+from PyQt6.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QRadioButton, QGroupBox
 
-def show_win():
-    victory_win = QMessageBox()
-    victory_win.setText('Верно!\nВы выиграли гироскутер')
-    victory_win.exec()
+app = QApplication(sys.argv)
 
-def show_lose():
-    victory_win = QMessageBox()
-    victory_win.setText('Нет, в 2015 году\nВы выиграли фирменный плакат')
-    victory_win.exec()
+class Variants(QGroupBox):
+    def __init__(self, window:Window):
+        super().__init__(window)
+        layout = QHBoxLayout(self)
+        self.layout_1 = QVBoxLayout()
+        self.layout_2 = QVBoxLayout()
 
-app = QApplication([])
-main_win = QWidget()
-main_win.setWindowTitle('Конкурс от Crazy People')
-main_win.resize(400, 200)
+        self.rbtn_1 = QRadioButton("Смурфики")
+        self.rbtn_2 = QRadioButton("Энцы")
+        self.rbtn_3 = QRadioButton("Русские")
+        self.rbtn_4 = QRadioButton("Алауты")
 
-question = QLabel('В каком году канал получил «золотую кнопку» от YouTube?')
-btn_answer1 = QRadioButton('2005')
-btn_answer2 = QRadioButton('2010')
-btn_answer3 = QRadioButton('2015')
-btn_answer4 = QRadioButton('2020')
+        self.layout_1.addWidget(self.rbtn_1)
+        self.layout_1.addWidget(self.rbtn_2)
 
-layout_main = QVBoxLayout()
-layoutH1 = QHBoxLayout()
-layoutH2 = QHBoxLayout()
-layoutH3 = QHBoxLayout()
+        self.layout_2.addWidget(self.rbtn_3)
+        self.layout_2.addWidget(self.rbtn_4)
 
-layoutH1.addWidget(question, alignment=Qt.AlignmentFlag.AlignCenter)
-layoutH2.addWidget(btn_answer1, alignment=Qt.AlignmentFlag.AlignCenter)
-layoutH2.addWidget(btn_answer2, alignment=Qt.AlignmentFlag.AlignCenter)
-layoutH3.addWidget(btn_answer3, alignment=Qt.AlignmentFlag.AlignCenter)
-layoutH3.addWidget(btn_answer4, alignment=Qt.AlignmentFlag.AlignCenter)
+        layout.addLayout(self.layout_1)
+        layout.addLayout(self.layout_2)
 
-layout_main.addLayout(layoutH1)
-layout_main.addLayout(layoutH2)
-layout_main.addLayout(layoutH3)
+class Result(QGroupBox):
+    def __init__(self, window:Window):
+        super().__init__(window)
+        layout = QHBoxLayout(self)
+        self.label = QLabel()
+        layout.addWidget(self.label)
 
-main_win.setLayout(layout_main)
+class Window(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setFixedSize(600, 400)
+        self.setWindowTitle("Memory Card")
 
-btn_answer3.clicked.connect(show_win)
-btn_answer1.clicked.connect(show_lose)
-btn_answer2.clicked.connect(show_lose)
-btn_answer4.clicked.connect(show_lose)
+        self.variants = Variants(self)
+        self.result = Result(self)
+        self.widget = QWidget(self)
+        self.widget.setParent(self.variants)
+        self.btn = QPushButton("Ответить")
+        self.btn.clicked.connect(lambda *args: self.check())
+        layout = QVBoxLayout(self)
 
-main_win.show()
+        layout.addWidget(QLabel("Какой национальности не существует?"))
+        layout.addStretch()
+        layout.addWidget(self.widget)
+        layout.addStretch()
+        layout.addWidget(self.btn)
+
+    def check(self):
+        if self.variants.rbtn_1.isChecked():
+            self.result.label.setText("Правильно")
+            self.widget.setParent(self.result)
+
+window = Window()
+window.show()
 app.exec()

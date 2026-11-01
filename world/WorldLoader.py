@@ -3,12 +3,11 @@ from __future__ import annotations
 import os, json, traceback
 from datetime import datetime
 
-from base.MusicPlayer import MusicPlayer
 from base.folders import folder, saves, block_config
 
 from base.composites import composites
 from base.components import components
-from components.SceneObject import Cell, Size
+from components.SceneObject import Cell, Size, Angle
 
 from PyQt6.QtWidgets import QGraphicsItem
 from PyQt6.QtGui import QPixmap
@@ -84,12 +83,12 @@ class WorldLoader:
             try:
                 for block in sector_path.read("Blocks.json", type="json"):
                     try:
-                        block_class = composites[block_config[block["name"]]["type"]]
+                        block_class:type[Block] = composites[block_config[block["name"]]["type"]]
                     except KeyError as e:
                         folder.log.write(f"Invalid composite settings KeyError: <{e}>")
                         continue
 
-                    block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]))
+                    block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]), angle=Angle(block.get("angle", 0)))
                     if block["name"] == "base":
                         world.Base = block_сам
 
@@ -118,7 +117,7 @@ class WorldLoader:
                     if not block.exists:
                         continue
 
-                    entry = {"x": block.cell.x, "y": block.cell.y}
+                    entry = {"x": block.cell.x, "y": block.cell.y, "angle": block.angle.value}
                     for n in block.__class__.save:
                         entry[n] = block.__getattribute__(n)
 

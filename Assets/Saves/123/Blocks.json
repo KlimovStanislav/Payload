@@ -2,6 +2,7 @@
     {
         "x": 132,
         "y": 113,
+        "angle": 0,
         "name": "connector",
         "Powerable": {
             "energy": 0,

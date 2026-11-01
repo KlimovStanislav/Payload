@@ -219,6 +219,8 @@ class MainWindow(QMainWindow):
 
     def parsing(self, cmd:str):
         match cmd.lower().split():
+            case ["help"]:
+                self.terminal("current status - print info about current world\ncurrent pause - pause the world\ncurrent resume - resume the world\ncurrent tick <n> - tick n-times\ncurrent give <material> <n> - give operator n material\ncurrent quota <n> - set step of quota to n")
             case ["current", *args]:
                 window:SandboxWindow|CampaignWindow = self.widget.currentWidget()
                 if window not in [self.SandboxWindow, self.CampaignWindow]:

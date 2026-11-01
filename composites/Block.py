@@ -6,7 +6,7 @@ import base.functions as func
 from base.MusicPlayer import MusicPlayer
 from PyQt6.QtWidgets import QGraphicsItem
 
-from components.SceneObject import SceneObject, Cell, Size
+from components.SceneObject import SceneObject, Cell, Size, Angle
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -15,7 +15,7 @@ if TYPE_CHECKING:
 @func.safe_class
 class Block(SceneObject):
     save = ("name",)
-    def __init__(self, w:World, cell:Cell, name:str):
+    def __init__(self, w:World, cell:Cell, name:str, angle:Angle):
         if cell.x >= w.size.w or cell.y >= w.size.h or cell.x < 0 or cell.y < 0:
             self.exists = False
             folder.log.write(f"Block <{name}(x:{cell.x}, y:{cell.y})> Located behind the world", type="BlockData")
@@ -23,7 +23,7 @@ class Block(SceneObject):
         integrity = block_config[name].get("integrity", 1)
         self.pixmap = func.get_texture(name)
 
-        super().__init__(w, cell, Size(self.pixmap.width()//32, self.pixmap.height()//32), name, integrity)
+        super().__init__(w, cell, Size(self.pixmap.width()//32, self.pixmap.height()//32), name, integrity, angle)
 
         self.place()
     
@@ -35,6 +35,7 @@ class Block(SceneObject):
             else:
                 self.pixmap_item.setPos(self.cell.x*32, self.cell.y*32)
             self.pixmap_item.setZValue(block_config[self.name]["z"])  
+            self.pixmap_item.setTransformOriginPoint((self.size[0]/2)*32, (self.size[1]/2)*32)
             self.pixmap_item.setCacheMode(QGraphicsItem.CacheMode.DeviceCoordinateCache)
 
     def place(self):

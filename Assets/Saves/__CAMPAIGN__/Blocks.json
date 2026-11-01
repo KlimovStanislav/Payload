@@ -2,51 +2,61 @@
     {
         "x": 143,
         "y": 114,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 144,
         "y": 114,
+        "angle": 0,
         "name": "lead_2"
     },
     {
         "x": 143,
         "y": 115,
+        "angle": 0,
         "name": "lead_3"
     },
     {
         "x": 145,
         "y": 114,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 145,
         "y": 115,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 144,
         "y": 115,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 143,
         "y": 116,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 144,
         "y": 116,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 145,
         "y": 116,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 143,
         "y": 114,
+        "angle": 0,
         "name": "drill",
         "Storable": {
             "storage": {
@@ -60,6 +70,7 @@
     {
         "x": 155,
         "y": 115,
+        "angle": 0,
         "name": "launch_pad",
         "Storable": {
             "storage": {}
@@ -68,121 +79,90 @@
     {
         "x": 150,
         "y": 114,
+        "angle": 0,
         "name": "base",
         "Storable": {
             "storage": {
-                "lead": 8
+                "lead": 34
             }
         }
     },
     {
-        "x": 162,
-        "y": 118,
-        "name": "air"
-    },
-    {
-        "x": 163,
-        "y": 119,
-        "name": "air"
-    },
-    {
-        "x": 162,
-        "y": 116,
-        "name": "air"
-    },
-    {
-        "x": 151,
-        "y": 121,
-        "name": "air"
-    },
-    {
-        "x": 163,
-        "y": 116,
-        "name": "air"
-    },
-    {
-        "x": 163,
-        "y": 115,
-        "name": "air"
-    },
-    {
-        "x": 163,
-        "y": 116,
-        "name": "air"
-    },
-    {
-        "x": 159,
-        "y": 117,
-        "name": "air"
-    },
-    {
-        "x": 183,
-        "y": 107,
-        "name": "air"
-    },
-    {
         "x": 143,
         "y": 117,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 144,
         "y": 117,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 145,
         "y": 117,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 145,
         "y": 118,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 144,
         "y": 118,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 143,
         "y": 118,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 143,
         "y": 119,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 144,
         "y": 119,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 145,
         "y": 119,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 145,
         "y": 120,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 144,
         "y": 120,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 143,
         "y": 120,
+        "angle": 0,
         "name": "lead_1"
     },
     {
         "x": 143,
         "y": 117,
+        "angle": 0,
         "name": "drill",
         "Storable": {
             "storage": {
@@ -194,13 +174,9 @@
         }
     },
     {
-        "x": 158,
-        "y": 118,
-        "name": "air"
-    },
-    {
-        "x": 161,
-        "y": 122,
+        "x": 146,
+        "y": 124,
+        "angle": 0,
         "name": "air"
     }
 ]

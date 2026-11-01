@@ -1,7 +1,15 @@
-[BlockData] Block <air(x:256, y:256)> Located behind the world
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\air.png> (32x32)
-[StartInfo] All systems online. Start lasted 243 milliseconds. Smoke tests completed in 20 milliseconds.
+[StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 15 milliseconds.
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\icon.png> (64x64)
+[RuntimeError]
+   ><MapScene.__init__> - Traceback (most recent call last):
+   >  File "d:\Payload\base\functions.py", line 21, in wrapper
+   >    return func(*args, **kwargs)
+   >  File "d:\Payload\ui\SandboxWindow.py", line 108, in __init__
+   >    w = window.manager.current.size[0] * 32
+   >        ^^^^^^^^^^^^^^
+   >AttributeError: 'SandboxWindow' object has no attribute 'manager'
+   >
 [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\sand_1.png> (64x64)
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\sand_2.png> (64x64)
@@ -37,4 +45,260 @@
 [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
 [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\flask.png> (32x32)
-[EXIT] 0
+[RuntimeError]
+   ><MapScene.__init__> - Traceback (most recent call last):
+   >  File "d:\Payload\base\functions.py", line 21, in wrapper
+   >    return func(*args, **kwargs)
+   >  File "d:\Payload\ui\SandboxWindow.py", line 108, in __init__
+   >    w = window.manager.current.size[0] * 32
+   >        ^^^^^^^^^^^^^^
+   >AttributeError: 'EditorWindow' object has no attribute 'manager'
+   >
+[RuntimeError]
+   ><MapScene.__init__> - Traceback (most recent call last):
+   >  File "d:\Payload\base\functions.py", line 21, in wrapper
+   >    return func(*args, **kwargs)
+   >  File "d:\Payload\ui\SandboxWindow.py", line 108, in __init__
+   >    w = window.manager.current.size[0] * 32
+   >        ^^^^^^^^^^^^^^
+   >AttributeError: 'CampaignWindow' object has no attribute 'manager'
+   >
+[RuntimeError]
+   ><MapScene.drawBackground> - Traceback (most recent call last):
+   >  File "d:\Payload\base\functions.py", line 21, in wrapper
+   >    return func(*args, **kwargs)
+   >  File "d:\Payload\ui\SandboxWindow.py", line 118, in drawBackground
+   >    painter.drawLine(x, rect.top(), x, rect.bottom())
+   >    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   >TypeError: arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+   >
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[RuntimeError]
+   ><MapScene.drawBackground> - arguments did not match any overloaded call:
+   >  drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+   >  drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+   >  drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+   >  drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+   >  drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+[EXIT] 1

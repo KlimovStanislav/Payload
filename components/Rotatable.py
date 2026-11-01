@@ -5,16 +5,9 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from components.SceneObject import SceneObject
 
-class Side(Enum):
-    RIGHT = auto()
-    LEFT = auto()
-    UP = auto()
-    DOWN = auto()
-
 class Rotatable:
     def __init__(self, owner:SceneObject):
         self.owner = owner
-        self.value = Side.UP
 
     def __call__(self, value):
         self.value = value

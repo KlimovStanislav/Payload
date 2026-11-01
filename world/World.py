@@ -14,11 +14,12 @@ from components.Clickable import Clickable
 from components.Updatable import Updatable
 from components.Removable import Removable
 from components.Placable import Placable
+from components.Rotatable import Rotatable
 from components.Storable import Storable
 
 from world.TempField import TempField
 
-from components.SceneObject import SceneObject, Cell, Size
+from components.SceneObject import SceneObject, Cell, Size, Angle
 from components.Network import Network
 from components.PipeNetwork import PipeNetwork
 
@@ -98,6 +99,8 @@ class World:
 
         self.window = window
         self.operator = Operator(self, f"OPERATOR #{random.randint(0, 9)}{random.randint(0, 9)}{random.randint(0, 9)}{random.randint(0, 9)}")
+
+        self.place_angle = Angle.UP
 
         self.blocks:list[Block] = []
         self.block_map:dict[Cell, list[Block]] = {}
@@ -297,9 +300,11 @@ class World:
                         if not self.Base.components[Storable].reduce(name, int(value*coef)):
                             return
                                     
-                obj:SceneObject = block_class(self, cell=Cell(x, y), name=self.placing_block)
+                obj:SceneObject = block_class(self, cell=Cell(x, y), name=self.placing_block, angle=self.place_angle)
                 if Placable in obj.components:
                     obj.components[Placable]()
+                if hasattr(obj, "pixmap_item") and Rotatable in obj.components:
+                    obj.pixmap_item.setRotation(self.angle.value)
                 
         elif type == "right":
             existing = self.get_block_at(x, y)
