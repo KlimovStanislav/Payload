@@ -1,987 +1,4 @@
-[2026-11-01 | 22:42:53] >>> [SYSTEM] File was truncated to 10000 lines
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: can't set attribute
-                    >>> 
-[2026-10-09 | 22:45:22] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 44, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[2026-11-06 | 23:37:26] >>> [SYSTEM] File was truncated to 10000 lines
                     >>> AttributeError: can't set attribute
                     >>> 
 [2026-10-09 | 22:45:22] >>> [ERROR]
@@ -10048,4 +9065,946 @@
                     >>>   drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
                     >>> 
 [2026-11-01 | 22:42:56] >>> [EXIT] 1
+
+[2026-11-03 | 17:05:26] >>> [START] Alpha 0.2.22
+[2026-11-03 | 17:05:26] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-03 | 17:05:28] >>> [StartInfo] All systems online. Start lasted 1466 milliseconds. Smoke tests completed in 40 milliseconds.
+[2026-11-03 | 17:05:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-03 | 17:05:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-03 | 17:05:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-03 | 17:05:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-03 | 17:05:38] >>> [EXIT] 0
+
+[2026-11-03 | 17:46:32] >>> [START] Alpha 0.2.22
+[2026-11-03 | 17:46:32] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-03 | 17:46:32] >>> [StartInfo] All systems online. Start lasted 238 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-03 | 17:46:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-03 | 17:46:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-03 | 17:46:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-03 | 17:46:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-03 | 17:46:43] >>> [EXIT] 0
+
+[2026-11-03 | 17:47:21] >>> [START] Alpha 0.2.22
+[2026-11-03 | 17:47:21] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-03 | 17:47:22] >>> [StartInfo] All systems online. Start lasted 219 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-03 | 17:47:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-03 | 17:47:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-03 | 17:47:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-03 | 17:47:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-03 | 17:47:22] >>> [RuntimeError]
+                    >>> <MenuWindow.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\MainWindow.py", line 154, in __init__
+                    >>>     if not pixmap.isNull():
+                    >>>            ^^^^^^
+                    >>> UnboundLocalError: cannot access local variable 'pixmap' where it is not associated with a value
+                    >>> 
+[2026-11-03 | 17:47:22] >>> [RuntimeError]
+                    >>> <MenuWindow.paintEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\MainWindow.py", line 173, in paintEvent
+                    >>>     if not self._bg.isNull():
+                    >>>            ^^^^^^^^
+                    >>> AttributeError: 'MenuWindow' object has no attribute '_bg'
+                    >>> 
+[2026-11-03 | 17:47:24] >>> [EXIT] 1
+
+[2026-11-03 | 17:47:49] >>> [START] Alpha 0.2.22
+[2026-11-03 | 17:47:49] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-03 | 17:47:49] >>> [StartInfo] All systems online. Start lasted 215 milliseconds. Smoke tests completed in 14 milliseconds.
+[2026-11-03 | 17:47:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-03 | 17:47:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-03 | 17:47:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-03 | 17:47:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-03 | 17:47:53] >>> [EXIT] 0
+
+[2026-11-03 | 17:48:35] >>> [START] Alpha 0.2.22
+[2026-11-03 | 17:48:35] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-03 | 17:48:36] >>> [StartInfo] All systems online. Start lasted 227 milliseconds. Smoke tests completed in 23 milliseconds.
+[2026-11-03 | 17:48:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-03 | 17:48:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-03 | 17:48:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-03 | 17:48:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-03 | 17:48:41] >>> [EXIT] 0
+
+[2026-11-03 | 17:48:51] >>> [START] Alpha 0.2.22
+[2026-11-03 | 17:48:51] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-03 | 17:48:51] >>> [StartInfo] All systems online. Start lasted 218 milliseconds. Smoke tests completed in 14 milliseconds.
+[2026-11-03 | 17:48:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-03 | 17:48:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-03 | 17:48:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-03 | 17:48:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-03 | 17:48:53] >>> [EXIT] 0
+
+[2026-11-06 | 12:36:25] >>> [START] Alpha 0.2.22
+[2026-11-06 | 12:36:25] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 12:36:25] >>> [StartInfo] All systems online. Start lasted 835 milliseconds. Smoke tests completed in 35 milliseconds.
+[2026-11-06 | 12:36:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 12:36:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 12:36:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 12:36:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 12:37:11] >>> [RuntimeError]
+                    >>> <Unit.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>> TypeError: Unit.__init__() got an unexpected keyword argument 'angle'
+                    >>> 
+[2026-11-06 | 12:37:11] >>> [RuntimeError]
+                    >>> <World.click> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 304, in click
+                    >>>     if Placable in obj.components:
+                    >>>                    ^^^^^^^^^^^^^^
+                    >>> AttributeError: 'Unit' object has no attribute 'components'
+                    >>> 
+[2026-11-06 | 12:37:15] >>> [EXIT] 1
+
+[2026-11-06 | 12:57:08] >>> [START] Alpha 0.2.22
+[2026-11-06 | 12:57:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 12:57:08] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 12:57:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 12:57:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 12:57:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 12:57:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 12:57:22] >>> [EXIT] 0
+
+[2026-11-06 | 12:59:08] >>> [START] Alpha 0.2.22
+[2026-11-06 | 12:59:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 12:59:08] >>> [StartInfo] All systems online. Start lasted 238 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-06 | 12:59:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 12:59:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 12:59:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 12:59:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 12:59:14] >>> [RuntimeError]
+                    >>> <World.click> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 307, in click
+                    >>>     obj.pixmap_item.setRotation(self.angle.value)
+                    >>>                                 ^^^^^^^^^^
+                    >>> AttributeError: 'World' object has no attribute 'angle'
+                    >>> 
+[2026-11-06 | 12:59:18] >>> [EXIT] 1
+
+[2026-11-06 | 12:59:49] >>> [START] Alpha 0.2.22
+[2026-11-06 | 12:59:49] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 12:59:49] >>> [StartInfo] All systems online. Start lasted 238 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-11-06 | 12:59:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 12:59:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 12:59:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 12:59:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 13:00:47] >>> [EXIT] 0
+
+[2026-11-06 | 13:01:19] >>> [START] Alpha 0.2.22
+[2026-11-06 | 13:01:19] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 13:01:20] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-06 | 13:01:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 13:01:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 13:01:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 13:01:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 13:02:05] >>> [RuntimeError]
+                    >>> <Campaign.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 90, in update
+                    >>>     if (step:=self.steps[self.active])(self.window):
+                    >>>               ~~~~~~~~~~^^^^^^^^^^^^^
+                    >>> IndexError: list index out of range
+                    >>> 
+[2026-11-06 | 13:02:13] >>> [EXIT] 1
+
+[2026-11-06 | 13:09:29] >>> [START] Alpha 0.2.22
+[2026-11-06 | 13:09:29] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 13:09:29] >>> [StartInfo] All systems online. Start lasted 238 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-06 | 13:09:29] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 13:09:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 13:09:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 13:09:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 13:09:30] >>> [RuntimeError]
+                    >>> <Campaign.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 87, in __init__
+                    >>>     self.viewer.refresh(self.steps[self.active])
+                    >>>                         ~~~~~~~~~~^^^^^^^^^^^^^
+                    >>> IndexError: list index out of range
+                    >>> 
+[2026-11-06 | 13:09:54] >>> [EXIT] 1
+
+[2026-11-06 | 21:59:01] >>> [START] Alpha 0.2.22
+[2026-11-06 | 21:59:01] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 21:59:01] >>> [StartInfo] All systems online. Start lasted 626 milliseconds. Smoke tests completed in 32 milliseconds.
+[2026-11-06 | 21:59:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 21:59:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 21:59:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 21:59:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 21:59:01] >>> [RuntimeError]
+                    >>> <Campaign.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 87, in __init__
+                    >>>     self.viewer.refresh(self.steps[self.active])
+                    >>>                         ~~~~~~~~~~^^^^^^^^^^^^^
+                    >>> IndexError: list index out of range
+                    >>> 
+[2026-11-06 | 21:59:03] >>> [RuntimeError]
+                    >>> <Campaign.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 90, in update
+                    >>>     if (step:=self.steps[self.active])(self.window):
+                    >>>               ~~~~~~~~~~^^^^^^^^^^^^^
+                    >>> IndexError: list index out of range
+                    >>> 
+[2026-11-06 | 21:59:08] >>> [EXIT] 1
+
+[2026-11-06 | 21:59:24] >>> [START] Alpha 0.2.22
+[2026-11-06 | 21:59:24] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 21:59:24] >>> [StartInfo] All systems online. Start lasted 264 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-11-06 | 21:59:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 21:59:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 21:59:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 21:59:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 21:59:24] >>> [RuntimeError]
+                    >>> <Campaign.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 87, in __init__
+                    >>>     self.viewer.refresh(self.steps[self.active])
+                    >>>                         ~~~~~~~~~~^^^^^^^^^^^^^
+                    >>> IndexError: list index out of range
+                    >>> 
+[2026-11-06 | 21:59:25] >>> [RuntimeError]
+                    >>> <Campaign.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 90, in update
+                    >>>     if (step:=self.steps[self.active])(self.window):
+                    >>>               ~~~~~~~~~~^^^^^^^^^^^^^
+                    >>> IndexError: list index out of range
+                    >>> 
+[2026-11-06 | 22:00:00] >>> [EXIT] 1
+
+[2026-11-06 | 22:00:19] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:00:19] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:00:20] >>> [StartInfo] All systems online. Start lasted 263 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-06 | 22:00:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:00:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:00:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:00:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:00:34] >>> [EXIT] 0
+
+[2026-11-06 | 22:00:49] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:00:49] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:00:50] >>> [StartInfo] All systems online. Start lasted 260 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-11-06 | 22:00:50] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:00:50] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:00:50] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:00:50] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:00:50] >>> [RuntimeError]
+                    >>> <FPSViewer.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 53, in __init__
+                    >>>     layout.addSpacing()
+                    >>>     ~~~~~~~~~~~~~~~~~^^
+                    >>> TypeError: addSpacing(self, size: int): not enough arguments
+                    >>> 
+[2026-11-06 | 22:00:54] >>> [EXIT] 1
+
+[2026-11-06 | 22:00:59] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:00:59] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:00:59] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-11-06 | 22:00:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:00:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:00:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:00:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:01:07] >>> [EXIT] 0
+
+[2026-11-06 | 22:01:19] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:01:19] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:01:19] >>> [StartInfo] All systems online. Start lasted 283 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-06 | 22:01:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:01:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:01:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:01:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:01:27] >>> [EXIT] 0
+
+[2026-11-06 | 22:01:37] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:01:37] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:01:37] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-11-06 | 22:01:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:01:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:01:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:01:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+
+[2026-11-06 | 22:03:42] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:03:42] >>> [WARNING] The previous launch failed
+[2026-11-06 | 22:03:42] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:03:42] >>> [StartInfo] All systems online. Start lasted 264 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 22:03:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:03:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:03:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:03:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:03:43] >>> [EXIT] 0
+
+[2026-11-06 | 22:03:47] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:03:47] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:03:47] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-11-06 | 22:03:47] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:03:47] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:03:47] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:03:47] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:04:12] >>> [EXIT] 0
+
+[2026-11-06 | 22:05:14] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:05:14] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:05:14] >>> [StartInfo] All systems online. Start lasted 265 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-06 | 22:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:05:20] >>> [EXIT] 0
+
+[2026-11-06 | 22:05:36] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:05:36] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:05:36] >>> [StartInfo] All systems online. Start lasted 258 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-11-06 | 22:05:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:05:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:05:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:05:36] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:12:21] >>> [EXIT] 0
+
+[2026-11-06 | 22:15:01] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:15:01] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:15:01] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 22:15:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:15:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:15:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:15:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:15:10] >>> [EXIT] 0
+
+[2026-11-06 | 22:19:47] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:19:47] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:19:48] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-06 | 22:19:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:19:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:19:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:19:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:19:49] >>> [RuntimeError]
+                    >>> <FPSViewer.paintEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>> TypeError: FPSViewer.paintEvent() missing 1 required positional argument: 'dt'
+                    >>> 
+[2026-11-06 | 22:19:49] >>> [RuntimeError]
+                    >>> <SandboxWindow.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 396, in update
+                    >>>     self.fps_viewer.refresh(self.now, dt)
+                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'FPSViewer' object has no attribute 'refresh'
+                    >>> 
+[2026-11-06 | 22:19:52] >>> [EXIT] 1
+
+[2026-11-06 | 22:20:04] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:20:04] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:20:04] >>> [StartInfo] All systems online. Start lasted 275 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 22:20:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:20:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:20:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:20:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:20:41] >>> [EXIT] 0
+
+[2026-11-06 | 22:25:30] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:25:30] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:25:30] >>> [StartInfo] All systems online. Start lasted 285 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 22:25:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:25:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:25:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:25:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:25:34] >>> [EXIT] 0
+
+[2026-11-06 | 22:29:38] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:29:38] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:29:38] >>> [StartInfo] All systems online. Start lasted 268 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-06 | 22:29:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:29:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:29:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:29:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:29:42] >>> [EXIT] 0
+
+[2026-11-06 | 22:31:08] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:31:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:31:08] >>> [StartInfo] All systems online. Start lasted 268 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 22:31:08] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'SandboxWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:31:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:31:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:31:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:31:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:31:08] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'EditorWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:31:08] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'CampaignWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:31:09] >>> [RuntimeError]
+                    >>> <MapScene.drawBackground> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 144, in drawBackground
+                    >>>     painter.drawLine(x, max(rect.top(), scene_rect.top()),
+                    >>>     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>                         x, min(rect.bottom(), scene_rect.bottom()))
+                    >>>                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> TypeError: arguments did not match any overloaded call:
+                    >>>   drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+                    >>>   drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+                    >>>   drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+                    >>>   drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+                    >>>   drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+                    >>> 
+[2026-11-06 | 22:31:13] >>> [EXIT] 1
+
+[2026-11-06 | 22:32:09] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:32:09] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:32:10] >>> [StartInfo] All systems online. Start lasted 274 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-06 | 22:32:10] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'SandboxWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:32:10] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:32:10] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:32:10] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:32:10] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:32:10] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'EditorWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:32:10] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'CampaignWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:32:11] >>> [RuntimeError]
+                    >>> <MapScene.drawBackground> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 145, in drawBackground
+                    >>>     painter.drawLine(x, max(rect.top(), scene_rect.top()),
+                    >>>     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>                         x, min(rect.bottom(), scene_rect.bottom()))
+                    >>>                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> TypeError: arguments did not match any overloaded call:
+                    >>>   drawLine(self, l: QLineF): argument 1 has unexpected type 'int'
+                    >>>   drawLine(self, line: QLine): argument 1 has unexpected type 'int'
+                    >>>   drawLine(self, x1: int, y1: int, x2: int, y2: int): argument 2 has unexpected type 'float'
+                    >>>   drawLine(self, p1: QPoint, p2: QPoint): argument 1 has unexpected type 'int'
+                    >>>   drawLine(self, p1: QPointF, p2: QPointF): argument 1 has unexpected type 'int'
+                    >>> 
+[2026-11-06 | 22:32:16] >>> [EXIT] 1
+
+[2026-11-06 | 22:32:50] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:32:50] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:32:51] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-11-06 | 22:32:51] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'SandboxWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:32:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:32:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:32:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:32:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:32:51] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'EditorWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:32:51] >>> [RuntimeError]
+                    >>> <MapScene.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 118, in __init__
+                    >>>     w = self.window.manager.current.size[0] * 32
+                    >>>         ^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'CampaignWindow' object has no attribute 'manager'
+                    >>> 
+[2026-11-06 | 22:32:54] >>> [EXIT] 1
+
+[2026-11-06 | 22:34:25] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:34:25] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:34:26] >>> [StartInfo] All systems online. Start lasted 271 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 22:34:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:34:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:34:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:34:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:34:32] >>> [EXIT] 0
+
+[2026-11-06 | 22:34:33] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:34:33] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:34:34] >>> [StartInfo] All systems online. Start lasted 240 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-11-06 | 22:34:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:34:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:34:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:34:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:34:36] >>> [EXIT] 0
+
+[2026-11-06 | 22:38:22] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:38:22] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:38:23] >>> [StartInfo] All systems online. Start lasted 270 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-06 | 22:38:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:38:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:38:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:38:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:38:25] >>> [EXIT] 0
+
+[2026-11-06 | 22:59:02] >>> [START] Alpha 0.2.22
+[2026-11-06 | 22:59:02] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 22:59:02] >>> [StartInfo] All systems online. Start lasted 294 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-06 | 22:59:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 22:59:03] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 22:59:03] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 22:59:03] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 22:59:09] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 40, in load
+                    >>>     world = self.loader.load(name, scene=self.scene, view=self.view, window=self.window)
+                    >>>   File "d:\Payload\world\WorldEditorLoader.py", line 58, in load
+                    >>>     for block in [*sector_path.read("Blocks.json", type="json"), *sector_path.read("ReliefBlocks.json", type="json")]:
+                    >>>                                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\applib.py", line 412, in read
+                    >>>     with open(_os.path.join(self.file_path, str(name)), "r", encoding='UTF-8') as f:
+                    >>>          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> FileNotFoundError: [Errno 2] No such file or directory: 'd:\\Payload\\Assets\\Saves\\123\\ReliefBlocks.json'
+                    >>> 
+[2026-11-06 | 22:59:09] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 293, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-06 | 22:59:09] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 167, in mouseMoveEvent
+                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-06 | 22:59:12] >>> [EXIT] 1
+
+[2026-11-06 | 23:03:39] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:03:39] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:03:39] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 23:03:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:03:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:03:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:03:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:03:46] >>> [RuntimeError]
+                    >>> <Block.__init__> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>> TypeError: Block.__init__() missing 1 required positional argument: 'angle'
+                    >>> 
+[2026-11-06 | 23:03:46] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 40, in load
+                    >>>     world = self.loader.load(name, scene=self.scene, view=self.view, window=self.window)
+                    >>>   File "d:\Payload\world\WorldEditorLoader.py", line 65, in load
+                    >>>     block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]))
+                    >>>                       ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\composites\Base.py", line 16, in __init__
+                    >>>     max_size = block_config.get(self.name).get("max_storage", 10)
+                    >>>                                 ^^^^^^^^^
+                    >>> AttributeError: 'Base' object has no attribute 'name'
+                    >>> 
+[2026-11-06 | 23:03:46] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 293, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-06 | 23:03:47] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 167, in mouseMoveEvent
+                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-06 | 23:03:48] >>> [EXIT] 1
+
+[2026-11-06 | 23:04:58] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:04:58] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:04:58] >>> [StartInfo] All systems online. Start lasted 255 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-06 | 23:04:58] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:04:58] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:04:58] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:04:58] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:05:00] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 40, in load
+                    >>>     world = self.loader.load(name, scene=self.scene, view=self.view, window=self.window)
+                    >>>   File "d:\Payload\world\WorldEditorLoader.py", line 58, in load
+                    >>>     for block in [*sector_path.read("Blocks.json", type="json"), *sector_path.read("ReliefBlocks.json", type="json")]:
+                    >>>                                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\applib.py", line 412, in read
+                    >>>     with open(_os.path.join(self.file_path, str(name)), "r", encoding='UTF-8') as f:
+                    >>>          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> FileNotFoundError: [Errno 2] No such file or directory: 'd:\\Payload\\Assets\\Saves\\123\\ReliefBlocks.json'
+                    >>> 
+[2026-11-06 | 23:05:00] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 293, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-06 | 23:05:00] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 167, in mouseMoveEvent
+                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-06 | 23:05:02] >>> [EXIT] 1
+
+[2026-11-06 | 23:05:17] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:05:17] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:05:17] >>> [StartInfo] All systems online. Start lasted 252 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 23:05:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:05:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:05:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:05:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:05:23] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 40, in load
+                    >>>     world = self.loader.load(name, scene=self.scene, view=self.view, window=self.window)
+                    >>>   File "d:\Payload\world\WorldEditorLoader.py", line 58, in load
+                    >>>     for block in [*sector_path.read("Blocks.json", type="json"), *sector_path.read("ReliefBlocks.json", type="json")]:
+                    >>>                                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\applib.py", line 412, in read
+                    >>>     with open(_os.path.join(self.file_path, str(name)), "r", encoding='UTF-8') as f:
+                    >>>          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> FileNotFoundError: [Errno 2] No such file or directory: 'd:\\Payload\\Assets\\Saves\\123\\ReliefBlocks.json'
+                    >>> 
+[2026-11-06 | 23:05:23] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 293, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-06 | 23:05:23] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 167, in mouseMoveEvent
+                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-06 | 23:05:25] >>> [EXIT] 1
+
+[2026-11-06 | 23:05:39] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:05:39] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:05:40] >>> [StartInfo] All systems online. Start lasted 250 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-11-06 | 23:05:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:05:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:05:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:05:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:05:42] >>> [LoadError]
+                    >>> Error reading the sector file: <Traceback (most recent call last):
+                    >>>   File "d:\Payload\world\WorldEditorLoader.py", line 65, in load
+                    >>>     block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]), angle=block["angle"])
+                    >>>                                                                                                       ~~~~~^^^^^^^^^
+                    >>> KeyError: 'angle'
+                    >>> >
+[2026-11-06 | 23:05:42] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 41, in load
+                    >>>     if self.resource_panel is not None and world.Base is not None:
+                    >>>                                            ^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'Base'
+                    >>> 
+[2026-11-06 | 23:05:42] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 293, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-06 | 23:05:42] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 167, in mouseMoveEvent
+                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-06 | 23:05:44] >>> [EXIT] 1
+
+[2026-11-06 | 23:06:13] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:06:13] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:06:14] >>> [StartInfo] All systems online. Start lasted 271 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 23:06:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:06:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:06:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:06:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+
+[2026-11-06 | 23:06:28] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:06:28] >>> [WARNING] The previous launch failed
+[2026-11-06 | 23:06:28] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:06:28] >>> [StartInfo] All systems online. Start lasted 251 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-11-06 | 23:06:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:06:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:06:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:06:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:06:35] >>> [LoadError]
+                    >>> Error reading the sector file: <Traceback (most recent call last):
+                    >>>   File "d:\Payload\world\WorldEditorLoader.py", line 65, in load
+                    >>>     block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]), angle=block.get("angle"))
+                    >>>                                                                        ~~~~~^^^^^
+                    >>> KeyError: 'x'
+                    >>> >
+[2026-11-06 | 23:06:35] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 41, in load
+                    >>>     if self.resource_panel is not None and world.Base is not None:
+                    >>>                                            ^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'Base'
+                    >>> 
+[2026-11-06 | 23:06:35] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 293, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-06 | 23:06:35] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 167, in mouseMoveEvent
+                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-06 | 23:06:41] >>> [EXIT] 1
+
+[2026-11-06 | 23:11:07] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:11:07] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:11:07] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 23:11:07] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:11:07] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:11:07] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:11:07] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+
+[2026-11-06 | 23:11:40] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:11:40] >>> [WARNING] The previous launch failed
+[2026-11-06 | 23:11:40] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:11:40] >>> [StartInfo] All systems online. Start lasted 262 milliseconds. Smoke tests completed in 16 milliseconds.
+[2026-11-06 | 23:11:41] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:11:41] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:11:41] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:11:41] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:12:04] >>> [EXIT] 0
+
+[2026-11-06 | 23:12:56] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:12:56] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:12:56] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 23:12:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:12:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:12:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:12:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:12:59] >>> [EXIT] 0
+
+[2026-11-06 | 23:13:29] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:13:29] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:13:29] >>> [StartInfo] All systems online. Start lasted 265 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 23:13:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:13:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:13:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:13:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:13:34] >>> [LoadError]
+                    >>> Error reading the sector file: <Traceback (most recent call last):
+                    >>>   File "d:\Payload\world\WorldEditorLoader.py", line 65, in load
+                    >>>     block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]), angle=block.get("angle"))
+                    >>>                                                                        ~~~~~^^^^^
+                    >>> KeyError: 'x'
+                    >>> >
+[2026-11-06 | 23:13:34] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 41, in load
+                    >>>     if self.resource_panel is not None and world.Base is not None:
+                    >>>                                            ^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'Base'
+                    >>> 
+[2026-11-06 | 23:13:34] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 281, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-06 | 23:13:35] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 155, in mouseMoveEvent
+                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-06 | 23:13:38] >>> [EXIT] 1
+
+[2026-11-06 | 23:15:08] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:15:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:15:08] >>> [StartInfo] All systems online. Start lasted 243 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-06 | 23:15:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:15:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:15:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:15:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:15:40] >>> [EXIT] 0
+
+[2026-11-06 | 23:16:13] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:16:13] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:16:13] >>> [StartInfo] All systems online. Start lasted 255 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-06 | 23:16:13] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:16:13] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:16:13] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:16:13] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:16:19] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 40, in load
+                    >>>     world = self.loader.load(name, scene=self.scene, view=self.view, window=self.window)
+                    >>>   File "d:\Payload\world\WorldEditorLoader.py", line 58, in load
+                    >>>     for block in [*sector_path.read("Blocks.json", type="json"), *sector_path.read("ReliefBlocks.json", type="json")]:
+                    >>>                                                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\applib.py", line 412, in read
+                    >>>     with open(_os.path.join(self.file_path, str(name)), "r", encoding='UTF-8') as f:
+                    >>>          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> FileNotFoundError: [Errno 2] No such file or directory: 'd:\\Payload\\Assets\\Saves\\123\\ReliefBlocks.json'
+                    >>> 
+[2026-11-06 | 23:16:19] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 281, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-06 | 23:16:20] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 155, in mouseMoveEvent
+                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-06 | 23:16:22] >>> [EXIT] 1
+
+[2026-11-06 | 23:28:44] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:28:44] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:28:44] >>> [StartInfo] All systems online. Start lasted 249 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-06 | 23:28:44] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:28:44] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:28:44] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:28:44] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:31:29] >>> [EXIT] 0
+
+[2026-11-06 | 23:37:26] >>> [START] Alpha 0.2.22
+[2026-11-06 | 23:37:26] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-06 | 23:37:26] >>> [StartInfo] All systems online. Start lasted 234 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-06 | 23:37:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-06 | 23:37:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-06 | 23:37:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[2026-11-06 | 23:37:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-06 | 23:37:44] >>> [EXIT] 0
 

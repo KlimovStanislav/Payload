@@ -26,12 +26,16 @@ class Variants(QGroupBox):
         layout.addLayout(self.layout_1)
         layout.addLayout(self.layout_2)
 
-class Result(QGroupBox):
-    def __init__(self, window:Window):
-        super().__init__(window)
-        layout = QHBoxLayout(self)
-        self.label = QLabel()
-        layout.addWidget(self.label)
+    def check(self):
+        for rbtn in [self.rbtn_1, self.rbtn_2, self.rbtn_3, self.rbtn_4]:
+            rbtn.deleteLater()
+        label = QLabel("Неправильно")
+        label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        if self.rbtn_1.isChecked():
+            for rbtn in [self.rbtn_1, self.rbtn_2, self.rbtn_3, self.rbtn_4]:
+                rbtn.deleteLater()
+            label.setText("Правильно")
+        self.layout().addWidget(label)
 
 class Window(QWidget):
     def __init__(self):
@@ -40,23 +44,15 @@ class Window(QWidget):
         self.setWindowTitle("Memory Card")
 
         self.variants = Variants(self)
-        self.result = Result(self)
-        self.widget = QWidget(self)
-        self.widget.setParent(self.variants)
         self.btn = QPushButton("Ответить")
-        self.btn.clicked.connect(lambda *args: self.check())
+        self.btn.clicked.connect(lambda *args: self.variants.check())
         layout = QVBoxLayout(self)
 
-        layout.addWidget(QLabel("Какой национальности не существует?"))
+        layout.addWidget(QLabel("Какой национальности не существует?"), alignment=Qt.AlignmentFlag.AlignCenter)
         layout.addStretch()
-        layout.addWidget(self.widget)
+        layout.addWidget(self.variants)
         layout.addStretch()
         layout.addWidget(self.btn)
-
-    def check(self):
-        if self.variants.rbtn_1.isChecked():
-            self.result.label.setText("Правильно")
-            self.widget.setParent(self.result)
 
 window = Window()
 window.show()

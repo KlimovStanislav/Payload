@@ -1,6 +1,6 @@
 {
     "version": "Alpha 0.2.22",
-    "time": "[2026-10-21] 22:50",
+    "time": "[2026-11-06] 23:15",
     "ambient": 20,
     "sizeX": 256,
     "sizeY": 256,
@@ -10,8 +10,5 @@
         "conveyor_up",
         "conveyor_left",
         "conveyor_right"
-    ],
-    "camX": 4323,
-    "camY": 2624,
-    "camZoom": 1.0
+    ]
 }

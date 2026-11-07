@@ -17,12 +17,12 @@ class Page(QWidget):
 
 class WelcomePage(Page):
     def __post_init__(self):
-        label = QLabel("Привет! Это установщик приложения")
+        label = QLabel("Application installer <Payload>")
         self.layout.addWidget(label)
 
 class DirPage(Page):
     def __post_init__(self):
-        self.btn_choise = QPushButton("Выберите путь установки")
+        self.btn_choise = QPushButton("Select installation path")
         self.btn_choise.clicked.connect(self.choose_dir)
         self.layout.addWidget(self.btn_choise)
         
@@ -30,22 +30,22 @@ class DirPage(Page):
         start = os.path.join(os.environ.get("LOCALAPPDATA", ""), "Programs")
         path = QFileDialog.getExistingDirectory(
             self,
-            "Выберите папку установки",
+            "Select installation folder",
             start,
             QFileDialog.Option.ShowDirsOnly | QFileDialog.Option.DontResolveSymlinks)
         if path:
-            self.btn_choise.setText(f"Выбранный путь: {path}")
+            self.btn_choise.setText(f"Selected path: {path}")
             self.w.install_path = path
 
 class InstallPage(Page):
     def __post_init__(self):
-        self.btn = QPushButton("Установить приложение?")
+        self.btn = QPushButton("Install")
         self.btn.clicked.connect(self.install)
         self.layout.addWidget(self.btn)
 
     def install(self):
             if self.w.install_path is None:
-                self.btn.setText("Выбран не правильный путь! Попробуйте снова, изменя путь установки")
+                self.btn.setText("The wrong path has been selected! Try again after changing installation path.")
                 return
             
             with zipfile.ZipFile(os.path.join(sys._MEIPASS, "archive-win64.zip")) as z:
@@ -67,7 +67,7 @@ class InstallPage(Page):
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Установка")
+        self.setWindowTitle("Installation")
         self.install_path = None
 
         root = QVBoxLayout(self)
@@ -90,9 +90,9 @@ class MainWindow(QWidget):
 
         nav = QHBoxLayout()
         nav.addStretch()
-        self.btn_back = QPushButton("< Назад")
-        self.btn_next = QPushButton("Далее >")
-        self.btn_cancel = QPushButton("Отмена")
+        self.btn_back = QPushButton("<- Back")
+        self.btn_next = QPushButton("Next ->")
+        self.btn_cancel = QPushButton("Cancel")
         nav.addStretch()
         nav.addWidget(self.btn_back)
         nav.addWidget(self.btn_next)

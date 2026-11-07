@@ -256,18 +256,8 @@ class World:
             MusicPlayer.play("click_1")
             existing = self.get_block_at(x, y)
             if existing and block_config[existing.name]["z"] >= 20:
-                if Clickable in existing.components and existing: # is self.selected для выделения
+                if Clickable in existing.components and existing: 
                     existing.components[Clickable]()
-                else:
-                    #выделение
-                    return
-                    self.selected = existing
-                    if self.scene is not None:
-                        if self.selected_scene_item is not None:
-                            self.scene.removeItem(self.selected_scene_item)
-                        self.selected_scene_item = self.scene.addPixmap(get_texture(f"outline({existing.size[0]}x{existing.size[1]})"))
-                        self.selected_scene_item.setPos(QPointF(existing.cell.x*32, existing.cell.y*32))
-                        self.selected_scene_item.setZValue(100)
 
             else:  
                 type_name = None
@@ -304,19 +294,12 @@ class World:
                 if Placable in obj.components:
                     obj.components[Placable]()
                 if hasattr(obj, "pixmap_item") and Rotatable in obj.components:
-                    obj.pixmap_item.setRotation(self.angle.value)
+                    obj.pixmap_item.setRotation(self.place_angle.value)
                 
         elif type == "right":
             existing = self.get_block_at(x, y)
             if existing:            
                 self.remove_block(existing)
-
-            #выделение
-            return
-            self.selected = None
-            if self.scene is not None:
-                if self.selected_scene_item is not None:
-                    self.scene.removeItem(self.selected_scene_item)
         else:
             raise Exception(f"type <{type}> has no handler")
 

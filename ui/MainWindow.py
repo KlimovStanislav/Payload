@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from PyQt6 import QtWidgets
-from PyQt6.QtGui import QPixmap, QIcon, QShortcut, QKeySequence
+from PyQt6.QtGui import QPixmap, QIcon, QShortcut, QKeySequence, QPainter, QColor
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtWidgets import QMainWindow, QStackedWidget, QWidget
 
@@ -151,10 +151,6 @@ class MenuWindow(QWidget):
         left_widget.setFixedWidth(500)
         
         image_label = QtWidgets.QLabel()
-        pixmap = QPixmap("bg.png")
-        if not pixmap.isNull():
-            pixmap = pixmap.scaled(900, 700, Qt.AspectRatioMode.KeepAspectRatio)
-            image_label.setPixmap(pixmap)
         image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         main_layout.addWidget(left_widget)
@@ -167,6 +163,20 @@ class MenuWindow(QWidget):
 
         btn_settings.clicked.connect(lambda: self.MainWindow.SettingsWindow.show())
         btn_exit.clicked.connect(self.MainWindow.close)
+
+        self._bg = QPixmap("bg.png")
+
+    def paintEvent(self, ev):
+        if not self._bg.isNull():
+            scaled = self._bg.scaled(self.size(), Qt.AspectRatioMode.KeepAspectRatioByExpanding, Qt.TransformationMode.SmoothTransformation)
+
+            x = (scaled.width() - self.width()) // 2
+            y = (scaled.height() - self.height()) // 2
+            painter = QPainter(self)
+            painter.drawPixmap(-x, -y, scaled)
+        else:
+            painter = QPainter(self)
+            painter.fillRect(self.rect(), QColor("#1e1e1e"))
 
     def play(self):
         MusicPlayer.play("click_2")

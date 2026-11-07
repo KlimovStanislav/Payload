@@ -10,7 +10,7 @@ from base.composites import composites
 from base.components import components
 
 from PyQt6.QtWidgets import QGraphicsItem
-from PyQt6.QtGui import QPixmap
+from PyQt6.QtGui import QPixmap, QPen
 from PyQt6.QtCore import QRectF
 
 from base.functions import safe_class
@@ -62,7 +62,7 @@ class WorldEditorLoader:
                         folder.log.write(f"Invalid composite settings KeyError: <{e}>")
                         continue
 
-                    block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]))
+                    block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]), angle=block.get("angle"))
                     if block["name"] == "base":
                         world.Base = block_сам
 

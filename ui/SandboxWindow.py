@@ -16,7 +16,7 @@ from base.folders import folder, block_config, unit_config, settings
 from ui.Widgets import Labels
 from ui.PauseMenu import PauseMenu
 
-import time, math
+import time, math, psutil
 
 from world.WorldManager import WorldManager
 from world.WorldLoader import WorldLoader
@@ -43,18 +43,23 @@ class FPSViewer(QtWidgets.QWidget):
 
         super().__init__(window)
         layout = QtWidgets.QVBoxLayout(self)
+        self.cpu = Labels.Mono()
+        self.ram = Labels.Mono()
         self.fps = Labels.Mono()
         self.avg = Labels.Mono()
         self.max_fps = Labels.Mono()
         self.min_fps = Labels.Mono()
 
+        layout.addWidget(self.cpu)
+        layout.addWidget(self.ram)
+        layout.addStretch()
         layout.addWidget(self.fps)
         layout.addWidget(self.avg)
         layout.addWidget(self.max_fps)
         layout.addWidget(self.min_fps)
 
         self.move(10, 10)
-        self.setFixedSize(QtCore.QSize(250, 100))
+        self.setFixedSize(QtCore.QSize(250, 180))
         self.show()
 
     def refresh(self, now, dt):   
@@ -72,6 +77,8 @@ class FPSViewer(QtWidgets.QWidget):
             max_fps = max(frame_fps)
             min_fps = min(frame_fps)
 
+            self.cpu.setText(f"CPU: {psutil.cpu_percent():.0f}%")
+            self.ram.setText(f"RAM: {psutil.virtual_memory().percent:.0f}%")
             self.fps.setText(f"FPS: {fps:.0f}")
             self.avg.setText(f"AVG: {avg_fps:.0f}")
             self.max_fps.setText(f"MAX: {max_fps:.0f}")
@@ -101,20 +108,10 @@ class VersionViewer(QtWidgets.QWidget):
 
 @safe_class
 class MapScene(QGraphicsScene):
-    def __init__(self, intensity, window:SandboxWindow, *args, **kwargs):
+    def __init__(self, intensity, window, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.window=window
+        self.window = window
         self.intensity = intensity
-
-    def drawBackground(self, painter, rect):
-        painter.fillRect(rect, QColor("#EBE5E5"))     
-        painter.setPen(QPen(QColor("#2a2a2a"), 1))   
-        w = self.window.manager.current.size[0]*32
-        h = self.window.manager.current.size[1]*32
-        for x in range(0, w + 1, 32):
-            painter.drawLine(x, 0, x, h)
-        for y in range(0, h + 1, 32):
-            painter.drawLine(0, y, w, y)
 
 @safe_class
 class MapView(QGraphicsView):
@@ -123,6 +120,7 @@ class MapView(QGraphicsView):
         self.w=window
 
         self.setRenderHint(QPainter.RenderHint.Antialiasing, False)
+        self.setRenderHint(QPainter.RenderHint.SmoothPixmapTransform, False)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.setDragMode(QGraphicsView.DragMode.NoDrag)
@@ -192,7 +190,6 @@ class SandboxWindow(QWidget):
         self.main_window:MainWindow = window
         
         self.scene:MapScene = MapScene(0, self)
-        #self.scene.setSceneRect(QRectF(0, 0, 8192, 8192))
 
         self.view = MapView(self, self.scene, self)
 

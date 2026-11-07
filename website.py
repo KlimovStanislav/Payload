@@ -21,31 +21,9 @@ GAME = {
     "download_win": "https://github.com/KlimovStanislav/Payload/releases/latest/download/installer-win64.exe",
 }
 
-
-CHANGELOG = [
-    {
-        "version": "Alpha 0.2.21",
-        "date": "2026г",
-        "changes": [
-            "Много чего",
-        ],
-    },
-    {
-        "version": "Alpha 0.2.1",
-        "date": "2026г",
-        "changes": [
-            "релиз",
-        ],
-    },
-]
-
 @app.route("/")
 def index():
     return render_template("index.html", game=GAME)
-
-@app.route("/changelog")
-def changelog():
-    return render_template("changelog.html", game=GAME, changelog=CHANGELOG)
 
 if __name__ == "__main__":
     app.run(debug=True)
