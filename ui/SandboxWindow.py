@@ -1,9 +1,19 @@
 from __future__ import annotations
 
 from PyQt6 import QtWidgets
-from PyQt6.QtGui import QBrush, QColor, QPainter, QIcon, QPen
-from PyQt6.QtCore import Qt, QRectF, QTimer
-from PyQt6.QtWidgets import QWidget, QGraphicsScene, QGraphicsView, QListWidget, QListWidgetItem, QGraphicsItem, QGraphicsPixmapItem
+from PyQt6.QtGui import QBrush, QColor, QPainter, QIcon
+from PyQt6.QtCore import Qt, QTimer
+from PyQt6.QtWidgets import QWidget, QGraphicsScene, QGraphicsView, QListWidget, QListWidgetItem, QGraphicsPixmapItem
+
+from PyQt6.QtGui import QSurfaceFormat
+from PyQt6.QtOpenGLWidgets import QOpenGLWidget
+
+fmt = QSurfaceFormat()
+fmt.setVersion(3, 3)
+fmt.setProfile(QSurfaceFormat.OpenGLContextProfile.CoreProfile)
+fmt.setDepthBufferSize(24)
+fmt.setSamples(4)  
+QSurfaceFormat.setDefaultFormat(fmt)
 
 from PyQt6 import QtCore
 
@@ -25,7 +35,7 @@ from world.World import World
 from ui.ResourcePanel import ResourcePanel
 
 from components.Storable import Storable
-from components.SceneObject import Cell, Angle
+from components.SceneObject import Cell
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -119,6 +129,7 @@ class MapView(QGraphicsView):
         super().__init__(*args, **kwargs)
         self.w=window
 
+        self.setViewport(QOpenGLWidget())
         self.setRenderHint(QPainter.RenderHint.Antialiasing, False)
         self.setRenderHint(QPainter.RenderHint.SmoothPixmapTransform, False)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
@@ -175,11 +186,12 @@ class MapView(QGraphicsView):
             self.item = self.scene().addPixmap(get_texture(self.w.manager.current.placing_block))
             self.item.setZValue(100)
             self.item.setOpacity(0.5)
-        else:   
-            self.item.setPixmap(get_texture(self.w.manager.current.placing_block))
+        else:
+            if self.w.manager.current.placing_block is not None:
+                self.item.setPixmap(get_texture(self.w.manager.current.placing_block))
 
         self.item.setTransformOriginPoint((size[0]/2)*32, (size[1]/2)*32)
-        self.item.setRotation(self.w.manager.current.place_angle.value)
+        self.item.setRotation(self.w.manager.current.place_angle)
         self.item.setVisible(True)
 
 @safe_class
@@ -349,9 +361,8 @@ class SandboxWindow(QWidget):
         self.keys_pressed.add(key)
 
         if key == 0x13:
-            value = (self.manager.current.place_angle.value+90)
-            value = value-((value//360)*360)
-            self.manager.current.place_angle = Angle(value)
+            value = (self.manager.current.place_angle+90)
+            self.manager.current.place_angle = value-((value//360)*360)
             self.view.update_item()
 
         if key == 42:

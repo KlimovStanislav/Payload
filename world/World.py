@@ -14,16 +14,17 @@ from components.Clickable import Clickable
 from components.Updatable import Updatable
 from components.Removable import Removable
 from components.Placable import Placable
-from components.Rotatable import Rotatable
+from components.Rotatable import Rotatable, Angle
 from components.Storable import Storable
 
 from world.TempField import TempField
 
-from components.SceneObject import SceneObject, Cell, Size, Angle
+from components.SceneObject import SceneObject, Cell, Size
 from components.Network import Network
 from components.PipeNetwork import PipeNetwork
 
 from composites.Pipe import Pipe
+from composites.Pump import Pump
 
 import applib, random
 from functools import partialmethod
@@ -109,7 +110,7 @@ class World:
         self.unit_map:dict[Cell, list[Unit]] = {}
     
         self.networks:list[Network] = []
-        self.networks_generators:list[NetworkGenerator] = [NetworkGenerator(self, [Pipe], PipeNetwork)]
+        self.networks_generators:list[NetworkGenerator] = [NetworkGenerator(self, [Pipe, Pump], PipeNetwork)]
         self.projectiles:list[Projectile] = []
 
         self.exported:Storage[str, int] = Storage(9999)
@@ -290,11 +291,9 @@ class World:
                         if not self.Base.components[Storable].reduce(name, int(value*coef)):
                             return
                                     
-                obj:SceneObject = block_class(self, cell=Cell(x, y), name=self.placing_block, angle=self.place_angle)
+                obj:SceneObject = block_class(self, cell=Cell(x, y), name=self.placing_block)
                 if Placable in obj.components:
                     obj.components[Placable]()
-                if hasattr(obj, "pixmap_item") and Rotatable in obj.components:
-                    obj.pixmap_item.setRotation(self.place_angle.value)
                 
         elif type == "right":
             existing = self.get_block_at(x, y)

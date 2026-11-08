@@ -19,3 +19,5 @@ class Base(Block):
         self.components[Clickable] = Clickable(self, lambda obj: AutoUI(obj).Show())
 
         self.panel = resource_panel
+
+        self.finish()

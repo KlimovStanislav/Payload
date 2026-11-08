@@ -60,3 +60,5 @@ class Drill(Block):
 
             task = self.components[Updatable].every(speed, generate_ore_upd(resource))
             task.progress = random.uniform(0, speed)
+
+        self.finish()

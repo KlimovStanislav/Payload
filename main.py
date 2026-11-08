@@ -51,6 +51,7 @@ def main()->int:
         if failed:
             folder.log.write("\n".join(failed), type="StartError", set_error=True)
             if pymsgbox.confirm(f"Failed {len(failed)} tests:\n{"\n".join(failed)}\nLaunch the game?", "StartError", icon=pymsgbox.WARNING) != pymsgbox.OK_TEXT:
+                print(failed)
                 return 1
 
         folder.plugins.init()

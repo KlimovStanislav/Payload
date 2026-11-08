@@ -28,6 +28,8 @@ class Healer(Block):
                 if x*x + y*y <= 25:
                     self.cells.append((self.x+x, self.y+y))
 
+        self.finish()
+
     @staticmethod
     def update(obj:Healer): 
         if obj.components[Powerable].energy > 0.01:

@@ -27,16 +27,6 @@ class Size(NamedTuple):
     w:int
     h:int
 
-class Angle(Enum):
-    UP = 0
-    RIGHT = 90
-    DOWN = 180
-    LEFT = 270
-
-    def __call__(cls, value):
-        dct = {Angle.UP: 0, Angle.DOWN: 180, Angle.LEFT: 270, Angle.RIGHT: 90}
-        return dct[value-((value//360)*360)]
-
 @dataclass
 class SceneObject:
     w:World
@@ -44,7 +34,6 @@ class SceneObject:
     size:Size
     name:str
     integrity:int|float
-    angle:Angle
 
     components:Dict[Type[T], Type[T]] = field(default_factory=Dict)
     networks:Dict[Type[T], Type[T]] = field(default_factory=Dict)

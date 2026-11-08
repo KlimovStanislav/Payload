@@ -4,9 +4,11 @@ from base.folders import folder, block_config
 import applib
 import base.functions as func
 from base.MusicPlayer import MusicPlayer
+from base.cursors import Cursor
 from PyQt6.QtWidgets import QGraphicsItem
 
-from components.SceneObject import SceneObject, Cell, Size, Angle
+from components.SceneObject import SceneObject, Cell, Size
+from components.Clickable import Clickable
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -15,7 +17,7 @@ if TYPE_CHECKING:
 @func.safe_class
 class Block(SceneObject):
     save = ("name",)
-    def __init__(self, w:World, cell:Cell, name:str, angle:Angle):
+    def __init__(self, w:World, cell:Cell, name:str):
         if cell.x >= w.size.w or cell.y >= w.size.h or cell.x < 0 or cell.y < 0:
             self.exists = False
             folder.log.write(f"Block <{name}(x:{cell.x}, y:{cell.y})> Located behind the world", type="BlockData")
@@ -23,9 +25,7 @@ class Block(SceneObject):
         integrity = block_config[name].get("integrity", 1)
         self.pixmap = func.get_texture(name)
 
-        super().__init__(w, cell, Size(self.pixmap.width()//32, self.pixmap.height()//32), name, integrity, angle)
-
-        self.place()
+        super().__init__(w, cell, Size(self.pixmap.width()//32, self.pixmap.height()//32), name, integrity)
     
     def draw(self):
         if self.exists and self.w.scene is not None:
@@ -38,7 +38,10 @@ class Block(SceneObject):
             self.pixmap_item.setTransformOriginPoint((self.size[0]/2)*32, (self.size[1]/2)*32)
             self.pixmap_item.setCacheMode(QGraphicsItem.CacheMode.DeviceCoordinateCache)
 
-    def place(self):
+            if Clickable in self.components:
+                self.pixmap_item.setCursor(Cursor.Hand)
+
+    def finish(self):
         if hasattr(self, "pixmap_item"):
             folder.log.write("2 раза ставишь", type=applib.ERROR)
             return
@@ -70,4 +73,4 @@ class Block(SceneObject):
             return f"<{type(self).__name__}({output[:-2]})>"
 
     def __repr__(self):
-        return f"TEMPERATURE: {self.temperature}, <{type(self).__name__}>"
+        return f"<{type(self).__name__}>"

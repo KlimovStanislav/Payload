@@ -11,5 +11,7 @@ class MemoryBlock(Block):
 
         super().__init__(*args, **kwargs)
 
+        self.finish()
+
     def on_click(self):
         print(self.variables)

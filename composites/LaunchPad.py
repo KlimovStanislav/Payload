@@ -51,6 +51,8 @@ class LaunchPad(Block):
 
         self.components[Launchable] = Launchable(self)
 
+        self.finish()
+
     def clicked(self):
         for name, value in self.components[Storable].storage.items():
             self.w.exported.add(name, value)

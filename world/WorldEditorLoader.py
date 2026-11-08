@@ -62,7 +62,7 @@ class WorldEditorLoader:
                         folder.log.write(f"Invalid composite settings KeyError: <{e}>")
                         continue
 
-                    block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]), angle=block.get("angle"))
+                    block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]))
                     if block["name"] == "base":
                         world.Base = block_сам
 

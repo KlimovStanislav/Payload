@@ -76,13 +76,17 @@ class DevConsole(QDialog):
             self._original_stdout.flush()
         
         def exec(self):
-            cmd = self.input.text()
-            cmd = str(cmd)
+            cmd = str(self.input.text())
+            
             if cmd.strip():
-                if not self.history or self.history[-1] != cmd:
+                if not self.history or self.history[-1]!=cmd:
                     self.history.append(cmd)
                 self.history_index = len(self.history)
+
             fcmd = cmd.lower()
+            if fcmd.startswith("cls") or fcmd.startswith("clear"):
+                self.output.setText("")
+
             if fcmd.startswith("exec"):
                 try:
                     exec(cmd[4:].strip(), globals())
@@ -91,6 +95,7 @@ class DevConsole(QDialog):
                 finally:
                     self.input.clear()
                     return
+                
             if fcmd.startswith("eval"):
                 try:
                     self.output.append(f"-> {str(eval(cmd[4:].strip()))}\n")

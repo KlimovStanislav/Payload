@@ -1,5 +1,5 @@
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\air.png> (32x32)
-[StartInfo] All systems online. Start lasted 234 milliseconds. Smoke tests completed in 18 milliseconds.
+[StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 17 milliseconds.
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\icon.png> (64x64)
 [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\sand_1.png> (64x64)
@@ -33,7 +33,8 @@
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\peltier.png> (32x32)
 [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\launch_pad.png> (96x96)
-[TextureCache] Texture <d:\Payload\Assets\Textures\pipe.png> not found
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\pipe.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\pump.png> (32x32)
 [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\flask.png> (32x32)
 [EXIT] 0

@@ -2,61 +2,6 @@
     {
         "x": 143,
         "y": 114,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 114,
-        "angle": 0,
-        "name": "lead_2"
-    },
-    {
-        "x": 143,
-        "y": 115,
-        "angle": 0,
-        "name": "lead_3"
-    },
-    {
-        "x": 145,
-        "y": 114,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 115,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 115,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 116,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 116,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 116,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 114,
-        "angle": 0,
         "name": "drill",
         "Storable": {
             "storage": {
@@ -70,7 +15,6 @@
     {
         "x": 155,
         "y": 115,
-        "angle": 0,
         "name": "launch_pad",
         "Storable": {
             "storage": {}
@@ -79,94 +23,20 @@
     {
         "x": 150,
         "y": 114,
-        "angle": 0,
         "name": "base",
         "Storable": {
             "storage": {
-                "lead": 486
+                "lead": 1000
             }
         }
     },
     {
         "x": 143,
         "y": 117,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 117,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 117,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 118,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 118,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 118,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 119,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 119,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 119,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 120,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 120,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 120,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 117,
-        "angle": 0,
         "name": "drill",
         "Storable": {
             "storage": {
-                "lead": 6
+                "lead": 10
             }
         },
         "Switchable": {
@@ -174,211 +44,12 @@
         }
     },
     {
-        "x": 146,
-        "y": 124,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 153,
-        "y": 122,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 166,
-        "y": 127,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 167,
-        "y": 118,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 184,
-        "y": 109,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 163,
-        "y": 104,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 129,
-        "y": 122,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 129,
-        "y": 115,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 145,
-        "y": 121,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 122,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 123,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 125,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 124,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 125,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 124,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 123,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 122,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 121,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 121,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 122,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 123,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 124,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 125,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 126,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 126,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 126,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 127,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 127,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 127,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 128,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 144,
-        "y": 128,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 128,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
-        "x": 143,
-        "y": 127,
-        "angle": 0,
-        "name": "lead_1"
-    },
-    {
         "x": 143,
         "y": 120,
-        "angle": 0,
         "name": "drill",
         "Storable": {
             "storage": {
-                "lead": 3
+                "lead": 10
             }
         },
         "Switchable": {
@@ -388,11 +59,10 @@
     {
         "x": 143,
         "y": 123,
-        "angle": 0,
         "name": "drill",
         "Storable": {
             "storage": {
-                "lead": 6
+                "lead": 10
             }
         },
         "Switchable": {
@@ -402,11 +72,10 @@
     {
         "x": 143,
         "y": 126,
-        "angle": 0,
         "name": "drill",
         "Storable": {
             "storage": {
-                "lead": 7
+                "lead": 10
             }
         },
         "Switchable": {
@@ -414,65 +83,48 @@
         }
     },
     {
-        "x": 207,
-        "y": 119,
-        "angle": 0,
-        "name": "air"
-    },
-    {
-        "x": 197,
-        "y": 108,
-        "angle": 0,
-        "name": "air"
-    },
-    {
         "x": 146,
         "y": 126,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 146,
         "y": 123,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 146,
         "y": 120,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 146,
         "y": 117,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 146,
         "y": 114,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
@@ -483,7 +135,6 @@
     {
         "x": 147,
         "y": 126,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
@@ -494,7 +145,6 @@
     {
         "x": 147,
         "y": 125,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
@@ -505,7 +155,6 @@
     {
         "x": 147,
         "y": 124,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
@@ -516,18 +165,16 @@
     {
         "x": 147,
         "y": 123,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 147,
         "y": 122,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
@@ -538,7 +185,6 @@
     {
         "x": 147,
         "y": 121,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
@@ -549,18 +195,16 @@
     {
         "x": 147,
         "y": 120,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 147,
         "y": 119,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
@@ -571,7 +215,6 @@
     {
         "x": 147,
         "y": 118,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
@@ -582,472 +225,499 @@
     {
         "x": 147,
         "y": 117,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
-            "storage": {}
+            "storage": {
+                "lead": 1
+            }
         }
     },
     {
         "x": 147,
         "y": 116,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 147,
         "y": 115,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 147,
         "y": 114,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 148,
         "y": 114,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 149,
         "y": 114,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 148,
         "y": 117,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 149,
         "y": 117,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 150,
         "y": 117,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 148,
         "y": 120,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 149,
         "y": 120,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 150,
         "y": 120,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 148,
         "y": 123,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 149,
         "y": 123,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 150,
         "y": 123,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 151,
         "y": 123,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 151,
         "y": 120,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 151,
         "y": 119,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 151,
         "y": 118,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 151,
         "y": 117,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 152,
         "y": 123,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 152,
         "y": 122,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 152,
         "y": 121,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 152,
         "y": 120,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 152,
         "y": 119,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 152,
         "y": 118,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 152,
         "y": 117,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 148,
         "y": 126,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 149,
         "y": 126,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 150,
         "y": 126,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 151,
         "y": 126,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 152,
         "y": 126,
-        "angle": 0,
         "name": "conveyor_right",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 126,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 125,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 124,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 123,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 122,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 121,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 120,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 119,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 118,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 117,
-        "angle": 0,
         "name": "conveyor_up",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
         }
     },
     {
         "x": 153,
         "y": 116,
-        "angle": 0,
         "name": "conveyor_left",
         "Storable": {
             "storage": {
-                "lead": 0
+                "lead": 1
             }
+        }
+    },
+    {
+        "x": 178,
+        "y": 122,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 1.774059274059274,
+            "fluids": {},
+            "volume": 4
+        }
+    },
+    {
+        "x": 178,
+        "y": 120,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 1.774059274059274,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 178,
+        "y": 119,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 1.774059274059274,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 178,
+        "y": 121,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 1.774059274059274,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 178,
+        "y": 123,
+        "name": "pump",
+        "Switchable": {
+            "state": false
+        },
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 0,
+            "fluids": {},
+            "volume": 1
         }
     }
 ]

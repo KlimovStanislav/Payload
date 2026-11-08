@@ -7,7 +7,7 @@ from base.folders import folder, saves, block_config
 
 from base.composites import composites
 from base.components import components
-from components.SceneObject import Cell, Size, Angle
+from components.SceneObject import Cell, Size
 
 from PyQt6.QtWidgets import QGraphicsItem
 from PyQt6.QtGui import QPixmap
@@ -87,8 +87,7 @@ class WorldLoader:
                     except KeyError as e:
                         folder.log.write(f"Invalid composite settings KeyError: <{e}>")
                         continue
-
-                    block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]), angle=Angle(block.get("angle", 0)))
+                    block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]))
                     if block["name"] == "base":
                         world.Base = block_сам
 
@@ -117,7 +116,7 @@ class WorldLoader:
                     if not block.exists:
                         continue
 
-                    entry = {"x": block.cell.x, "y": block.cell.y, "angle": block.angle.value}
+                    entry = {"x": block.cell.x, "y": block.cell.y}
                     for n in block.__class__.save:
                         entry[n] = block.__getattribute__(n)
 

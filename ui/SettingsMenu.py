@@ -38,7 +38,7 @@ class SettingsMenu(Menu):
         btn_back = Buttons.Secondary("Back")
         btn_back.clicked.connect(lambda: self.Back())
         
-        btn_save = Buttons.Secondary("Save")
+        btn_save = Buttons.Secondary("Apply and Save")
         btn_save.clicked.connect(lambda: self.save_settings())
         
         layout.addWidget(title)

@@ -27,6 +27,8 @@ class Battery(Block):
             self.center.setZValue(40)
             self.center.setOpacity(0)
 
+        self.finish()
+
     @staticmethod
     def update(obj:Battery):
         obj.center.setOpacity(obj.stored/obj.max_stored)

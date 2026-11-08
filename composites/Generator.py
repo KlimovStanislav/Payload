@@ -28,6 +28,8 @@ class Generator(Block):
         self.components[Placable] = Placable(self, Powerable.place)
         self.components[Clickable] = Clickable(self, Storable.click)
 
+        self.finish()
+
     @staticmethod
     def upd(obj:Generator):
         if obj.mining_type in obj.components[Storable].dict(): 

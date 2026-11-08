@@ -13,9 +13,6 @@ class Clickable:
         self.owner = owner
         self.func = func
 
-        if hasattr(owner, "pixmap_item"):
-            owner.pixmap_item.setCursor(Cursor.Hand)
-
     def __call__(self):
         try:
             self.func(self.owner)

@@ -231,7 +231,13 @@ class MainWindow(QMainWindow):
         match cmd.lower().split():
             case ["help"]:
                 self.terminal("current status - print info about current world\ncurrent pause - pause the world\ncurrent resume - resume the world\ncurrent tick <n> - tick n-times\ncurrent give <material> <n> - give operator n material\ncurrent quota <n> - set step of quota to n")
+
+            case ["view"]:
+                folder.view()
+
             case ["current", *args]:
+                if not args:
+                    self.terminal("what")
                 window:SandboxWindow|CampaignWindow = self.widget.currentWidget()
                 if window not in [self.SandboxWindow, self.CampaignWindow]:
                     self.terminal("not a chance")

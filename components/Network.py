@@ -37,7 +37,7 @@ class Network:
     def update(self, dt):
         raise NotImplementedError(f"{self.__class__.__name__} lacks a update method")
 
-    def merge_into(self, other: Network) -> None:
+    def merge_into(self, other:Network) -> None:
         for node in other.nodes:
             node.networks[self.__class__] = self
             self.nodes.append(node)
