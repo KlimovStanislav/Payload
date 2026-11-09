@@ -93,21 +93,6 @@ class Window(QWidget):
         layout.addStretch()
         layout.addWidget(self.btn)
 
-from pathlib import Path
-
-rows = []
-for p in Path(".").rglob("*.py"):
-    if any(x in p.parts for x in {".venv","venv","__pycache__",".git"}):
-        continue
-    n = sum(1 for line in p.read_text(errors="ignore").splitlines()
-            if line.strip() and not line.strip().startswith("#"))
-    rows.append((n, str(p)))
-
-rows.sort(reverse=True)
-total = sum(n for n, _ in rows)
-for n, p in rows:
-    print(f"{n:5d}  {n/total*100:5.1f}%  {p}")
-
 window = Window()
 window.show()
 app.exec()

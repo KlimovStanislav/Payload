@@ -1,18 +1,5 @@
 [
     {
-        "x": 143,
-        "y": 114,
-        "name": "drill",
-        "Storable": {
-            "storage": {
-                "lead": 10
-            }
-        },
-        "Switchable": {
-            "state": true
-        }
-    },
-    {
         "x": 155,
         "y": 115,
         "name": "launch_pad",
@@ -26,687 +13,13 @@
         "name": "base",
         "Storable": {
             "storage": {
-                "lead": 1000
-            }
-        }
-    },
-    {
-        "x": 143,
-        "y": 117,
-        "name": "drill",
-        "Storable": {
-            "storage": {
                 "lead": 10
             }
-        },
-        "Switchable": {
-            "state": true
         }
     },
     {
-        "x": 143,
-        "y": 120,
-        "name": "drill",
-        "Storable": {
-            "storage": {
-                "lead": 10
-            }
-        },
-        "Switchable": {
-            "state": true
-        }
-    },
-    {
-        "x": 143,
-        "y": 123,
-        "name": "drill",
-        "Storable": {
-            "storage": {
-                "lead": 10
-            }
-        },
-        "Switchable": {
-            "state": true
-        }
-    },
-    {
-        "x": 143,
-        "y": 126,
-        "name": "drill",
-        "Storable": {
-            "storage": {
-                "lead": 10
-            }
-        },
-        "Switchable": {
-            "state": true
-        }
-    },
-    {
-        "x": 146,
-        "y": 126,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 146,
-        "y": 123,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 146,
-        "y": 120,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 146,
+        "x": 162,
         "y": 117,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 146,
-        "y": 114,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 126,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 125,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 124,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 123,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 122,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 121,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 120,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 119,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 118,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 117,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 116,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 115,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 147,
-        "y": 114,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 148,
-        "y": 114,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 149,
-        "y": 114,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 148,
-        "y": 117,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 149,
-        "y": 117,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 150,
-        "y": 117,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 148,
-        "y": 120,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 149,
-        "y": 120,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 150,
-        "y": 120,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 148,
-        "y": 123,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 149,
-        "y": 123,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 150,
-        "y": 123,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 151,
-        "y": 123,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 151,
-        "y": 120,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 151,
-        "y": 119,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 151,
-        "y": 118,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 151,
-        "y": 117,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 152,
-        "y": 123,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 152,
-        "y": 122,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 152,
-        "y": 121,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 152,
-        "y": 120,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 152,
-        "y": 119,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 152,
-        "y": 118,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 152,
-        "y": 117,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 148,
-        "y": 126,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 149,
-        "y": 126,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 150,
-        "y": 126,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 151,
-        "y": 126,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 152,
-        "y": 126,
-        "name": "conveyor_right",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 126,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 125,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 124,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 123,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 122,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 121,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 120,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 119,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 118,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 117,
-        "name": "conveyor_up",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 153,
-        "y": 116,
-        "name": "conveyor_left",
-        "Storable": {
-            "storage": {
-                "lead": 1
-            }
-        }
-    },
-    {
-        "x": 178,
-        "y": 122,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 1.774059274059274,
-            "fluids": {},
-            "volume": 4
-        }
-    },
-    {
-        "x": 178,
-        "y": 120,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 1.774059274059274,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 178,
-        "y": 119,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 1.774059274059274,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 178,
-        "y": 121,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 1.774059274059274,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 178,
-        "y": 123,
         "name": "pump",
         "Switchable": {
             "state": false
@@ -719,5 +32,138 @@
             "fluids": {},
             "volume": 1
         }
+    },
+    {
+        "x": 162,
+        "y": 116,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 0.0,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 162,
+        "y": 115,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 0.0,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 162,
+        "y": 114,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 0.0,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 162,
+        "y": 112,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 0.0,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 162,
+        "y": 111,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 0.0,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 162,
+        "y": 110,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "pressure": 0.0,
+            "fluids": {},
+            "volume": 1
+        }
+    },
+    {
+        "x": 146,
+        "y": 117,
+        "name": "lead_1"
+    },
+    {
+        "x": 146,
+        "y": 117,
+        "name": "lead_1"
+    },
+    {
+        "x": 147,
+        "y": 117,
+        "name": "lead_1"
+    },
+    {
+        "x": 147,
+        "y": 116,
+        "name": "lead_1"
+    },
+    {
+        "x": 146,
+        "y": 116,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 117,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 117,
+        "name": "lead_1"
+    },
+    {
+        "x": 145,
+        "y": 116,
+        "name": "lead_1"
+    },
+    {
+        "x": 147,
+        "y": 118,
+        "name": "lead_2"
+    },
+    {
+        "x": 146,
+        "y": 118,
+        "name": "lead_2"
+    },
+    {
+        "x": 145,
+        "y": 118,
+        "name": "lead_2"
     }
 ]

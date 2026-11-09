@@ -1,53 +1,4 @@
-[2026-11-08 | 23:57:32] >>> [SYSTEM] File was truncated to 10000 lines
-                    >>>     self.manager.current.update(dt)
-                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'update'
-                    >>> 
-[2026-10-12 | 21:35:43] >>> [EXIT] 1
-
-[2026-10-12 | 21:38:27] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-12 | 21:38:27] >>> [ERROR] The module <composites/Spawner.py> lacks a final class
-[2026-10-12 | 21:38:27] >>> [SaveError] File of sector not found
-[2026-10-12 | 21:38:27] >>> [StartInfo] All systems online
-[2026-10-12 | 21:38:27] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-12 | 21:38:27] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-12 | 21:38:27] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-12 | 21:38:38] >>> [RuntimeError]
-                    >>> <World.update> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\world\World.py", line 77, in update
-                    >>>     proj.components[Updatable](dt*1000)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 47, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\composites\Projectile.py", line 72, in upd
-                    >>>     target.integrity -= 1
-                    >>>     ^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'list' object has no attribute 'integrity'
-                    >>> 
-[2026-10-12 | 21:38:39] >>> [RuntimeError]
-                    >>> <World.update> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\world\World.py", line 77, in update
-                    >>>     proj.components[Updatable](dt*1000)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Updatable.py", line 47, in __call__
-                    >>>     task.func(self.owner, task, dt)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\composites\Projectile.py", line 71, in upd
-                    >>>     if target is not None:
-                    >>>        ^^^^^^
-                    >>> UnboundLocalError: cannot access local variable 'target' where it is not associated with a value
-                    >>> 
-[2026-10-12 | 21:38:43] >>> [EXIT] 1
-
-[2026-10-12 | 21:40:32] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-12 | 21:40:32] >>> [ERROR] The module <composites/Spawner.py> lacks a final class
-[2026-10-12 | 21:40:32] >>> [SaveError] File of sector not found
-[2026-10-12 | 21:40:32] >>> [StartInfo] All systems online
+[2026-11-09 | 11:24:28] >>> [SYSTEM] File was truncated to 10000 lines
 [2026-10-12 | 21:40:32] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
 [2026-10-12 | 21:40:32] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
 [2026-10-12 | 21:40:32] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
@@ -10006,4 +9957,50 @@
 [2026-11-08 | 23:57:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
 [2026-11-08 | 23:57:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
 [2026-11-08 | 23:57:36] >>> [EXIT] 0
+
+[2026-11-09 | 00:03:57] >>> [START] Alpha 0.2.23
+[2026-11-09 | 00:03:57] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-09 | 00:03:57] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-09 | 00:03:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-09 | 00:03:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-09 | 00:03:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-09 | 00:04:09] >>> [LoadWarning] Different save versions
+
+[2026-11-09 | 00:04:31] >>> [START] Alpha 0.2.23
+[2026-11-09 | 00:04:31] >>> [WARNING] The previous launch failed
+[2026-11-09 | 00:04:31] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-09 | 00:04:31] >>> [StartInfo] All systems online. Start lasted 269 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-09 | 00:04:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-09 | 00:04:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-09 | 00:04:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-09 | 00:04:53] >>> [EXIT] 0
+
+[2026-11-09 | 00:05:06] >>> [START] Alpha 0.2.23
+[2026-11-09 | 00:05:06] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-09 | 00:05:06] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-11-09 | 00:05:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-09 | 00:05:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-09 | 00:05:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-09 | 00:11:33] >>> [EXIT] 0
+
+[2026-11-09 | 11:23:40] >>> [START] Alpha 0.2.23
+[2026-11-09 | 11:23:40] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-09 | 11:23:42] >>> [StartInfo] All systems online. Start lasted 1606 milliseconds. Smoke tests completed in 35 milliseconds.
+[2026-11-09 | 11:23:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-09 | 11:23:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-09 | 11:23:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-09 | 11:23:49] >>> [EXIT] 0
+
+[2026-11-09 | 11:23:52] >>> [START] Alpha 0.2.23
+[2026-11-09 | 11:23:52] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-09 | 11:23:52] >>> [StartInfo] All systems online. Start lasted 245 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-11-09 | 11:23:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-09 | 11:23:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-09 | 11:23:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-09 | 11:24:17] >>> [EXIT] 0
+
+[2026-11-09 | 11:24:28] >>> [START] Alpha 0.2.23
+[2026-11-09 | 11:24:28] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-09 | 11:24:29] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-09 | 11:24:38] >>> [EXIT] 0
 
