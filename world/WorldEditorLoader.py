@@ -1,16 +1,13 @@
 import os, json, traceback
 from datetime import datetime
 
-from PyQt6.QtGui import QPixmap, QPainter, QBrush, QColor
-
-from base.MusicPlayer import MusicPlayer
 from base.folders import folder, saves, block_config
 
 from base.composites import composites
 from base.components import components
 
-from PyQt6.QtWidgets import QGraphicsItem
-from PyQt6.QtGui import QPixmap, QPen
+from PyQt6.QtWidgets import QApplication
+from PyQt6.QtGui import QPixmap, QPainter, QBrush, QColor
 from PyQt6.QtCore import QRectF
 
 from base.functions import safe_class
@@ -55,7 +52,9 @@ class WorldEditorLoader:
                 scene.setSceneRect(QRectF(0, 0, world.size[0]*32, world.size[1]*32))
     
             try:
-                for block in [*sector_path.read("Blocks.json", type="json"), *sector_path.read("ReliefBlocks.json", type="json")]:
+                for i, block in enumerate([*sector_path.read("Blocks.json", type="json"), *sector_path.read("ReliefBlocks.json", type="json")]):
+                    if i%10==0:
+                        QApplication.processEvents()
                     try:
                         block_class = composites[block_config[block["name"]]["type"]]
                     except KeyError as e:
@@ -103,7 +102,7 @@ class WorldEditorLoader:
                     if not block.exists:
                         continue
                 
-                    entry = {}
+                    entry = {"x": block.cell.x, "y": block.cell.y}
                     for n in block.__class__.save:
                         entry[n] = block.__getattribute__(n)
 

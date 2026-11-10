@@ -1,20 +1,10 @@
 [
     {
-        "x": 155,
-        "y": 115,
-        "name": "launch_pad",
-        "Storable": {
-            "storage": {}
-        }
-    },
-    {
         "x": 150,
         "y": 114,
         "name": "base",
         "Storable": {
-            "storage": {
-                "lead": 10
-            }
+            "storage": {}
         }
     },
     {
@@ -73,45 +63,6 @@
         }
     },
     {
-        "x": 162,
-        "y": 112,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 0.0,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 162,
-        "y": 111,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 0.0,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 162,
-        "y": 110,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 0.0,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
         "x": 146,
         "y": 117,
         "name": "lead_1"
@@ -165,5 +116,61 @@
         "x": 145,
         "y": 118,
         "name": "lead_2"
+    },
+    {
+        "x": 145,
+        "y": 116,
+        "name": "drill",
+        "Storable": {
+            "storage": {}
+        },
+        "Switchable": {
+            "state": false
+        }
+    },
+    {
+        "x": 161,
+        "y": 109,
+        "name": "air"
+    },
+    {
+        "x": 188,
+        "y": 115,
+        "name": "air"
+    },
+    {
+        "x": 190,
+        "y": 118,
+        "name": "air"
+    },
+    {
+        "x": 160,
+        "y": 126,
+        "name": "air"
+    },
+    {
+        "x": 162,
+        "y": 123,
+        "name": "air"
+    },
+    {
+        "x": 148,
+        "y": 118,
+        "name": "air"
+    },
+    {
+        "x": 149,
+        "y": 118,
+        "name": "air"
+    },
+    {
+        "x": 166,
+        "y": 106,
+        "name": "air"
+    },
+    {
+        "x": 175,
+        "y": 129,
+        "name": "air"
     }
 ]

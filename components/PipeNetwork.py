@@ -27,11 +27,10 @@ class PipeNetwork(Network):
         return Cell(bx - ax, by - ay)
 
     def _connected(self, a, b) -> bool:
-        # оба открыты друг на друга — с учётом дельт из .opens (список Cell)
         return (self._delta(a, b) in self._liq(a).opens and
                 self._delta(b, a) in self._liq(b).opens)
 
-    def _linked(self, node, cell_map):# -> Generator[Any, Any, None]:
+    def _linked(self, node, cell_map):
         nx, ny = node.cell
         for dx, dy in self._liq(node).opens:
             other = cell_map.get(Cell(nx + dx, ny + dy))
@@ -41,7 +40,10 @@ class PipeNetwork(Network):
     # ---------- add / remove ----------
 
     def add(self, node):
-        if node in self.nodes:
+        if node in self.nodes or Liquidable not in node.components:
+            return
+
+        if self.nodes and not any(self._connected(node, n) for n in self.nodes):
             return
 
         super().add(node)

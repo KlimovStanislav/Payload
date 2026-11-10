@@ -26,7 +26,7 @@ class Liquidable:
         elif Rotatable in owner.components:
             self.opens = ANGLE_CNV[owner.components[Rotatable].value]
         else:
-            raise NotImplementedError(f"Obj <{owner}> dont have <Rotatable> compoent and the <opens> parameter not passed")
+            raise NotImplementedError(f"Obj {owner} dont have <Rotatable> component and the <opens> parameter not passed")
 
         self.pressure: float = 0
         self.fluids: dict[str, float] = {}

@@ -33,12 +33,12 @@ class SettingsMenu(Menu):
 
         fps_label = Labels.Body("FPS:")
         self.fps_slider = Sliders.Horizontal()
-        self.fps_slider.setRange(1, 240)
+        self.fps_slider.setRange(10, 240)
         
         btn_back = Buttons.Secondary("Back")
         btn_back.clicked.connect(lambda: self.Back())
         
-        btn_save = Buttons.Secondary("Apply and Save")
+        btn_save = Buttons.Secondary("Apply")
         btn_save.clicked.connect(lambda: self.save_settings())
         
         layout.addWidget(title)

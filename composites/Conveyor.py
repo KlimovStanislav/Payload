@@ -4,18 +4,19 @@ from composites.Block import Block
 
 from components.Storable import Storable
 from components.Updatable import Updatable
-
-from base.folders import block_config
+from components.Rotatable import Rotatable
+from components.Liquidable import ANGLE_CNV
 
 class Conveyor(Block):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
-        self.direction_start = block_config[self.name]["direction_start"]
-        self.direction_end = block_config[self.name]["direction_end"]
-
+        self.components[Rotatable] = Rotatable(self)
         self.components[Storable] = Storable(self, None, 1)
         self.components[Updatable] = Updatable(self, [(1000, self.upd)])
+
+        cnv = ANGLE_CNV[self.components[Rotatable].value]
+        self.direction_start = cnv[1]
+        self.direction_end = cnv[0]
 
         self.finish()
 

@@ -497,12 +497,18 @@ class Config:
                 pass
             raise
 
+    def items(self):
+        return self._data.items()
+
     def __getitem__(self, key):
         return self.get(key)
 
+    def __contains__(self, item):
+        return item in self._data
+
     def get(self, dotted_key: str, default=None):
         node = self._data
-        for part in dotted_key.split("."):
+        for part in str(dotted_key).split("."):
             if isinstance(node, dict) and part in node:
                 node = node[part]
             else:

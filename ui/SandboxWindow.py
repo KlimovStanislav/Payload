@@ -162,8 +162,8 @@ class MapView(QGraphicsView):
         scene_pos = self.mapToScene(event.pos())
         _x, _y = round(scene_pos.x()), round(scene_pos.y())
         x, y = math.floor((_x/32)), math.floor(_y/32)
-
-        size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+        texture = get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block))
+        size = (int(texture.width()/32), int(texture.height()/32))
 
         for dx in range(size[0]):
             for dy in range(size[1]):
@@ -180,15 +180,16 @@ class MapView(QGraphicsView):
         self.item.setPos(x*32, y*32)
 
     def update_item(self):
-        size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
+        texture = get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block))
+        size = (int(texture.width()/32), int(texture.height()/32))
 
         if self.item is None:
-            self.item = self.scene().addPixmap(get_texture(self.w.manager.current.placing_block))
+            self.item = self.scene().addPixmap(get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block)))
             self.item.setZValue(100)
             self.item.setOpacity(0.5)
         else:
             if self.w.manager.current.placing_block is not None:
-                self.item.setPixmap(get_texture(self.w.manager.current.placing_block))
+                self.item.setPixmap(get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block)))
 
         self.item.setTransformOriginPoint((size[0]/2)*32, (size[1]/2)*32)
         self.item.setRotation(self.w.manager.current.place_angle)
@@ -294,7 +295,7 @@ class SandboxWindow(QWidget):
                         if name not in self.manager.current.opened:
                             continue
                     
-                    pixmap = get_texture(name)
+                    pixmap = get_texture(block_config[name].get("texture", name))
                     icon = QIcon(pixmap)
           
                     cost:dict = i.get("cost")
@@ -325,6 +326,7 @@ class SandboxWindow(QWidget):
         MusicPlayer.play("click_2")
         if self.manager.current_name is not None:
             self.manager.save(self.manager.current_name)
+        self.view.item = None
         self.pause_menu.Back()
         self.main_window.MenuWindow.show()
         return event.accept()
@@ -455,6 +457,7 @@ class SandboxWindow(QWidget):
         return self.__class__.__name__
 
     def show(self):
+        self.main_window.widget.currentWidget().close()
         self.last_time = time.time()
         self.main_window.widget.setCurrentIndex(1)
         self.version_viewer.reposition()

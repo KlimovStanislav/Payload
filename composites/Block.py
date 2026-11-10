@@ -9,6 +9,7 @@ from PyQt6.QtWidgets import QGraphicsItem
 
 from components.SceneObject import SceneObject, Cell, Size
 from components.Clickable import Clickable
+from components.Rotatable import Rotatable
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -23,7 +24,7 @@ class Block(SceneObject):
             folder.log.write(f"Block <{name}(x:{cell.x}, y:{cell.y})> Located behind the world", type="BlockData")
 
         integrity = block_config[name].get("integrity", 1)
-        self.pixmap = func.get_texture(name)
+        self.pixmap = func.get_texture(name if block_config[name].get("texture") is None else block_config[name].get("texture"))
 
         super().__init__(w, cell, Size(self.pixmap.width()//32, self.pixmap.height()//32), name, integrity)
     
@@ -38,12 +39,15 @@ class Block(SceneObject):
             self.pixmap_item.setTransformOriginPoint((self.size[0]/2)*32, (self.size[1]/2)*32)
             self.pixmap_item.setCacheMode(QGraphicsItem.CacheMode.DeviceCoordinateCache)
 
+            if Rotatable in self.components:
+                self.pixmap_item.setRotation(self.components[Rotatable].value)
+
             if Clickable in self.components:
                 self.pixmap_item.setCursor(Cursor.Hand)
 
     def finish(self):
         if hasattr(self, "pixmap_item"):
-            folder.log.write("2 раза ставишь", type=applib.ERROR)
+            folder.log.write("Block has placed 2 times", type=applib.ERROR)
             return
         
         for cell in self.get_occupied_cells():

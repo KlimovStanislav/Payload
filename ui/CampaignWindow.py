@@ -110,6 +110,7 @@ class CampaignWindow(SandboxWindow):
         self.campaign.viewer.reposition()
 
     def show(self):
+        self.main_window.widget.currentWidget().close()
         self.last_time = time.time()
         self.manager.switch_to("__CAMPAIGN__")
         self.main_window.widget.setCurrentIndex(5)

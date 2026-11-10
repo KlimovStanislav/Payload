@@ -11,10 +11,12 @@ from ui.Widgets import Labels, Buttons
 
 from terminal import init
 
-from base.functions import get_texture, safe_class
+from base.functions import get_texture, safe_class, TEXTURE_CACHE
 from base.MusicPlayer import MusicPlayer
 from base.cursors import Cursor
-from base.folders import folder, saves, settings
+from base import composites
+from base import components
+from base.folders import folder, saves, settings, block_config, unit_config
 
 from ui.SandboxWindow import SandboxWindow
 from ui.EditorWindow import EditorWindow
@@ -230,10 +232,25 @@ class MainWindow(QMainWindow):
     def parsing(self, cmd:str):
         match cmd.lower().split():
             case ["help"]:
-                self.terminal("current status - print info about current world\ncurrent pause - pause the world\ncurrent resume - resume the world\ncurrent tick <n> - tick n-times\ncurrent give <material> <n> - give operator n material\ncurrent quota <n> - set step of quota to n")
+                self.terminal("view = view game folder\nrefresh - refresh game cache\ncurrent status - print info about current world\ncurrent pause - pause the world\ncurrent resume - resume the world\ncurrent tick <n> - tick n-times\ncurrent give <material> <n> - give operator n material\ncurrent quota <n> - set step of quota to n")
 
             case ["view"]:
                 folder.view()
+
+            case ["refresh"]:
+                global TEXTURE_CACHE
+                TEXTURE_CACHE = {}
+                block_config.load()
+                unit_config.load()
+                settings.load()
+
+                composites.refresh()
+
+                window:SandboxWindow|CampaignWindow = self.widget.currentWidget()
+                if window in [self.SandboxWindow, self.CampaignWindow]:
+                    window.show()
+                    window.update_tool_panel()
+                self.terminal("refreshed")
 
             case ["current", *args]:
                 if not args:

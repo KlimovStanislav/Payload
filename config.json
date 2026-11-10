@@ -1,5 +1,5 @@
 {
-  "devmode": false,
+  "devmode": true,
   "craft_coef": 1,
-  "campaign_step": 0
+  "campaign_step": 1
 }

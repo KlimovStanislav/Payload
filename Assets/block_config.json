@@ -7,128 +7,62 @@
         "type": "UseBlock",
         "z": 0
     },
-    "sand_1": {
-        "type": "UseBlock",
-        "z": 11,
-        "centered": true,
-        "relief": true
-    },
-    "sand_2": {
-        "type": "UseBlock",
-        "z": 11,
-        "centered": true,
-        "relief": true
-    },
-    "water": {
-        "type": "UseBlock",
-        "z": 15,
-        "centered": true
-    },
-    "stone_1": {
-        "type": "UseBlock",
-        "z": 10,
-        "centered": true,
-        "relief": true
-    },
-    "stone_2": {
-        "type": "UseBlock",
-        "z": 10,
-        "centered": true,
-        "relief": true
-    },
-    "stone_3": {
-        "type": "UseBlock",
-        "z": 10,
-        "centered": true,
-        "relief": true
-    },
-    "stone_4": {
-        "type": "UseBlock",
-        "z": 10,
-        "hardness": -1,
-        "centered": true,
-        "relief": true
-    },
-    "snow_block(2x2)": {
-        "type": "UseBlock",
-        "z": 20,
-        "hardness": -1,
-        "relief": true
-    },
     "drill": {
         "type": "Drill",
         "z": 30,
         "hardness": 2,
         "cost": {"lead": 1},
         "max_storage": 10,
-        "mining_max_temperature": 80
+        "mining_max_temperature": 80,
+        "texture": "drill"
     },
-    "conveyor_left": {
+    "conveyor": {
         "type": "Conveyor",
         "z": 30,
         "hardness": 1,
         "max_storage": 1,
-        "direction_start": [-1, 0],
-        "direction_end": [1, 0]
-    },
-    "conveyor_right": {
-        "type": "Conveyor",
-        "z": 30,
-        "hardness": 1,
-        "max_storage": 1,
-        "direction_start": [1, 0],
-        "direction_end": [-1, 0]
-    },
-    "conveyor_up": {
-        "type": "Conveyor",
-        "z": 30,
-        "hardness": 1,
-        "max_storage": 1,
-        "direction_start": [0, -1],
-        "direction_end": [0, 1]
-    },
-    "conveyor_down": {
-        "type": "Conveyor",
-        "z": 30,
-        "hardness": 1,
-        "max_storage": 1,
-        "direction_start": [0, 1],
-        "direction_end": [0, -1]
+        "texture": "conveyor"
     },
     "base": {
         "type": "Base",
         "z":35,
         "hardness":10,
         "max_storage": 1000,
-        "ignore_on_editor": true
+        "ignore_on_editor": true,
+        "texture": "base"
     },
     "lead_1": {
         "type": "UseBlock",
         "z":14,
         "mining_type": "lead",
-        "mining_speed": 2500
+        "mining_speed": 2500,
+        "texture": "lead_1"
     },
     "lead_2": {
         "type": "UseBlock",
         "z":14,
         "mining_type": "lead",
-        "mining_speed": 2500
+        "mining_speed": 2500,
+        "texture": "lead_2"
     },
     "lead_3": {
         "type": "UseBlock",
         "z":14,
         "mining_type": "lead",
-        "mining_speed": 2500
+        "mining_speed": 2500,
+        "texture": "lead_3"
     },
     "turrel_base(32x32)": {
         "type": "UseBlock",
         "z":30,
-        "ignore_on_editor": true
+        "ignore_on_editor": true,
+        "texture": "turrel_base(32x32)"
     },
     "turrel_base(64x64)": {
         "type": "UseBlock",
         "z":30,
-        "ignore_on_editor": true
+        "ignore_on_editor": true,
+        "texture": "turrel_base(64x64)"
     },
     "generator": {
         "type": "Generator",
@@ -138,77 +72,580 @@
         "max_storage": 10,
         "max_energy": 0.1,
         "mining_speed": 0.8,
-        "energy_add": 0.5
+        "energy_add": 0.5,
+        "texture": "generator"
     },
     "coal_1": {
         "type": "UseBlock",
         "z":14,
         "mining_type": "coal",
-        "mining_speed": 1750
+        "mining_speed": 1750,
+        "texture": "coal_1"
     },
     "coal_2": {
         "type": "UseBlock",
         "z":14,
         "mining_type": "coal",
-        "mining_speed": 1750
+        "mining_speed": 1750,
+        "texture": "coal_2"
     },
     "coal_3": {
         "type": "UseBlock",
         "z":14,
         "mining_type": "coal",
-        "mining_speed": 1750
+        "mining_speed": 1750,
+        "texture": "coal_3"
     },
     "connector": {
         "type": "PowerBlock",
         "z":30,
         "hardness":1,
-        "mining_type": null
+        "texture": "connector"
     },
     "battery": {
         "type": "Battery",
         "z":30,
         "hardness":1,
-        "mining_type": null,
-        "max_stored_energy": 5
+        "max_stored_energy": 5,
+        "texture": "battery"
     },
     "healer": {
         "type": "Healer",
         "z":30,
-        "hardness":1
+        "hardness":1,
+        "texture": "healer"
     },
     "processor": {
         "type": "Processor",
         "z":30,
-        "hardness":1
+        "hardness":1,
+        "texture": "processor"
     },
     "memory_block": {
         "type": "MemoryBlock",
         "z":30,
-        "hardness":1
+        "hardness":1,
+        "texture": "memory_block"
     },
     "peltier": {
         "type": "Peltier",
         "z": 30,
-        "hardness": 1
+        "hardness": 1,
+        "texture": "peltier"
     },
     "turrel": {
         "type": "Turrel",
         "z": 30,
-        "hardness": 3
+        "hardness": 3,
+        "texture": "turrel"
     },
     "launch_pad": {
         "type": "LaunchPad",
         "z": 30,
-        "hardness": 3
+        "hardness": 3,
+        "texture": "launch_pad"
     },
     "pipe": {
         "type": "Pipe",
         "z": 30,
-        "hardness": 1
+        "hardness": 1,
+        "texture": "pipe"
     },
     "pump": {
         "type": "Pump",
         "z": 30,
-        "hardness": 2
+        "hardness": 2,
+        "texture": "pump"
+    },
+    "corner_pipe": {
+        "type": "LPipe",
+        "z": 30,
+        "hardness": 2,
+        "texture": "lpipe"
+    },
+    "tee": {
+        "type": "TPipe",
+        "z": 30,
+        "hardness": 2,
+        "texture": "tpipe"
+    },
+    "cross_tee": {
+        "type": "XPipe",
+        "z": 30,
+        "hardness": 2,
+        "texture": "xpipe"
+    },
+
+    
+
+
+    
+    "basalt-edge": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "basalt-edge"
+    },
+    "basalt1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "basalt1"
+    },
+    "basalt2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "basalt2"
+    },
+    "basalt3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "basalt3"
+    },
+    "char1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "char1"
+    },
+    "char2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "char2"
+    },
+    "char3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "char3"
+    },
+    "cliffs1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "cliffs1"
+    },
+    "crater-stone1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "crater-stone1"
+    },
+    "crater-stone2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "crater-stone2"
+    },
+    "crater-stone3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "crater-stone3"
+    },
+    "crater-stone4": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "crater-stone4"
+    },
+    "crater-stone5": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "crater-stone5"
+    },
+    "crater-stone6": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "crater-stone6"
+    },
+    "dacite-edge": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dacite-edge"
+    },
+    "dacite": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dacite"
+    },
+    "dacite1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dacite1"
+    },
+    "dacite2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dacite2"
+    },
+    "dacite3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dacite3"
+    },
+    "darksand-edge": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "darksand-edge"
+    },
+    "darksand-tainted-water": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "darksand-tainted-water"
+    },
+    "darksand-water": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "darksand-water"
+    },
+    "darksand1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "darksand1"
+    },
+    "darksand2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "darksand2"
+    },
+    "darksand3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "darksand3"
+    },
+    "deepwater": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "deepwater"
+    },
+    "dirt1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dirt1"
+    },
+    "dirt2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dirt2"
+    },
+    "dirt3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dirt3"
+    },
+    "dunerocks-large": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dunerocks-large"
+    },
+    "dunerocks1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dunerocks1"
+    },
+    "dunerocks2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "dunerocks2"
+    },
+    "holostone1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "holostone1"
+    },
+    "holostone2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "holostone2"
+    },
+    "holostone3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "holostone3"
+    },
+    "hotrock1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "hotrock1"
+    },
+    "hotrock2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "hotrock2"
+    },
+    "hotrock3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "hotrock3"
+    },
+    "ice-edge": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "ice-edge"
+    },
+    "ice-snow1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "ice-snow1"
+    },
+    "ice-snow2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "ice-snow2"
+    },
+    "ice-snow3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "ice-snow3"
+    },
+    "ice1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "ice1"
+    },
+    "ice2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "ice2"
+    },
+    "ice3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "ice3"
+    },
+    "icerocks-large": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "icerocks-large"
+    },
+    "icerocks1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "icerocks1"
+    },
+    "icerocks2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "icerocks2"
+    },
+    "magmarock1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "magmarock1"
+    },
+    "magmarock2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "magmarock2"
+    },
+    "magmarock3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "magmarock3"
+    },
+    "pine": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "pine"
+    },
+    "saltrocks-large": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "saltrocks-large"
+    },
+    "saltrocks1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "saltrocks1"
+    },
+    "saltrocks2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "saltrocks2"
+    },
+    "sand-edge": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "sand-edge"
+    },
+    "sand-floor1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "sand-floor1"
+    },
+    "sand-floor2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "sand-floor2"
+    },
+    "sand-floor3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "sand-floor3"
+    },
+    "sand-wall-large": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "sand-wall-large"
+    },
+    "sand-wall1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "sand-wall1"
+    },
+    "sand-wall2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "sand-wall2"
+    },
+    "sand-water": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "sand-water"
+    },
+    "shale-edge": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "shale-edge"
+    },
+    "shale-wall-large": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "shale-wall-large"
+    },
+    "shale-wall1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "shale-wall1"
+    },
+    "shale-wall2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "shale-wall2"
+    },
+    "shale1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "shale1"
+    },
+    "shale2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "shale2"
+    },
+    "shale3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "shale3"
+    },
+    "stone-edge": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "stone-edge"
+    },
+    "stone-wall-large": {
+        "type": "UseBlock",
+        "z": 3,
+        "relief": false,
+        "texture": "stone-wall-large"
+    },
+    "stone-wall1": {
+        "type": "UseBlock",
+        "z": 30,
+        "relief": false,
+        "texture": "stone-wall1"
+    },
+    "stone-wall2": {
+        "type": "UseBlock",
+        "z": 30,
+        "relief": false,
+        "texture": "stone-wall2"
+    },
+    "stone1": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "stone1"
+    },
+    "stone2": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "stone2"
+    },
+    "stone3": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "stone3"
+    },
+    "water": {
+        "type": "UseBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "water"
     }
 }
