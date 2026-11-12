@@ -16,7 +16,7 @@ class Pump(Block):
         super().__init__(*args, **kwargs)
         self.components[Switchable] = Switchable(self, False)
         self.components[Rotatable] = Rotatable(self)
-        self.components[Updatable] = Updatable(self, [(1000, self.upd)])
+        self.components[Updatable] = Updatable(self, [(50, self.upd)])
         self.components[Clickable] = Clickable(self, lambda obj: AutoUI(obj).Show())
         self.components[Liquidable] = Liquidable(self, State.ACTIVE)
 
@@ -30,12 +30,10 @@ class Pump(Block):
         blocks_end = self.w.block_map.get(Cell(self.cell.x+angle[1].x, self.cell.y+angle[1].y), [])
         for block in block_start:
             if Liquidable in block_start:
-                block.components[Liquidable].volume -= 0
-                block.components[Liquidable].pressure -= 0
+                block.components[Liquidable].fluids["123"] -= 0
                 break
         
         for block in blocks_end:
             if Liquidable in block.components:
-                block.components[Liquidable].volume += 1
-                block.components[Liquidable].pressure += 1
+                block.components[Liquidable].fluids["123"] = min(block.components[Liquidable].fluids.get("123", 0)+0.1, block.components[Liquidable].capacity)
                 break

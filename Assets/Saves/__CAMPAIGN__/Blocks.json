@@ -4,128 +4,10 @@
         "y": 114,
         "name": "base",
         "Storable": {
-            "storage": {}
-        }
-    },
-    {
-        "x": 162,
-        "y": 117,
-        "name": "pump",
-        "Switchable": {
-            "state": false
-        },
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 0,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 162,
-        "y": 116,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 0.0,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 162,
-        "y": 115,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 0.0,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 162,
-        "y": 114,
-        "name": "pipe",
-        "Rotatable": {
-            "value": 0
-        },
-        "Liquidable": {
-            "pressure": 0.0,
-            "fluids": {},
-            "volume": 1
-        }
-    },
-    {
-        "x": 146,
-        "y": 117,
-        "name": "lead_1"
-    },
-    {
-        "x": 146,
-        "y": 117,
-        "name": "lead_1"
-    },
-    {
-        "x": 147,
-        "y": 117,
-        "name": "lead_1"
-    },
-    {
-        "x": 147,
-        "y": 116,
-        "name": "lead_1"
-    },
-    {
-        "x": 146,
-        "y": 116,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 117,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 117,
-        "name": "lead_1"
-    },
-    {
-        "x": 145,
-        "y": 116,
-        "name": "lead_1"
-    },
-    {
-        "x": 147,
-        "y": 118,
-        "name": "lead_2"
-    },
-    {
-        "x": 146,
-        "y": 118,
-        "name": "lead_2"
-    },
-    {
-        "x": 145,
-        "y": 118,
-        "name": "lead_2"
-    },
-    {
-        "x": 145,
-        "y": 116,
-        "name": "drill",
-        "Storable": {
-            "storage": {}
-        },
-        "Switchable": {
-            "state": false
+            "storage": {
+                "titan": 23,
+                "coal": 16
+            }
         }
     },
     {
@@ -172,5 +54,143 @@
         "x": 175,
         "y": 129,
         "name": "air"
+    },
+    {
+        "x": 145,
+        "y": 118,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 146,
+        "y": 117,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 146,
+        "y": 118,
+        "name": "ore-coal3"
+    },
+    {
+        "x": 145,
+        "y": 116,
+        "name": "drill",
+        "Storable": {
+            "storage": {
+                "titan": 10,
+                "coal": 10
+            }
+        },
+        "Switchable": {
+            "state": true
+        }
+    },
+    {
+        "x": 161,
+        "y": 127,
+        "name": "air"
+    },
+    {
+        "x": 161,
+        "y": 127,
+        "name": "air"
+    },
+    {
+        "x": 148,
+        "y": 116,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 90
+        },
+        "Storable": {
+            "storage": {
+                "titan": 0,
+                "coal": 1
+            }
+        }
+    },
+    {
+        "x": 149,
+        "y": 116,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 90
+        },
+        "Storable": {
+            "storage": {
+                "titan": 0
+            }
+        }
+    },
+    {
+        "x": 163,
+        "y": 116,
+        "name": "air"
+    },
+    {
+        "x": 163,
+        "y": 114,
+        "name": "air"
+    },
+    {
+        "x": 164,
+        "y": 115,
+        "name": "air"
+    },
+    {
+        "x": 166,
+        "y": 117,
+        "name": "pump",
+        "Switchable": {
+            "state": true
+        },
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "fluids": {},
+            "capacity": 10
+        }
+    },
+    {
+        "x": 166,
+        "y": 116,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "fluids": {
+                "123": 10
+            },
+            "capacity": 10
+        }
+    },
+    {
+        "x": 166,
+        "y": 115,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "fluids": {
+                "123": 10.0
+            },
+            "capacity": 10
+        }
+    },
+    {
+        "x": 166,
+        "y": 114,
+        "name": "pipe",
+        "Rotatable": {
+            "value": 0
+        },
+        "Liquidable": {
+            "fluids": {
+                "123": 10.0
+            },
+            "capacity": 10
+        }
     }
 ]

@@ -28,7 +28,7 @@ try:
         with open(mainfolder.path("style.qss"), encoding="utf-8") as f:
             application.setStyleSheet(f.read())
     else:
-        folder.log.write(f"style.qss not found at <{mainfolder.path("style.qss")}>")
+        folder.log.write(f"style.qss not found at <{mainfolder.path('style.qss')}>")
 
     from ui.MainWindow import MainWindow
 
@@ -37,7 +37,7 @@ try:
 except Exception:
     pymsgbox.alert(f"Critical StartError:\n{traceback.format_exc()}", "C1", icon=pymsgbox.STOP)
     traceback.print_exc()
-    __import__("os").abort()
+    os.abort()
 
 def main()->int:
     try:
@@ -45,7 +45,7 @@ def main()->int:
 
         if critical:
             folder.log.write("\n".join(critical), type="StartError", set_error=True)
-            pymsgbox.alert(f"Critical StartError:\n{"\n".join(critical)}", "C2", icon=pymsgbox.STOP)
+            pymsgbox.alert(f'Critical StartError:\n{"\n".join(critical)}', "C2", icon=pymsgbox.STOP)
             return 1
 
         if failed:

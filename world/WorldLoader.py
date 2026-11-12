@@ -83,6 +83,8 @@ class WorldLoader:
             try:
                 for block in sector_path.read("Blocks.json", type="json"):
                     try:
+                        if block_config.get(block["name"]) is None:
+                            raise KeyError(f"<{block["name"]}> missing in the config")
                         block_class:type[Block] = composites[block_config[block["name"]]["type"]]
                     except KeyError as e:
                         folder.log.write(f"Invalid composite settings KeyError: <{e}>")

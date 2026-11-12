@@ -82,7 +82,7 @@ class Operator:
         self.inventory = Storage(100)
 
 class NetworkGenerator:
-    def __init__(self, world:World, clss:list[SceneObject], network_type:Network):
+    def __init__(self, world:World, clss:list[SceneObject], network_type:type[Network]):
         self.w = world
         self.clss = clss
         self.network_type = network_type
@@ -90,6 +90,7 @@ class NetworkGenerator:
     def __call__(self, obj:SceneObject):
         for cls in self.clss:
             if isinstance(obj, cls):
+                folder.log.write(f"Generated a <{self.network_type.__name__}> network")
                 network:Network = self.network_type(self.w)
                 network.add(obj)
 

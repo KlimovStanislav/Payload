@@ -1,575 +1,4 @@
-[2026-11-11 | 00:23:22] >>> [SYSTEM] File was truncated to 10000 lines
-[2026-10-15 | 22:20:11] >>> [StartInfo] All systems online. Start lasted 242 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:20:25] >>> [EXIT] 0
-
-[2026-10-15 | 22:23:53] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:23:53] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:23:53] >>> [StartInfo] All systems online. Start lasted 227 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-15 | 22:23:53] >>> [RuntimeError]
-                    >>> <GameWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 135, in __init__
-                    >>>     self.manager = WorldManager(self, self.update_tool_panel, loader=loader, resource_panel=self.resource_panel)
-                    >>>                                                                                             ^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'GameWindow' object has no attribute 'resource_panel'
-                    >>> 
-[2026-10-15 | 22:23:53] >>> [RuntimeError]
-                    >>> <GameWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 135, in __init__
-                    >>>     self.manager = WorldManager(self, self.update_tool_panel, loader=loader, resource_panel=self.resource_panel)
-                    >>>                                                                                             ^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'EditorWindow' object has no attribute 'resource_panel'
-                    >>> 
-[2026-10-15 | 22:23:53] >>> [RuntimeError]
-                    >>> <EditorWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\EditorWindow.py", line 35, in __init__
-                    >>>     self.layout().addWidget(widget)
-                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'addWidget'
-                    >>> 
-[2026-10-15 | 22:23:54] >>> [EXIT] 1
-
-[2026-10-15 | 22:24:41] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:24:41] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:24:41] >>> [StartInfo] All systems online. Start lasted 221 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:24:45] >>> [EXIT] 0
-
-[2026-10-15 | 22:25:02] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:25:02] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:25:03] >>> [StartInfo] All systems online. Start lasted 223 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 22:25:03] >>> [RuntimeError]
-                    >>> <GameWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 222, in __init__
-                    >>>     self.resource_panel._raise
-                    >>> AttributeError: 'ResourcePanel' object has no attribute '_raise'. Did you mean: 'raise_'?
-                    >>> 
-[2026-10-15 | 22:25:03] >>> [EXIT] 1
-
-[2026-10-15 | 22:25:16] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:25:16] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:25:16] >>> [StartInfo] All systems online. Start lasted 240 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-10-15 | 22:25:28] >>> [EXIT] 0
-
-[2026-10-15 | 22:26:07] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:26:07] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:26:07] >>> [StartInfo] All systems online. Start lasted 232 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-15 | 22:26:13] >>> [EXIT] 0
-
-[2026-10-15 | 22:27:06] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:27:06] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:27:06] >>> [StartInfo] All systems online. Start lasted 225 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:28:14] >>> [EXIT] 0
-
-[2026-10-15 | 22:32:14] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:32:14] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:32:14] >>> [StartInfo] All systems online. Start lasted 244 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:32:20] >>> [EXIT] 0
-
-[2026-10-15 | 22:32:33] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:32:33] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:32:33] >>> [StartInfo] All systems online. Start lasted 217 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-10-15 | 22:33:52] >>> [EXIT] 0
-
-[2026-10-15 | 22:34:29] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:34:29] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:34:29] >>> [StartInfo] All systems online. Start lasted 241 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:35:31] >>> [EXIT] 0
-
-[2026-10-15 | 22:37:20] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:37:20] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:37:20] >>> [StartInfo] All systems online. Start lasted 226 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:37:33] >>> [EXIT] 0
-
-[2026-10-15 | 22:38:55] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:38:55] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:38:55] >>> [StartInfo] All systems online. Start lasted 222 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:39:11] >>> [EXIT] 0
-
-[2026-10-15 | 22:39:17] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:39:17] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:39:17] >>> [StartInfo] All systems online. Start lasted 224 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:39:23] >>> [EXIT] 0
-
-[2026-10-15 | 22:40:13] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:40:13] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:40:13] >>> [StartInfo] All systems online. Start lasted 254 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 22:40:20] >>> [EXIT] 0
-
-[2026-10-15 | 22:42:07] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:42:07] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:42:08] >>> [StartInfo] All systems online. Start lasted 236 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:42:13] >>> [EXIT] 0
-
-[2026-10-15 | 22:43:23] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:43:23] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:43:23] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 22:43:32] >>> [EXIT] 0
-
-[2026-10-15 | 22:44:43] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:44:43] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:44:43] >>> [StartInfo] All systems online. Start lasted 233 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 22:44:49] >>> [EXIT] 0
-
-[2026-10-15 | 22:46:36] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:46:36] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:46:36] >>> [StartInfo] All systems online. Start lasted 222 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-15 | 22:46:47] >>> [EXIT] 0
-
-[2026-10-15 | 22:46:53] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:46:53] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:46:53] >>> [StartInfo] All systems online. Start lasted 233 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-10-15 | 22:47:19] >>> [EXIT] 0
-
-[2026-10-15 | 22:47:34] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:47:34] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:47:34] >>> [StartInfo] All systems online. Start lasted 242 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-15 | 22:47:44] >>> [EXIT] 0
-
-[2026-10-15 | 22:48:00] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:48:00] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:48:00] >>> [StartInfo] All systems online. Start lasted 236 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:48:20] >>> [EXIT] 0
-
-[2026-10-15 | 22:48:52] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:48:52] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:48:53] >>> [StartInfo] All systems online. Start lasted 243 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-10-15 | 22:49:35] >>> [EXIT] 0
-
-[2026-10-15 | 22:49:45] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:49:45] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:49:46] >>> [StartInfo] All systems online. Start lasted 225 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 22:49:51] >>> [EXIT] 0
-
-[2026-10-15 | 22:54:36] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:54:36] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:54:36] >>> [StartInfo] All systems online. Start lasted 236 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-15 | 22:57:24] >>> [EXIT] 0
-
-[2026-10-15 | 22:57:56] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 22:57:56] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 22:57:56] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 25 milliseconds.
-[2026-10-15 | 22:58:06] >>> [EXIT] 0
-
-[2026-10-15 | 23:00:21] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:00:21] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:00:22] >>> [StartInfo] All systems online. Start lasted 226 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-15 | 23:00:57] >>> [EXIT] 0
-
-[2026-10-15 | 23:08:15] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:08:15] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:08:15] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 23:08:19] >>> [EXIT] 0
-
-[2026-10-15 | 23:09:03] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:09:03] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:09:03] >>> [StartInfo] All systems online. Start lasted 238 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 23:09:39] >>> [EXIT] 0
-
-[2026-10-15 | 23:10:12] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:10:12] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:10:12] >>> [StartInfo] All systems online. Start lasted 241 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 23:10:18] >>> [EXIT] 0
-
-[2026-10-15 | 23:10:30] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:10:30] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:10:30] >>> [StartInfo] All systems online. Start lasted 242 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-10-15 | 23:10:34] >>> [EXIT] 0
-
-[2026-10-15 | 23:10:47] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:10:47] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:10:47] >>> [StartInfo] All systems online. Start lasted 240 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-10-15 | 23:10:54] >>> [EXIT] 0
-
-[2026-10-15 | 23:11:22] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:11:22] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:11:22] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-15 | 23:11:24] >>> [EXIT] 0
-
-[2026-10-15 | 23:12:38] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:12:38] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:12:39] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 24 milliseconds.
-[2026-10-15 | 23:12:42] >>> [RuntimeError]
-                    >>> <GameWindow.mouseMoveEvent> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 317, in mouseMoveEvent
-                    >>>     self.pixmap_item.setPos(math.floor((x/32)*32, math.floor(y/32)*32))
-                    >>>                             ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> TypeError: math.floor() takes exactly one argument (2 given)
-                    >>> 
-[2026-10-15 | 23:12:45] >>> [EXIT] 1
-
-[2026-10-15 | 23:12:56] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:12:56] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:12:56] >>> [StartInfo] All systems online. Start lasted 230 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-10-15 | 23:13:12] >>> [EXIT] 0
-
-[2026-10-15 | 23:15:50] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:15:50] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:15:51] >>> [StartInfo] All systems online. Start lasted 244 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 23:15:56] >>> [EXIT] 0
-
-[2026-10-15 | 23:16:43] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:16:43] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:16:43] >>> [StartInfo] All systems online. Start lasted 258 milliseconds. Smoke tests completed in 25 milliseconds.
-[2026-10-15 | 23:16:47] >>> [EXIT] 0
-
-[2026-10-15 | 23:17:41] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:17:41] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:17:42] >>> [StartInfo] All systems online. Start lasted 230 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 23:17:42] >>> [RuntimeError]
-                    >>> <GameWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 146, in __init__
-                    >>>     self.scene:MapScene = MapScene(0, self)
-                    >>>                           ~~~~~~~~^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 105, in __init__
-                    >>>     self.setMouseTracking(True)
-                    >>>     ^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'MapScene' object has no attribute 'setMouseTracking'
-                    >>> 
-[2026-10-15 | 23:17:42] >>> [RuntimeError]
-                    >>> <EditorWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\EditorWindow.py", line 35, in __init__
-                    >>>     self.layout().addWidget(widget)
-                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'addWidget'
-                    >>> 
-[2026-10-15 | 23:17:43] >>> [EXIT] 1
-
-[2026-10-15 | 23:18:34] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:18:34] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:18:34] >>> [StartInfo] All systems online. Start lasted 228 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-15 | 23:18:34] >>> [RuntimeError]
-                    >>> <GameWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 147, in __init__
-                    >>>     self.scene:MapScene = MapScene(0, self)
-                    >>>                           ~~~~~~~~^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 105, in __init__
-                    >>>     self.window.view.setMouseTracking(True)
-                    >>>     ^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'GameWindow' object has no attribute 'view'
-                    >>> 
-[2026-10-15 | 23:18:35] >>> [RuntimeError]
-                    >>> <GameWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 147, in __init__
-                    >>>     self.scene:MapScene = MapScene(0, self)
-                    >>>                           ~~~~~~~~^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 105, in __init__
-                    >>>     self.window.view.setMouseTracking(True)
-                    >>>     ^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'EditorWindow' object has no attribute 'view'
-                    >>> 
-[2026-10-15 | 23:18:35] >>> [RuntimeError]
-                    >>> <EditorWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\EditorWindow.py", line 35, in __init__
-                    >>>     self.layout().addWidget(widget)
-                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'addWidget'
-                    >>> 
-[2026-10-15 | 23:18:35] >>> [EXIT] 1
-
-[2026-10-15 | 23:20:37] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:20:37] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:20:37] >>> [StartInfo] All systems online. Start lasted 234 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 23:20:37] >>> [RuntimeError]
-                    >>> <GameWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 155, in __init__
-                    >>>     self.scene:MapScene = MapScene(0, self)
-                    >>>                           ~~~~~~~~^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 105, in __init__
-                    >>>     self.window.view.setMouseTracking(True)
-                    >>>     ^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'GameWindow' object has no attribute 'view'
-                    >>> 
-[2026-10-15 | 23:20:37] >>> [RuntimeError]
-                    >>> <GameWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 155, in __init__
-                    >>>     self.scene:MapScene = MapScene(0, self)
-                    >>>                           ~~~~~~~~^^^^^^^^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 105, in __init__
-                    >>>     self.window.view.setMouseTracking(True)
-                    >>>     ^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'EditorWindow' object has no attribute 'view'
-                    >>> 
-[2026-10-15 | 23:20:37] >>> [RuntimeError]
-                    >>> <EditorWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\EditorWindow.py", line 35, in __init__
-                    >>>     self.layout().addWidget(widget)
-                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'addWidget'
-                    >>> 
-[2026-10-15 | 23:20:38] >>> [EXIT] 1
-
-[2026-10-15 | 23:20:53] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:20:53] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:20:53] >>> [StartInfo] All systems online. Start lasted 242 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-10-15 | 23:21:00] >>> [EXIT] 0
-
-[2026-10-15 | 23:21:30] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:21:30] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:21:30] >>> [StartInfo] All systems online. Start lasted 227 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 23:21:39] >>> [EXIT] 0
-
-[2026-10-15 | 23:22:06] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:22:06] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:22:06] >>> [StartInfo] All systems online. Start lasted 244 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 23:22:15] >>> [EXIT] 0
-
-[2026-10-15 | 23:24:42] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:24:42] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:24:42] >>> [StartInfo] All systems online. Start lasted 255 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-15 | 23:24:52] >>> [EXIT] 0
-
-[2026-10-15 | 23:35:39] >>> [START] LOW-LEVEL Alpha 0.2.2 Thermal-Mode
-[2026-10-15 | 23:35:39] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-15 | 23:35:39] >>> [StartInfo] All systems online. Start lasted 243 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-15 | 23:39:30] >>> [EXIT] 0
-
-[2026-10-16 | 10:44:22] >>> [START] Alpha 0.2.2 Thermal-Mode
-[2026-10-16 | 10:44:22] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-16 | 10:44:23] >>> [StartInfo] All systems online. Start lasted 1503 milliseconds. Smoke tests completed in 39 milliseconds.
-[2026-10-16 | 10:44:32] >>> [LoadWarning] Different save versions
-[2026-10-16 | 10:46:40] >>> [EXIT] 0
-
-[2026-10-16 | 18:39:43] >>> [START] Alpha 0.2.2 Thermal-Mode
-[2026-10-16 | 18:39:43] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-16 | 18:39:45] >>> [StartInfo] All systems online. Start lasted 1555 milliseconds. Smoke tests completed in 41 milliseconds.
-[2026-10-16 | 18:39:47] >>> [EXIT] 0
-
-[2026-10-16 | 18:41:02] >>> [START] Alpha 0.2.2 Thermal-Mode
-[2026-10-16 | 18:41:02] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-16 | 18:41:02] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 23 milliseconds.
-
-[2026-10-16 | 18:42:13] >>> [START] Alpha 0.2.2 Thermal-Mode
-[2026-10-16 | 18:42:13] >>> [WARNING] The previous launch failed
-[2026-10-16 | 18:42:13] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-16 | 18:42:13] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-16 | 18:42:15] >>> [EXIT] 0
-
-[2026-10-16 | 18:42:17] >>> [START] Alpha 0.2.2 Thermal-Mode
-[2026-10-16 | 18:42:17] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-16 | 18:42:17] >>> [StartInfo] All systems online. Start lasted 220 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-10-16 | 18:42:23] >>> [EXIT] 0
-
-[2026-10-16 | 19:44:57] >>> [START] Alpha 0.2.2 Thermal-Mode
-[2026-10-16 | 19:44:57] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-16 | 19:44:58] >>> [StartInfo] All systems online. Start lasted 274 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-16 | 19:45:22] >>> [EXIT] 0
-
-[2026-10-16 | 23:46:09] >>> [START] Alpha 0.2.2 Thermal-Mode
-[2026-10-16 | 23:46:09] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-16 | 23:46:09] >>> [StartInfo] All systems online. Start lasted 258 milliseconds. Smoke tests completed in 20 milliseconds.
-
-[2026-10-17 | 12:21:23] >>> [START] Alpha 0.2.21
-[2026-10-17 | 12:21:23] >>> [WARNING] The previous launch failed
-[2026-10-17 | 12:21:23] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-17 | 12:21:25] >>> [StartInfo] All systems online. Start lasted 1253 milliseconds. Smoke tests completed in 29 milliseconds.
-[2026-10-17 | 12:21:29] >>> [EXIT] 0
-
-[2026-10-17 | 12:21:40] >>> [START] Alpha 0.2.21
-[2026-10-17 | 12:21:40] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-17 | 12:21:40] >>> [StartInfo] All systems online. Start lasted 230 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-10-17 | 12:21:43] >>> [EXIT] 0
-
-[2026-10-17 | 12:22:13] >>> [START] Alpha 0.2.21
-[2026-10-17 | 12:22:13] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-17 | 12:22:14] >>> [StartInfo] All systems online. Start lasted 238 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-17 | 12:22:18] >>> [EXIT] 0
-
-[2026-10-17 | 12:22:20] >>> [START] Alpha 0.2.21
-[2026-10-17 | 12:22:20] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-17 | 12:22:20] >>> [StartInfo] All systems online. Start lasted 250 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-10-17 | 12:22:21] >>> [LoadWarning] Different save versions
-[2026-10-17 | 12:22:28] >>> [EXIT] 0
-
-[2026-10-18 | 00:21:43] >>> [START] Alpha 0.2.21
-[2026-10-18 | 00:21:43] >>> [SYSTEM] Deleted 1 files from temp folder
-
-[2026-10-18 | 00:22:17] >>> [START] Alpha 0.2.21
-[2026-10-18 | 00:22:17] >>> [WARNING] The previous launch failed
-[2026-10-18 | 00:22:17] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 00:22:18] >>> [StartInfo] All systems online. Start lasted 371 milliseconds. Smoke tests completed in 36 milliseconds.
-[2026-10-18 | 00:22:18] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 00:22:18] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\base.png> not found
-[2026-10-18 | 00:22:18] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 00:22:18] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 00:22:18] >>> [RuntimeError]
-                    >>> <GameWindow.update> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 377, in update
-                    >>>     self.quota.refresh()
-                    >>>     ~~~~~~~~~~~~~~~~~~^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 125, in refresh
-                    >>>     coal = self.w.manager.current.Base.components[Storable].dict().get("coal", 0)
-                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'components'
-                    >>> 
-[2026-10-18 | 00:22:19] >>> [EXIT] 1
-
-[2026-10-18 | 00:23:19] >>> [START] Alpha 0.2.21
-[2026-10-18 | 00:23:19] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 00:23:19] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-18 | 00:23:19] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 00:23:19] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\base.png> not found
-[2026-10-18 | 00:23:19] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 00:23:19] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 00:23:29] >>> [EXIT] 0
-
-[2026-10-18 | 00:24:16] >>> [START] Alpha 0.2.21
-[2026-10-18 | 00:24:16] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 00:24:17] >>> [StartInfo] All systems online. Start lasted 255 milliseconds. Smoke tests completed in 23 milliseconds.
-[2026-10-18 | 00:24:17] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 00:24:17] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\base.png> not found
-[2026-10-18 | 00:24:17] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 00:24:17] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 00:24:48] >>> [RuntimeError]
-                    >>> <GameWindow.update> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 378, in update
-                    >>>     self.quota.refresh()
-                    >>>     ~~~~~~~~~~~~~~~~~~^^
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\GameWindow.py", line 127, in refresh
-                    >>>     coal = self.w.manager.current.Base.components[Storable].dict().get("coal", 0)
-                    >>>                                                   ^^^^^^^^
-                    >>> NameError: name 'Storable' is not defined
-                    >>> 
-[2026-10-18 | 00:24:52] >>> [EXIT] 1
-
-[2026-10-18 | 00:30:03] >>> [START] Alpha 0.2.21
-[2026-10-18 | 00:30:03] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 00:30:03] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-18 | 00:30:03] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 00:30:03] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 00:30:03] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 00:30:47] >>> [EXIT] 0
-
-[2026-10-18 | 00:31:01] >>> [START] Alpha 0.2.21
-[2026-10-18 | 00:31:01] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 00:31:01] >>> [StartInfo] All systems online. Start lasted 236 milliseconds. Smoke tests completed in 21 milliseconds.
-[2026-10-18 | 00:31:01] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 00:31:02] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 00:31:02] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 00:31:14] >>> [EXIT] 0
-
-[2026-10-18 | 00:31:43] >>> [START] Alpha 0.2.21
-[2026-10-18 | 00:31:43] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 00:31:43] >>> [StartInfo] All systems online. Start lasted 233 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-10-18 | 00:31:43] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 00:31:43] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 00:31:43] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 00:32:18] >>> [EXIT] 0
-
-[2026-10-18 | 00:33:29] >>> [START] Alpha 0.2.21
-[2026-10-18 | 00:33:29] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 00:33:29] >>> [StartInfo] All systems online. Start lasted 249 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-18 | 00:33:30] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 00:33:30] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 00:33:30] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 00:34:32] >>> [EXIT] 0
-
-[2026-10-18 | 22:16:19] >>> [START] Alpha 0.2.21
-[2026-10-18 | 22:16:19] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 22:16:20] >>> [StartInfo] All systems online. Start lasted 1558 milliseconds. Smoke tests completed in 39 milliseconds.
-[2026-10-18 | 22:16:20] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 22:16:20] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 22:16:20] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 22:16:21] >>> [RuntimeError]
-                    >>> <SandboxWindow.update> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\SandboxWindow.py", line 347, in update
-                    >>>     self.quota.refresh()
-                    >>>     ^^^^^^^^^^
-                    >>> AttributeError: 'SandboxWindow' object has no attribute 'quota'
-                    >>> 
-[2026-10-18 | 22:16:21] >>> [EXIT] 1
-
-[2026-10-18 | 22:16:39] >>> [START] Alpha 0.2.21
-[2026-10-18 | 22:16:39] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 22:16:39] >>> [StartInfo] All systems online. Start lasted 234 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-10-18 | 22:16:39] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 22:16:39] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 22:16:39] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 22:16:39] >>> [RuntimeError]
-                    >>> <SandboxWindow.update> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\ui\SandboxWindow.py", line 347, in update
-                    >>>     self.quota.refresh()
-                    >>>     ^^^^^^^^^^
-                    >>> AttributeError: 'SandboxWindow' object has no attribute 'quota'
-                    >>> 
-
-[2026-10-18 | 22:16:57] >>> [START] Alpha 0.2.21
-[2026-10-18 | 22:16:57] >>> [WARNING] The previous launch failed
-[2026-10-18 | 22:16:57] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 22:16:57] >>> [StartInfo] All systems online. Start lasted 268 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-10-18 | 22:16:57] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 22:16:57] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 22:16:57] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-
-[2026-10-18 | 22:18:10] >>> [START] Alpha 0.2.21
-[2026-10-18 | 22:18:11] >>> [WARNING] The previous launch failed
-[2026-10-18 | 22:18:11] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 22:18:11] >>> [StartInfo] All systems online. Start lasted 244 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-18 | 22:18:11] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 22:18:11] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 22:18:11] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 22:18:41] >>> [EXIT] 0
-
-[2026-10-18 | 22:41:57] >>> [START] Alpha 0.2.21
-[2026-10-18 | 22:41:57] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 22:41:57] >>> [StartInfo] All systems online. Start lasted 223 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-18 | 22:41:57] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 22:41:57] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 22:41:57] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 22:42:04] >>> [ERROR]
-                    >>> Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Clickable.py", line 21, in __call__
-                    >>>     self.func(self.owner)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^
-                    >>> ValueError: too many values to unpack (expected 2)
-                    >>> 
-[2026-10-18 | 22:42:07] >>> [EXIT] 1
-
-[2026-10-18 | 22:43:31] >>> [START] Alpha 0.2.21
-[2026-10-18 | 22:43:32] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-10-18 | 22:43:32] >>> [StartInfo] All systems online. Start lasted 228 milliseconds. Smoke tests completed in 22 milliseconds.
-[2026-10-18 | 22:43:32] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\none.png> not found
-[2026-10-18 | 22:43:32] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\turrel.png> not found
-[2026-10-18 | 22:43:32] >>> [TextureCache] Texture <c:\Users\Stasik\AppData\Roaming\Various\Low-Level\Assets\Textures\test.png> not found
-[2026-10-18 | 22:43:37] >>> [RuntimeError]
-                    >>> <Storable.ui> - Traceback (most recent call last):
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Storable.py", line 137, in ui
-                    >>>     return w(self)
-                    >>>   File "c:\Users\Stasik\AppData\Roaming\Various\Low-Level\components\Storable.py", line 123, in __init__
+[2026-11-12 | 15:10:54] >>> [SYSTEM] File was truncated to 10000 lines
                     >>>     for name, value in obj.dict():
                     >>>         ^^^^^^^^^^^
                     >>> ValueError: too many values to unpack (expected 2)
@@ -10007,3 +9436,572 @@
 [2026-11-11 | 00:23:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
 [2026-11-11 | 00:23:24] >>> [EXIT] 0
 
+[2026-11-11 | 00:24:20] >>> [START] Alpha 0.2.23
+[2026-11-11 | 00:24:20] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 00:24:20] >>> [StartInfo] All systems online. Start lasted 241 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-11 | 00:24:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 00:24:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 00:24:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 00:33:21] >>> [EXIT] 0
+
+[2026-11-11 | 00:33:22] >>> [START] Alpha 0.2.23
+[2026-11-11 | 00:33:22] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 00:33:22] >>> [StartInfo] All systems online. Start lasted 239 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-11 | 00:33:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 00:33:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 00:33:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 00:33:24] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 00:33:30] >>> [EXIT] 0
+
+[2026-11-11 | 00:33:34] >>> [START] Alpha 0.2.23
+[2026-11-11 | 00:33:34] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 00:33:34] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-11-11 | 00:33:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 00:33:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 00:33:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 00:35:19] >>> [EXIT] 0
+
+[2026-11-11 | 12:07:12] >>> [START] Alpha 0.2.23
+[2026-11-11 | 12:07:12] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 12:07:14] >>> [StartInfo] All systems online. Start lasted 1646 milliseconds. Smoke tests completed in 35 milliseconds.
+[2026-11-11 | 12:07:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 12:07:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 12:07:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 12:09:42] >>> [EXIT] 0
+
+[2026-11-11 | 12:10:27] >>> [START] Alpha 0.2.23
+[2026-11-11 | 12:10:27] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 12:10:27] >>> [StartInfo] All systems online. Start lasted 242 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-11 | 12:10:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 12:10:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 12:10:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 12:14:58] >>> [EXIT] 0
+
+[2026-11-11 | 20:21:55] >>> [START] Alpha 0.2.23
+[2026-11-11 | 20:21:55] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 20:21:56] >>> [StartInfo] All systems online. Start lasted 1635 milliseconds. Smoke tests completed in 42 milliseconds.
+[2026-11-11 | 20:21:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 20:21:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 20:21:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+
+[2026-11-11 | 20:22:19] >>> [START] Alpha 0.2.23
+[2026-11-11 | 20:22:19] >>> [WARNING] The previous launch failed
+[2026-11-11 | 20:22:19] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 20:22:19] >>> [StartInfo] All systems online. Start lasted 259 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-11 | 20:22:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 20:22:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 20:22:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 20:26:05] >>> [EXIT] 0
+
+[2026-11-11 | 22:40:39] >>> [START] Alpha 0.2.23
+[2026-11-11 | 22:40:39] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 22:40:40] >>> [StartInfo] All systems online. Start lasted 279 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-11 | 22:40:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 22:40:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 22:40:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 22:40:46] >>> [EXIT] 0
+
+[2026-11-11 | 22:43:08] >>> [START] Alpha 0.2.23
+[2026-11-11 | 22:43:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 22:43:09] >>> [StartInfo] All systems online. Start lasted 271 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-11 | 22:43:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 22:43:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 22:43:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\scrap-wall-huge.png> not found
+[2026-11-11 | 22:43:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\scrap-wall-large.png> not found
+[2026-11-11 | 22:43:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\scrap-wall.png> not found
+[2026-11-11 | 22:43:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 22:44:04] >>> [Composites] Composites was refresed
+[2026-11-11 | 22:44:28] >>> [EXIT] 0
+
+[2026-11-11 | 22:44:30] >>> [START] Alpha 0.2.23
+[2026-11-11 | 22:44:30] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 22:44:30] >>> [StartInfo] All systems online. Start lasted 236 milliseconds. Smoke tests completed in 14 milliseconds.
+[2026-11-11 | 22:44:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 22:44:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 22:44:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 22:45:15] >>> [EXIT] 0
+
+[2026-11-11 | 23:01:46] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:01:46] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:01:46] >>> [StartInfo] All systems online. Start lasted 251 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal1.png> not found
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal2.png> not found
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal3.png> not found
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan1.png> not found
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan2.png> not found
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan3.png> not found
+[2026-11-11 | 23:01:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:01:47] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:01:47] >>> [RuntimeError]
+                    >>> <WorldLoader.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldLoader.py", line 86, in load
+                    >>>     block_class:type[Block] = composites[block_config[block["name"]]["type"]]
+                    >>>                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+                    >>> TypeError: 'NoneType' object is not subscriptable
+                    >>> 
+[2026-11-11 | 23:01:47] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 41, in load
+                    >>>     if self.resource_panel is not None and world.Base is not None:
+                    >>>                                            ^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'Base'
+                    >>> 
+[2026-11-11 | 23:01:47] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 294, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-11 | 23:01:47] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 165, in mouseMoveEvent
+                    >>>     texture = get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block))
+                    >>>                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-11 | 23:01:47] >>> [RuntimeError]
+                    >>> <SandboxWindow.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 390, in update
+                    >>>     self.manager.current.update(dt)
+                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'update'
+                    >>> 
+[2026-11-11 | 23:01:47] >>> [RuntimeError]
+                    >>> <Campaign.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 90, in update
+                    >>>     if (step:=self.steps[self.active])(self.window):
+                    >>>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 48, in __call__
+                    >>>     return self.func(*args, **kwargs)
+                    >>>            ~~~~~~~~~^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 32, in training_2
+                    >>>     if "lead" in w.manager.current.operator.inventory.dict():
+                    >>>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'operator'
+                    >>> 
+[2026-11-11 | 23:01:50] >>> [EXIT] 1
+
+[2026-11-11 | 23:03:24] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:03:24] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:03:24] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal1.png> not found
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal2.png> not found
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal3.png> not found
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan1.png> not found
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan2.png> not found
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan3.png> not found
+[2026-11-11 | 23:03:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:03:25] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:03:25] >>> [INFO] Invalid composite settings KeyError: <>
+[2026-11-11 | 23:05:06] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:05:36] >>> [EXIT] 0
+
+[2026-11-11 | 23:06:35] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:06:35] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:06:35] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal1.png> not found
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal2.png> not found
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-coal3.png> not found
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan1.png> not found
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan2.png> not found
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\ore-titan3.png> not found
+[2026-11-11 | 23:06:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:06:36] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:06:38] >>> [Composites] Composites was refresed
+[2026-11-11 | 23:06:55] >>> [Composites] Composites was refresed
+[2026-11-11 | 23:07:03] >>> [Composites] Composites was refresed
+[2026-11-11 | 23:07:06] >>> [EXIT] 0
+
+[2026-11-11 | 23:07:31] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:07:31] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:07:31] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-11 | 23:07:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:07:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:07:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:07:32] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:08:16] >>> [EXIT] 0
+
+[2026-11-11 | 23:09:52] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:09:52] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:09:52] >>> [StartInfo] All systems online. Start lasted 265 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-11 | 23:09:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:09:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:09:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:09:53] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:10:03] >>> [EXIT] 0
+
+[2026-11-11 | 23:10:26] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:10:26] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:10:26] >>> [StartInfo] All systems online. Start lasted 267 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-11 | 23:10:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:10:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:10:26] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:10:27] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:11:19] >>> [EXIT] 0
+
+[2026-11-11 | 23:15:21] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:15:21] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:15:21] >>> [StartInfo] All systems online. Start lasted 518 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-11 | 23:15:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:15:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:15:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:15:25] >>> [EXIT] 0
+
+[2026-11-11 | 23:24:11] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:24:11] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:24:11] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-11-11 | 23:24:11] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:24:11] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:24:11] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:24:13] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:24:13] >>> [RuntimeError]
+                    >>> <World.append_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 200, in append_block
+                    >>>     network.add(block)
+                    >>>     ~~~~~~~~~~~^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 38, in add
+                    >>>     if self.nodes and not any(self._connected(node, n) for n in self.nodes):
+                    >>>                           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 38, in <genexpr>
+                    >>>     if self.nodes and not any(self._connected(node, n) for n in self.nodes):
+                    >>>                               ~~~~~~~~~~~~~~~^^^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 24, in _connected
+                    >>>     return (self._delta(a, b) in self._liq(a).opens and
+                    >>>                                  ^^^^^^^^^
+                    >>> AttributeError: 'PipeNetwork' object has no attribute '_liq'
+                    >>> 
+[2026-11-11 | 23:24:13] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:24:16] >>> [EXIT] 1
+
+[2026-11-11 | 23:26:30] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:26:30] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:26:30] >>> [StartInfo] All systems online. Start lasted 276 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-11 | 23:26:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:26:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:26:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:26:31] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:26:49] >>> [RuntimeError]
+                    >>> <World.remove_block> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 187, in remove_block
+                    >>>     network.remove(block)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 49, in remove
+                    >>>     super().remove()
+                    >>>     ~~~~~~~~~~~~~~^^
+                    >>> TypeError: Network.remove() missing 1 required positional argument: 'node'
+                    >>> 
+[2026-11-11 | 23:27:32] >>> [EXIT] 1
+
+[2026-11-11 | 23:34:42] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:34:42] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:34:42] >>> [StartInfo] All systems online. Start lasted 300 milliseconds. Smoke tests completed in 21 milliseconds.
+[2026-11-11 | 23:34:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:34:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:34:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:34:58] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:35:15] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:35:33] >>> [EXIT] 0
+
+[2026-11-11 | 23:36:19] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:36:19] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:36:19] >>> [StartInfo] All systems online. Start lasted 300 milliseconds. Smoke tests completed in 23 milliseconds.
+[2026-11-11 | 23:36:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:36:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:36:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:36:34] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:37:05] >>> [Composites] Composites was refresed
+[2026-11-11 | 23:38:17] >>> [Composites] Composites was refresed
+[2026-11-11 | 23:38:32] >>> [EXIT] 0
+
+[2026-11-11 | 23:40:40] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:40:40] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:40:40] >>> [StartInfo] All systems online. Start lasted 255 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-11 | 23:40:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:40:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:40:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:40:41] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:40:50] >>> [Composites] Composites was refresed
+[2026-11-11 | 23:40:53] >>> [Composites] Composites was refresed
+[2026-11-11 | 23:41:27] >>> [EXIT] 0
+
+[2026-11-11 | 23:53:09] >>> [START] Alpha 0.2.23
+[2026-11-11 | 23:53:09] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-11 | 23:53:09] >>> [StartInfo] All systems online. Start lasted 264 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-11 | 23:53:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-11 | 23:53:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-11 | 23:53:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-11 | 23:53:11] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-11 | 23:55:00] >>> [EXIT] 0
+
+[2026-11-12 | 00:04:39] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:04:39] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:04:39] >>> [StartInfo] All systems online. Start lasted 249 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-12 | 00:04:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:04:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:04:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:04:41] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:04:41] >>> [RuntimeError]
+                    >>> <WorldLoader.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldLoader.py", line 101, in load
+                    >>>     block_сам.components[cls].__setattr__(st, zn)
+                    >>>     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+                    >>> AttributeError: property 'volume' of 'Liquidable' object has no setter
+                    >>> 
+[2026-11-12 | 00:04:41] >>> [RuntimeError]
+                    >>> <WorldManager.load> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\WorldManager.py", line 41, in load
+                    >>>     if self.resource_panel is not None and world.Base is not None:
+                    >>>                                            ^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'Base'
+                    >>> 
+[2026-11-12 | 00:04:41] >>> [RuntimeError]
+                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 294, in update_tool_panel
+                    >>>     if not self.manager.current.devmode:
+                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
+                    >>> 
+[2026-11-12 | 00:04:41] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 165, in mouseMoveEvent
+                    >>>     texture = get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block))
+                    >>>                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
+                    >>> 
+[2026-11-12 | 00:04:41] >>> [RuntimeError]
+                    >>> <SandboxWindow.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 390, in update
+                    >>>     self.manager.current.update(dt)
+                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'update'
+                    >>> 
+[2026-11-12 | 00:04:41] >>> [RuntimeError]
+                    >>> <Campaign.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 90, in update
+                    >>>     if (step:=self.steps[self.active])(self.window):
+                    >>>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 48, in __call__
+                    >>>     return self.func(*args, **kwargs)
+                    >>>            ~~~~~~~~~^^^^^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 37, in training_3
+                    >>>     if w.manager.current.exported.dict().get("titan", 0) >= 30:
+                    >>>        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'exported'
+                    >>> 
+[2026-11-12 | 00:04:45] >>> [EXIT] 1
+
+[2026-11-12 | 00:06:08] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:06:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:06:08] >>> [StartInfo] All systems online. Start lasted 271 milliseconds. Smoke tests completed in 18 milliseconds.
+[2026-11-12 | 00:06:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:06:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:06:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:06:17] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:06:57] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:07:50] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:08:03] >>> [EXIT] 0
+
+[2026-11-12 | 00:08:08] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:08:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:08:08] >>> [StartInfo] All systems online. Start lasted 270 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-12 | 00:08:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:08:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:08:09] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:08:10] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:08:10] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:08:33] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:08:45] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:09:11] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:09:14] >>> [EXIT] 0
+
+[2026-11-12 | 00:12:00] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:12:00] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:12:00] >>> [StartInfo] All systems online. Start lasted 274 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-12 | 00:12:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:12:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:12:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:12:02] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:12:02] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:12:26] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:12:35] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:12:44] >>> [EXIT] 0
+
+[2026-11-12 | 00:18:22] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:18:22] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:18:22] >>> [StartInfo] All systems online. Start lasted 248 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-12 | 00:18:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:18:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:18:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:18:24] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:18:24] >>> [RuntimeError]
+                    >>> <World.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 150, in update
+                    >>>     network.update(dt*1000)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 77, in update
+                    >>>     l.pressure += k_t * (l.target_pressure - l.pressure)
+                    >>>                          ^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'Liquidable' object has no attribute 'target_pressure'
+                    >>> 
+[2026-11-12 | 00:18:28] >>> [EXIT] 1
+
+[2026-11-12 | 00:19:03] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:19:03] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:19:03] >>> [StartInfo] All systems online. Start lasted 275 milliseconds. Smoke tests completed in 26 milliseconds.
+[2026-11-12 | 00:19:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:19:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:19:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:19:05] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:19:05] >>> [RuntimeError]
+                    >>> <World.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 139, in update
+                    >>>     block.components[Updatable](dt*1000)
+                    >>>     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+                    >>>   File "d:\Payload\components\Updatable.py", line 49, in __call__
+                    >>>     task.func(self.owner)
+                    >>>     ~~~~~~~~~^^^^^^^^^^^^
+                    >>>   File "d:\Payload\composites\Pump.py", line 38, in upd
+                    >>>     block.components[Liquidable].fluids["123"] = min(block.components[Liquidable].fluids["123"]+0.1, block.components[Liquidable].capacity)
+                    >>>                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+                    >>> KeyError: '123'
+                    >>> 
+[2026-11-12 | 00:19:07] >>> [EXIT] 1
+
+[2026-11-12 | 00:19:24] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:19:24] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:19:24] >>> [StartInfo] All systems online. Start lasted 235 milliseconds. Smoke tests completed in 15 milliseconds.
+[2026-11-12 | 00:19:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:19:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:19:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:19:26] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:19:47] >>> [RuntimeError]
+                    >>> <World.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 150, in update
+                    >>>     network.update(dt*1000)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 69, in update
+                    >>>     edges = list(self._passive_edges())
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 47, in _passive_edges
+                    >>>     for nb in self._linked(n, cell_map):
+                    >>>               ~~~~~~~~~~~~^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 36, in _linked
+                    >>>     if other is not None and self._connected(node, other):
+                    >>>                              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 30, in _connected
+                    >>>     self._delta(b, a) in b.components[Liquidable].opens)
+                    >>>                          ~~~~~~~~~~~~^^^^^^^^^^^^
+                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
+                    >>>     return super().__getitem__(key)
+                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
+                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
+                    >>> 
+[2026-11-12 | 00:20:05] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:20:28] >>> [EXIT] 1
+
+[2026-11-12 | 00:20:31] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:20:31] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:20:31] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 17 milliseconds.
+[2026-11-12 | 00:20:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:20:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:20:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:20:32] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:20:32] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:21:18] >>> [Composites] Composites was refresed
+[2026-11-12 | 00:21:54] >>> [EXIT] 0
+
+[2026-11-12 | 00:23:28] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:23:28] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:23:28] >>> [StartInfo] All systems online. Start lasted 272 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-12 | 00:23:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:23:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:23:28] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:23:30] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:23:30] >>> [RuntimeError]
+                    >>> <World.update> - Traceback (most recent call last):
+                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "d:\Payload\world\World.py", line 150, in update
+                    >>>     network.update(dt*1000)
+                    >>>     ~~~~~~~~~~~~~~^^^^^^^^^
+                    >>>   File "d:\Payload\components\PipeNetwork.py", line 62, in update
+                    >>>     edges = list(self._liquid_edges())
+                    >>>                  ^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'PipeNetwork' object has no attribute '_liquid_edges'
+                    >>> 
+[2026-11-12 | 00:23:33] >>> [EXIT] 1
+
+[2026-11-12 | 00:24:31] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:24:31] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:24:31] >>> [StartInfo] All systems online. Start lasted 269 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-12 | 00:24:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:24:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:24:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:24:33] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:24:48] >>> [INFO] Generated a <PipeNetwork> network
+[2026-11-12 | 00:25:23] >>> [EXIT] 0
+
+[2026-11-12 | 00:25:39] >>> [START] Alpha 0.2.23
+[2026-11-12 | 00:25:39] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 00:25:40] >>> [StartInfo] All systems online. Start lasted 259 milliseconds. Smoke tests completed in 19 milliseconds.
+[2026-11-12 | 00:25:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 00:25:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 00:25:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
+[2026-11-12 | 00:25:45] >>> [EXIT] 0
+
+[2026-11-12 | 15:10:54] >>> [START] Alpha 0.2.23
+[2026-11-12 | 15:10:54] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-12 | 15:10:56] >>> [StartInfo] All systems online. Start lasted 1591 milliseconds. Smoke tests completed in 35 milliseconds.
+[2026-11-12 | 15:10:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
+[2026-11-12 | 15:10:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-12 | 15:10:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found

@@ -218,6 +218,7 @@ class MainWindow(QMainWindow):
         self.terminal("Enter <help> to get assistance and information")
 
         QShortcut(QKeySequence("F11"), self).activated.connect(lambda: self.switch_fullscreen())
+        QShortcut(QKeySequence("F4"), self).activated.connect(lambda: self.parsing("refresh"))
 
     def switch_fullscreen(self):
         if self.fullscreen:

@@ -11,7 +11,7 @@
         "type": "Drill",
         "z": 30,
         "hardness": 2,
-        "cost": {"lead": 1},
+        "cost": {"titan": 5},
         "max_storage": 10,
         "mining_max_temperature": 80,
         "texture": "drill"
@@ -19,6 +19,7 @@
     "conveyor": {
         "type": "Conveyor",
         "z": 30,
+        "cost": {"titan": 1},
         "hardness": 1,
         "max_storage": 1,
         "texture": "conveyor"
@@ -30,27 +31,6 @@
         "max_storage": 1000,
         "ignore_on_editor": true,
         "texture": "base"
-    },
-    "lead_1": {
-        "type": "UseBlock",
-        "z":14,
-        "mining_type": "lead",
-        "mining_speed": 2500,
-        "texture": "lead_1"
-    },
-    "lead_2": {
-        "type": "UseBlock",
-        "z":14,
-        "mining_type": "lead",
-        "mining_speed": 2500,
-        "texture": "lead_2"
-    },
-    "lead_3": {
-        "type": "UseBlock",
-        "z":14,
-        "mining_type": "lead",
-        "mining_speed": 2500,
-        "texture": "lead_3"
     },
     "turrel_base(32x32)": {
         "type": "UseBlock",
@@ -74,27 +54,6 @@
         "mining_speed": 0.8,
         "energy_add": 0.5,
         "texture": "generator"
-    },
-    "coal_1": {
-        "type": "UseBlock",
-        "z":14,
-        "mining_type": "coal",
-        "mining_speed": 1750,
-        "texture": "coal_1"
-    },
-    "coal_2": {
-        "type": "UseBlock",
-        "z":14,
-        "mining_type": "coal",
-        "mining_speed": 1750,
-        "texture": "coal_2"
-    },
-    "coal_3": {
-        "type": "UseBlock",
-        "z":14,
-        "mining_type": "coal",
-        "mining_speed": 1750,
-        "texture": "coal_3"
     },
     "connector": {
         "type": "PowerBlock",
@@ -176,7 +135,69 @@
         "texture": "xpipe"
     },
 
+
+
+
+        "scrap-wall-huge": {
+        "type": "UseBlock",
+        "z": 30,
+        "texture": "scrap-wall-huge"
+    },
+    "scrap-wall-large": {
+        "type": "UseBlock",
+        "z": 30,
+        "texture": "scrap-wall-large"
+    },
+    "scrap-wall": {
+        "type": "UseBlock",
+        "z": 30,
+        "texture": "scrap-wall"
+    },
+
     
+
+        "ore-coal1": {
+        "type": "UseBlock",
+        "z": 14,
+        "mining_type": "coal",
+        "mining_speed": 1750,
+        "texture": "ore-coal1"
+    },
+    "ore-coal2": {
+        "type": "UseBlock",
+        "z": 14,
+        "mining_type": "coal",
+        "mining_speed": 1750,
+        "texture": "ore-coal2"
+    },
+    "ore-coal3": {
+        "type": "UseBlock",
+        "z": 14,
+        "mining_type": "coal",
+        "mining_speed": 1750,
+        "texture": "ore-coal3"
+    },
+    "ore-titan1": {
+        "type": "UseBlock",
+        "z": 14,
+        "mining_type": "titan",
+        "mining_speed": 2500,
+        "texture": "ore-titan1"
+    },
+    "ore-titan2": {
+        "type": "UseBlock",
+        "z": 14,
+        "mining_type": "titan",
+        "mining_speed": 2500,
+        "texture": "ore-titan2"
+    },
+    "ore-titan3": {
+        "type": "UseBlock",
+        "z": 14,
+        "mining_type": "titan",
+        "mining_speed": 2500,
+        "texture": "ore-titan3"
+    },
 
 
     
@@ -608,7 +629,7 @@
     },
     "stone-wall-large": {
         "type": "UseBlock",
-        "z": 3,
+        "z": 30,
         "relief": false,
         "texture": "stone-wall-large"
     },

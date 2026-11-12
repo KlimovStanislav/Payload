@@ -29,13 +29,13 @@ def training_1(w:CampaignWindow) -> bool:
     return False
 
 def training_2(w:CampaignWindow) -> bool:
-    if "lead" in w.manager.current.operator.inventory.dict():
+    if "titan" in w.manager.current.operator.inventory.dict():
         return True
     return False
 
 def training_3(w:CampaignWindow) -> bool:
-    if w.manager.current.exported.dict().get("lead", 0) >= 30:
-        w.manager.current.exported.reduce("lead", 30)
+    if w.manager.current.exported.dict().get("titan", 0) >= 30:
+        w.manager.current.exported.reduce("titan", 30)
         return True 
     return False
 
@@ -77,9 +77,9 @@ class Campaign:
         self.viewer = CampaignViewer(window)
         self.window:CampaignWindow = window             
         self.steps = [
-                      Step("Training(step 1)", "Place Drill on the lead-ore vein", training_1),
-                      Step("Training(step 2)", "Turn on Drill and put lead-ore\nin Operator inventory", training_2),
-                      Step("Training(step 3)", "Create a Launch Pad and launch\nyour first rocket with 30 lead", training_3),
+                      Step("Training(step 1)", "Place Drill on the titan-ore vein", training_1),
+                      Step("Training(step 2)", "Turn on Drill and put titan-ore\nin Operator inventory", training_2),
+                      Step("Training(step 3)", "Create a Launch Pad and launch\nyour first rocket with 30 titan", training_3),
                       Step("No tasks more", "Empty", lambda w: False)
                       ]
         
