@@ -1,18 +1,14 @@
 {
     "version": "Alpha 0.2.23",
-    "time": "[2026-11-12] 00:25",
+    "time": "[2026-11-16] 11:14",
     "ambient": 20,
     "sizeX": 256,
     "sizeY": 256,
     "opened": [
-        "conveyor_left",
-        "conveyor_right",
-        "conveyor_up",
-        "conveyor_down",
-        "launch_pad",
-        "drill"
+        "conveyor",
+        "launch_pad"
     ],
-    "camX": 5538.69519506265,
-    "camY": 3588.1857306004113,
-    "camZoom": 1.8092708927064636
+    "camX": 4259.122651193671,
+    "camY": 3728.5974474638247,
+    "camZoom": 0.6031758675181629
 }

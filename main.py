@@ -23,6 +23,7 @@ try:
     application = QApplication(sys.argv)
     base.font.__dict__[...] = application
     base.cursors.__dict__[...] = application
+    testing.__dict__[...] = application
     
     if os.path.exists(os.path.abspath(mainfolder.path("style.qss"))):
         with open(mainfolder.path("style.qss"), encoding="utf-8") as f:
@@ -31,7 +32,7 @@ try:
         folder.log.write(f"style.qss not found at <{mainfolder.path('style.qss')}>")
 
     from ui.MainWindow import MainWindow
-
+    
     faulthandler.enable(sys.stdout)
 
 except Exception:

@@ -4,8 +4,8 @@ from composites.Block import Block
 
 from components.Liquidable import Liquidable, State
 from components.Clickable import Clickable
-from components.Rotatable import Rotatable, Angle
-from components.SceneObject import Cell
+from components.Rotatable import Rotatable
+from components.SceneObject import Cell, Angle
 
 from ui.Widgets import AutoUI
 

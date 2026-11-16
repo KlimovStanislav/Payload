@@ -4,7 +4,7 @@
         "z": 30
     },
     "air": {
-        "type": "UseBlock",
+        "type": "AirBlock",
         "z": 0
     },
     "drill": {
@@ -351,12 +351,6 @@
         "relief": true,
         "texture": "darksand3"
     },
-    "deepwater": {
-        "type": "UseBlock",
-        "z": 11,
-        "relief": true,
-        "texture": "deepwater"
-    },
     "dirt1": {
         "type": "UseBlock",
         "z": 11,
@@ -538,46 +532,40 @@
         "texture": "sand-edge"
     },
     "sand-floor1": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "sand-floor1"
     },
     "sand-floor2": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "sand-floor2"
     },
     "sand-floor3": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "sand-floor3"
     },
     "sand-wall-large": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "sand-wall-large"
     },
     "sand-wall1": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "sand-wall1"
     },
     "sand-wall2": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "sand-wall2"
-    },
-    "sand-water": {
-        "type": "UseBlock",
-        "z": 11,
-        "relief": true,
-        "texture": "sand-water"
     },
     "shale-edge": {
         "type": "UseBlock",
@@ -627,24 +615,67 @@
         "relief": true,
         "texture": "stone-edge"
     },
-    "stone-wall-large": {
-        "type": "UseBlock",
+
+
+
+    "stone-wall-large-alpha0": {
+        "type": "RandomRotateBlock",
         "z": 30,
         "relief": false,
         "texture": "stone-wall-large"
     },
-    "stone-wall1": {
-        "type": "UseBlock",
+    "stone-wall1-alpha0": {
+        "type": "RandomRotateBlock",
         "z": 30,
         "relief": false,
         "texture": "stone-wall1"
     },
-    "stone-wall2": {
-        "type": "UseBlock",
+    "stone-wall2-alpha0": {
+        "type": "RandomRotateBlock",
         "z": 30,
         "relief": false,
         "texture": "stone-wall2"
     },
+    "stone-wall-large-alpha1": {
+        "type": "RandomRotateBlock",
+        "z": 30,
+        "relief": false,
+        "texture": "stone-wall-large-alpha1"
+    },
+    "stone-wall1-alpha1": {
+        "type": "RandomRotateBlock",
+        "z": 30,
+        "relief": false,
+        "texture": "stone-wall1-alpha1"
+    },
+    "stone-wall2-alpha1": {
+        "type": "RandomRotateBlock",
+        "z": 30,
+        "relief": false,
+        "texture": "stone-wall2-alpha1"
+    },
+    "stone-wall-large-alpha2": {
+        "type": "RandomRotateBlock",
+        "z": 30,
+        "relief": false,
+        "texture": "stone-wall-large-alpha2"
+    },
+    "stone-wall1-alpha2": {
+        "type": "RandomRotateBlock",
+        "z": 30,
+        "relief": false,
+        "texture": "stone-wall1-alpha2"
+    },
+    "stone-wall2-alpha2": {
+        "type": "RandomRotateBlock",
+        "z": 30,
+        "relief": false,
+        "texture": "stone-wall2-alpha2"
+    },
+
+
+
+
     "stone1": {
         "type": "UseBlock",
         "z": 11,
@@ -663,10 +694,25 @@
         "relief": true,
         "texture": "stone3"
     },
+
+
+
+    "not deepwater": {
+        "type": "WaterBlock",
+        "z": 12,
+        "relief": false,
+        "texture": "mini-water"
+    },
     "water": {
-        "type": "UseBlock",
-        "z": 11,
-        "relief": true,
+        "type": "WaterBlock",
+        "z": 12,
+        "relief": false,
         "texture": "water"
+    },
+    "deepwater": {
+        "type": "WaterBlock",
+        "z": 12,
+        "relief": false,
+        "texture": "deepwater"
     }
 }

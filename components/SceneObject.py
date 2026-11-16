@@ -19,6 +19,17 @@ class Dict(dict[type, object]):
             raise KeyError("Types of keys and values not match")
         return super().__setitem__(key, value)
 
+class Angle:
+    UP = 0
+    RIGHT = 90
+    DOWN = 180
+    LEFT = 270
+
+class Various(Enum):
+    placing_block = auto()
+    place_angle = auto()
+    devmode = auto()
+
 class Cell(NamedTuple):
     x:int
     y:int

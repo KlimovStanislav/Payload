@@ -37,11 +37,13 @@ class EditorWindow(SandboxWindow):
     def show(self):
         self.main_window.widget.setCurrentIndex(2)
         self.timer.start()
+        super().reposition()
         MusicPlayer.start()
 
     def update(self):
         self.now = time.time()
         dt = self.now - self.last_time 
         self.last_time = self.now
+        self.fps_viewer.refresh(self.now, dt)
         self.update_cam(dt)
 

@@ -31,17 +31,14 @@ class PauseMenu(Menu):
 
         layout.addWidget(label)
 
-        for btn in [btn_resume, btn_exit, btn_tree, btn_settings] if not self.Window.manager.current.devmode else [btn_resume, btn_exit, btn_settings]:
+        for btn in [btn_resume, btn_exit, btn_tree, btn_settings]:
             layout.addWidget(btn)
                 
         self.setFixedSize(250, 200)
 
         self.settings = SettingsMenu(self.Window, self)
 
-        if not self.Window.manager.current.devmode:
-            self.tree = TechTreeMenu(self.Window, None)
-        else:
-            self.tree = None
+        self.tree = TechTreeMenu(self.Window, None)
 
     def show_window_tree(self): 
         self.tree.Parent = self

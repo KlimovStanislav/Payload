@@ -35,7 +35,7 @@ from world.World import World
 from ui.ResourcePanel import ResourcePanel
 
 from components.Storable import Storable
-from components.SceneObject import Cell
+from components.SceneObject import Cell, Various
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -162,7 +162,8 @@ class MapView(QGraphicsView):
         scene_pos = self.mapToScene(event.pos())
         _x, _y = round(scene_pos.x()), round(scene_pos.y())
         x, y = math.floor((_x/32)), math.floor(_y/32)
-        texture = get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block))
+        block= self.w.manager.current.various[Various.placing_block]
+        texture = get_texture(block_config[block].get("texture", block))
         size = (int(texture.width()/32), int(texture.height()/32))
 
         for dx in range(size[0]):
@@ -180,19 +181,20 @@ class MapView(QGraphicsView):
         self.item.setPos(x*32, y*32)
 
     def update_item(self):
-        texture = get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block))
+        block = self.w.manager.current.various[Various.placing_block]
+        texture = get_texture(block_config[block].get("texture", block))
         size = (int(texture.width()/32), int(texture.height()/32))
 
         if self.item is None:
-            self.item = self.scene().addPixmap(get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block)))
+            self.item = self.scene().addPixmap(get_texture(block_config[block].get("texture", block)))
             self.item.setZValue(100)
             self.item.setOpacity(0.5)
         else:
-            if self.w.manager.current.placing_block is not None:
-                self.item.setPixmap(get_texture(block_config[self.w.manager.current.placing_block].get("texture", self.w.manager.current.placing_block)))
+            if block is not None:
+                self.item.setPixmap(get_texture(block_config[block].get("texture", block)))
 
         self.item.setTransformOriginPoint((size[0]/2)*32, (size[1]/2)*32)
-        self.item.setRotation(self.w.manager.current.place_angle)
+        self.item.setRotation(self.w.manager.current.various[Various.place_angle])
         self.item.setVisible(True)
 
 @safe_class
@@ -247,7 +249,7 @@ class SandboxWindow(QWidget):
 
         self.last_time = time.time()
 
-        if not self.manager.current.devmode:
+        if not self.manager.current.various[Various.devmode]:
             self.tool_names = {}
             for clt in [block_config, unit_config]:
                 for name, value in clt.items():
@@ -291,7 +293,7 @@ class SandboxWindow(QWidget):
         coef = folder.config.get("craft_coef", 1)
 
         for name, i in self.tool_names.items():
-                    if not self.manager.current.devmode:
+                    if not self.manager.current.various[Various.devmode]:
                         if name not in self.manager.current.opened:
                             continue
                     
@@ -335,7 +337,7 @@ class SandboxWindow(QWidget):
         if current is not None:
             self.view.setFocus()
             MusicPlayer.play("click_1")
-            self.manager.current.placing_block = current.data(Qt.ItemDataRole.UserRole)
+            self.manager.current.various[Various.placing_block] = current.data(Qt.ItemDataRole.UserRole)
 
     def mousePressEvent(self, event):
         if self.menu_active is not None:
@@ -363,8 +365,8 @@ class SandboxWindow(QWidget):
         self.keys_pressed.add(key)
 
         if key == 0x13:
-            value = (self.manager.current.place_angle+90)
-            self.manager.current.place_angle = value-((value//360)*360)
+            value = (self.w.manager.current.various[Various.place_angle]+90)
+            self.w.manager.current.various[Various.place_angle] = value-((value//360)*360)
             self.view.update_item()
 
         if key == 42:
@@ -448,19 +450,22 @@ class SandboxWindow(QWidget):
 
     def resizeEvent(self, a0):
         super().resizeEvent(a0)
+        self.reposition()
+
+    def __repr__(self):
+        return self.__class__.__name__
+
+    def reposition(self):
         if self.menu_active is not None:
             self.menu_active.reposition()
         self.version_viewer.reposition()
         self.resource_panel.reposition()
 
-    def __repr__(self):
-        return self.__class__.__name__
-
     def show(self):
         self.main_window.widget.currentWidget().close()
         self.last_time = time.time()
         self.main_window.widget.setCurrentIndex(1)
-        self.version_viewer.reposition()
-        self.resource_panel.reposition()
+        self.reposition()
         self.timer.start()
+        MusicPlayer.play("beep_1")
         MusicPlayer.start()

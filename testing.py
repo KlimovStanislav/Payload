@@ -14,10 +14,6 @@ from PyQt6.QtWidgets import QApplication
 import base.font
 from base.functions import safe
 import base.cursors
-    
-application = QApplication(sys.argv)
-base.font.__dict__[...] = application
-base.cursors.__dict__[...] = application
 
 FULL_TESTS = []
 SMOKE_TESTS = []
@@ -85,6 +81,10 @@ def test_scene_objects(world:World):
 
 def start(mode:Mode) -> list:
     start_time = perf_counter()
+    if mode is Mode.FULL:
+        application = QApplication(sys.argv)
+        base.font.__dict__[...] = application
+        base.cursors.__dict__[...] = application
     world = World(devmode=True)
     failed = []
     critical = []
@@ -98,6 +98,9 @@ def start(mode:Mode) -> list:
             break
 
     if mode is Mode.FULL:
+        application = QApplication(sys.argv)
+        base.font.__dict__[...] = application
+        base.cursors.__dict__[...] = application
         for func in FULL_TESTS:
             try:
                 func(world)

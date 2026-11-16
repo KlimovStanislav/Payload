@@ -3,7 +3,8 @@ from __future__ import annotations
 from PyQt6 import QtWidgets
 from ui.Widgets import Labels, AutoUI
 
-from components.Rotatable import Angle, Rotatable
+from components.SceneObject import Angle
+from components.Rotatable import Rotatable
 from enum import auto, Enum
 from components.SceneObject import SceneObject, Cell
 

@@ -1,11 +1,12 @@
 from __future__ import annotations
-import sys
+import sys, time, json
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QRadioButton, QGroupBox
 
 app = QApplication(sys.argv)
 
-VARIANTS = [("1", "2", "3", "4", 1), ("1", "2", "3", "4", 1)]
+with open("questions.json", "r", encoding="UTF-8") as f:
+    VARIANTS:list[list] = json.load(f)
 
 class Variant(QGroupBox):
     def __init__(self, window:Variants, tuple:tuple):
@@ -18,7 +19,7 @@ class Variant(QGroupBox):
         self.rbtn_3 = QRadioButton(tuple[2])
         self.rbtn_4 = QRadioButton(tuple[3])    
 
-        dct = {1: self.rbtn_1, 2:self.rbtn_2, 3:self.rbtn_3, 4:self.rbtn_4}
+        dct = {1:self.rbtn_1, 2:self.rbtn_2, 3:self.rbtn_3, 4:self.rbtn_4}
         self.correct:QRadioButton = dct[tuple[4]]
 
         self.layout_1.addWidget(self.rbtn_1)
@@ -33,8 +34,10 @@ class Variant(QGroupBox):
 class Variants(QWidget):
     def __init__(self, window:Window):
         super().__init__(window)
+        self.w = window
         self.variants:list[Variant] = []
         self.current = 0
+        self.correct = 0
         for var in VARIANTS:
             self.variants.append(Variant(self, var))
         self.layout_ = QVBoxLayout(self)
@@ -44,43 +47,34 @@ class Variants(QWidget):
     def next(self, btn:QPushButton):
         self.variants[self.current].deleteLater()
         self.current += 1
-        if len(self.variants) == self.current:
-            print(123)
-            self.current-=1
-            self.layout_.addWidget(self.variants[self.current])
-            for rbtn in [self.variants[self.current].rbtn_1, self.variants[self.current].rbtn_2, self.variants[self.current].rbtn_3, self.variants[self.current].rbtn_4]:
-                rbtn.deleteLater()
-            btn.setText("Конец")
-            btn.clicked.disconnect()
-            btn.clicked.connect(lambda *args: [app.exit()])
-            return
         self.layout_.addWidget(self.variants[self.current])
         btn.clicked.disconnect()
         btn.clicked.connect(lambda *args: [self.check(btn), btn.setText("Следующий вопрос")])
 
     def check(self, btn:QPushButton):
-        if len(self.variants)-1 == self.current:
-            print(123)
-            return
         for rbtn in [self.variants[self.current].rbtn_1, self.variants[self.current].rbtn_2, self.variants[self.current].rbtn_3, self.variants[self.current].rbtn_4]:
             rbtn.deleteLater()
         label = QLabel("Неправильно")
         label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         if self.variants[self.current].correct.isChecked():
             label.setText("Правильно")
+            self.correct+=1
         self.variants[self.current].layout().addWidget(label)
 
         btn.clicked.disconnect()
         if len(self.variants)-1 == self.current:
-            print(123)
+            label.setText(f"Конец\n Правильных ответов: {self.correct}/{len(self.variants)}\nВремя прохождения теста: {time.time()-self.w.start:.1f} секунд")
+            btn.clicked.connect(lambda *args: [app.exit()])
         else:
             btn.clicked.connect(lambda *args: [self.next(btn), btn.setText("Ответить")])
 
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        self.setFixedSize(600, 400)
+        self.setFixedSize(700, 400)
         self.setWindowTitle("Memory Card")
+
+        self.start = time.time()
 
         self.variants = Variants(self)
         self.btn = QPushButton("Ответить")

@@ -1,4 +1,4 @@
-from typing import Callable, Any, NoReturn
+from typing import Callable, Any
 
 import applib, traceback
 import base.folders as folders
@@ -54,20 +54,4 @@ def get_texture(name) -> QPixmap:
         TEXTURE_CACHE[name] = pixmap
     
     return TEXTURE_CACHE[name]
-
-class Meta(type):
-    def __call__(self, *args, **kwargs) -> any:
-        return self.__call__(*args, **kwargs)
-
-    def __repr__(self):
-        return repr(self.__init__())
-
-class Static(metaclass=Meta):
-    @classmethod
-    def __call__(cls) -> NoReturn:
-        raise AttributeError(f"type object '{cls.__name__}' has no attribute '__call__'")
-
-    @classmethod
-    def __init__(cls) -> NoReturn:
-        raise AttributeError(f"type object '{cls.__name__}' has no attribute '__repr__'")
 

@@ -52,7 +52,7 @@ class WorldEditorLoader:
                 scene.setSceneRect(QRectF(0, 0, world.size[0]*32, world.size[1]*32))
     
             try:
-                for i, block in enumerate([*sector_path.read("Blocks.json", type="json"), *sector_path.read("ReliefBlocks.json", type="json")]):
+                for i, block in enumerate([*sector_path.read("ReliefBlocks.json", type="json"), *sector_path.read("Blocks.json", type="json")]):
                     if i%10==0:
                         QApplication.processEvents()
                     try:

@@ -219,6 +219,7 @@ class MainWindow(QMainWindow):
 
         QShortcut(QKeySequence("F11"), self).activated.connect(lambda: self.switch_fullscreen())
         QShortcut(QKeySequence("F4"), self).activated.connect(lambda: self.parsing("refresh"))
+        QShortcut(QKeySequence("F3"), self).activated.connect(lambda: self.parsing("view"))
 
     def switch_fullscreen(self):
         if self.fullscreen:
@@ -248,7 +249,8 @@ class MainWindow(QMainWindow):
                 composites.refresh()
 
                 window:SandboxWindow|CampaignWindow = self.widget.currentWidget()
-                if window in [self.SandboxWindow, self.CampaignWindow]:
+                if window in [self.SandboxWindow, self.CampaignWindow, self.EditorWindow]:
+                    window.close()
                     window.show()
                     window.update_tool_panel()
                 self.terminal("refreshed")

@@ -3,18 +3,15 @@ from __future__ import annotations
 from composites.Block import Block
 from composites.Unit import Unit
 
-from PyQt6.QtCore import QPointF
-
 from base.composites import composites
 from base.MusicPlayer import MusicPlayer
 from base.folders import folder, block_config, unit_config
-from base.functions import safe_class, get_texture
+from base.functions import safe_class
 
 from components.Clickable import Clickable
 from components.Updatable import Updatable
 from components.Removable import Removable
 from components.Placable import Placable
-from components.Rotatable import Rotatable, Angle
 from components.Storable import Storable
 
 from world.TempField import TempField
@@ -22,6 +19,8 @@ from world.TempField import TempField
 from components.SceneObject import SceneObject, Cell, Size
 from components.Network import Network
 from components.PipeNetwork import PipeNetwork
+
+from components.SceneObject import Various
 
 from composites.Pipe import Pipe
 from composites.Pump import Pump
@@ -82,14 +81,14 @@ class Operator:
         self.inventory = Storage(100)
 
 class NetworkGenerator:
-    def __init__(self, world:World, clss:list[SceneObject], network_type:type[Network]):
+    def __init__(self, world:World, clss:list[type], network_type:type[Network]):
         self.w = world
         self.clss = clss
         self.network_type = network_type
 
     def __call__(self, obj:SceneObject):
         for cls in self.clss:
-            if isinstance(obj, cls):
+            if cls in obj.components:
                 folder.log.write(f"Generated a <{self.network_type.__name__}> network")
                 network:Network = self.network_type(self.w)
                 network.add(obj)
@@ -101,8 +100,6 @@ class World:
 
         self.window = window
         self.operator = Operator(self, f"OPERATOR #{random.randint(0, 9)}{random.randint(0, 9)}{random.randint(0, 9)}{random.randint(0, 9)}")
-
-        self.place_angle = Angle.UP
 
         self.blocks:list[Block] = []
         self.block_map:dict[Cell, list[Block]] = {}
@@ -117,17 +114,14 @@ class World:
         self.exported:Storage[str, int] = Storage(9999)
 
         self.Base:StorageBlock|None = None
-        self.devmode = devmode
-
-        self.selected:Block|Unit|None = None
-        self.selected_scene_item:None|QGraphicsPixmapItem=None
 
         self.relief_map:None|QGraphicsPixmapItem=None
 
         self.temperature = TempField(size.h, size.w, temperature)
 
-        self.placing_block:str = "air"
         self.opened:list[str] = []
+
+        self.various = {Various.placing_block: "air", Various.place_angle: 0, Various.devmode: devmode}
 
         self.scene = scene
 
@@ -163,14 +157,14 @@ class World:
                 if len(blocks) == 0:
                     del self.block_map[Cell(xcoord, ycoord)]
 
-        if not self.devmode:
+        if not self.various[Various.devmode]:
             cost:dict = block_config[block.name].get("cost")
             coef = folder.config.get("craft_coef", 1)
             if cost is not None and self.Base is not None:
                 for name, value in cost.items():
                     self.Base.components[Storable].add(name, int(value*coef))
 
-        if not self.devmode and block_config[block.name]["z"] < 20:
+        if not self.various[Various.devmode] and block_config[block.name]["z"] < 20:
             return
         
         if Removable in block.components:
@@ -265,21 +259,18 @@ class World:
                 type_name = None
                 cost = None
 
-                self.selected = None
-                if self.selected_scene_item is not None:
-                    self.scene.removeItem(self.selected_scene_item)
-                    self.selected_scene_item = None
+                placing_block = self.various[Various.placing_block]
 
-                if self.placing_block is None:
+                if placing_block is None:
                     return
         
-                if self.placing_block in block_config:
-                    type_name = block_config[self.placing_block].get("type")
-                    cost = block_config[self.placing_block].get("cost")
+                if placing_block in block_config:
+                    type_name = block_config[placing_block].get("type")
+                    cost = block_config[placing_block].get("cost")
         
-                if self.placing_block in unit_config:
-                    type_name = unit_config[self.placing_block].get("type")
-                    cost = unit_config[self.placing_block].get("cost")
+                if placing_block in unit_config:
+                    type_name = unit_config[placing_block].get("type")
+                    cost = unit_config[placing_block].get("cost")
         
                 block_class = composites.get(type_name)
                 if block_class is None:
@@ -292,7 +283,7 @@ class World:
                         if not self.Base.components[Storable].reduce(name, int(value*coef)):
                             return
                                     
-                obj:SceneObject = block_class(self, cell=Cell(x, y), name=self.placing_block)
+                obj:SceneObject = block_class(self, cell=Cell(x, y), name=placing_block)
                 if Placable in obj.components:
                     obj.components[Placable]()
                 
