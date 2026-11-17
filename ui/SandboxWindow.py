@@ -365,8 +365,8 @@ class SandboxWindow(QWidget):
         self.keys_pressed.add(key)
 
         if key == 0x13:
-            value = (self.w.manager.current.various[Various.place_angle]+90)
-            self.w.manager.current.various[Various.place_angle] = value-((value//360)*360)
+            value = (self.manager.current.various[Various.place_angle]+90)
+            self.manager.current.various[Various.place_angle] = value-((value//360)*360)
             self.view.update_item()
 
         if key == 42:
@@ -446,7 +446,7 @@ class SandboxWindow(QWidget):
         else:
             self.target_scale /= 1.15
         
-        self.target_scale = max(0.4, min(2.0, self.target_scale))
+        self.target_scale = max(0.67, min(2.5, self.target_scale))
 
     def resizeEvent(self, a0):
         super().resizeEvent(a0)

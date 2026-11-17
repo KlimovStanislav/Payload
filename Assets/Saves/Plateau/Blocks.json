@@ -1,5 +1,1945 @@
 [
     {
+        "x": 68,
+        "y": 141,
+        "name": "deepwater"
+    },
+    {
+        "x": 67,
+        "y": 141,
+        "name": "deepwater"
+    },
+    {
+        "x": 66,
+        "y": 141,
+        "name": "deepwater"
+    },
+    {
+        "x": 66,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 65,
+        "y": 141,
+        "name": "deepwater"
+    },
+    {
+        "x": 65,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 67,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 68,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 69,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 69,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 70,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 68,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 67,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 66,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 64,
+        "y": 140,
+        "name": "water"
+    },
+    {
+        "x": 64,
+        "y": 141,
+        "name": "water"
+    },
+    {
+        "x": 65,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 66,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 67,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 67,
+        "y": 143,
+        "name": "water"
+    },
+    {
+        "x": 68,
+        "y": 143,
+        "name": "water"
+    },
+    {
+        "x": 68,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 69,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 69,
+        "y": 141,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 141,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 140,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 140,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 139,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 136,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 136,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 69,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 69,
+        "y": 136,
+        "name": "water"
+    },
+    {
+        "x": 68,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 68,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 67,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 66,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 65,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 64,
+        "y": 139,
+        "name": "water"
+    },
+    {
+        "x": 64,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 63,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 63,
+        "y": 139,
+        "name": "water"
+    },
+    {
+        "x": 62,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 62,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 61,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 60,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 65,
+        "y": 139,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 138,
+        "name": "deepwater"
+    },
+    {
+        "x": 69,
+        "y": 138,
+        "name": "deepwater"
+    },
+    {
+        "x": 59,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 60,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 61,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 62,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 63,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 63,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 64,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 65,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 66,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 67,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 67,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 68,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 68,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 69,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 70,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 71,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 72,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 72,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 72,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 72,
+        "y": 138,
+        "name": "not deepwater"
+    },
+    {
+        "x": 73,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 74,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 73,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 58,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 64,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 109,
+        "y": 161,
+        "name": "scrap-wall-huge"
+    },
+    {
+        "x": 112,
+        "y": 160,
+        "name": "scrap-wall-huge"
+    },
+    {
+        "x": 115,
+        "y": 159,
+        "name": "scrap-wall-huge"
+    },
+    {
+        "x": 151,
+        "y": 151,
+        "name": "scrap-wall-huge"
+    },
+    {
+        "x": 154,
+        "y": 151,
+        "name": "scrap-wall-huge"
+    },
+    {
+        "x": 157,
+        "y": 150,
+        "name": "scrap-wall-huge"
+    },
+    {
+        "x": 160,
+        "y": 151,
+        "name": "scrap-wall-huge"
+    },
+    {
+        "x": 163,
+        "y": 150,
+        "name": "scrap-wall-huge"
+    },
+    {
+        "x": 164,
+        "y": 153,
+        "name": "scrap-wall-large"
+    },
+    {
+        "x": 166,
+        "y": 152,
+        "name": "scrap-wall"
+    },
+    {
+        "x": 166,
+        "y": 153,
+        "name": "scrap-wall"
+    },
+    {
+        "x": 163,
+        "y": 153,
+        "name": "scrap-wall"
+    },
+    {
+        "x": 118,
+        "y": 160,
+        "name": "scrap-wall"
+    },
+    {
+        "x": 109,
+        "y": 159,
+        "name": "scrap-wall-large"
+    },
+    {
+        "x": 116,
+        "y": 158,
+        "name": "scrap-wall"
+    },
+    {
+        "x": 150,
+        "y": 152,
+        "name": "scrap-wall"
+    },
+    {
+        "x": 150,
+        "y": 153,
+        "name": "scrap-wall"
+    },
+    {
+        "x": 149,
+        "y": 153,
+        "name": "scrap-wall"
+    },
+    {
+        "x": 238,
+        "y": 237,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 237,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 238,
+        "name": "water"
+    },
+    {
+        "x": 240,
+        "y": 237,
+        "name": "water"
+    },
+    {
+        "x": 240,
+        "y": 238,
+        "name": "water"
+    },
+    {
+        "x": 240,
+        "y": 239,
+        "name": "water"
+    },
+    {
+        "x": 240,
+        "y": 240,
+        "name": "water"
+    },
+    {
+        "x": 239,
+        "y": 241,
+        "name": "water"
+    },
+    {
+        "x": 238,
+        "y": 241,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 241,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 239,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 240,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 236,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 236,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 237,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 238,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 239,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 240,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 241,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 242,
+        "name": "not deepwater"
+    },
+    {
+        "x": 237,
+        "y": 242,
+        "name": "not deepwater"
+    },
+    {
+        "x": 238,
+        "y": 242,
+        "name": "not deepwater"
+    },
+    {
+        "x": 237,
+        "y": 243,
+        "name": "not deepwater"
+    },
+    {
+        "x": 239,
+        "y": 236,
+        "name": "water"
+    },
+    {
+        "x": 239,
+        "y": 235,
+        "name": "water"
+    },
+    {
+        "x": 238,
+        "y": 236,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 235,
+        "name": "not deepwater"
+    },
+    {
+        "x": 238,
+        "y": 235,
+        "name": "not deepwater"
+    },
+    {
+        "x": 238,
+        "y": 234,
+        "name": "not deepwater"
+    },
+    {
+        "x": 237,
+        "y": 234,
+        "name": "not deepwater"
+    },
+    {
+        "x": 184,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 185,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 185,
+        "y": 214,
+        "name": "deepwater"
+    },
+    {
+        "x": 186,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 185,
+        "y": 216,
+        "name": "deepwater"
+    },
+    {
+        "x": 186,
+        "y": 216,
+        "name": "deepwater"
+    },
+    {
+        "x": 187,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 188,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 188,
+        "y": 214,
+        "name": "deepwater"
+    },
+    {
+        "x": 188,
+        "y": 216,
+        "name": "deepwater"
+    },
+    {
+        "x": 187,
+        "y": 216,
+        "name": "deepwater"
+    },
+    {
+        "x": 184,
+        "y": 216,
+        "name": "water"
+    },
+    {
+        "x": 183,
+        "y": 216,
+        "name": "water"
+    },
+    {
+        "x": 183,
+        "y": 215,
+        "name": "water"
+    },
+    {
+        "x": 183,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 184,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 184,
+        "y": 213,
+        "name": "water"
+    },
+    {
+        "x": 185,
+        "y": 212,
+        "name": "water"
+    },
+    {
+        "x": 185,
+        "y": 213,
+        "name": "water"
+    },
+    {
+        "x": 186,
+        "y": 213,
+        "name": "water"
+    },
+    {
+        "x": 186,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 187,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 188,
+        "y": 213,
+        "name": "water"
+    },
+    {
+        "x": 189,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 189,
+        "y": 215,
+        "name": "water"
+    },
+    {
+        "x": 189,
+        "y": 216,
+        "name": "water"
+    },
+    {
+        "x": 189,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 188,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 187,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 186,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 185,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 184,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 183,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 182,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 183,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 184,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 185,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 186,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 187,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 188,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 189,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 190,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 190,
+        "y": 217,
+        "name": "not deepwater"
+    },
+    {
+        "x": 190,
+        "y": 216,
+        "name": "not deepwater"
+    },
+    {
+        "x": 190,
+        "y": 215,
+        "name": "not deepwater"
+    },
+    {
+        "x": 191,
+        "y": 216,
+        "name": "not deepwater"
+    },
+    {
+        "x": 239,
+        "y": 237,
+        "name": "water"
+    },
+    {
+        "x": 238,
+        "y": 238,
+        "name": "deepwater"
+    },
+    {
+        "x": 239,
+        "y": 238,
+        "name": "deepwater"
+    },
+    {
+        "x": 239,
+        "y": 239,
+        "name": "deepwater"
+    },
+    {
+        "x": 238,
+        "y": 239,
+        "name": "deepwater"
+    },
+    {
+        "x": 238,
+        "y": 240,
+        "name": "deepwater"
+    },
+    {
+        "x": 239,
+        "y": 240,
+        "name": "deepwater"
+    },
+    {
+        "x": 68,
+        "y": 141,
+        "name": "deepwater"
+    },
+    {
+        "x": 67,
+        "y": 141,
+        "name": "deepwater"
+    },
+    {
+        "x": 66,
+        "y": 141,
+        "name": "deepwater"
+    },
+    {
+        "x": 66,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 65,
+        "y": 141,
+        "name": "deepwater"
+    },
+    {
+        "x": 65,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 67,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 68,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 69,
+        "y": 140,
+        "name": "deepwater"
+    },
+    {
+        "x": 69,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 70,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 68,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 67,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 66,
+        "y": 139,
+        "name": "deepwater"
+    },
+    {
+        "x": 64,
+        "y": 140,
+        "name": "water"
+    },
+    {
+        "x": 64,
+        "y": 141,
+        "name": "water"
+    },
+    {
+        "x": 65,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 66,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 67,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 67,
+        "y": 143,
+        "name": "water"
+    },
+    {
+        "x": 68,
+        "y": 143,
+        "name": "water"
+    },
+    {
+        "x": 68,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 69,
+        "y": 142,
+        "name": "water"
+    },
+    {
+        "x": 69,
+        "y": 141,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 141,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 140,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 140,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 139,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 71,
+        "y": 136,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 136,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 69,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 69,
+        "y": 136,
+        "name": "water"
+    },
+    {
+        "x": 68,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 68,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 67,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 66,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 65,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 64,
+        "y": 139,
+        "name": "water"
+    },
+    {
+        "x": 64,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 63,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 63,
+        "y": 139,
+        "name": "water"
+    },
+    {
+        "x": 62,
+        "y": 138,
+        "name": "water"
+    },
+    {
+        "x": 62,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 61,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 60,
+        "y": 137,
+        "name": "water"
+    },
+    {
+        "x": 65,
+        "y": 139,
+        "name": "water"
+    },
+    {
+        "x": 70,
+        "y": 138,
+        "name": "deepwater"
+    },
+    {
+        "x": 69,
+        "y": 138,
+        "name": "deepwater"
+    },
+    {
+        "x": 59,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 60,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 61,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 62,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 63,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 63,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 64,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 65,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 66,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 67,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 67,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 68,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 68,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 69,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 70,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 71,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 72,
+        "y": 135,
+        "name": "not deepwater"
+    },
+    {
+        "x": 72,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 72,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 72,
+        "y": 138,
+        "name": "not deepwater"
+    },
+    {
+        "x": 73,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 74,
+        "y": 137,
+        "name": "not deepwater"
+    },
+    {
+        "x": 73,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 58,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 64,
+        "y": 136,
+        "name": "not deepwater"
+    },
+    {
+        "x": 238,
+        "y": 237,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 237,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 238,
+        "name": "water"
+    },
+    {
+        "x": 240,
+        "y": 237,
+        "name": "water"
+    },
+    {
+        "x": 240,
+        "y": 238,
+        "name": "water"
+    },
+    {
+        "x": 240,
+        "y": 239,
+        "name": "water"
+    },
+    {
+        "x": 240,
+        "y": 240,
+        "name": "water"
+    },
+    {
+        "x": 239,
+        "y": 241,
+        "name": "water"
+    },
+    {
+        "x": 238,
+        "y": 241,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 241,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 239,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 240,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 236,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 236,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 237,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 238,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 239,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 240,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 241,
+        "name": "not deepwater"
+    },
+    {
+        "x": 236,
+        "y": 242,
+        "name": "not deepwater"
+    },
+    {
+        "x": 237,
+        "y": 242,
+        "name": "not deepwater"
+    },
+    {
+        "x": 238,
+        "y": 242,
+        "name": "not deepwater"
+    },
+    {
+        "x": 237,
+        "y": 243,
+        "name": "not deepwater"
+    },
+    {
+        "x": 239,
+        "y": 236,
+        "name": "water"
+    },
+    {
+        "x": 239,
+        "y": 235,
+        "name": "water"
+    },
+    {
+        "x": 238,
+        "y": 236,
+        "name": "water"
+    },
+    {
+        "x": 237,
+        "y": 235,
+        "name": "not deepwater"
+    },
+    {
+        "x": 238,
+        "y": 235,
+        "name": "not deepwater"
+    },
+    {
+        "x": 238,
+        "y": 234,
+        "name": "not deepwater"
+    },
+    {
+        "x": 237,
+        "y": 234,
+        "name": "not deepwater"
+    },
+    {
+        "x": 184,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 185,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 185,
+        "y": 214,
+        "name": "deepwater"
+    },
+    {
+        "x": 186,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 185,
+        "y": 216,
+        "name": "deepwater"
+    },
+    {
+        "x": 186,
+        "y": 216,
+        "name": "deepwater"
+    },
+    {
+        "x": 187,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 188,
+        "y": 215,
+        "name": "deepwater"
+    },
+    {
+        "x": 188,
+        "y": 214,
+        "name": "deepwater"
+    },
+    {
+        "x": 188,
+        "y": 216,
+        "name": "deepwater"
+    },
+    {
+        "x": 187,
+        "y": 216,
+        "name": "deepwater"
+    },
+    {
+        "x": 184,
+        "y": 216,
+        "name": "water"
+    },
+    {
+        "x": 183,
+        "y": 216,
+        "name": "water"
+    },
+    {
+        "x": 183,
+        "y": 215,
+        "name": "water"
+    },
+    {
+        "x": 183,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 184,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 184,
+        "y": 213,
+        "name": "water"
+    },
+    {
+        "x": 185,
+        "y": 212,
+        "name": "water"
+    },
+    {
+        "x": 185,
+        "y": 213,
+        "name": "water"
+    },
+    {
+        "x": 186,
+        "y": 213,
+        "name": "water"
+    },
+    {
+        "x": 186,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 187,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 188,
+        "y": 213,
+        "name": "water"
+    },
+    {
+        "x": 189,
+        "y": 214,
+        "name": "water"
+    },
+    {
+        "x": 189,
+        "y": 215,
+        "name": "water"
+    },
+    {
+        "x": 189,
+        "y": 216,
+        "name": "water"
+    },
+    {
+        "x": 189,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 188,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 187,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 186,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 185,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 184,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 183,
+        "y": 217,
+        "name": "water"
+    },
+    {
+        "x": 182,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 183,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 184,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 185,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 186,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 187,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 188,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 189,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 190,
+        "y": 218,
+        "name": "not deepwater"
+    },
+    {
+        "x": 190,
+        "y": 217,
+        "name": "not deepwater"
+    },
+    {
+        "x": 190,
+        "y": 216,
+        "name": "not deepwater"
+    },
+    {
+        "x": 190,
+        "y": 215,
+        "name": "not deepwater"
+    },
+    {
+        "x": 191,
+        "y": 216,
+        "name": "not deepwater"
+    },
+    {
+        "x": 239,
+        "y": 237,
+        "name": "water"
+    },
+    {
+        "x": 238,
+        "y": 238,
+        "name": "deepwater"
+    },
+    {
+        "x": 239,
+        "y": 238,
+        "name": "deepwater"
+    },
+    {
+        "x": 239,
+        "y": 239,
+        "name": "deepwater"
+    },
+    {
+        "x": 238,
+        "y": 239,
+        "name": "deepwater"
+    },
+    {
+        "x": 238,
+        "y": 240,
+        "name": "deepwater"
+    },
+    {
+        "x": 239,
+        "y": 240,
+        "name": "deepwater"
+    },
+    {
+        "x": 204,
+        "y": 222,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 203,
+        "y": 222,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 204,
+        "y": 223,
+        "name": "ore-coal3"
+    },
+    {
+        "x": 205,
+        "y": 223,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 206,
+        "y": 223,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 206,
+        "y": 224,
+        "name": "ore-coal3"
+    },
+    {
+        "x": 205,
+        "y": 225,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 202,
+        "y": 221,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 202,
+        "y": 223,
+        "name": "ore-coal3"
+    },
+    {
+        "x": 201,
+        "y": 222,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 201,
+        "y": 221,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 190,
+        "y": 247,
+        "name": "ore-titan2"
+    },
+    {
+        "x": 190,
+        "y": 246,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 191,
+        "y": 246,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 191,
+        "y": 245,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 191,
+        "y": 244,
+        "name": "ore-titan3"
+    },
+    {
+        "x": 191,
+        "y": 243,
+        "name": "ore-titan3"
+    },
+    {
+        "x": 192,
+        "y": 245,
+        "name": "ore-titan2"
+    },
+    {
+        "x": 193,
+        "y": 246,
+        "name": "ore-titan2"
+    },
+    {
+        "x": 193,
+        "y": 247,
+        "name": "ore-titan3"
+    },
+    {
+        "x": 193,
+        "y": 245,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 194,
+        "y": 245,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 197,
+        "y": 245,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 196,
+        "y": 245,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 196,
+        "y": 246,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 195,
+        "y": 245,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 195,
+        "y": 244,
+        "name": "ore-titan2"
+    },
+    {
+        "x": 194,
+        "y": 243,
+        "name": "ore-titan2"
+    },
+    {
+        "x": 194,
+        "y": 244,
+        "name": "ore-titan3"
+    },
+    {
+        "x": 193,
+        "y": 243,
+        "name": "ore-titan3"
+    },
+    {
+        "x": 193,
+        "y": 241,
+        "name": "ore-titan3"
+    },
+    {
+        "x": 192,
+        "y": 240,
+        "name": "ore-titan3"
+    },
+    {
+        "x": 193,
+        "y": 240,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 192,
+        "y": 241,
+        "name": "ore-titan2"
+    },
+    {
+        "x": 193,
+        "y": 242,
+        "name": "ore-titan1"
+    },
+    {
+        "x": 191,
+        "y": 240,
+        "name": "ore-coal3"
+    },
+    {
+        "x": 192,
+        "y": 242,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 189,
+        "y": 240,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 189,
+        "y": 238,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 190,
+        "y": 243,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 189,
+        "y": 242,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 194,
+        "y": 240,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 193,
+        "y": 238,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 191,
+        "y": 238,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 190,
+        "y": 239,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 191,
+        "y": 241,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 190,
+        "y": 242,
+        "name": "ore-coal1"
+    },
+    {
+        "x": 192,
+        "y": 238,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 192,
+        "y": 237,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 192,
+        "y": 236,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 190,
+        "y": 236,
+        "name": "ore-coal2"
+    },
+    {
+        "x": 191,
+        "y": 235,
+        "name": "ore-coal2"
+    },
+    {
         "x": 0,
         "y": 0,
         "name": "stone-wall2-alpha0"
@@ -31285,11 +33225,6 @@
         "name": "stone-wall2-alpha0"
     },
     {
-        "x": 240,
-        "y": 254,
-        "name": "stone-wall2-alpha0"
-    },
-    {
         "x": 241,
         "y": 254,
         "name": "stone-wall2-alpha1"
@@ -31431,11 +33366,6 @@
     },
     {
         "x": 190,
-        "y": 255,
-        "name": "stone-wall1-alpha0"
-    },
-    {
-        "x": 240,
         "y": 255,
         "name": "stone-wall1-alpha0"
     },
@@ -31530,386 +33460,6 @@
         "name": "stone-wall1-alpha0"
     },
     {
-        "x": 68,
-        "y": 141,
-        "name": "deepwater"
-    },
-    {
-        "x": 67,
-        "y": 141,
-        "name": "deepwater"
-    },
-    {
-        "x": 66,
-        "y": 141,
-        "name": "deepwater"
-    },
-    {
-        "x": 66,
-        "y": 140,
-        "name": "deepwater"
-    },
-    {
-        "x": 65,
-        "y": 141,
-        "name": "deepwater"
-    },
-    {
-        "x": 65,
-        "y": 140,
-        "name": "deepwater"
-    },
-    {
-        "x": 67,
-        "y": 140,
-        "name": "deepwater"
-    },
-    {
-        "x": 68,
-        "y": 140,
-        "name": "deepwater"
-    },
-    {
-        "x": 69,
-        "y": 140,
-        "name": "deepwater"
-    },
-    {
-        "x": 69,
-        "y": 139,
-        "name": "deepwater"
-    },
-    {
-        "x": 70,
-        "y": 139,
-        "name": "deepwater"
-    },
-    {
-        "x": 68,
-        "y": 139,
-        "name": "deepwater"
-    },
-    {
-        "x": 67,
-        "y": 139,
-        "name": "deepwater"
-    },
-    {
-        "x": 66,
-        "y": 139,
-        "name": "deepwater"
-    },
-    {
-        "x": 64,
-        "y": 140,
-        "name": "water"
-    },
-    {
-        "x": 64,
-        "y": 141,
-        "name": "water"
-    },
-    {
-        "x": 65,
-        "y": 142,
-        "name": "water"
-    },
-    {
-        "x": 66,
-        "y": 142,
-        "name": "water"
-    },
-    {
-        "x": 67,
-        "y": 142,
-        "name": "water"
-    },
-    {
-        "x": 67,
-        "y": 143,
-        "name": "water"
-    },
-    {
-        "x": 68,
-        "y": 143,
-        "name": "water"
-    },
-    {
-        "x": 68,
-        "y": 142,
-        "name": "water"
-    },
-    {
-        "x": 69,
-        "y": 142,
-        "name": "water"
-    },
-    {
-        "x": 69,
-        "y": 141,
-        "name": "water"
-    },
-    {
-        "x": 70,
-        "y": 141,
-        "name": "water"
-    },
-    {
-        "x": 70,
-        "y": 140,
-        "name": "water"
-    },
-    {
-        "x": 71,
-        "y": 140,
-        "name": "water"
-    },
-    {
-        "x": 71,
-        "y": 139,
-        "name": "water"
-    },
-    {
-        "x": 71,
-        "y": 138,
-        "name": "water"
-    },
-    {
-        "x": 71,
-        "y": 137,
-        "name": "water"
-    },
-    {
-        "x": 71,
-        "y": 136,
-        "name": "water"
-    },
-    {
-        "x": 70,
-        "y": 136,
-        "name": "water"
-    },
-    {
-        "x": 70,
-        "y": 137,
-        "name": "water"
-    },
-    {
-        "x": 69,
-        "y": 137,
-        "name": "water"
-    },
-    {
-        "x": 69,
-        "y": 136,
-        "name": "water"
-    },
-    {
-        "x": 68,
-        "y": 137,
-        "name": "water"
-    },
-    {
-        "x": 68,
-        "y": 138,
-        "name": "water"
-    },
-    {
-        "x": 67,
-        "y": 138,
-        "name": "water"
-    },
-    {
-        "x": 66,
-        "y": 138,
-        "name": "water"
-    },
-    {
-        "x": 65,
-        "y": 138,
-        "name": "water"
-    },
-    {
-        "x": 64,
-        "y": 139,
-        "name": "water"
-    },
-    {
-        "x": 64,
-        "y": 138,
-        "name": "water"
-    },
-    {
-        "x": 63,
-        "y": 138,
-        "name": "water"
-    },
-    {
-        "x": 63,
-        "y": 139,
-        "name": "water"
-    },
-    {
-        "x": 62,
-        "y": 138,
-        "name": "water"
-    },
-    {
-        "x": 62,
-        "y": 137,
-        "name": "water"
-    },
-    {
-        "x": 61,
-        "y": 137,
-        "name": "water"
-    },
-    {
-        "x": 60,
-        "y": 137,
-        "name": "water"
-    },
-    {
-        "x": 65,
-        "y": 139,
-        "name": "water"
-    },
-    {
-        "x": 70,
-        "y": 138,
-        "name": "deepwater"
-    },
-    {
-        "x": 69,
-        "y": 138,
-        "name": "deepwater"
-    },
-    {
-        "x": 59,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 60,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 61,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 62,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 63,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 63,
-        "y": 137,
-        "name": "not deepwater"
-    },
-    {
-        "x": 64,
-        "y": 137,
-        "name": "not deepwater"
-    },
-    {
-        "x": 65,
-        "y": 137,
-        "name": "not deepwater"
-    },
-    {
-        "x": 66,
-        "y": 137,
-        "name": "not deepwater"
-    },
-    {
-        "x": 67,
-        "y": 137,
-        "name": "not deepwater"
-    },
-    {
-        "x": 67,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 68,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 68,
-        "y": 135,
-        "name": "not deepwater"
-    },
-    {
-        "x": 69,
-        "y": 135,
-        "name": "not deepwater"
-    },
-    {
-        "x": 70,
-        "y": 135,
-        "name": "not deepwater"
-    },
-    {
-        "x": 71,
-        "y": 135,
-        "name": "not deepwater"
-    },
-    {
-        "x": 72,
-        "y": 135,
-        "name": "not deepwater"
-    },
-    {
-        "x": 72,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 72,
-        "y": 137,
-        "name": "not deepwater"
-    },
-    {
-        "x": 72,
-        "y": 138,
-        "name": "not deepwater"
-    },
-    {
-        "x": 73,
-        "y": 137,
-        "name": "not deepwater"
-    },
-    {
-        "x": 74,
-        "y": 137,
-        "name": "not deepwater"
-    },
-    {
-        "x": 73,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 58,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
-        "x": 64,
-        "y": 136,
-        "name": "not deepwater"
-    },
-    {
         "x": 14,
         "y": 31,
         "name": "stone-wall1-alpha2"
@@ -35550,508 +37100,358 @@
         "name": "stone-wall1-alpha2"
     },
     {
-        "x": 109,
-        "y": 161,
-        "name": "scrap-wall-huge"
+        "x": 191,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 112,
-        "y": 160,
-        "name": "scrap-wall-huge"
+        "x": 192,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 115,
-        "y": 159,
-        "name": "scrap-wall-huge"
+        "x": 193,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 151,
-        "y": 151,
-        "name": "scrap-wall-huge"
+        "x": 194,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 154,
-        "y": 151,
-        "name": "scrap-wall-huge"
+        "x": 196,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 157,
-        "y": 150,
-        "name": "scrap-wall-huge"
+        "x": 195,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 160,
-        "y": 151,
-        "name": "scrap-wall-huge"
+        "x": 198,
+        "y": 256,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 163,
-        "y": 150,
-        "name": "scrap-wall-huge"
+        "x": 197,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 164,
-        "y": 153,
-        "name": "scrap-wall-large"
+        "x": 198,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 166,
-        "y": 152,
-        "name": "scrap-wall"
+        "x": 199,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 166,
-        "y": 153,
-        "name": "scrap-wall"
+        "x": 203,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 163,
-        "y": 153,
-        "name": "scrap-wall"
+        "x": 202,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 118,
-        "y": 160,
-        "name": "scrap-wall"
+        "x": 201,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 109,
-        "y": 159,
-        "name": "scrap-wall-large"
+        "x": 200,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 116,
-        "y": 158,
-        "name": "scrap-wall"
+        "x": 204,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 150,
-        "y": 152,
-        "name": "scrap-wall"
+        "x": 205,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 150,
-        "y": 153,
-        "name": "scrap-wall"
-    },
-    {
-        "x": 149,
-        "y": 153,
-        "name": "scrap-wall"
+        "x": 206,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
         "x": 238,
-        "y": 237,
-        "name": "water"
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
         "x": 237,
-        "y": 237,
-        "name": "water"
-    },
-    {
-        "x": 237,
-        "y": 238,
-        "name": "water"
-    },
-    {
-        "x": 240,
-        "y": 237,
-        "name": "water"
-    },
-    {
-        "x": 240,
-        "y": 238,
-        "name": "water"
-    },
-    {
-        "x": 240,
-        "y": 239,
-        "name": "water"
-    },
-    {
-        "x": 240,
-        "y": 240,
-        "name": "water"
-    },
-    {
-        "x": 239,
-        "y": 241,
-        "name": "water"
-    },
-    {
-        "x": 238,
-        "y": 241,
-        "name": "water"
-    },
-    {
-        "x": 237,
-        "y": 241,
-        "name": "water"
-    },
-    {
-        "x": 237,
-        "y": 239,
-        "name": "water"
-    },
-    {
-        "x": 237,
-        "y": 240,
-        "name": "water"
-    },
-    {
-        "x": 237,
-        "y": 236,
-        "name": "not deepwater"
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
         "x": 236,
-        "y": 236,
-        "name": "not deepwater"
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 236,
-        "y": 237,
-        "name": "not deepwater"
+        "x": 235,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 236,
-        "y": 238,
-        "name": "not deepwater"
+        "x": 234,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 236,
-        "y": 239,
-        "name": "not deepwater"
+        "x": 233,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 236,
-        "y": 240,
-        "name": "not deepwater"
+        "x": 231,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 236,
-        "y": 241,
-        "name": "not deepwater"
+        "x": 230,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 236,
-        "y": 242,
-        "name": "not deepwater"
+        "x": 232,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 237,
-        "y": 242,
-        "name": "not deepwater"
+        "x": 229,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 238,
-        "y": 242,
-        "name": "not deepwater"
+        "x": 227,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 237,
-        "y": 243,
-        "name": "not deepwater"
+        "x": 225,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 239,
-        "y": 236,
-        "name": "water"
+        "x": 224,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 239,
-        "y": 235,
-        "name": "water"
+        "x": 221,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 238,
-        "y": 236,
-        "name": "water"
+        "x": 219,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 237,
-        "y": 235,
-        "name": "not deepwater"
+        "x": 217,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 238,
-        "y": 235,
-        "name": "not deepwater"
+        "x": 218,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 238,
-        "y": 234,
-        "name": "not deepwater"
+        "x": 220,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 237,
-        "y": 234,
-        "name": "not deepwater"
+        "x": 226,
+        "y": 255,
+        "name": "stone-wall1-alpha0"
     },
     {
-        "x": 184,
-        "y": 215,
-        "name": "deepwater"
+        "x": 228,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 185,
-        "y": 215,
-        "name": "deepwater"
+        "x": 223,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 185,
-        "y": 214,
-        "name": "deepwater"
+        "x": 222,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 186,
-        "y": 215,
-        "name": "deepwater"
+        "x": 216,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 185,
-        "y": 216,
-        "name": "deepwater"
+        "x": 215,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 186,
-        "y": 216,
-        "name": "deepwater"
+        "x": 213,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 187,
-        "y": 215,
-        "name": "deepwater"
+        "x": 212,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 188,
-        "y": 215,
-        "name": "deepwater"
+        "x": 211,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 188,
-        "y": 214,
-        "name": "deepwater"
+        "x": 209,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 188,
-        "y": 216,
-        "name": "deepwater"
+        "x": 208,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 187,
-        "y": 216,
-        "name": "deepwater"
+        "x": 207,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 184,
-        "y": 216,
-        "name": "water"
+        "x": 210,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 183,
-        "y": 216,
-        "name": "water"
+        "x": 214,
+        "y": 255,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 183,
-        "y": 215,
-        "name": "water"
+        "x": 214,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 183,
-        "y": 214,
-        "name": "water"
+        "x": 215,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 184,
-        "y": 214,
-        "name": "water"
+        "x": 216,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 184,
-        "y": 213,
-        "name": "water"
+        "x": 217,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 185,
-        "y": 212,
-        "name": "water"
-    },
-    {
-        "x": 185,
-        "y": 213,
-        "name": "water"
-    },
-    {
-        "x": 186,
-        "y": 213,
-        "name": "water"
-    },
-    {
-        "x": 186,
-        "y": 214,
-        "name": "water"
-    },
-    {
-        "x": 187,
-        "y": 214,
-        "name": "water"
-    },
-    {
-        "x": 188,
-        "y": 213,
-        "name": "water"
+        "x": 218,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
         "x": 189,
-        "y": 214,
-        "name": "water"
-    },
-    {
-        "x": 189,
-        "y": 215,
-        "name": "water"
-    },
-    {
-        "x": 189,
-        "y": 216,
-        "name": "water"
-    },
-    {
-        "x": 189,
-        "y": 217,
-        "name": "water"
-    },
-    {
-        "x": 188,
-        "y": 217,
-        "name": "water"
-    },
-    {
-        "x": 187,
-        "y": 217,
-        "name": "water"
-    },
-    {
-        "x": 186,
-        "y": 217,
-        "name": "water"
-    },
-    {
-        "x": 185,
-        "y": 217,
-        "name": "water"
-    },
-    {
-        "x": 184,
-        "y": 217,
-        "name": "water"
-    },
-    {
-        "x": 183,
-        "y": 217,
-        "name": "water"
-    },
-    {
-        "x": 182,
-        "y": 218,
-        "name": "not deepwater"
-    },
-    {
-        "x": 183,
-        "y": 218,
-        "name": "not deepwater"
-    },
-    {
-        "x": 184,
-        "y": 218,
-        "name": "not deepwater"
-    },
-    {
-        "x": 185,
-        "y": 218,
-        "name": "not deepwater"
-    },
-    {
-        "x": 186,
-        "y": 218,
-        "name": "not deepwater"
-    },
-    {
-        "x": 187,
-        "y": 218,
-        "name": "not deepwater"
-    },
-    {
-        "x": 188,
-        "y": 218,
-        "name": "not deepwater"
-    },
-    {
-        "x": 189,
-        "y": 218,
-        "name": "not deepwater"
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
         "x": 190,
-        "y": 218,
-        "name": "not deepwater"
-    },
-    {
-        "x": 190,
-        "y": 217,
-        "name": "not deepwater"
-    },
-    {
-        "x": 190,
-        "y": 216,
-        "name": "not deepwater"
-    },
-    {
-        "x": 190,
-        "y": 215,
-        "name": "not deepwater"
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
         "x": 191,
-        "y": 216,
-        "name": "not deepwater"
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
-        "x": 239,
-        "y": 237,
-        "name": "water"
+        "x": 189,
+        "y": 253,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 188,
+        "y": 252,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 192,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 193,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 209,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 207,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 208,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 206,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 212,
+        "y": 253,
+        "name": "stone-wall-large-alpha0"
+    },
+    {
+        "x": 210,
+        "y": 253,
+        "name": "stone-wall-large-alpha0"
     },
     {
         "x": 238,
-        "y": 238,
-        "name": "deepwater"
+        "y": 254,
+        "name": "stone-wall2-alpha0"
+    },
+    {
+        "x": 237,
+        "y": 254,
+        "name": "stone-wall2-alpha0"
     },
     {
         "x": 239,
-        "y": 238,
-        "name": "deepwater"
+        "y": 253,
+        "name": "stone-wall2-alpha0"
     },
     {
         "x": 239,
-        "y": 239,
-        "name": "deepwater"
-    },
-    {
-        "x": 238,
-        "y": 239,
-        "name": "deepwater"
-    },
-    {
-        "x": 238,
-        "y": 240,
-        "name": "deepwater"
-    },
-    {
-        "x": 239,
-        "y": 240,
-        "name": "deepwater"
+        "y": 254,
+        "name": "stone-wall-large-alpha0"
     }
 ]

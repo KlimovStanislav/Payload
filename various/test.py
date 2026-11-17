@@ -5,7 +5,7 @@ from PyQt6.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QLa
 
 app = QApplication(sys.argv)
 
-with open("questions.json", "r", encoding="UTF-8") as f:
+with open("various/questions.json", "r", encoding="UTF-8") as f:
     VARIANTS:list[list] = json.load(f)
 
 class Variant(QGroupBox):

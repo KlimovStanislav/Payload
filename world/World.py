@@ -104,6 +104,9 @@ class World:
         self.blocks:list[Block] = []
         self.block_map:dict[Cell, list[Block]] = {}
 
+        self.static_blocks:list[Block] = []
+        #self.static_block_map:dict[Cell, list[Block]] = {}
+
         self.units:list[Unit] = []
         self.unit_map:dict[Cell, list[Unit]] = {}
     
@@ -179,6 +182,31 @@ class World:
 
         for network in [*block.networks.values()]:
             network.remove(block)
+
+    def append_static_block(self, block:Block):
+        self.static_blocks.append(block)
+        for xcoord, ycoord in block.get_occupied_cells():
+            if (blocks:=self.block_map.get(Cell(xcoord, ycoord))) is not None:
+                self.block_map[Cell(xcoord, ycoord)] = [block, *blocks]
+                continue
+            self.block_map[Cell(xcoord, ycoord)] = [block]
+
+    def remove_static_block(self, block:Block):
+        if block in self.static_blocks:
+            self.static_blocks.remove(block)
+        
+        for xcoord, ycoord in block.get_occupied_cells():
+            if (xcoord, ycoord) in self.block_map:
+                blocks = cast(list[Block], self.block_map.get(Cell(xcoord, ycoord)))
+                if block in blocks:
+                    blocks.remove(block)
+                if len(blocks) == 0:
+                    del self.block_map[Cell(xcoord, ycoord)]
+
+        if hasattr(block, 'pixmap_item'):
+            scene = block.pixmap_item.scene()
+            scene.removeItem(block.pixmap_item)
+            scene.update()
 
     def append_block(self, block:Block):
         self.blocks.append(block)

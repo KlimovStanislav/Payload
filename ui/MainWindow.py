@@ -5,7 +5,7 @@ from PyQt6.QtGui import QPixmap, QIcon, QShortcut, QKeySequence, QPainter, QColo
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtWidgets import QMainWindow, QStackedWidget, QWidget
 
-import webbrowser
+import webbrowser, os
 
 from ui.Widgets import Labels, Buttons
 
@@ -15,8 +15,7 @@ from base.functions import get_texture, safe_class, TEXTURE_CACHE
 from base.MusicPlayer import MusicPlayer
 from base.cursors import Cursor
 from base import composites
-from base import components
-from base.folders import folder, saves, settings, block_config, unit_config
+from base.folders import folder, saves, settings, block_config, unit_config, localization
 
 from ui.SandboxWindow import SandboxWindow
 from ui.EditorWindow import EditorWindow
@@ -110,6 +109,15 @@ class SettingsWindow(QWidget):
     def __init__(self, window:MainWindow, *args, **kwargs):
             self.MainWindow = window
             super().__init__(window, *args, **kwargs)
+
+            layout = QtWidgets.QVBoxLayout(self)
+            self.btn_exit = Buttons.Secondary(localization["menu-btn-exit"])
+            self.btn_exit.clicked.connect(lambda: self.MainWindow.MenuWindow.show())
+
+            layout.addStretch()
+            layout.addWidget(Labels.Body(localization["various-nothing"]), alignment=Qt.AlignmentFlag.AlignCenter)
+            layout.addWidget(self.btn_exit)
+            layout.addStretch()
             
     def show(self):
         self.MainWindow.widget.setCurrentIndex(4)
@@ -135,12 +143,12 @@ class MenuWindow(QWidget):
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         left_panel.addWidget(title)
 
-        btn_campaign = Buttons.Primary("Campaign")
-        btn_sandbox = Buttons.Primary("Sandbox")
-        btn_settings = Buttons.Secondary("Settings")
-        btn_exit = Buttons.Secondary("Exit")
-        btn_editor = Buttons.Secondary("Editor")
-        btn_github = Buttons.Secondary("GitHub")
+        btn_campaign = Buttons.Primary(localization["menu-btn-campaign"])
+        btn_sandbox = Buttons.Primary(localization["menu-btn-sandbox"])
+        btn_settings = Buttons.Secondary(localization["menu-btn-settings"])
+        btn_exit = Buttons.Secondary(localization["menu-btn-exit"])
+        btn_editor = Buttons.Secondary(localization["menu-btn-editor"])
+        btn_github = Buttons.Secondary(localization["menu-btn-github"])
         
         for btn in [btn_campaign, btn_sandbox, btn_settings, btn_editor, btn_github, btn_exit]:
             btn.setFixedSize(300, 80)
@@ -220,6 +228,7 @@ class MainWindow(QMainWindow):
         QShortcut(QKeySequence("F11"), self).activated.connect(lambda: self.switch_fullscreen())
         QShortcut(QKeySequence("F4"), self).activated.connect(lambda: self.parsing("refresh"))
         QShortcut(QKeySequence("F3"), self).activated.connect(lambda: self.parsing("view"))
+        QShortcut(QKeySequence("Shift+F1"), self).activated.connect(lambda: self.parsing("break"))
 
     def switch_fullscreen(self):
         if self.fullscreen:
@@ -238,6 +247,12 @@ class MainWindow(QMainWindow):
 
             case ["view"]:
                 folder.view()
+
+            case ["break"]:
+                try:
+                    folder.log.write("Forced closure of the application")
+                finally:
+                    os._exit(0)
 
             case ["refresh"]:
                 global TEXTURE_CACHE

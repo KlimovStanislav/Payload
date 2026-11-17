@@ -47,7 +47,7 @@ class Block(SceneObject):
 
     def finish(self):
         if hasattr(self, "pixmap_item"):
-            folder.log.write("Block has placed 2 times", type=applib.ERROR)
+            folder.log.write("Block was placed 2 times", type=applib.ERROR)
             return
         
         for cell in self.get_occupied_cells():

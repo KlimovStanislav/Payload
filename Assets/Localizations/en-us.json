@@ -1,0 +1,16 @@
+{
+"menu": {
+    "btn": {
+        "exit": "Exit",
+        "github": "GitHub",
+        "settings": "Settings",
+        "campaign": "Campaign",
+        "sandbox": "Sandbox",
+        "editor": "Editor"}
+},
+
+"various": {
+    "nothing": "Nothing here..."
+}
+
+}

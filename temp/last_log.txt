@@ -1,5 +1,6 @@
+[Loader] Loaded world <__TEST__>, block len: <1>
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\air.png> (32x32)
-[StartInfo] All systems online. Start lasted 282 milliseconds. Smoke tests completed in 21 milliseconds.
+[StartInfo] All systems online. Start lasted 306 milliseconds. Smoke tests completed in 26 milliseconds.
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\icon.png> (64x64)
 [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\drill.png> (96x96)
@@ -39,6 +40,7 @@
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\char3.png> (32x32)
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\cliffs1.png> (32x32)
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\crater-stone1.png> (32x32)
+[TextureCache] Loaded: <d:\Payload\Assets\Textures\crater-stone-alpha.png> (32x32)
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\crater-stone2.png> (32x32)
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\crater-stone3.png> (32x32)
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\crater-stone4.png> (32x32)
@@ -116,5 +118,7 @@
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\deepwater.png> (32x32)
 [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
 [TextureCache] Loaded: <d:\Payload\Assets\Textures\flask.png> (32x32)
-Playing: <d:\Payload\Assets\Music\game3.ogg>
+[BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[Loader] Loaded world <Plateau>, block len: <7491>
+Playing: <d:\Payload\Assets\Music\game7.ogg>
 [EXIT] 0

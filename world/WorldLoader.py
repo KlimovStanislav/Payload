@@ -81,7 +81,8 @@ class WorldLoader:
                 world.relief_map.setCacheMode(QGraphicsItem.CacheMode.DeviceCoordinateCache)
     
             try:
-                for block in sector_path.read("Blocks.json", type="json"):
+                i=0
+                for i, block in enumerate(sector_path.read("Blocks.json", type="json")):
                     try:
                         if block_config.get(block["name"]) is None:
                             raise KeyError(f"<{block["name"]}> missing in the config")
@@ -93,18 +94,19 @@ class WorldLoader:
                     if block["name"] == "base":
                         world.Base = block_сам
 
-                    for name, value in block.items():
+                    for namef, value in block.items():
                         if isinstance(value, dict):
                             for st, zn in value.items():
                                 try:
-                                    cls = components[name]
+                                    cls = components[namef]
                                     block_сам.components[cls].__setattr__(st, zn)
                                 except KeyError:
-                                    folder.log.write(f"Invalid component <{name}>", type="LoadError", set_error=True)
+                                    folder.log.write(f"Invalid component <{namef}>", type="LoadError", set_error=True)
     
             except (json.JSONDecodeError, KeyError) as e:
                 folder.log.write(f"Error reading the sector file: <{traceback.format_exc()}>", type="LoadError", set_error=True)
             else:
+                folder.log.write(f"Loaded world <{name}>, block len: <{i+1}>", type="Loader")
                 return world
 
     @staticmethod
@@ -114,7 +116,7 @@ class WorldLoader:
         
                 sector_path = saves.mkdir(name)
                 
-                for block in world.blocks:
+                for block in [*world.blocks, *world.static_blocks]:
                     if not block.exists:
                         continue
 

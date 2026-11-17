@@ -506,6 +506,9 @@ class Config:
     def __contains__(self, item):
         return item in self._data
 
+    def __repr__(self):
+        return repr(self._data)
+
     def get(self, dotted_key: str, default=None):
         node = self._data
         for part in str(dotted_key).split("."):

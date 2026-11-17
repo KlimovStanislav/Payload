@@ -1,7 +1,7 @@
-from composites.Block import Block
+from composites.StaticBlock import StaticBlock
 import random
 
-class RandomRotateBlock(Block):
+class RandomRotateBlock(StaticBlock):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.finish()

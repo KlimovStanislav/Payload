@@ -249,42 +249,50 @@
         "relief": true,
         "texture": "cliffs1"
     },
+
     "crater-stone1": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "crater-stone1"
     },
+    "crater-stone-alpha": {
+        "type": "RandomRotateBlock",
+        "z": 11,
+        "relief": true,
+        "texture": "crater-stone-alpha"
+    },
     "crater-stone2": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "crater-stone2"
     },
     "crater-stone3": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "crater-stone3"
     },
     "crater-stone4": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "crater-stone4"
     },
     "crater-stone5": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "crater-stone5"
     },
     "crater-stone6": {
-        "type": "UseBlock",
+        "type": "RandomRotateBlock",
         "z": 11,
         "relief": true,
         "texture": "crater-stone6"
     },
+
     "dacite-edge": {
         "type": "UseBlock",
         "z": 11,

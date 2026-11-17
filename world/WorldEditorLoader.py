@@ -6,7 +6,6 @@ from base.folders import folder, saves, block_config
 from base.composites import composites
 from base.components import components
 
-from PyQt6.QtWidgets import QApplication
 from PyQt6.QtGui import QPixmap, QPainter, QBrush, QColor
 from PyQt6.QtCore import QRectF
 
@@ -52,9 +51,8 @@ class WorldEditorLoader:
                 scene.setSceneRect(QRectF(0, 0, world.size[0]*32, world.size[1]*32))
     
             try:
+                i=0
                 for i, block in enumerate([*sector_path.read("ReliefBlocks.json", type="json"), *sector_path.read("Blocks.json", type="json")]):
-                    if i%10==0:
-                        QApplication.processEvents()
                     try:
                         block_class = composites[block_config[block["name"]]["type"]]
                     except KeyError as e:
@@ -65,18 +63,19 @@ class WorldEditorLoader:
                     if block["name"] == "base":
                         world.Base = block_сам
 
-                    for name, value in block.items():
+                    for namef, value in block.items():
                         if isinstance(value, dict):
                             for st, zn in value.items():
                                 try:
-                                    cls = components[name]
+                                    cls = components[namef]
                                     block_сам.components[cls].__setattr__(st, zn)
                                 except KeyError:
-                                    folder.log.write(f"Invalid component <{name}>", type="LoadError", set_error=True)
+                                    folder.log.write(f"Invalid component <{namef}>", type="LoadError", set_error=True)
     
-            except (json.JSONDecodeError, KeyError) as e:
+            except Exception as e:
                 folder.log.write(f"Error reading the sector file: <{traceback.format_exc()}>", type="LoadError", set_error=True)
             else:
+                folder.log.write(f"Loaded world <{name}>, block len: <{i+1}>", type="EditorLoader")
                 return world
 
     @staticmethod
@@ -98,7 +97,7 @@ class WorldEditorLoader:
         
                 sector_path = saves.mkdir(name)
                 
-                for block in world.blocks:
+                for block in [*world.blocks, *world.static_blocks]:
                     if not block.exists:
                         continue
                 
