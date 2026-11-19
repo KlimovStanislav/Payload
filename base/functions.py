@@ -25,8 +25,15 @@ def safe(func:Callable) -> Callable[..., Any]:
                 safe.errors.add(str((func.__qualname__, e)))
             else:
                 applib.lprint(f"<{func.__qualname__}> - {e}", type="RuntimeError", set_error=True)
+            for funcf in onerror.functions:
+                funcf(f"<{func.__qualname__}> - {e}")
     return wrapper
 
+def onerror(func:Callable):
+    onerror.functions.add(func)
+    return func
+
+onerror.functions = set()
 safe.errors = set()
 
 def safe_class(cls):

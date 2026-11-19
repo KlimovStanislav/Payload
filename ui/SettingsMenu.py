@@ -2,7 +2,7 @@ from PyQt6 import QtWidgets
 from PyQt6.QtCore import Qt
 
 from base.functions import safe_class
-from base.folders import settings
+from base.folders import settings, localization
 
 from ui.Widgets import Labels, Buttons, Sliders
 
@@ -15,19 +15,19 @@ class SettingsMenu(Menu):
         
         layout = QtWidgets.QVBoxLayout(self)
         
-        title = Labels.Title("Settings")
+        title = Labels.Title(localization["menu-general-settings"])
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         
-        self.fullscreen_check = Buttons.Toggle("Fullscreen")
+        self.fullscreen_check = Buttons.Toggle(localization["menu-btn-fullscreen"])
         self.fullscreen_check.clicked.connect(lambda *args: self.check())
 
-        self.music_check = Buttons.Toggle("Music")
+        self.music_check = Buttons.Toggle(localization["menu-label-music"])
 
-        volume_label = Labels.Body("Volume:")
+        volume_label = Labels.Body(f"{localization["menu-label-volume"]}:")
         self.volume_slider = Sliders.Horizontal()
         self.volume_slider.setRange(0, 100)
 
-        music_volume_label = Labels.Body("Music Volume:")
+        music_volume_label = Labels.Body(f"{localization["menu-label-musicvolume"]}:")
         self.music_volume_slider = Sliders.Horizontal()
         self.music_volume_slider.setRange(0, 100)
 
@@ -35,10 +35,10 @@ class SettingsMenu(Menu):
         self.fps_slider = Sliders.Horizontal()
         self.fps_slider.setRange(10, 240)
         
-        btn_back = Buttons.Secondary("Back")
+        btn_back = Buttons.Secondary(localization["menu-btn-back"])
         btn_back.clicked.connect(lambda: self.Back())
         
-        btn_save = Buttons.Secondary("Apply")
+        btn_save = Buttons.Secondary(localization["menu-btn-apply"])
         btn_save.clicked.connect(lambda: self.save_settings())
         
         layout.addWidget(title)

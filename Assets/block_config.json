@@ -138,7 +138,7 @@
 
 
 
-        "scrap-wall-huge": {
+    "scrap-wall-huge": {
         "type": "UseBlock",
         "z": 30,
         "texture": "scrap-wall-huge"
@@ -156,7 +156,7 @@
 
     
 
-        "ore-coal1": {
+    "ore-coal1": {
         "type": "UseBlock",
         "z": 14,
         "mining_type": "coal",

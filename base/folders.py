@@ -23,13 +23,13 @@ class Dict(dict):
         for t in key.split("-"):
             if not isinstance(current, dict) or t not in current:
                 folder.log.write(f"There is no translation for <{key}>", type="LocalizationError")
-                return key
+                return f"<{key}>"
             a = current.get(t)
             if isinstance(a, str):
                 return a
             current = a
         folder.log.write(f"There is no translation for <{key}>", type="LocalizationError")
-        return key
+        return f"<{key}>"
 
 localizations:dict[str, Dict] = {}
 for local in localizations_folder.list():

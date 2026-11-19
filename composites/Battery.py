@@ -14,6 +14,7 @@ class Battery(Block):
     def __init__(self, *args, **kwargs):
         self.stored = 0
         super().__init__(*args, **kwargs)
+
         self.max_stored = block_config[self.name].get("max_stored_energy", 10)
 
         self.components[Powerable] = Powerable(self, 0.1)

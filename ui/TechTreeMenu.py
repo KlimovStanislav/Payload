@@ -1,16 +1,14 @@
 from __future__ import annotations
 
-from PyQt6 import QtWidgets, QtCore
+from PyQt6 import QtWidgets
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QScrollArea
-
-from components.Storable import Storable
 
 from ui.Widgets import Labels, Buttons
 
 from base.MusicPlayer import MusicPlayer
 from base.functions import safe_class
-from base.folders import folder, mainfolder
+from base.folders import folder, mainfolder, localization
 
 branchs:dict = mainfolder.read("branch_config.json", type="json")
 
@@ -45,7 +43,7 @@ class TechTreeMenu(Menu):
         layout = self.layout()
         TechTreeMenu.clear_layout(layout)
                 
-        title = Labels.Title("Tree")
+        title = Labels.Title(localization["menu-general-techtree"])
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         
         layout.addStretch()
@@ -67,7 +65,7 @@ class TechTreeMenu(Menu):
         
         for name, value in branchs.items():
             text = "\n".join(f"{item.capitalize()}: {int(count*coef)}" for item, count in value["cost"].items())
-            btn = Buttons.Secondary(f"{name}\n{text}")
+            btn = Buttons.Secondary(f"{localization[f"branchs-{name}"]}\n{text}")
             btn.clicked.connect(lambda i, btn=btn, v=value: self.open(v["open"], v["cost"], btn))
             btn.setFixedHeight(150)
                         
@@ -75,7 +73,7 @@ class TechTreeMenu(Menu):
         
         layout.addStretch()
         
-        btn_back = Buttons.Secondary("Back")
+        btn_back = Buttons.Secondary(localization["menu-btn-back"])
         
         btn_back.clicked.connect(lambda: self.Back())
         
@@ -87,7 +85,7 @@ class TechTreeMenu(Menu):
         for name, value in cost.items():
             v = self.Window.manager.current.operator.inventory.dict().get(name, 0)
             if v < value:
-                MusicPlayer.play("error_1")
+                MusicPlayer.play("error-1")
                 return
 
         for name, value in cost.copy().items():

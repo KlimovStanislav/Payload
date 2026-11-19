@@ -6,26 +6,32 @@ from dataclasses import dataclass
 from base.MusicPlayer import MusicPlayer
 from components.Storable import Storable
 
-from base.functions import safe_class
-
 from ui.SandboxWindow import SandboxWindow
 
 from ui.Widgets import Labels
 
-from composites.Drill import Drill
-
 from PyQt6 import QtWidgets, QtCore
-from base.folders import folder
+from base.functions import safe_class
+from base.folders import folder, localization
+from base.composites import composites
 import time
 
 from typing import TYPE_CHECKING, Callable
 if TYPE_CHECKING:
     from MainWindow import MainWindow
 
+def training_0(w:CampaignWindow) -> bool:
+    if w.manager.current.operator.inventory.dict():
+        return True
+    return False
+
 def training_1(w:CampaignWindow) -> bool:
     for block in w.manager.current.blocks:
-        if isinstance(block, Drill):
-            return True
+        if isinstance(block, composites["Drill"]):
+            for cell in block.get_occupied_cells():
+                for i in w.manager.current.block_map.get(cell, []):
+                    if i.name in ["ore-titan1", "ore-titan2", "ore-titan3"]:
+                        return True
     return False
 
 def training_2(w:CampaignWindow) -> bool:
@@ -34,9 +40,32 @@ def training_2(w:CampaignWindow) -> bool:
     return False
 
 def training_3(w:CampaignWindow) -> bool:
-    if w.manager.current.exported.dict().get("titan", 0) >= 30:
-        w.manager.current.exported.reduce("titan", 30)
-        return True 
+    if w.manager.current.Base is None:
+        return False
+    if "titan" in w.manager.current.Base.components[Storable].dict():
+        for block in w.manager.current.blocks:
+            if isinstance(block, composites["Conveyor"]):
+                return True
+    return False
+
+def training_4(w:CampaignWindow) -> bool:
+    for block in w.manager.current.blocks:
+            if isinstance(block, composites["Drill"]):
+                for cell in block.get_occupied_cells():
+                    for i in w.manager.current.block_map.get(cell, []):
+                        if i.name in ["ore-coal1", "ore-coal2", "ore-coal3"]:
+                            return True
+    return False
+
+def training_5(w:CampaignWindow) -> bool:
+    if (count:=w.manager.current.exported.dict().get("titan", 50)) >= 50:
+        w.manager.current.exported.reduce("titan", count)
+        return True
+    return False
+
+def training_6(w:CampaignWindow) -> bool:
+    if "pipe" in w.manager.current.opened:
+        return True
     return False
 
 @dataclass
@@ -58,7 +87,7 @@ class CampaignViewer(QtWidgets.QFrame):
         layout.addWidget(self.title)
         layout.addWidget(self.subtitle)
 
-        self.setFixedSize(QtCore.QSize(300, 200))
+        self.setFixedSize(QtCore.QSize(500, 200))
         self.hide()
 
     def refresh(self, step:Step):
@@ -77,10 +106,14 @@ class Campaign:
         self.viewer = CampaignViewer(window)
         self.window:CampaignWindow = window             
         self.steps = [
-                      Step("Training(step 1)", "Place Drill on the titan-ore vein", training_1),
-                      Step("Training(step 2)", "Turn on Drill and put titan-ore\nin Operator inventory", training_2),
-                      Step("Training(step 3)", "Create a Launch Pad and launch\nyour first rocket with 30 titan", training_3),
-                      Step("No tasks more", "Empty", lambda w: False)
+                      Step(f"{localization["various-training"]}({localization["various-step"]} 0)", localization["campaign-training-0"], training_0),
+                      Step(f"{localization["various-training"]}({localization["various-step"]} 1)", localization["campaign-training-1"], training_1),
+                      Step(f"{localization["various-training"]}({localization["various-step"]} 2)", localization["campaign-training-2"], training_2),
+                      Step(f"{localization["various-training"]}({localization["various-step"]} 3)", localization["campaign-training-3"], training_3),
+                      Step(f"{localization["various-training"]}({localization["various-step"]} 4)", localization["campaign-training-4"], training_4),
+                      Step(f"{localization["various-training"]}({localization["various-step"]} 5)", localization["campaign-training-5"], training_5),
+                      Step(f"{localization["various-training"]}({localization["various-step"]} 6)", localization["campaign-training-6"], training_6),
+                      Step(localization["campaign-notasksmore"], localization["various-empty"], lambda w: False)
                       ]
         
         self.active:int=folder.config.get("campaign_step", 0)
@@ -88,6 +121,7 @@ class Campaign:
 
     def update(self):
         if (step:=self.steps[self.active])(self.window):
+            MusicPlayer.play("complete-1")
             self.active+=1
             self.viewer.refresh(self.steps[self.active])
 
@@ -117,5 +151,5 @@ class CampaignWindow(SandboxWindow):
         super().reposition()
         self.campaign.viewer.reposition()
         self.timer.start()
-        MusicPlayer.play("beep_1")
+        MusicPlayer.play("beep-1")
         MusicPlayer.start()

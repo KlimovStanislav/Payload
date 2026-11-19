@@ -1,7 +1,7 @@
 {
-  "volume": 21,
-  "music_volume": 76,
-  "music": false,
+  "volume": 100,
+  "music_volume": 100,
+  "music": true,
   "fps": 60,
   "fullscreen": false
 }

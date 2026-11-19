@@ -8,7 +8,7 @@ from PyQt6.QtCore import Qt
 from base.font import Font
 from base.MusicPlayer import MusicPlayer
 from base.cursors import Cursor
-from base.folders import folder
+from base.folders import folder, localization
 
 from ui.Menu import Menu
 
@@ -69,7 +69,7 @@ class Buttons:
             btn.setProperty("role", role)
         btn.setFont(Font.Bold)
         btn.setCursor(Cursor.Hand)
-        btn.clicked.connect(lambda a: MusicPlayer.play("click_1")) 
+        btn.clicked.connect(lambda a: MusicPlayer.play("click-1")) 
         return btn
 
     @staticmethod
@@ -89,7 +89,7 @@ class Buttons:
         btn = QtWidgets.QCheckBox(*args, **kwargs)
         btn.setFont(Font.Bold)
         btn.setCursor(Cursor.Hand)
-        btn.clicked.connect(lambda a: MusicPlayer.play("click_1"))
+        btn.clicked.connect(lambda a: MusicPlayer.play("click-1"))
         return btn
 
     @staticmethod
@@ -104,7 +104,7 @@ class Buttons:
         btn=QtWidgets.QToolButton(*args, **kwargs)
         btn.setFont(Font.Bold)
         btn.setCursor(Cursor.Hand)
-        btn.clicked.connect(lambda a: MusicPlayer.play("click_1"))
+        btn.clicked.connect(lambda a: MusicPlayer.play("click-1"))
         return btn
 
 class Sliders:
@@ -126,13 +126,13 @@ class Sliders:
 class AutoUI(Menu):
     def __init__(self, block:Block, *args, **kwargs):
         super().__init__(block.w.window, *args, **kwargs)
-        MusicPlayer.play("click_1")
+        MusicPlayer.play("click-1")
 
         self.widgets:list[AutoUI.Component] = []
 
         layout = QtWidgets.QVBoxLayout(self)
                 
-        title = Labels.Title(f"Information about {block.name.replace("_", " ").title()}")
+        title = Labels.Title(f'{localization["various-about"]} {block.name.replace("_", " ").title()}')
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         
         layout.addStretch()
@@ -156,7 +156,7 @@ class AutoUI(Menu):
                 self.widgets.append(w)
                 self.content_layout.addWidget(w)
         
-        btn_back = Buttons.Secondary("Back")
+        btn_back = Buttons.Secondary(localization["menu-btn-back"])
         
         btn_back.clicked.connect(lambda: self.Back())
         

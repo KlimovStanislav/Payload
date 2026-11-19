@@ -175,7 +175,7 @@ class World:
                         
         block.exists = False
         if hasattr(block, 'pixmap_item'):
-            MusicPlayer.play(random.choice(["destruction_1", "destruction_2"]), volume=0.7)
+            MusicPlayer.play(random.choice(["destruction-1", "destruction-2"]), volume=0.7)
             scene = block.pixmap_item.scene()
             scene.removeItem(block.pixmap_item)
             scene.update()
@@ -277,7 +277,7 @@ class World:
 
     def click(self, type:Literal["left", "right"], x, y) -> None:
         if type == "left":
-            MusicPlayer.play("click_1")
+            MusicPlayer.play("click-1")
             existing = self.get_block_at(x, y)
             if existing and block_config[existing.name]["z"] >= 20:
                 if Clickable in existing.components and existing: 
@@ -305,11 +305,14 @@ class World:
                     folder.log.write(f"Class <{type_name}> not exists", type=applib.ERROR)
                     return
         
-                if cost is not None and self.Base is not None:
+                if cost is not None and not self.various[Various.devmode]:
                     for name, value in cost.items():
                         coef = folder.config.get("craft_coef", 1)
-                        if not self.Base.components[Storable].reduce(name, int(value*coef)):
+                        if self.operator.inventory.dict().get(name, 0) < int(value*coef):
+                            MusicPlayer.play("error-2")
                             return
+                        else:
+                            self.operator.inventory.reduce(name, int(value*coef))
                                     
                 obj:SceneObject = block_class(self, cell=Cell(x, y), name=placing_block)
                 if Placable in obj.components:

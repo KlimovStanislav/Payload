@@ -5,6 +5,8 @@ class Peltier(PowerBlock):
         self._time_after = 0
         super().__init__(*args, **kwargs)
 
+        self.finish()
+
     def update(self, tick, dt):
         self._time_after += dt
         if self._time_after > 1:

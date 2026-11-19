@@ -210,4 +210,4 @@ class Storable:
     def click(block:SceneObject):
         if block.w.scene is not None:
             block.components[Storable].center.setOpacity(1 if block.components[Storable].center.opacity() == 0 else 0)
-            MusicPlayer.play("click_1")
+            MusicPlayer.play("click-1")

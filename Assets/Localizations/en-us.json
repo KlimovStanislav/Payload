@@ -1,16 +1,53 @@
 {
 "menu": {
+    "general": {
+        "techtree": "Technology Tree",
+        "settings": "Settings"
+    },
+    "label": {
+        "music": "Music",
+        "musicvolume": "Music Volume",
+        "volume": "Volume",
+        "pause": "Pause",
+        "sectorchoice": "Sector Choice"
+    },
     "btn": {
         "exit": "Exit",
         "github": "GitHub",
-        "settings": "Settings",
         "campaign": "Campaign",
         "sandbox": "Sandbox",
-        "editor": "Editor"}
+        "editor": "Editor",
+        "back": "Back",
+        "apply": "Apply",
+        "fullscreen": "Fullscreen",
+        "resume": "Resume"
+    }
+},
+
+"campaign": {
+    "training": {
+        "0": "Take the starting resources from the base.\n<Click on the base> -> <Storage> -> <Click on resources>",
+        "1": "Place a drill on the titanium deposit.\nThe deposit is the rocks sticking out of the sand.\nDon't forget to take 5 titanium from the base!\n<Click on the drill> -> <Working>",
+        "2": "Collect the titanium from the drill.\n<Click on the drill> -> <Storage> -> <Click on the resources>",
+        "3": "Connect the drill to the base with a conveyor.\nDon't forget to pick up titanium into your inventory!\nUse the <R> key to rotate conveyors.",
+        "4": "Start mining coal.",
+        "5": "Build the <Launch Pad>.\nSend 50 units of titanium through it.",
+        "6": "Research pipes.\n<Esc> -> <Technology Tree> -> <Pipes>"
+    },
+
+    "notasksmore": "No tasks more..."
+},
+
+"branchs": {
+    "tubes": "Pipes"
 },
 
 "various": {
-    "nothing": "Nothing here..."
+    "nothing": "There's nothing here...",
+    "about": "Information about",
+    "empty": "Empty",
+    "training": "Training",
+    "step": "Step"
 }
 
 }

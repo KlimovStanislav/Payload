@@ -325,7 +325,7 @@ class SandboxWindow(QWidget):
     def closeEvent(self, event):
         self.timer.stop()
         MusicPlayer.stop()
-        MusicPlayer.play("click_2")
+        MusicPlayer.play("click-2")
         if self.manager.current_name is not None:
             self.manager.save(self.manager.current_name)
         self.view.item = None
@@ -336,7 +336,7 @@ class SandboxWindow(QWidget):
     def on_tool_changed(self, current, f):
         if current is not None:
             self.view.setFocus()
-            MusicPlayer.play("click_1")
+            MusicPlayer.play("click-1")
             self.manager.current.various[Various.placing_block] = current.data(Qt.ItemDataRole.UserRole)
 
     def mousePressEvent(self, event):
@@ -354,7 +354,7 @@ class SandboxWindow(QWidget):
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key.Key_Escape:
-            MusicPlayer.play("click_2")
+            MusicPlayer.play("click-2")
             if self.menu_active is not None:
                 self.menu_active.Back()
             else:

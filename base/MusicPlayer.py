@@ -2,7 +2,7 @@ from os import environ
 environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "1"
 
 import time, random, threading, pygame
-from base.folders import settings, sounds, music
+from base.folders import settings, sounds, music, folder
 from pygame.mixer import Sound
 from typing import NoReturn
 
@@ -39,14 +39,16 @@ class MusicPlayer():
         MusicPlayer.playing = False
 
     @staticmethod
-    def play(path, volume=0.7) -> Sound:
+    def play(path, volume=0.7) -> Sound|None:
         if path in MusicPlayer.__cache__:
             sound = MusicPlayer.__cache__[path]
             sound.set_volume(volume*settings.get("volume"))
             sound.play()
-        else:
-            sound = pygame.mixer.Sound(sounds.path(f"{path}.ogg"))
+            return sound
+        if f"{path}.ogg" in sounds.list():
+            sound = Sound(sounds.path(f"{path}.ogg"))
             sound.set_volume(volume*settings.get("volume"))
             sound.play()
             MusicPlayer.__cache__[path] = sound
-        return sound
+            return sound
+        folder.log.write(f"Sound <{path}> not exists at <{sounds.file_path}>")

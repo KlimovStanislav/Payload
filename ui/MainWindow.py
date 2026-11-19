@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from PyQt6 import QtWidgets
 from PyQt6.QtGui import QPixmap, QIcon, QShortcut, QKeySequence, QPainter, QColor
-from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtCore import Qt, QSize, QTimer
 from PyQt6.QtWidgets import QMainWindow, QStackedWidget, QWidget
 
 import webbrowser, os
@@ -11,7 +11,7 @@ from ui.Widgets import Labels, Buttons
 
 from terminal import init
 
-from base.functions import get_texture, safe_class, TEXTURE_CACHE
+from base.functions import get_texture, safe_class, onerror, TEXTURE_CACHE
 from base.MusicPlayer import MusicPlayer
 from base.cursors import Cursor
 from base import composites
@@ -24,6 +24,39 @@ from ui.CampaignWindow import CampaignWindow
 from ui.Widgets import Labels, Buttons
 
 GITHUB_PATH = "https://github.com/KlimovStanislav/Payload"
+
+class NotificationViewer(QtWidgets.QFrame):
+    def __init__(self, window):
+        super().__init__(window)
+
+        layout = QtWidgets.QHBoxLayout(self)
+        self.label = Labels.Body()
+        self.btn = Buttons.Primary("OK")
+
+        self.btn.clicked.connect(lambda: [self.hide(), self.label.setText("")])
+
+        layout.addWidget(self.btn)
+        layout.addWidget(self.label)
+
+        self.setProperty("role", "NotificationViewer") 
+
+        self.hide()
+
+    def __call__(self, t:str):
+        self.label.setText(t)
+
+        self.label.adjustSize()
+        self.btn.adjustSize()
+        self.adjustSize()
+
+        self.reposition()
+        self.show()
+
+    def reposition(self):
+        if self.parent():
+            x = (self.parent().width() - self.width()) - 10
+            y = self.parent().height() - self.height() - 10
+            self.move(x, y)
 
 @safe_class
 class SectorChoiceWindow(QWidget):
@@ -52,7 +85,7 @@ class SectorChoiceWindow(QWidget):
                     SectorChoiceWindow.clear_layout(child_layout)
 
     def update_layout(self, window:SandboxWindow):
-        title = Labels.Title("Choice sector")
+        title = Labels.Title(localization["menu-label-sectorchoice"])
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         layout:QtWidgets.QVBoxLayout = self.layout()
@@ -90,7 +123,7 @@ class SectorChoiceWindow(QWidget):
         
         layout.addSpacing(10)
         
-        btn_back = Buttons.Secondary("Back")
+        btn_back = Buttons.Secondary(localization["menu-btn-back"])
         layout.addWidget(btn_back)
         btn_back.clicked.connect(lambda: self.MainWindow.MenuWindow.show())
         
@@ -145,7 +178,7 @@ class MenuWindow(QWidget):
 
         btn_campaign = Buttons.Primary(localization["menu-btn-campaign"])
         btn_sandbox = Buttons.Primary(localization["menu-btn-sandbox"])
-        btn_settings = Buttons.Secondary(localization["menu-btn-settings"])
+        btn_settings = Buttons.Secondary(localization["menu-general-settings"])
         btn_exit = Buttons.Secondary(localization["menu-btn-exit"])
         btn_editor = Buttons.Secondary(localization["menu-btn-editor"])
         btn_github = Buttons.Secondary(localization["menu-btn-github"])
@@ -189,7 +222,7 @@ class MenuWindow(QWidget):
             painter.fillRect(self.rect(), QColor("#1e1e1e"))
 
     def play(self):
-        MusicPlayer.play("click_2")
+        MusicPlayer.play("click-2")
         self.MainWindow.SandboxWindow.show()
 
     def show(self):
@@ -222,6 +255,8 @@ class MainWindow(QMainWindow):
         self.widget.addWidget(self.SettingsWindow)
         self.widget.addWidget(self.CampaignWindow)
 
+        self.notification = NotificationViewer(self)
+
         self.terminal = init(self, lambda cmd: self.parsing(cmd))
         self.terminal("Enter <help> to get assistance and information")
 
@@ -229,6 +264,11 @@ class MainWindow(QMainWindow):
         QShortcut(QKeySequence("F4"), self).activated.connect(lambda: self.parsing("refresh"))
         QShortcut(QKeySequence("F3"), self).activated.connect(lambda: self.parsing("view"))
         QShortcut(QKeySequence("Shift+F1"), self).activated.connect(lambda: self.parsing("break"))
+
+        onerror.functions.add(self.error)
+
+    def error(self, str:str):
+        self.notification(f"ERROR: {str}")
 
     def switch_fullscreen(self):
         if self.fullscreen:
@@ -314,6 +354,7 @@ class MainWindow(QMainWindow):
 
     def resizeEvent(self, event):
         super().resizeEvent(event)
+        self.notification.reposition()
         self.widget.currentWidget().resizeEvent(event)
 
     def closeEvent(self, a0):

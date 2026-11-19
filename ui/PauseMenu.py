@@ -1,11 +1,12 @@
 from PyQt6 import QtWidgets
 from PyQt6.QtCore import Qt
 
+from base.folders import localization
+
 from ui.SettingsMenu import SettingsMenu
 from ui.TechTreeMenu import TechTreeMenu
 
 from ui.Widgets import Labels, Buttons
-
 from ui.Menu import Menu
 
 class PauseMenu(Menu):
@@ -14,19 +15,19 @@ class PauseMenu(Menu):
 
         layout = QtWidgets.QVBoxLayout(self)
                 
-        label = Labels.Title("Pause")
+        label = Labels.Title(localization["menu-label-pause"])
         label.setAlignment(Qt.AlignmentFlag.AlignCenter)
                 
-        btn_resume = Buttons.Secondary("Resume")
+        btn_resume = Buttons.Secondary(localization["menu-btn-resume"])
         btn_resume.clicked.connect(self.Back)  
                 
-        btn_exit = Buttons.Secondary("Exit")
+        btn_exit = Buttons.Secondary(localization["menu-btn-exit"])
         btn_exit.clicked.connect(lambda: self.Window.close()) 
 
-        btn_tree = Buttons.Secondary("Techonology Tree")
+        btn_tree = Buttons.Secondary(localization["menu-general-techtree"])
         btn_tree.clicked.connect(lambda: self.show_window_tree())
 
-        btn_settings = Buttons.Secondary("Settings")
+        btn_settings = Buttons.Secondary(localization["menu-general-settings"])
         btn_settings.clicked.connect(lambda: self.settings.Show())
 
         layout.addWidget(label)

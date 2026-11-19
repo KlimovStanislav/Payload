@@ -1,4 +1,5 @@
 QFrame[role="AutoUIComponent"] {background-color: #262E36; border: 3px solid #2E3842}
+QFrame[role="NotificationViewer"] {background-color: #2E3842; border: 3px solid #ebebeb}
 QFrame[role="CampaignViewer"] {background-color: #2E3842; border: 3px solid #ebebeb}
 QScrollArea {border: 3px solid #2E3842}
 

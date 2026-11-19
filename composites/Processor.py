@@ -135,7 +135,7 @@ class Processor(MemoryBlock):
         self.editor = ProcessorEditor(self)
 
     def on_click(self):
-        MusicPlayer.play("click_2")
+        MusicPlayer.play("click-2")
         self.editor.Show()
 
     def parsing_line(self, line:str):
