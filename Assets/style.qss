@@ -1,6 +1,24 @@
 QFrame[role="AutoUIComponent"] {background-color: #262E36; border: 3px solid #2E3842}
+
 QFrame[role="NotificationViewer"] {background-color: #2E3842; border: 3px solid #ebebeb}
+QFrame[role="PlayViewer"] {
+    background: qlineargradient(
+        x1:1, y1:0, x2:0, y2:0,
+        stop:0   rgba(46, 56, 66, 180),
+        stop:0.5 rgba(38, 46, 54, 150),
+        stop:1   rgba(30, 36, 42, 130));
+    border: 3px solid #252e36;
+    border-radius: 32px;}
+QFrame[role="ReleaseViewer"] {
+    background: qlineargradient(
+        x1:1, y1:1, x2:0, y2:0,
+        stop:0   rgba(46, 56, 66, 180),
+        stop:0.5 rgba(38, 46, 54, 150),
+        stop:1   rgba(30, 36, 42, 130));
+    border: 3px solid #252e36;
+    border-radius: 32px;}
 QFrame[role="CampaignViewer"] {background-color: #2E3842; border: 3px solid #ebebeb}
+
 QScrollArea {border: 3px solid #2E3842}
 
 QLabel[role="title"]    {font-size: 20px; font-weight: 600; color: #D6DEE6}
@@ -30,7 +48,7 @@ QToolButton:hover {border-color: #ebebeb}
 QToolButton:pressed {border-color: #2E3842}
 QToolButton:disabled {background: #1C2228; color: #5A6470; border-color: #2E3842}
 
-/*слайдеры*/
+
 
 QSlider {
     min-height: 12px;
@@ -68,7 +86,7 @@ QSlider::handle:horizontal:pressed {
     background: #cccccc
 }
 
-/*чекбоксы*/
+
 
 QCheckBox {
     spacing: 8px;
@@ -135,4 +153,3 @@ QSpinBox:disabled {
 
 QSpinBox::up-button {width: 0px;}
 QSpinBox::down-button {width: 0px;}
-

@@ -156,6 +156,9 @@ class MapView(QGraphicsView):
     def mouseMoveEvent(self, event):
         super().mouseMoveEvent(event)
 
+        if self.w.menu_active is not None:
+            return
+
         if self.scene() is None:
             return
         
@@ -296,8 +299,10 @@ class SandboxWindow(QWidget):
                     if not self.manager.current.various[Various.devmode]:
                         if name not in self.manager.current.opened:
                             continue
-                    
-                    pixmap = get_texture(block_config[name].get("texture", name))
+                    if name in block_config:
+                        pixmap = get_texture(block_config[name].get("texture", name))
+                    else:
+                        pixmap = get_texture("404")
                     icon = QIcon(pixmap)
           
                     cost:dict = i.get("cost")

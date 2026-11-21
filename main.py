@@ -18,6 +18,7 @@ try:
     import base.font
     import base.cursors
 
+    from base.OnlineGetter import OnlineGetter
     from base.folders import folder, mainfolder, settings
     
     application = QApplication(sys.argv)
@@ -26,14 +27,14 @@ try:
     testing.__dict__[...] = application
     
     if os.path.exists(os.path.abspath(mainfolder.path("style.qss"))):
-        with open(mainfolder.path("style.qss"), encoding="utf-8") as f:
+        with open(mainfolder.path("style.qss"), "r", encoding="utf-8") as f:
             application.setStyleSheet(f.read())
     else:
         folder.log.write(f"style.qss not found at <{mainfolder.path('style.qss')}>")
 
     from ui.MainWindow import MainWindow
     
-    faulthandler.enable(sys.stdout)
+    faulthandler.enable(open("crash.log", "w"))
 
 except Exception:
     pymsgbox.alert(f"Critical StartError:\n{traceback.format_exc()}", "C1", icon=pymsgbox.STOP)
@@ -54,6 +55,8 @@ def main()->int:
             if pymsgbox.confirm(f"Failed {len(failed)} tests:\n{"\n".join(failed)}\nLaunch the game?", "StartError", icon=pymsgbox.WARNING) != pymsgbox.OK_TEXT:
                 print(failed)
                 return 1
+
+        OnlineGetter.start()
 
         folder.plugins.init()
         folder.plugins.call("pre_start", application)
@@ -82,4 +85,4 @@ if __name__ == "__main__":
     folder.config.save()
     settings.save()
     application.exit(code)
-    sys.exit(code)
+    os._exit(code)

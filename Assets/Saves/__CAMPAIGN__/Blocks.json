@@ -1945,8 +1945,123 @@
         "name": "base",
         "Storable": {
             "storage": {
-                "titan": 15
+                "titan": 47
             }
+        }
+    },
+    {
+        "x": 194,
+        "y": 243,
+        "name": "drill",
+        "Storable": {
+            "storage": {
+                "titan": 2
+            }
+        },
+        "Switchable": {
+            "state": true
+        }
+    },
+    {
+        "x": 197,
+        "y": 243,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 90
+        },
+        "Storable": {
+            "storage": {
+                "titan": 0
+            }
+        }
+    },
+    {
+        "x": 198,
+        "y": 243,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 90
+        },
+        "Storable": {
+            "storage": {
+                "titan": 1
+            }
+        }
+    },
+    {
+        "x": 199,
+        "y": 243,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 90
+        },
+        "Storable": {
+            "storage": {
+                "titan": 0
+            }
+        }
+    },
+    {
+        "x": 200,
+        "y": 243,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 90
+        },
+        "Storable": {
+            "storage": {
+                "titan": 0
+            }
+        }
+    },
+    {
+        "x": 201,
+        "y": 243,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 90
+        },
+        "Storable": {
+            "storage": {
+                "titan": 0
+            }
+        }
+    },
+    {
+        "x": 202,
+        "y": 243,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 90
+        },
+        "Storable": {
+            "storage": {
+                "titan": 0
+            }
+        }
+    },
+    {
+        "x": 203,
+        "y": 243,
+        "name": "conveyor",
+        "Rotatable": {
+            "value": 0
+        },
+        "Storable": {
+            "storage": {
+                "titan": 0
+            }
+        }
+    },
+    {
+        "x": 191,
+        "y": 236,
+        "name": "drill",
+        "Storable": {
+            "storage": {}
+        },
+        "Switchable": {
+            "state": false
         }
     },
     {

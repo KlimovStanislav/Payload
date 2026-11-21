@@ -1,19 +1,19 @@
 from __future__ import annotations
 
 from PyQt6 import QtWidgets
-from PyQt6.QtGui import QPixmap, QIcon, QShortcut, QKeySequence, QPainter, QColor
-from PyQt6.QtCore import Qt, QSize, QTimer
+from PyQt6.QtGui import QPixmap, QIcon, QShortcut, QKeySequence, QPainter, QColor, QCursor
+from PyQt6.QtCore import Qt, QSize, QTimer, QPointF
 from PyQt6.QtWidgets import QMainWindow, QStackedWidget, QWidget
 
-import webbrowser, os
-
+import os, webbrowser
+from datetime import datetime
 from ui.Widgets import Labels, Buttons
-
 from terminal import init
 
 from base.functions import get_texture, safe_class, onerror, TEXTURE_CACHE
 from base.MusicPlayer import MusicPlayer
 from base.cursors import Cursor
+from base.OnlineGetter import OnlineGetter, Release
 from base import composites
 from base.folders import folder, saves, settings, block_config, unit_config, localization
 
@@ -22,8 +22,6 @@ from ui.EditorWindow import EditorWindow
 from ui.CampaignWindow import CampaignWindow
 
 from ui.Widgets import Labels, Buttons
-
-GITHUB_PATH = "https://github.com/KlimovStanislav/Payload"
 
 class NotificationViewer(QtWidgets.QFrame):
     def __init__(self, window):
@@ -156,25 +154,19 @@ class SettingsWindow(QWidget):
         self.MainWindow.widget.setCurrentIndex(4)
 
 @safe_class
-class MenuWindow(QWidget):
-    def __init__(self, window:MainWindow):
+class PlayViewer(QtWidgets.QFrame):
+    def __init__(self, window:MenuWindow, mainwindow:MainWindow):
         super().__init__(window)
+        self.MainWindow = mainwindow
 
-        self.MainWindow = window
+        self.setProperty("role", "PlayViewer") 
 
-        self.setCursor(Cursor.Cursor)
+        layout = QtWidgets.QVBoxLayout(self)
+        layout.addStretch()
 
-        main_layout = QtWidgets.QHBoxLayout()
-        self.setLayout(main_layout)
-
-        left_panel = QtWidgets.QVBoxLayout()
-        left_panel.setSpacing(10)
-
-        left_panel.addStretch()
-        
         title = Labels.Title("Payload")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        left_panel.addWidget(title)
+        layout.addWidget(title)
 
         btn_campaign = Buttons.Primary(localization["menu-btn-campaign"])
         btn_sandbox = Buttons.Primary(localization["menu-btn-sandbox"])
@@ -182,43 +174,143 @@ class MenuWindow(QWidget):
         btn_exit = Buttons.Secondary(localization["menu-btn-exit"])
         btn_editor = Buttons.Secondary(localization["menu-btn-editor"])
         btn_github = Buttons.Secondary(localization["menu-btn-github"])
-        
+                
         for btn in [btn_campaign, btn_sandbox, btn_settings, btn_editor, btn_github, btn_exit]:
             btn.setFixedSize(300, 80)
-            left_panel.addWidget(btn, alignment=Qt.AlignmentFlag.AlignCenter)
-        
-        left_panel.addStretch()  
+            layout.addWidget(btn, alignment=Qt.AlignmentFlag.AlignCenter)
 
-        left_widget = QWidget()
-        left_widget.setLayout(left_panel)
-        left_widget.setFixedWidth(500)
-        
-        image_label = QtWidgets.QLabel()
-        image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        layout.addStretch()
 
-        main_layout.addWidget(left_widget)
-        main_layout.addWidget(image_label)  
-        
         btn_sandbox.clicked.connect(lambda *args: self.MainWindow.SectorChoiceWindow.show(self.MainWindow.SandboxWindow))
         btn_campaign.clicked.connect(lambda *args: self.MainWindow.CampaignWindow.show())
         btn_editor.clicked.connect(lambda *args: self.MainWindow.SectorChoiceWindow.show(self.MainWindow.EditorWindow))
-        btn_github.clicked.connect(lambda *args: webbrowser.open(GITHUB_PATH))
-
+        btn_github.clicked.connect(lambda *args: OnlineGetter.open())
         btn_settings.clicked.connect(lambda: self.MainWindow.SettingsWindow.show())
         btn_exit.clicked.connect(self.MainWindow.close)
 
-        self._bg = QPixmap("bg.png")
+        self.setFixedWidth(450)
+
+@safe_class
+class ReleaseViewer(QtWidgets.QFrame):
+    __cache__:list[Release] = []
+    def __init__(self, window:MenuWindow, mainwindow:MainWindow):
+        super().__init__(window)
+        self.MainWindow = mainwindow
+
+        self.setProperty("role", "ReleaseViewer")
+
+        self.state_label = Labels.Subtitle()
+
+        layout = QtWidgets.QVBoxLayout(self)
+
+        scroll = QtWidgets.QScrollArea()
+        scroll.setWidgetResizable(True)
+
+        self.content = QtWidgets.QWidget()
+        self.content_layout = QtWidgets.QVBoxLayout(self.content)
+        self.content_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
+                
+        scroll.setWidget(self.content)
+
+        layout.addWidget(Labels.Title("Releases"), alignment=Qt.AlignmentFlag.AlignCenter)
+        layout.addWidget(scroll, alignment=Qt.AlignmentFlag.AlignCenter)
+        layout.addWidget(self.state_label, alignment=Qt.AlignmentFlag.AlignCenter)
+
+        self.btns:list[QtWidgets.QPushButton] = []
+
+        self.timer = QTimer(self)
+        self.timer.timeout.connect(self.refresh)
+        self.timer.start(16)
+
+        scroll.setFixedSize(700, 300)
+        self.setFixedSize(900, 400)
+
+    def refresh(self):
+        if OnlineGetter.releases != ReleaseViewer.__cache__:
+            self.timer.setInterval(60000)
+            ReleaseViewer.__cache__ = OnlineGetter.releases.copy()
+
+        for btn in self.btns:
+            btn.deleteLater()
+
+        self.btns = []
+
+        if not ReleaseViewer.__cache__:
+            self.state_label.setText("No Ethernet Connection")
+            return
+
+        version = datetime.strptime(folder.version[6:], r"%d.%m.%Y")
+        if version < ReleaseViewer.__cache__[0].date:
+            self.state_label.setText("Update available")
+        else:
+            self.state_label.setText("Latest version")
+
+        for release in ReleaseViewer.__cache__:
+            btn = Buttons.Secondary(f"{release.date.strftime(r"%d.%m.%Y")}:\n{release.text}")
+            btn.clicked.connect(lambda *args, r=release: OnlineGetter.open(r))
+            self.btns.append(btn)
+            self.content_layout.addWidget(btn)
+
+@safe_class
+class MenuWindow(QWidget):
+    def __init__(self, window:MainWindow):
+        super().__init__(window)
+
+        self.MainWindow = window
+        self.setCursor(Cursor.Cursor)
+
+        layout = QtWidgets.QHBoxLayout(self)
+
+        self.play_viewer = PlayViewer(self, self.MainWindow)
+        self.release_viewer = ReleaseViewer(self, self.MainWindow)
+
+        layout.addWidget(self.play_viewer) 
+        layout.addWidget(self.release_viewer, alignment=Qt.AlignmentFlag.AlignCenter)
+
+        self.bg = QPixmap("bg.png")
+
+        if self.bg.isNull():
+            folder.log.write("Background <bg.png> not founded at game folder", type="MenuWindow", set_error=True)
+
+        self.current_offset = QPointF(0, 0)
+        
+        self.timer = QTimer(self)
+        self.timer.timeout.connect(self.update_parallax)
+        self.timer.start(int(1000/settings.get("fps")))
+
+    def update_parallax(self):
+        pos = self.mapFromGlobal(QCursor.pos())
+        
+        x = self.width() / 2
+        y = self.height() / 2
+        nx = (pos.x()-x)/x
+        ny = (pos.y()-y)/y
+        
+        nx = max(-1.0, min(1.0, nx))
+        ny = max(-1.0, min(1.0, ny))
+
+        target_x = -nx*30
+        target_y = -ny*30
+
+        self.current_offset.setX(self.current_offset.x() + (target_x - self.current_offset.x())*0.1)
+        self.current_offset.setY(self.current_offset.y() + (target_y - self.current_offset.y())*0.1)
+
+        self.update()
 
     def paintEvent(self, ev):
-        if not self._bg.isNull():
-            scaled = self._bg.scaled(self.size(), Qt.AspectRatioMode.KeepAspectRatioByExpanding, Qt.TransformationMode.SmoothTransformation)
-
-            x = (scaled.width() - self.width()) // 2
+        painter = QPainter(self)
+        
+        if not self.bg.isNull():
+            scaled = self.bg.scaled(self.width()+60, self.height()+60, Qt.AspectRatioMode.KeepAspectRatioByExpanding,  Qt.TransformationMode.SmoothTransformation)
+            
+            x = (scaled.width() - self.width()) //2 
             y = (scaled.height() - self.height()) // 2
-            painter = QPainter(self)
+            
+            x += int(self.current_offset.x())
+            y += int(self.current_offset.y())
+            
             painter.drawPixmap(-x, -y, scaled)
         else:
-            painter = QPainter(self)
             painter.fillRect(self.rect(), QColor("#1e1e1e"))
 
     def play(self):
@@ -281,6 +373,7 @@ class MainWindow(QMainWindow):
         return self.fullscreen
 
     def parsing(self, cmd:str):
+        print(OnlineGetter.releases)
         match cmd.lower().split():
             case ["help"]:
                 self.terminal("view = view game folder\nrefresh - refresh game cache\ncurrent status - print info about current world\ncurrent pause - pause the world\ncurrent resume - resume the world\ncurrent tick <n> - tick n-times\ncurrent give <material> <n> - give operator n material\ncurrent quota <n> - set step of quota to n")
