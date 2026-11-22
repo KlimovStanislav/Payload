@@ -5,7 +5,11 @@ import applib
 import base.functions as func
 from base.MusicPlayer import MusicPlayer
 from base.cursors import Cursor
+
 from PyQt6.QtWidgets import QGraphicsItem
+from PyQt6.QtWidgets import QGraphicsPolygonItem, QGraphicsItemGroup
+from PyQt6.QtGui import QPolygonF, QColor, QBrush, QPen
+from PyQt6.QtCore import Qt, QPointF
 
 from components.SceneObject import SceneObject, Cell, Size
 from components.Clickable import Clickable
@@ -25,12 +29,28 @@ class Block(SceneObject):
 
         integrity = block_config[name].get("integrity", 1)
         self.pixmap = func.get_texture(name if block_config[name].get("texture") is None else block_config[name].get("texture"))
+        self.shadow_item = None
 
         super().__init__(w, cell, Size(self.pixmap.width()//32, self.pixmap.height()//32), name, integrity)
     
     def draw(self):
         if self.exists and self.w.scene is not None:
             self.pixmap_item = self.w.scene.addPixmap(self.pixmap)
+
+            if block_config[self.name]["z"] >= 20:
+                const = (self.size.w+self.size.h)*2.5
+                polygon = QPolygonF([
+                    QPointF(0, self.size.h*32),
+                    QPointF(0, 0),
+                    QPointF(self.size.w*32, 0),
+                    QPointF(self.size.w*32+const, const),
+                    QPointF(self.size.w*32+const, self.size.h*32+const),
+                    QPointF(const, self.size.h*32+const)])
+
+                self.shadow_item = QPolygonF(polygon)
+                self.shadow_item.translate(self.cell.x * 32, self.cell.y * 32)
+                self.w.shadow_layer.add(self.shadow_item)
+
             if block_config[self.name].get("centered", False):
                 self.pixmap_item.setPos((self.cell.x-(self.size[0]/4))*32, (self.cell.y-(self.size[1]/4))*32)
             else:
@@ -67,6 +87,9 @@ class Block(SceneObject):
         if not self.exists:
             return
         self.exists = False
+
+        if self.shadow_item is not None:
+            self.w.shadow_layer.remove(self.shadow_item)
             
         self.w.remove_block(self)
 

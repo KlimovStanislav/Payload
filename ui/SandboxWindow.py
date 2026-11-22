@@ -8,20 +8,13 @@ from PyQt6.QtWidgets import QWidget, QGraphicsScene, QGraphicsView, QListWidget,
 from PyQt6.QtGui import QSurfaceFormat
 from PyQt6.QtOpenGLWidgets import QOpenGLWidget
 
-fmt = QSurfaceFormat()
-fmt.setVersion(3, 3)
-fmt.setProfile(QSurfaceFormat.OpenGLContextProfile.CoreProfile)
-fmt.setDepthBufferSize(24)
-fmt.setSamples(4)  
-QSurfaceFormat.setDefaultFormat(fmt)
-
 from PyQt6 import QtCore
 
 from base.functions import safe_class, get_texture
 from base.font import Font
 from base.cursors import Cursor
 from base.MusicPlayer import MusicPlayer
-from base.folders import folder, block_config, unit_config, settings
+from base.folders import folder, block_config, unit_config, settings, opengl
 
 from ui.Widgets import Labels
 from ui.PauseMenu import PauseMenu
@@ -41,6 +34,14 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from ui.MainWindow import MainWindow
     from ui.Menu import Menu
+
+if opengl.value:
+    fmt = QSurfaceFormat()
+    fmt.setVersion(3, 3)
+    fmt.setProfile(QSurfaceFormat.OpenGLContextProfile.CompatibilityProfile)
+    fmt.setDepthBufferSize(24)
+    fmt.setSamples(4)  
+    QSurfaceFormat.setDefaultFormat(fmt)
 
 round = math.floor
 
@@ -129,7 +130,8 @@ class MapView(QGraphicsView):
         super().__init__(*args, **kwargs)
         self.w=window
 
-        self.setViewport(QOpenGLWidget())
+        if opengl.value:
+            self.setViewport(QOpenGLWidget())
         self.setRenderHint(QPainter.RenderHint.Antialiasing, False)
         self.setRenderHint(QPainter.RenderHint.SmoothPixmapTransform, False)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
@@ -472,5 +474,5 @@ class SandboxWindow(QWidget):
         self.main_window.widget.setCurrentIndex(1)
         self.reposition()
         self.timer.start()
-        MusicPlayer.play("beep_1")
+        MusicPlayer.play("beep-1")
         MusicPlayer.start()

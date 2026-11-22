@@ -373,7 +373,6 @@ class MainWindow(QMainWindow):
         return self.fullscreen
 
     def parsing(self, cmd:str):
-        print(OnlineGetter.releases)
         match cmd.lower().split():
             case ["help"]:
                 self.terminal("view = view game folder\nrefresh - refresh game cache\ncurrent status - print info about current world\ncurrent pause - pause the world\ncurrent resume - resume the world\ncurrent tick <n> - tick n-times\ncurrent give <material> <n> - give operator n material\ncurrent quota <n> - set step of quota to n")

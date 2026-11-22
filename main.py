@@ -14,12 +14,16 @@ try:
     import os, applib, faulthandler
     import testing
 
+    from base.folders import folder, mainfolder, settings, devmode, opengl
+    
+    if "--devmode" in sys.argv: devmode.value = True
+    if "--opengl" in sys.argv: opengl.value = True
+
     from PyQt6.QtWidgets import QApplication
     import base.font
     import base.cursors
 
     from base.OnlineGetter import OnlineGetter
-    from base.folders import folder, mainfolder, settings
     
     application = QApplication(sys.argv)
     base.font.__dict__[...] = application
@@ -33,7 +37,6 @@ try:
         folder.log.write(f"style.qss not found at <{mainfolder.path('style.qss')}>")
 
     from ui.MainWindow import MainWindow
-    
     faulthandler.enable(open("crash.log", "w"))
 
 except Exception:
@@ -62,10 +65,11 @@ def main()->int:
         folder.plugins.call("pre_start", application)
 
         if not failed and not critical:
-            folder.log.write(f"All systems online. Start lasted {(perf_counter()-start)*1000:.0f} milliseconds. Smoke tests completed in {time:.0f} milliseconds.", type="StartInfo")
+            folder.log.write(f"All systems online. Start lasted {(perf_counter()-start)*1000:.0f} milliseconds. Smoke tests completed in {time:.0f} milliseconds.\nOpenGL-{opengl.value}\nDevMode-{devmode.value}", type="StartInfo")
 
         window = MainWindow()
-        window.showMaximized() if settings.get("fullscreen") is False else window.showFullScreen()
+        if not "--nowindow" in sys.argv:
+            window.showMaximized() if settings.get("fullscreen") is False else window.showFullScreen()
 
         folder.plugins.call("start", window)
     except Exception as e:

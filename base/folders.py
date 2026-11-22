@@ -1,12 +1,13 @@
 import applib
 import sys, os, locale
+from dataclasses import dataclass
 
 if getattr(sys, 'frozen', False):
     path = os.path.dirname(sys.executable)
 else:
     path = os.path.dirname(os.path.abspath(sys.argv[0]))
 
-folder = applib.AppDir(path=path, config=True, tee=True, defaults={"devmode": False, "craft_coef": 1, "campaign_step": 0})
+folder = applib.AppDir(path=path, config=True, tee=True, defaults={"craft_coef": 1, "campaign_step": 0})
 
 mainfolder = folder.mkdir("Assets")
 textures = mainfolder.mkdir("Textures")
@@ -16,6 +17,18 @@ sounds = mainfolder.mkdir("Sounds")
 fonts = mainfolder.mkdir("Fonts")
 cursors = mainfolder.mkdir("Cursors")
 localizations_folder = mainfolder.mkdir("Localizations")
+
+@dataclass
+class Devmode:
+    value:bool
+
+devmode = Devmode(False)
+
+@dataclass
+class OpenGL:
+    value:bool
+
+opengl = OpenGL(False)
 
 class Dict(dict):
     def __getitem__(self, key:str) -> str:

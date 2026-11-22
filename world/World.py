@@ -3,9 +3,11 @@ from __future__ import annotations
 from composites.Block import Block
 from composites.Unit import Unit
 
+from PyQt6.QtWidgets import QGraphicsItem, QGraphicsOpacityEffect
+
 from base.composites import composites
 from base.MusicPlayer import MusicPlayer
-from base.folders import folder, block_config, unit_config
+from base.folders import folder, block_config, unit_config, devmode as mode
 from base.functions import safe_class
 
 from components.Clickable import Clickable
@@ -34,7 +36,61 @@ if TYPE_CHECKING:
     from composites.Unit import Unit
     from composites.Projectile import Projectile
 
-    from PyQt6.QtWidgets import QGraphicsScene, QGraphicsPixmapItem
+    from PyQt6.QtWidgets import QGraphicsScene, QGraphicsPixmapItem, QGraphicsItem
+
+from PyQt6.QtWidgets import QGraphicsItem
+from PyQt6.QtGui import QImage, QPainter, QPolygonF
+from PyQt6.QtCore import QRectF, Qt
+
+class ShadowLayer(QGraphicsItem):
+    def __init__(self, width, height, opacity=0.4):
+        super().__init__()
+        self._opacity = opacity
+        self._rect = QRectF(0, 0, width, height)
+        self._img = QImage(int(width), int(height),
+                           QImage.Format.Format_ARGB32_Premultiplied)
+        self._img.fill(Qt.GlobalColor.transparent)
+        self._polys = []
+
+    def add(self, poly: QPolygonF):
+        self._polys.append(poly)
+        p = QPainter(self._img)
+        p.setPen(Qt.PenStyle.NoPen)
+        p.setBrush(Qt.GlobalColor.black)
+        p.drawPolygon(poly)
+        p.end()
+        self.update(QRectF(poly.boundingRect()).adjusted(-1, -1, 1, 1))
+
+    def boundingRect(self):
+        return self._rect
+
+    def paint(self, painter, option, widget=None):
+        painter.setOpacity(self._opacity)
+        painter.drawImage(0, 0, self._img)
+
+    def remove(self, poly: QPolygonF):
+        for i, p in enumerate(self._polys):
+            if p == poly:
+                del self._polys[i]
+                break
+
+        dirty = QRectF(poly.boundingRect()).adjusted(-2, -2, 2, 2)
+
+        p = QPainter(self._img)
+        p.setCompositionMode(QPainter.CompositionMode.CompositionMode_Source)
+        p.setPen(Qt.PenStyle.NoPen)
+        p.setBrush(Qt.GlobalColor.transparent)
+        p.drawRect(dirty)
+        p.setCompositionMode(QPainter.CompositionMode.CompositionMode_SourceOver)
+
+        p.setPen(Qt.PenStyle.NoPen)
+        p.setBrush(Qt.GlobalColor.black)
+        for other in self._polys:
+            if other.boundingRect().intersects(dirty):
+                p.drawPolygon(other)
+        p.end()
+
+        self.update(dirty)
 
 class Storage:
     def __init__(self, max_size:int):
@@ -95,7 +151,9 @@ class NetworkGenerator:
 
 @safe_class
 class World:
-    def __init__(self, size:Size=Size(256, 256), scene:QGraphicsScene|None=None, window=None, devmode:bool=folder.config.get("devmode"), temperature=20):
+    def __init__(self, size:Size=Size(256, 256), scene:QGraphicsScene|None=None, window=None, devmode:bool=None, temperature=20):
+        if devmode is None:
+            devmode = mode.value
         self.size = size
 
         self.window = window
@@ -105,7 +163,6 @@ class World:
         self.block_map:dict[Cell, list[Block]] = {}
 
         self.static_blocks:list[Block] = []
-        #self.static_block_map:dict[Cell, list[Block]] = {}
 
         self.units:list[Unit] = []
         self.unit_map:dict[Cell, list[Unit]] = {}
@@ -127,6 +184,12 @@ class World:
         self.various = {Various.placing_block: "air", Various.place_angle: 0, Various.devmode: devmode}
 
         self.scene = scene
+
+        self.shadow_layer = ShadowLayer(size.w*32, size.h*32, opacity=0.4)
+        self.shadow_layer.setZValue(5)
+        
+        if self.scene is not None:  
+            self.scene.addItem(self.shadow_layer)
 
     def update(self, dt):
         folder.plugins.call("update", dt*1000)
@@ -321,7 +384,7 @@ class World:
         elif type == "right":
             existing = self.get_block_at(x, y)
             if existing:            
-                self.remove_block(existing)
+                existing.remove()
         else:
             raise Exception(f"type <{type}> has no handler")
 

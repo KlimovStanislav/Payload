@@ -1,1244 +1,4 @@
-[2026-11-21 | 12:14:21] >>> [SYSTEM] File was truncated to 10000 lines
-                    >>>     from components.SceneObject import Angle
-[2026-11-08 | 22:21:07] >>> [ERROR] ImportError: cannot import name 'Angle' from 'components.SceneObject' (d:\Payload\components\SceneObject.py)
-
-[2026-11-08 | 22:28:38] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:28:38] >>> [WARNING] The previous launch failed
-[2026-11-08 | 22:28:38] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:28:41] >>> [ERROR] Traceback (most recent call last):
-[2026-11-08 | 22:28:41] >>> [ERROR]
-                    >>>   File "d:\Payload\main.py", line 15, in <module>
-                    >>>     import testing
-[2026-11-08 | 22:28:41] >>> [ERROR]
-                    >>>   File "d:\Payload\testing.py", line 5, in <module>
-                    >>>     from components.SceneObject import SceneObject, Cell, Angle
-[2026-11-08 | 22:28:41] >>> [ERROR] ImportError: cannot import name 'Angle' from 'components.SceneObject' (d:\Payload\components\SceneObject.py)
-
-[2026-11-08 | 22:29:05] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:29:05] >>> [WARNING] The previous launch failed
-[2026-11-08 | 22:29:05] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:29:05] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-08 | 22:29:05] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:29:05] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:29:05] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:29:26] >>> [RuntimeError]
-                    >>> <WorldLoader.load> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\WorldLoader.py", line 90, in load
-                    >>>     block_сам:Block = block_class(world, name=block["name"], cell=Cell(block["x"], block["y"]))
-                    >>>                       ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\composites\Pipe.py", line 14, in __init__
-                    >>>     self.components[Liquidable] = Liquidable(self, State.PASSIVE)
-                    >>>                                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\Liquidable.py", line 29, in __init__
-                    >>>     raise NotImplementedError(f"Obj <{owner}> dont have <Rotatable> compoent and the <opens> parameter not passed")
-                    >>> NotImplementedError: Obj <<Pipe>> dont have <Rotatable> compoent and the <opens> parameter not passed
-                    >>> 
-[2026-11-08 | 22:29:26] >>> [RuntimeError]
-                    >>> <WorldManager.load> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\WorldManager.py", line 41, in load
-                    >>>     if self.resource_panel is not None and world.Base is not None:
-                    >>>                                            ^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'Base'
-                    >>> 
-[2026-11-08 | 22:29:26] >>> [RuntimeError]
-                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 282, in update_tool_panel
-                    >>>     if not self.manager.current.devmode:
-                    >>>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'devmode'
-                    >>> 
-[2026-11-08 | 22:29:26] >>> [RuntimeError]
-                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 155, in mouseMoveEvent
-                    >>>     size = (int(get_texture(self.w.manager.current.placing_block).width()/32), int(get_texture(self.w.manager.current.placing_block).height()/32))
-                    >>>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'placing_block'
-                    >>> 
-[2026-11-08 | 22:29:26] >>> [RuntimeError]
-                    >>> <SandboxWindow.update> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 377, in update
-                    >>>     self.manager.current.update(dt)
-                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'update'
-                    >>> 
-[2026-11-08 | 22:29:26] >>> [RuntimeError]
-                    >>> <Campaign.update> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 90, in update
-                    >>>     if (step:=self.steps[self.active])(self.window):
-                    >>>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 48, in __call__
-                    >>>     return self.func(*args, **kwargs)
-                    >>>            ~~~~~~~~~^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\ui\CampaignWindow.py", line 37, in training_3
-                    >>>     if w.manager.current.exported.dict().get("lead", 0) >= 30:
-                    >>>        ^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'exported'
-                    >>> 
-[2026-11-08 | 22:29:28] >>> [EXIT] 1
-
-[2026-11-08 | 22:30:06] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:30:06] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:30:06] >>> [StartInfo] All systems online. Start lasted 243 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 22:30:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:30:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:30:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:30:22] >>> [EXIT] 0
-
-[2026-11-08 | 22:30:24] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:30:24] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:30:25] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 16 milliseconds.
-[2026-11-08 | 22:30:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:30:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:30:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:30:35] >>> [RuntimeError]
-                    >>> <World.update> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 137, in update
-                    >>>     block.components[Updatable](dt*1000)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\Updatable.py", line 49, in __call__
-                    >>>     task.func(self.owner)
-                    >>>     ~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\composites\Pump.py", line 24, in upd
-                    >>>     angle:Cell = self.components[Rotatable].opens.start
-                    >>>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'Rotatable' object has no attribute 'opens'
-                    >>> 
-[2026-11-08 | 22:30:36] >>> [EXIT] 1
-
-[2026-11-08 | 22:32:44] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:32:44] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:32:44] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-08 | 22:32:44] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:32:44] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:32:44] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:33:01] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 202, in append_block
-                    >>>     ng(block)
-                    >>>     ~~^^^^^^^
-                    >>>   File "d:\Payload\world\World.py", line 93, in __call__
-                    >>>     network.add(obj)
-                    >>>     ~~~~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 50, in add
-                    >>>     self._merge_neighbors(node)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 59, in _merge_neighbors
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 59, in <genexpr>
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 34, in _connected
-                    >>>     return (self._delta(a, b) in self._liq(a).opens and
-                    >>>                                  ~~~~~~~~~^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 24, in _liq
-                    >>>     return node.components[Liquidable]
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
-                    >>>     return super().__getitem__(key)
-                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
-                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
-                    >>> 
-[2026-11-08 | 22:33:03] >>> [EXIT] 1
-
-[2026-11-08 | 22:33:56] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:33:56] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:33:57] >>> [StartInfo] All systems online. Start lasted 264 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-11-08 | 22:33:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:33:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:33:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:33:57] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 202, in append_block
-                    >>>     ng(block)
-                    >>>     ~~^^^^^^^
-                    >>>   File "d:\Payload\world\World.py", line 93, in __call__
-                    >>>     network.add(obj)
-                    >>>     ~~~~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 50, in add
-                    >>>     self._merge_neighbors(node)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 59, in _merge_neighbors
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 59, in <genexpr>
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 34, in _connected
-                    >>>     return (self._delta(a, b) in self._liq(a).opens and
-                    >>>                                  ~~~~~~~~~^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 24, in _liq
-                    >>>     return node.components[Liquidable]
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
-                    >>>     return super().__getitem__(key)
-                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
-                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
-                    >>> 
-[2026-11-08 | 22:34:02] >>> [EXIT] 1
-
-[2026-11-08 | 22:37:21] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:37:21] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:37:21] >>> [StartInfo] All systems online. Start lasted 260 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-08 | 22:37:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:37:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:37:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:38:46] >>> [EXIT] 0
-
-[2026-11-08 | 22:39:08] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:39:08] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:39:08] >>> [StartInfo] All systems online. Start lasted 242 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-11-08 | 22:39:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:39:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:39:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:39:24] >>> [EXIT] 0
-
-[2026-11-08 | 22:39:41] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:39:41] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:39:42] >>> [StartInfo] All systems online. Start lasted 251 milliseconds. Smoke tests completed in 14 milliseconds.
-[2026-11-08 | 22:39:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:39:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:39:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:40:37] >>> [EXIT] 0
-
-[2026-11-08 | 22:55:40] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:55:40] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:55:40] >>> [StartInfo] All systems online. Start lasted 250 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 22:55:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:55:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:55:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:55:58] >>> [EXIT] 0
-
-[2026-11-08 | 22:56:30] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:56:30] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:56:30] >>> [StartInfo] All systems online. Start lasted 263 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-08 | 22:56:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:56:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:56:30] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:56:33] >>> [EXIT] 0
-
-[2026-11-08 | 22:57:54] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:57:54] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:57:54] >>> [StartInfo] All systems online. Start lasted 251 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 22:57:54] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:57:54] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:57:54] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:57:59] >>> [EXIT] 0
-
-[2026-11-08 | 22:58:17] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:58:17] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:58:17] >>> [StartInfo] All systems online. Start lasted 251 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-11-08 | 22:58:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:58:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:58:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:58:21] >>> [EXIT] 0
-
-[2026-11-08 | 22:59:04] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:59:04] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:59:04] >>> [StartInfo] All systems online. Start lasted 254 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 22:59:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:59:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:59:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:59:08] >>> [EXIT] 0
-
-[2026-11-08 | 22:59:25] >>> [START] Alpha 0.2.22
-[2026-11-08 | 22:59:25] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 22:59:25] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 14 milliseconds.
-[2026-11-08 | 22:59:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 22:59:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 22:59:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 22:59:37] >>> [EXIT] 0
-
-[2026-11-08 | 23:00:17] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:00:17] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:00:17] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 23:00:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:00:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:00:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:00:22] >>> [EXIT] 0
-
-[2026-11-08 | 23:00:33] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:00:33] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:00:33] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 14 milliseconds.
-[2026-11-08 | 23:00:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:00:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:00:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:00:44] >>> [EXIT] 0
-
-[2026-11-08 | 23:01:23] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:01:23] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:01:23] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 23:01:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:01:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:01:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:01:34] >>> [EXIT] 0
-
-[2026-11-08 | 23:02:16] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:02:16] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:02:16] >>> [StartInfo] All systems online. Start lasted 252 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 23:02:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:02:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:02:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:02:21] >>> [EXIT] 0
-
-[2026-11-08 | 23:02:33] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:02:33] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:02:33] >>> [StartInfo] All systems online. Start lasted 277 milliseconds. Smoke tests completed in 16 milliseconds.
-[2026-11-08 | 23:02:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:02:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:02:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:02:45] >>> [EXIT] 0
-
-[2026-11-08 | 23:02:52] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:02:52] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:02:52] >>> [StartInfo] All systems online. Start lasted 255 milliseconds. Smoke tests completed in 15 milliseconds.
-[2026-11-08 | 23:02:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:02:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:02:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:03:28] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 199, in append_block
-                    >>>     network.add(block)
-                    >>>     ~~~~~~~~~~~^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 48, in add
-                    >>>     self._merge_neighbors(node)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in _merge_neighbors
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in <genexpr>
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 31, in _connected
-                    >>>     return (self._delta(a, b) in self._liq(a).opens and
-                    >>>                                  ~~~~~~~~~^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 21, in _liq
-                    >>>     return node.components[Liquidable]
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
-                    >>>     return super().__getitem__(key)
-                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
-                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
-                    >>> 
-[2026-11-08 | 23:03:45] >>> [EXIT] 1
-
-[2026-11-08 | 23:03:46] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:03:46] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:03:46] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-08 | 23:03:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:03:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:03:46] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:04:14] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 203, in append_block
-                    >>>     ng(block)
-                    >>>     ~~^^^^^^^
-                    >>>   File "d:\Payload\world\World.py", line 93, in __call__
-                    >>>     network.add(obj)
-                    >>>     ~~~~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 48, in add
-                    >>>     self._merge_neighbors(node)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in _merge_neighbors
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in <genexpr>
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 31, in _connected
-                    >>>     return (self._delta(a, b) in self._liq(a).opens and
-                    >>>                                  ~~~~~~~~~^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 21, in _liq
-                    >>>     return node.components[Liquidable]
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
-                    >>>     return super().__getitem__(key)
-                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
-                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
-                    >>> 
-[2026-11-08 | 23:04:38] >>> [EXIT] 1
-
-[2026-11-08 | 23:04:39] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:04:39] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:04:40] >>> [StartInfo] All systems online. Start lasted 265 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-11-08 | 23:04:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:04:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:04:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:04:56] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 199, in append_block
-                    >>>     network.add(block)
-                    >>>     ~~~~~~~~~~~^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 48, in add
-                    >>>     self._merge_neighbors(node)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in _merge_neighbors
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in <genexpr>
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 31, in _connected
-                    >>>     return (self._delta(a, b) in self._liq(a).opens and
-                    >>>                                  ~~~~~~~~~^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 21, in _liq
-                    >>>     return node.components[Liquidable]
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
-                    >>>     return super().__getitem__(key)
-                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
-                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
-                    >>> 
-[2026-11-08 | 23:05:27] >>> [EXIT] 1
-
-[2026-11-08 | 23:06:49] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:06:49] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:06:49] >>> [StartInfo] All systems online. Start lasted 271 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 23:06:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:06:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:06:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:07:16] >>> [EXIT] 0
-
-[2026-11-08 | 23:07:25] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:07:25] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:07:25] >>> [StartInfo] All systems online. Start lasted 267 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-11-08 | 23:07:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:07:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:07:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:07:49] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 203, in append_block
-                    >>>     ng(block)
-                    >>>     ~~^^^^^^^
-                    >>>   File "d:\Payload\world\World.py", line 94, in __call__
-                    >>>     network.add(obj)
-                    >>>     ~~~~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 48, in add
-                    >>>     self._merge_neighbors(node)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in _merge_neighbors
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in <genexpr>
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 31, in _connected
-                    >>>     return (self._delta(a, b) in self._liq(a).opens and
-                    >>>                                  ~~~~~~~~~^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 21, in _liq
-                    >>>     return node.components[Liquidable]
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
-                    >>>     return super().__getitem__(key)
-                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
-                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
-                    >>> 
-[2026-11-08 | 23:07:56] >>> [EXIT] 1
-
-[2026-11-08 | 23:08:01] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:08:01] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:08:01] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-11-08 | 23:08:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:08:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:08:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:08:03] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 203, in append_block
-                    >>>     ng(block)
-                    >>>     ~~^^^^^^^
-                    >>>   File "d:\Payload\world\World.py", line 94, in __call__
-                    >>>     network.add(obj)
-                    >>>     ~~~~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 48, in add
-                    >>>     self._merge_neighbors(node)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in _merge_neighbors
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in <genexpr>
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 31, in _connected
-                    >>>     return (self._delta(a, b) in self._liq(a).opens and
-                    >>>                                  ~~~~~~~~~^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 21, in _liq
-                    >>>     return node.components[Liquidable]
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
-                    >>>     return super().__getitem__(key)
-                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
-                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
-                    >>> 
-[2026-11-08 | 23:08:10] >>> [EXIT] 1
-
-[2026-11-08 | 23:08:11] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:08:11] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:08:11] >>> [StartInfo] All systems online. Start lasted 249 milliseconds. Smoke tests completed in 14 milliseconds.
-[2026-11-08 | 23:08:11] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:08:11] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:08:11] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:08:25] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 203, in append_block
-                    >>>     ng(block)
-                    >>>     ~~^^^^^^^
-                    >>>   File "d:\Payload\world\World.py", line 94, in __call__
-                    >>>     network.add(obj)
-                    >>>     ~~~~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 48, in add
-                    >>>     self._merge_neighbors(node)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in _merge_neighbors
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 57, in <genexpr>
-                    >>>     if any(self._connected(node, n) for n in other.nodes):
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 31, in _connected
-                    >>>     return (self._delta(a, b) in self._liq(a).opens and
-                    >>>                                  ~~~~~~~~~^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 21, in _liq
-                    >>>     return node.components[Liquidable]
-                    >>>            ~~~~~~~~~~~~~~~^^^^^^^^^^^^
-                    >>>   File "d:\Payload\components\SceneObject.py", line 15, in __getitem__
-                    >>>     return super().__getitem__(key)
-                    >>>            ~~~~~~~~~~~~~~~~~~~^^^^^
-                    >>> KeyError: <class 'components.Liquidable.Liquidable'>
-                    >>> 
-[2026-11-08 | 23:08:31] >>> [EXIT] 1
-
-[2026-11-08 | 23:10:25] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:10:25] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:10:25] >>> [StartInfo] All systems online. Start lasted 270 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-11-08 | 23:10:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:10:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:10:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:10:54] >>> [EXIT] 0
-
-[2026-11-08 | 23:24:24] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:24:24] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:24:24] >>> [StartError] Test Scene Objects: 
-[2026-11-08 | 23:24:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:24:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:24:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:24:41] >>> [EXIT] 1
-
-[2026-11-08 | 23:24:45] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:24:45] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:24:45] >>> [StartError] Test Scene Objects: 
-[2026-11-08 | 23:24:46] >>> [EXIT] 1
-
-[2026-11-08 | 23:25:17] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:25:17] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:25:17] >>> [EXIT] 1
-
-[2026-11-08 | 23:26:29] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:26:29] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:26:29] >>> [ERROR] The module <composites/UseBlock.py> lacks a final class
-[2026-11-08 | 23:26:29] >>> [StartError] Test Scene Objects: 
-[2026-11-08 | 23:26:32] >>> [EXIT] 1
-
-[2026-11-08 | 23:27:18] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:27:18] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:27:18] >>> [ERROR] The module <composites/UseBlock.py> lacks a final class
-[2026-11-08 | 23:27:18] >>> [StartError] Test Scene Objects: 
-[2026-11-08 | 23:27:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:27:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:27:22] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:24] >>> [INFO] Invalid composite settings KeyError: <'UseBlock'>
-[2026-11-08 | 23:27:52] >>> [EXIT] 1
-
-[2026-11-08 | 23:28:01] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:28:01] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:28:01] >>> [StartError] Test Scene Objects: 
-[2026-11-08 | 23:28:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:28:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:28:04] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:29:03] >>> [EXIT] 1
-
-[2026-11-08 | 23:30:34] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:30:34] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:30:35] >>> [StartInfo] All systems online. Start lasted 260 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-08 | 23:30:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:30:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:30:35] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:30:41] >>> [EXIT] 0
-
-[2026-11-08 | 23:34:51] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:34:51] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:34:52] >>> [StartInfo] All systems online. Start lasted 267 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-08 | 23:34:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:34:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:34:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:34:57] >>> [EXIT] 0
-
-[2026-11-08 | 23:35:08] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:35:08] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:35:08] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-08 | 23:35:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:35:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:35:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:35:12] >>> [EXIT] 0
-
-[2026-11-08 | 23:35:30] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:35:30] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:35:31] >>> [StartInfo] All systems online. Start lasted 254 milliseconds. Smoke tests completed in 15 milliseconds.
-[2026-11-08 | 23:35:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:35:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:35:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:35:36] >>> [EXIT] 0
-
-[2026-11-08 | 23:36:08] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:36:08] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:36:08] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-08 | 23:36:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:36:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:36:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:42:09] >>> [EXIT] 0
-
-[2026-11-08 | 23:50:55] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:50:55] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:50:56] >>> [StartInfo] All systems online. Start lasted 240 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-11-08 | 23:50:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:50:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:50:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:51:58] >>> [EXIT] 0
-
-[2026-11-08 | 23:57:32] >>> [START] Alpha 0.2.22
-[2026-11-08 | 23:57:32] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-08 | 23:57:32] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-11-08 | 23:57:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-08 | 23:57:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-08 | 23:57:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-08 | 23:57:36] >>> [EXIT] 0
-
-[2026-11-09 | 00:03:57] >>> [START] Alpha 0.2.23
-[2026-11-09 | 00:03:57] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 00:03:57] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 00:03:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 00:03:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 00:03:57] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 00:04:09] >>> [LoadWarning] Different save versions
-
-[2026-11-09 | 00:04:31] >>> [START] Alpha 0.2.23
-[2026-11-09 | 00:04:31] >>> [WARNING] The previous launch failed
-[2026-11-09 | 00:04:31] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 00:04:31] >>> [StartInfo] All systems online. Start lasted 269 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 00:04:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 00:04:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 00:04:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 00:04:53] >>> [EXIT] 0
-
-[2026-11-09 | 00:05:06] >>> [START] Alpha 0.2.23
-[2026-11-09 | 00:05:06] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 00:05:06] >>> [StartInfo] All systems online. Start lasted 237 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-11-09 | 00:05:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 00:05:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 00:05:06] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 00:11:33] >>> [EXIT] 0
-
-[2026-11-09 | 11:23:40] >>> [START] Alpha 0.2.23
-[2026-11-09 | 11:23:40] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 11:23:42] >>> [StartInfo] All systems online. Start lasted 1606 milliseconds. Smoke tests completed in 35 milliseconds.
-[2026-11-09 | 11:23:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 11:23:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 11:23:42] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 11:23:49] >>> [EXIT] 0
-
-[2026-11-09 | 11:23:52] >>> [START] Alpha 0.2.23
-[2026-11-09 | 11:23:52] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 11:23:52] >>> [StartInfo] All systems online. Start lasted 245 milliseconds. Smoke tests completed in 15 milliseconds.
-[2026-11-09 | 11:23:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 11:23:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 11:23:52] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 11:24:17] >>> [EXIT] 0
-
-[2026-11-09 | 11:24:28] >>> [START] Alpha 0.2.23
-[2026-11-09 | 11:24:28] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 11:24:29] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 11:24:38] >>> [EXIT] 0
-
-[2026-11-09 | 11:27:47] >>> [START] Alpha 0.2.23
-[2026-11-09 | 11:27:47] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 11:27:47] >>> [StartInfo] All systems online. Start lasted 230 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 11:27:59] >>> [EXIT] 0
-
-[2026-11-09 | 11:31:35] >>> [START] Alpha 0.2.23
-[2026-11-09 | 11:31:35] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 11:31:36] >>> [StartInfo] All systems online. Start lasted 1217 milliseconds. Smoke tests completed in 24 milliseconds.
-[2026-11-09 | 11:31:52] >>> [EXIT] 0
-
-[2026-11-09 | 11:33:15] >>> [START] Alpha 0.2.23
-[2026-11-09 | 11:33:15] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 11:33:15] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 17 milliseconds.
-[2026-11-09 | 11:33:21] >>> [EXIT] 0
-
-[2026-11-09 | 11:34:16] >>> [START] Alpha 0.2.23
-[2026-11-09 | 11:34:16] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 11:34:16] >>> [StartInfo] All systems online. Start lasted 245 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 11:34:23] >>> [EXIT] 0
-
-[2026-11-09 | 22:39:32] >>> [START] Alpha 0.2.23
-[2026-11-09 | 22:39:32] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 22:39:34] >>> [StartInfo] All systems online. Start lasted 1614 milliseconds. Smoke tests completed in 35 milliseconds.
-[2026-11-09 | 22:40:09] >>> [EXIT] 0
-
-[2026-11-09 | 22:40:51] >>> [START] Alpha 0.2.23
-[2026-11-09 | 22:40:51] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 22:40:51] >>> [StartInfo] All systems online. Start lasted 245 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 22:40:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 22:40:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 22:40:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 22:41:04] >>> [EXIT] 0
-
-[2026-11-09 | 22:42:08] >>> [START] Alpha 0.2.23
-[2026-11-09 | 22:42:08] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 22:42:08] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 22:42:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 22:42:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 22:42:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 22:43:11] >>> [EXIT] 0
-
-[2026-11-09 | 22:43:50] >>> [START] Alpha 0.2.23
-[2026-11-09 | 22:43:50] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 22:43:51] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 22:43:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 22:43:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 22:43:51] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 22:44:30] >>> [EXIT] 0
-
-[2026-11-09 | 22:47:16] >>> [START] Alpha 0.2.23
-[2026-11-09 | 22:47:16] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 22:47:16] >>> [StartInfo] All systems online. Start lasted 259 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-11-09 | 22:47:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 22:47:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 22:47:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 22:47:44] >>> [EXIT] 0
-
-[2026-11-09 | 23:05:55] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:05:55] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:05:55] >>> [StartInfo] All systems online. Start lasted 238 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 23:05:55] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:05:55] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:05:55] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:05:59] >>> [EXIT] 0
-
-[2026-11-09 | 23:12:37] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:12:37] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:12:37] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:12:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:12:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:12:37] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:12:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:12:47] >>> [EXIT] 0
-
-[2026-11-09 | 23:14:17] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:14:17] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:14:17] >>> [StartInfo] All systems online. Start lasted 259 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-11-09 | 23:14:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:14:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:14:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:14:17] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:14:26] >>> [EXIT] 0
-
-[2026-11-09 | 23:14:59] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:14:59] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:14:59] >>> [StartInfo] All systems online. Start lasted 250 milliseconds. Smoke tests completed in 15 milliseconds.
-[2026-11-09 | 23:14:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:14:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:14:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:14:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:15:09] >>> [EXIT] 0
-
-[2026-11-09 | 23:15:25] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:15:25] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:15:25] >>> [StartInfo] All systems online. Start lasted 262 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 23:15:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:15:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:15:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:15:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:15:31] >>> [EXIT] 0
-
-[2026-11-09 | 23:15:59] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:15:59] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:15:59] >>> [StartInfo] All systems online. Start lasted 244 milliseconds. Smoke tests completed in 16 milliseconds.
-[2026-11-09 | 23:15:59] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:16:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:16:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:16:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:16:13] >>> [EXIT] 0
-
-[2026-11-09 | 23:25:33] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:25:33] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:25:33] >>> [StartInfo] All systems online. Start lasted 260 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 23:25:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:25:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:25:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:25:33] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:25:34] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:25:43] >>> [EXIT] 0
-
-[2026-11-09 | 23:32:38] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:32:38] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:32:38] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 23:32:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:32:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:32:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:32:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:32:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:32:47] >>> [RuntimeError]
-                    >>> <World.click> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 294, in click
-                    >>>     obj:SceneObject = block_class(self, cell=Cell(x, y), name=self.placing_block)
-                    >>>                       ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\composites\Conveyor.py", line 17, in __init__
-                    >>>     cnv = ANGLE_CNV(self.components[Rotatable].value)
-                    >>> TypeError: 'dict' object is not callable
-                    >>> 
-[2026-11-09 | 23:32:52] >>> [EXIT] 1
-
-[2026-11-09 | 23:33:00] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:33:00] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:33:00] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 23:33:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:33:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:33:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:33:00] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:33:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:37:36] >>> [EXIT] 0
-
-[2026-11-09 | 23:38:19] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:38:19] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:38:19] >>> [StartInfo] All systems online. Start lasted 254 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 23:38:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:38:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:38:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:38:19] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:38:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:38:52] >>> [EXIT] 0
-
-[2026-11-09 | 23:39:23] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:39:23] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:39:23] >>> [StartInfo] All systems online. Start lasted 260 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-11-09 | 23:39:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:39:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:39:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:39:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:39:24] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-
-[2026-11-09 | 23:41:41] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:41:41] >>> [WARNING] The previous launch failed
-[2026-11-09 | 23:41:41] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:41:41] >>> [StartInfo] All systems online. Start lasted 279 milliseconds. Smoke tests completed in 20 milliseconds.
-[2026-11-09 | 23:41:41] >>> [RuntimeError]
-                    >>> <SandboxWindow.update_tool_panel> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 297, in update_tool_panel
-                    >>>     pixmap = get_texture(block_config[name]["texture"])
-                    >>>                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
-                    >>> KeyError: 'texture'
-                    >>> 
-[2026-11-09 | 23:41:46] >>> [EXIT] 1
-
-[2026-11-09 | 23:42:01] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:42:01] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:42:02] >>> [StartInfo] All systems online. Start lasted 267 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:42:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:42:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:42:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:42:02] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:42:03] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 203, in append_block
-                    >>>     ng(block)
-                    >>>     ~~^^^^^^^
-                    >>>   File "d:\Payload\world\World.py", line 94, in __call__
-                    >>>     network.add(obj)
-                    >>>     ~~~~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 43, in add
-                    >>>     if node in self.nodes or Liquidable not in node.co:
-                    >>>                                                ^^^^^^^
-                    >>> AttributeError: 'Pump' object has no attribute 'co'
-                    >>> 
-[2026-11-09 | 23:42:03] >>> [RuntimeError]
-                    >>> <World.append_block> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 203, in append_block
-                    >>>     ng(block)
-                    >>>     ~~^^^^^^^
-                    >>>   File "d:\Payload\world\World.py", line 94, in __call__
-                    >>>     network.add(obj)
-                    >>>     ~~~~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\components\PipeNetwork.py", line 43, in add
-                    >>>     if node in self.nodes or Liquidable not in node.co:
-                    >>>                                                ^^^^^^^
-                    >>> AttributeError: 'Pipe' object has no attribute 'co'
-                    >>> 
-[2026-11-09 | 23:42:10] >>> [EXIT] 1
-
-[2026-11-09 | 23:42:25] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:42:25] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:42:25] >>> [StartInfo] All systems online. Start lasted 247 milliseconds. Smoke tests completed in 14 milliseconds.
-[2026-11-09 | 23:42:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:42:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:42:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:42:25] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:42:32] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:42:37] >>> [EXIT] 0
-
-[2026-11-09 | 23:42:48] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:42:48] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:42:48] >>> [StartInfo] All systems online. Start lasted 240 milliseconds. Smoke tests completed in 15 milliseconds.
-[2026-11-09 | 23:42:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:42:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:42:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:42:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:42:53] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:42:56] >>> [EXIT] 0
-
-[2026-11-09 | 23:44:16] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:44:16] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:44:16] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:44:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:44:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:44:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:44:16] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:44:23] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\corner_pipe.png> not found
-[2026-11-09 | 23:44:36] >>> [EXIT] 0
-
-[2026-11-09 | 23:45:14] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:45:14] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:45:15] >>> [StartInfo] All systems online. Start lasted 266 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:45:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:45:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:45:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:45:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:45:38] >>> [EXIT] 0
-
-[2026-11-09 | 23:46:07] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:46:07] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:46:08] >>> [StartInfo] All systems online. Start lasted 249 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:46:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:46:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:46:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:46:08] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:46:34] >>> [EXIT] 0
-
-[2026-11-09 | 23:46:39] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:46:39] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:46:39] >>> [StartInfo] All systems online. Start lasted 253 milliseconds. Smoke tests completed in 16 milliseconds.
-[2026-11-09 | 23:46:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:46:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:46:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:46:39] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:47:00] >>> [EXIT] 0
-
-[2026-11-09 | 23:47:31] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:47:31] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:47:31] >>> [StartInfo] All systems online. Start lasted 251 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:47:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:47:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:47:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:47:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:48:04] >>> [EXIT] 0
-
-[2026-11-09 | 23:48:27] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:48:27] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:48:27] >>> [StartInfo] All systems online. Start lasted 258 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 23:48:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:48:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:48:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:48:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:49:29] >>> [EXIT] 0
-
-[2026-11-09 | 23:49:37] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:49:37] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:49:38] >>> [StartInfo] All systems online. Start lasted 257 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-09 | 23:49:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:49:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:49:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:49:38] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:50:11] >>> [EXIT] 0
-
-[2026-11-09 | 23:50:45] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:50:45] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:50:45] >>> [StartInfo] All systems online. Start lasted 258 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:50:45] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:50:45] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:50:45] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:50:45] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:51:06] >>> [EXIT] 0
-
-[2026-11-09 | 23:51:29] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:51:29] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:51:29] >>> [StartInfo] All systems online. Start lasted 260 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:51:29] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:51:29] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:51:29] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:51:29] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:51:58] >>> [EXIT] 0
-
-[2026-11-09 | 23:52:39] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:52:39] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:52:40] >>> [StartInfo] All systems online. Start lasted 259 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:52:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:52:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:52:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:52:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:53:47] >>> [EXIT] 0
-
-[2026-11-09 | 23:58:27] >>> [START] Alpha 0.2.23
-[2026-11-09 | 23:58:27] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-09 | 23:58:27] >>> [StartInfo] All systems online. Start lasted 252 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-09 | 23:58:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-09 | 23:58:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-09 | 23:58:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-09 | 23:58:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\rpipe.png> not found
-[2026-11-09 | 23:58:27] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-09 | 23:58:38] >>> [EXIT] 0
-
-[2026-11-10 | 00:00:49] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:00:49] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:00:49] >>> [StartInfo] All systems online. Start lasted 240 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-10 | 00:00:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:00:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:00:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:00:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\rpipe.png> not found
-[2026-11-10 | 00:00:49] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-10 | 00:00:56] >>> [EXIT] 0
-
-[2026-11-10 | 00:03:29] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:03:29] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:03:29] >>> [StartInfo] All systems online. Start lasted 254 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-10 | 00:03:29] >>> [RuntimeError]
-                    >>> <SandboxWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\ui\SandboxWindow.py", line 258, in __init__
-                    >>>     self.tool_names.update(unit_config)
-                    >>>     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\applib.py", line 523, in update
-                    >>>     self._data = self._deep_merge(self._data, patch)
-                    >>>                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\applib.py", line 547, in _deep_merge
-                    >>>     for k, v in patch.items():
-                    >>>                 ^^^^^^^^^^^
-                    >>> AttributeError: 'Config' object has no attribute 'items'
-                    >>> 
-[2026-11-10 | 00:03:29] >>> [RuntimeError]
-                    >>> <EditorWindow.__init__> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\ui\EditorWindow.py", line 35, in __init__
-                    >>>     self.layout().addWidget(widget)
-                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'NoneType' object has no attribute 'addWidget'
-                    >>> 
-[2026-11-10 | 00:03:32] >>> [EXIT] 1
-
-[2026-11-10 | 00:05:14] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:05:14] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:05:14] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-10 | 00:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\rpipe.png> not found
-[2026-11-10 | 00:05:14] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-10 | 00:05:29] >>> [RuntimeError]
-                    >>> <World.click> - Traceback (most recent call last):
-                    >>>   File "d:\Payload\base\functions.py", line 21, in wrapper
-                    >>>     return func(*args, **kwargs)
-                    >>>   File "d:\Payload\world\World.py", line 275, in click
-                    >>>     if self.placing_block in block_config:
-                    >>>        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    >>>   File "d:\Payload\applib.py", line 504, in __getitem__
-                    >>>     return self.get(key)
-                    >>>            ~~~~~~~~^^^^^
-                    >>>   File "d:\Payload\applib.py", line 508, in get
-                    >>>     for part in dotted_key.split("."):
-                    >>>                 ^^^^^^^^^^^^^^^^
-                    >>> AttributeError: 'int' object has no attribute 'split'
-                    >>> 
-[2026-11-10 | 00:06:02] >>> [EXIT] 1
-
-[2026-11-10 | 00:06:15] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:06:15] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:06:15] >>> [StartInfo] All systems online. Start lasted 266 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-10 | 00:06:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:06:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:06:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:06:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\rpipe.png> not found
-[2026-11-10 | 00:06:15] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-10 | 00:07:35] >>> [EXIT] 0
-
-[2026-11-10 | 00:07:56] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:07:56] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:07:56] >>> [StartInfo] All systems online. Start lasted 254 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-10 | 00:07:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:07:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:07:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:07:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\rpipe.png> not found
-[2026-11-10 | 00:07:56] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-
-[2026-11-10 | 00:08:39] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:08:39] >>> [WARNING] The previous launch failed
-[2026-11-10 | 00:08:39] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:08:40] >>> [StartInfo] All systems online. Start lasted 284 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-10 | 00:08:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:08:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:08:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:08:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\rpipe.png> not found
-[2026-11-10 | 00:08:40] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-
-[2026-11-10 | 00:10:01] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:10:01] >>> [WARNING] The previous launch failed
-[2026-11-10 | 00:10:01] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:10:01] >>> [StartInfo] All systems online. Start lasted 255 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-10 | 00:10:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:10:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:10:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:10:01] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-
-[2026-11-10 | 00:10:19] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:10:19] >>> [WARNING] The previous launch failed
-[2026-11-10 | 00:10:19] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:10:19] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 16 milliseconds.
-[2026-11-10 | 00:10:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:10:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:10:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:10:20] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-
-[2026-11-10 | 00:10:58] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:10:58] >>> [WARNING] The previous launch failed
-[2026-11-10 | 00:10:58] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:10:58] >>> [StartInfo] All systems online. Start lasted 256 milliseconds. Smoke tests completed in 16 milliseconds.
-[2026-11-10 | 00:10:58] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:10:58] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:10:58] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:10:58] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-
-[2026-11-10 | 00:11:18] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:11:18] >>> [WARNING] The previous launch failed
-[2026-11-10 | 00:11:18] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:11:18] >>> [StartInfo] All systems online. Start lasted 248 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-10 | 00:11:18] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:11:18] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:11:18] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:11:18] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-
-[2026-11-10 | 00:12:48] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:12:48] >>> [WARNING] The previous launch failed
-[2026-11-10 | 00:12:48] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:12:48] >>> [StartInfo] All systems online. Start lasted 267 milliseconds. Smoke tests completed in 19 milliseconds.
-[2026-11-10 | 00:12:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:12:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:12:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:12:48] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-
-[2026-11-10 | 00:13:30] >>> [START] Alpha 0.2.23
-[2026-11-10 | 00:13:30] >>> [WARNING] The previous launch failed
-[2026-11-10 | 00:13:30] >>> [SYSTEM] Deleted 1 files from temp folder
-[2026-11-10 | 00:13:31] >>> [StartInfo] All systems online. Start lasted 261 milliseconds. Smoke tests completed in 18 milliseconds.
-[2026-11-10 | 00:13:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
-[2026-11-10 | 00:13:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\turrel.png> not found
-[2026-11-10 | 00:13:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\laucnh_pad.png> not found
-[2026-11-10 | 00:13:31] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\test.png> not found
-[2026-11-10 | 00:13:46] >>> [EXIT] 0
-
-[2026-11-10 | 00:14:20] >>> [START] Alpha 0.2.23
+[2026-11-22 | 22:17:24] >>> [SYSTEM] File was truncated to 10000 lines
 [2026-11-10 | 00:14:20] >>> [SYSTEM] Deleted 1 files from temp folder
 [2026-11-10 | 00:14:21] >>> [StartInfo] All systems online. Start lasted 258 milliseconds. Smoke tests completed in 20 milliseconds.
 [2026-11-10 | 00:14:21] >>> [TextureCache] Texture <d:\Payload\Assets\Textures\none.png> not found
@@ -10007,4 +8767,1249 @@
 [2026-11-21 | 12:14:33] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
 [2026-11-21 | 12:14:33] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
 [2026-11-21 | 12:15:27] >>> [EXIT] 0
+
+[2026-11-21 | 23:10:52] >>> [START] build.21.11.2026
+[2026-11-21 | 23:10:52] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:10:54] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:10:54] >>> [StartInfo] All systems online. Start lasted 2043 milliseconds. Smoke tests completed in 46 milliseconds.
+[2026-11-21 | 23:10:55] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:11:02] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-21 | 23:11:02] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-21 | 23:11:16] >>> [EXIT] 0
+
+[2026-11-21 | 23:31:39] >>> [START] build.21.11.2026
+[2026-11-21 | 23:31:39] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:31:39] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:31:39] >>> [StartInfo] All systems online. Start lasted 463 milliseconds. Smoke tests completed in 34 milliseconds.
+[2026-11-21 | 23:31:40] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:31:55] >>> [EXIT] 0
+
+[2026-11-21 | 23:34:38] >>> [START] build.21.11.2026
+[2026-11-21 | 23:34:38] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:34:39] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:34:39] >>> [StartInfo] All systems online. Start lasted 435 milliseconds. Smoke tests completed in 26 milliseconds.
+[2026-11-21 | 23:34:39] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:34:42] >>> [EXIT] 0
+
+[2026-11-21 | 23:38:38] >>> [START] build.21.11.2026
+[2026-11-21 | 23:38:38] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:38:39] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:38:39] >>> [StartInfo] All systems online. Start lasted 455 milliseconds. Smoke tests completed in 26 milliseconds.
+[2026-11-21 | 23:38:40] >>> [EXIT] 0
+
+[2026-11-21 | 23:38:58] >>> [START] build.21.11.2026
+[2026-11-21 | 23:38:58] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:38:58] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:38:58] >>> [StartInfo] All systems online. Start lasted 440 milliseconds. Smoke tests completed in 22 milliseconds.
+[2026-11-21 | 23:38:59] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:39:01] >>> [EXIT] 0
+
+[2026-11-21 | 23:39:32] >>> [START] build.21.11.2026
+[2026-11-21 | 23:39:32] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:39:32] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:39:32] >>> [StartInfo] All systems online. Start lasted 431 milliseconds. Smoke tests completed in 25 milliseconds.
+[2026-11-21 | 23:39:33] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:39:34] >>> [EXIT] 0
+
+[2026-11-21 | 23:39:54] >>> [START] build.21.11.2026
+[2026-11-21 | 23:39:54] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:39:55] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:39:55] >>> [StartInfo] All systems online. Start lasted 441 milliseconds. Smoke tests completed in 22 milliseconds.
+[2026-11-21 | 23:39:55] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:39:58] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-21 | 23:39:58] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-21 | 23:40:08] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-21 | 23:40:08] >>> [Loader] Loaded world <Plateau>, block len: <7491>
+[2026-11-21 | 23:40:08] >>> [INFO] Sound <beep_1> not exists at <D:\Payload\Assets\Sounds>
+[2026-11-21 | 23:40:12] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-21 | 23:40:12] >>> [EditorLoader] Loaded world <Plateau>, block len: <37643>
+[2026-11-21 | 23:40:12] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-21 | 23:40:13] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-21 | 23:40:15] >>> [RuntimeError]
+                    >>> <MapView.mouseMoveEvent> - Traceback (most recent call last):
+                    >>>   File "D:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "D:\Payload\ui\SandboxWindow.py", line 169, in mouseMoveEvent
+                    >>>     texture = get_texture(block_config[block].get("texture", block))
+                    >>>                           ^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'get'
+                    >>> 
+[2026-11-21 | 23:40:20] >>> [EXIT] 1
+
+[2026-11-21 | 23:40:50] >>> [START] build.21.11.2026
+[2026-11-21 | 23:40:50] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:40:50] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:40:50] >>> [StartInfo] All systems online. Start lasted 465 milliseconds. Smoke tests completed in 25 milliseconds.
+[2026-11-21 | 23:40:50] >>> [RuntimeError]
+                    >>> <EditorWindow.__init__> - Traceback (most recent call last):
+                    >>>   File "D:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "D:\Payload\ui\EditorWindow.py", line 31, in __init__
+                    >>>     layout.addWidget(1)
+                    >>>     ~~~~~~~~~~~~~~~~^^^
+                    >>> TypeError: addWidget(self, a0: QWidget|None, stretch: int = 0, alignment: Qt.AlignmentFlag = Qt.Alignment()): argument 1 has unexpected type 'int'
+                    >>> 
+[2026-11-21 | 23:40:51] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:40:54] >>> [EXIT] 1
+
+[2026-11-21 | 23:41:36] >>> [START] build.21.11.2026
+[2026-11-21 | 23:41:36] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:41:36] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:41:36] >>> [StartInfo] All systems online. Start lasted 471 milliseconds. Smoke tests completed in 27 milliseconds.
+[2026-11-21 | 23:41:37] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:41:41] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-21 | 23:41:41] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-21 | 23:41:42] >>> [EXIT] 0
+
+[2026-11-21 | 23:41:53] >>> [START] build.21.11.2026
+[2026-11-21 | 23:41:53] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:41:53] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-21 | 23:41:53] >>> [StartInfo] All systems online. Start lasted 466 milliseconds. Smoke tests completed in 21 milliseconds.
+[2026-11-21 | 23:41:54] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-21 | 23:42:02] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-21 | 23:42:02] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-21 | 23:42:04] >>> [EXIT] 0
+
+[2026-11-21 | 23:43:26] >>> [START] build.21.11.2026
+[2026-11-21 | 23:43:26] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-21 | 23:43:32] >>> [ERROR] Traceback (most recent call last):
+[2026-11-21 | 23:43:32] >>> [ERROR]
+                    >>>   File "D:\Payload\main.py", line 24, in <module>
+                    >>>     w = base.font.Bold
+                    >>>         ^^^^^^^^^^^^^^
+[2026-11-21 | 23:43:32] >>> [ERROR] AttributeError: module 'base.font' has no attribute 'Bold'
+
+[2026-11-21 | 23:43:52] >>> [START] build.21.11.2026
+[2026-11-21 | 23:43:52] >>> [WARNING] The previous launch failed
+[2026-11-21 | 23:43:52] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-21 | 23:49:30] >>> [START] build.21.11.2026
+[2026-11-21 | 23:49:30] >>> [WARNING] The previous launch failed
+[2026-11-21 | 23:49:30] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-21 | 23:53:14] >>> [START] build.21.11.2026
+[2026-11-21 | 23:53:14] >>> [WARNING] The previous launch failed
+[2026-11-21 | 23:53:14] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-21 | 23:54:39] >>> [START] build.21.11.2026
+[2026-11-21 | 23:54:39] >>> [WARNING] The previous launch failed
+[2026-11-21 | 23:54:39] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:10:53] >>> [START] build.21.11.2026
+[2026-11-22 | 00:10:53] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:10:53] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:11:00] >>> [START] build.21.11.2026
+[2026-11-22 | 00:11:00] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:11:00] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:11:40] >>> [START] build.21.11.2026
+[2026-11-22 | 00:11:40] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:11:40] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:12:18] >>> [START] build.21.11.2026
+[2026-11-22 | 00:12:18] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:12:18] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:12:23] >>> [START] build.21.11.2026
+[2026-11-22 | 00:12:23] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:12:23] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:12:25] >>> [START] build.21.11.2026
+[2026-11-22 | 00:12:25] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:12:25] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:12:42] >>> [START] build.21.11.2026
+[2026-11-22 | 00:12:42] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:12:42] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:12:47] >>> [START] build.21.11.2026
+[2026-11-22 | 00:12:47] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:12:47] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:12:50] >>> [START] build.21.11.2026
+[2026-11-22 | 00:12:50] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:12:50] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:12:54] >>> [START] build.21.11.2026
+[2026-11-22 | 00:12:54] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:12:54] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:12:58] >>> [START] build.21.11.2026
+[2026-11-22 | 00:12:58] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:12:58] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:20:58] >>> [START] build.21.11.2026
+[2026-11-22 | 00:20:58] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:20:58] >>> [SYSTEM] Deleted 1 files from temp folder
+
+[2026-11-22 | 00:21:52] >>> [START] build.21.11.2026
+[2026-11-22 | 00:21:52] >>> [WARNING] The previous launch failed
+[2026-11-22 | 00:21:52] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:21:52] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:21:52] >>> [StartInfo] All systems online. Start lasted 459 milliseconds. Smoke tests completed in 25 milliseconds.
+[2026-11-22 | 00:21:53] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:21:57] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:21:57] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:22:02] >>> [EXIT] 0
+
+[2026-11-22 | 00:23:12] >>> [START] build.21.11.2026
+[2026-11-22 | 00:23:12] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:23:12] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:23:12] >>> [StartInfo] All systems online. Start lasted 427 milliseconds. Smoke tests completed in 25 milliseconds.
+[2026-11-22 | 00:23:13] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:23:15] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:23:15] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:23:19] >>> [EXIT] 0
+
+[2026-11-22 | 00:24:27] >>> [START] build.21.11.2026
+[2026-11-22 | 00:24:27] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:24:27] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:24:27] >>> [StartInfo] All systems online. Start lasted 453 milliseconds. Smoke tests completed in 26 milliseconds.
+[2026-11-22 | 00:24:28] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:24:31] >>> [EXIT] 0
+
+[2026-11-22 | 00:24:35] >>> [START] build.21.11.2026
+[2026-11-22 | 00:24:35] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:24:35] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:24:35] >>> [StartInfo] All systems online. Start lasted 430 milliseconds. Smoke tests completed in 23 milliseconds.
+[2026-11-22 | 00:24:36] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:24:37] >>> [EXIT] 0
+
+[2026-11-22 | 00:24:49] >>> [START] build.21.11.2026
+[2026-11-22 | 00:24:49] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:24:49] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:24:49] >>> [StartInfo] All systems online. Start lasted 444 milliseconds. Smoke tests completed in 24 milliseconds.
+[2026-11-22 | 00:24:50] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:24:52] >>> [EXIT] 0
+
+[2026-11-22 | 00:25:32] >>> [START] build.21.11.2026
+[2026-11-22 | 00:25:32] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:25:33] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:25:33] >>> [StartInfo] All systems online. Start lasted 395 milliseconds. Smoke tests completed in 26 milliseconds.
+[2026-11-22 | 00:25:33] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:25:35] >>> [EXIT] 0
+
+[2026-11-22 | 00:26:17] >>> [START] build.21.11.2026
+[2026-11-22 | 00:26:17] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:26:17] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:26:17] >>> [StartInfo] All systems online. Start lasted 452 milliseconds. Smoke tests completed in 26 milliseconds.
+[2026-11-22 | 00:26:18] >>> [EXIT] 0
+
+[2026-11-22 | 00:28:57] >>> [START] build.21.11.2026
+[2026-11-22 | 00:28:57] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:28:57] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:28:57] >>> [StartInfo] All systems online. Start lasted 440 milliseconds. Smoke tests completed in 26 milliseconds.
+[2026-11-22 | 00:28:58] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:28:59] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:28:59] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:29:07] >>> [EXIT] 0
+
+[2026-11-22 | 00:30:12] >>> [START] build.21.11.2026
+[2026-11-22 | 00:30:12] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:30:12] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:30:12] >>> [StartInfo] All systems online. Start lasted 441 milliseconds. Smoke tests completed in 27 milliseconds.
+[2026-11-22 | 00:30:13] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:30:17] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:30:17] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:30:27] >>> [EXIT] 0
+
+[2026-11-22 | 00:31:42] >>> [START] build.21.11.2026
+[2026-11-22 | 00:31:42] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:31:43] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:31:43] >>> [StartInfo] All systems online. Start lasted 440 milliseconds. Smoke tests completed in 27 milliseconds.
+[2026-11-22 | 00:31:43] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:31:48] >>> [EXIT] 0
+
+[2026-11-22 | 00:32:31] >>> [START] build.21.11.2026
+[2026-11-22 | 00:32:31] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:32:32] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:32:32] >>> [StartInfo] All systems online. Start lasted 448 milliseconds. Smoke tests completed in 24 milliseconds.
+[2026-11-22 | 00:32:32] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 00:32:32] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 00:32:32] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 00:32:32] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:32:38] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:32:38] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:32:41] >>> [EXIT] 0
+
+[2026-11-22 | 00:32:50] >>> [START] build.21.11.2026
+[2026-11-22 | 00:32:50] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:32:50] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:32:50] >>> [StartInfo] All systems online. Start lasted 414 milliseconds. Smoke tests completed in 20 milliseconds.
+[2026-11-22 | 00:32:51] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:32:52] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:32:52] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:32:56] >>> [EXIT] 0
+
+[2026-11-22 | 00:33:00] >>> [START] build.21.11.2026
+[2026-11-22 | 00:33:00] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:33:00] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:33:00] >>> [StartInfo] All systems online. Start lasted 420 milliseconds. Smoke tests completed in 24 milliseconds.
+[2026-11-22 | 00:33:00] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 00:33:01] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 00:33:01] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 00:33:01] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:33:05] >>> [EXIT] 0
+
+[2026-11-22 | 00:34:40] >>> [START] build.21.11.2026
+[2026-11-22 | 00:34:40] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:34:40] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:34:40] >>> [StartInfo] All systems online. Start lasted 427 milliseconds. Smoke tests completed in 28 milliseconds.
+[2026-11-22 | 00:34:41] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:34:42] >>> [EXIT] 0
+
+[2026-11-22 | 00:38:39] >>> [START] build.21.11.2026
+[2026-11-22 | 00:38:39] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:38:39] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:38:39] >>> [StartInfo]
+                    >>> All systems online. Start lasted 425 milliseconds. Smoke tests completed in 23 milliseconds.
+                    >>> OpenGL-True DevMode-False
+[2026-11-22 | 00:38:40] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:41:01] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:41:01] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:41:16] >>> [EXIT] 0
+
+[2026-11-22 | 00:41:19] >>> [START] build.21.11.2026
+[2026-11-22 | 00:41:19] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:41:20] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:41:20] >>> [StartInfo]
+                    >>> All systems online. Start lasted 434 milliseconds. Smoke tests completed in 24 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 00:41:20] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:41:24] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:41:24] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:42:00] >>> [EXIT] 0
+
+[2026-11-22 | 00:42:02] >>> [START] build.21.11.2026
+[2026-11-22 | 00:42:02] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:42:02] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:42:02] >>> [StartInfo]
+                    >>> All systems online. Start lasted 421 milliseconds. Smoke tests completed in 24 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 00:42:03] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:42:05] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:42:05] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:42:23] >>> [EXIT] 0
+
+[2026-11-22 | 00:45:09] >>> [START] build.21.11.2026
+[2026-11-22 | 00:45:09] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:45:09] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:45:09] >>> [StartInfo]
+                    >>> All systems online. Start lasted 464 milliseconds. Smoke tests completed in 28 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 00:45:10] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:45:20] >>> [EXIT] 0
+
+[2026-11-22 | 00:45:32] >>> [START] build.21.11.2026
+[2026-11-22 | 00:45:32] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 00:45:33] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 00:45:33] >>> [StartInfo]
+                    >>> All systems online. Start lasted 431 milliseconds. Smoke tests completed in 23 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 00:45:33] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 00:45:55] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 00:45:55] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 00:46:09] >>> [EXIT] 0
+
+[2026-11-22 | 12:12:43] >>> [START] build.21.11.2026
+[2026-11-22 | 12:12:43] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:12:45] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:12:45] >>> [StartInfo]
+                    >>> All systems online. Start lasted 2307 milliseconds. Smoke tests completed in 48 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 12:12:45] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:13:38] >>> [EXIT] 0
+
+[2026-11-22 | 12:31:19] >>> [START] build.21.11.2026
+[2026-11-22 | 12:31:19] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:31:19] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:31:19] >>> [StartInfo]
+                    >>> All systems online. Start lasted 410 milliseconds. Smoke tests completed in 24 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 12:31:19] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:31:36] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 12:31:36] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7501>
+[2026-11-22 | 12:31:51] >>> [EXIT] 0
+
+[2026-11-22 | 12:39:17] >>> [START] build.21.11.2026
+[2026-11-22 | 12:39:17] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:39:17] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:39:17] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:39:25] >>> [EXIT] 0
+
+[2026-11-22 | 12:40:09] >>> [START] build.21.11.2026
+[2026-11-22 | 12:40:09] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:40:09] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:40:09] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:40:09] >>> [StartInfo]
+                    >>> All systems online. Start lasted 438 milliseconds. Smoke tests completed in 24 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 12:40:18] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 12:40:18] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 12:40:39] >>> [INFO] Forced closure of the application
+
+[2026-11-22 | 12:40:55] >>> [START] build.21.11.2026
+[2026-11-22 | 12:40:55] >>> [WARNING] The previous launch failed
+[2026-11-22 | 12:40:55] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:40:56] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:40:56] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:41:13] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 12:41:13] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 12:41:35] >>> [EXIT] 0
+
+[2026-11-22 | 12:41:39] >>> [START] build.21.11.2026
+[2026-11-22 | 12:41:39] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:41:40] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:41:40] >>> [StartInfo]
+                    >>> All systems online. Start lasted 436 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+lutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:41:55] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 12:41:55] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 12:42:11] >>> [EXIT] 0
+
+[2026-11-22 | 12:42:14] >>> [START] build.21.11.2026
+[2026-11-22 | 12:42:14] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:42:14] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:42:14] >>> [StartInfo]
+                    >>> All systems online. Start lasted 447 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+                    >>> 
+n(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:42:32] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 12:42:32] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 12:42:52] >>> [EXIT] 0
+
+[2026-11-22 | 12:42:56] >>> [START] build.21.11.2026
+[2026-11-22 | 12:42:56] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:42:56] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:42:56] >>> [StartInfo]
+                    >>> All systems online. Start lasted 435 milliseconds. Smoke tests completed in 21 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+                    >>> 
+[2026-11-22 | 12:42:56] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:42:56] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 12:42:56] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 12:42:57] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 12:43:00] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 12:43:00] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 12:43:13] >>> [EXIT] 0
+
+[2026-11-22 | 12:43:18] >>> [START] build.21.11.2026
+[2026-11-22 | 12:43:18] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 12:43:18] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 12:43:18] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 12:43:18] >>> [StartInfo]
+                    >>> All systems online. Start lasted 434 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+                    >>> 
+[2026-11-22 | 12:43:20] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 12:43:20] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 12:43:29] >>> [EXIT] 0
+
+[2026-11-22 | 13:46:30] >>> [START] build.21.11.2026
+[2026-11-22 | 13:46:30] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 13:46:32] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 13:46:32] >>> [StartInfo]
+                    >>> All systems online. Start lasted 1603 milliseconds. Smoke tests completed in 39 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+                    >>> 
+[2026-11-22 | 13:46:36] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 13:46:43] >>> [EXIT] 0
+
+[2026-11-22 | 13:47:36] >>> [START] build.21.11.2026
+[2026-11-22 | 13:47:36] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 13:47:36] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 13:47:36] >>> [StartInfo]
+                    >>> All systems online. Start lasted 502 milliseconds. Smoke tests completed in 33 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+                    >>> 
+[2026-11-22 | 13:47:36] >>> [INFO] Error in retrieving releases from GitHub: <HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/KlimovStanislav/Payload/releases?per_page=100 (Caused by NameResolutionError("HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))>
+[2026-11-22 | 13:47:46] >>> [INFO] Forced closure of the application
+
+[2026-11-22 | 13:48:18] >>> [START] build.21.11.2026
+[2026-11-22 | 13:48:18] >>> [WARNING] The previous launch failed
+[2026-11-22 | 13:48:18] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 13:48:18] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 13:48:18] >>> [StartInfo]
+                    >>> All systems online. Start lasted 468 milliseconds. Smoke tests completed in 29 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 13:48:19] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 13:49:03] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 13:49:03] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 13:49:20] >>> [EXIT] 0
+
+[2026-11-22 | 19:08:57] >>> [START] build.21.11.2026
+[2026-11-22 | 19:08:57] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:08:59] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:08:59] >>> [StartInfo]
+                    >>> All systems online. Start lasted 1982 milliseconds. Smoke tests completed in 45 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 19:09:01] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:09:03] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:09:03] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:09:32] >>> [EXIT] 0
+
+[2026-11-22 | 19:09:37] >>> [START] build.21.11.2026
+[2026-11-22 | 19:09:37] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:09:37] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:09:37] >>> [StartInfo]
+                    >>> All systems online. Start lasted 458 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:09:38] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:09:39] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:09:39] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:10:03] >>> [INFO] Forced closure of the application
+
+[2026-11-22 | 19:10:07] >>> [START] build.21.11.2026
+[2026-11-22 | 19:10:07] >>> [WARNING] The previous launch failed
+[2026-11-22 | 19:10:07] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:10:07] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:10:07] >>> [StartInfo]
+                    >>> All systems online. Start lasted 448 milliseconds. Smoke tests completed in 24 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:10:08] >>> [EXIT] 0
+
+[2026-11-22 | 19:10:11] >>> [START] build.21.11.2026
+[2026-11-22 | 19:10:11] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:10:11] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:10:11] >>> [StartInfo]
+                    >>> All systems online. Start lasted 434 milliseconds. Smoke tests completed in 23 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 19:10:12] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:10:13] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:10:13] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:10:22] >>> [EXIT] 0
+
+[2026-11-22 | 19:20:31] >>> [START] build.21.11.2026
+[2026-11-22 | 19:20:31] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:20:31] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:20:31] >>> [RuntimeError]
+                    >>> <Block.remove> - Traceback (most recent call last):
+                    >>>   File "D:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "D:\Payload\composites\Block.py", line 75, in remove
+                    >>>     self.w.scene.removeItem(self.shadow_item)
+                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'removeItem'
+                    >>> 
+[2026-11-22 | 19:20:31] >>> [StartError] ('Block.remove', AttributeError("'NoneType' object has no attribute 'removeItem'"))
+
+[2026-11-22 | 19:20:46] >>> [START] build.21.11.2026
+[2026-11-22 | 19:20:46] >>> [WARNING] The previous launch failed
+[2026-11-22 | 19:20:46] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:20:47] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:20:47] >>> [StartInfo]
+                    >>> All systems online. Start lasted 445 milliseconds. Smoke tests completed in 20 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:20:47] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:20:51] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:20:51] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:21:07] >>> [EXIT] 0
+
+[2026-11-22 | 19:21:23] >>> [START] build.21.11.2026
+[2026-11-22 | 19:21:23] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:21:24] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:21:24] >>> [StartInfo]
+                    >>> All systems online. Start lasted 492 milliseconds. Smoke tests completed in 29 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:21:24] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:21:24] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:21:24] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:21:24] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:21:28] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:21:28] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:21:47] >>> [EXIT] 0
+
+[2026-11-22 | 19:22:48] >>> [START] build.21.11.2026
+[2026-11-22 | 19:22:48] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:22:48] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:22:48] >>> [StartInfo]
+                    >>> All systems online. Start lasted 460 milliseconds. Smoke tests completed in 29 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:22:48] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:22:48] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:22:48] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:22:49] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:23:04] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:23:04] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:23:20] >>> [EXIT] 0
+
+[2026-11-22 | 19:23:40] >>> [START] build.21.11.2026
+[2026-11-22 | 19:23:40] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:23:40] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:23:40] >>> [StartInfo]
+                    >>> All systems online. Start lasted 448 milliseconds. Smoke tests completed in 28 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:23:41] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:23:41] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:23:41] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:23:41] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:23:42] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:23:42] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:24:21] >>> [EXIT] 0
+
+[2026-11-22 | 19:29:28] >>> [START] build.21.11.2026
+[2026-11-22 | 19:29:28] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:29:29] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:29:29] >>> [StartInfo]
+                    >>> All systems online. Start lasted 448 milliseconds. Smoke tests completed in 24 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:29:30] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:29:31] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:29:31] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:29:54] >>> [EXIT] 0
+
+[2026-11-22 | 19:30:55] >>> [START] build.21.11.2026
+[2026-11-22 | 19:30:55] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:30:55] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:30:55] >>> [StartInfo]
+                    >>> All systems online. Start lasted 469 milliseconds. Smoke tests completed in 27 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:30:55] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:30:55] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:30:55] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:30:56] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:30:57] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:30:57] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:31:15] >>> [EXIT] 0
+
+[2026-11-22 | 19:35:55] >>> [START] build.21.11.2026
+[2026-11-22 | 19:35:55] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:35:55] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:35:55] >>> [StartInfo]
+                    >>> All systems online. Start lasted 538 milliseconds. Smoke tests completed in 27 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:35:56] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:35:57] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:35:57] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:36:36] >>> [EXIT] 0
+
+[2026-11-22 | 19:37:35] >>> [START] build.21.11.2026
+[2026-11-22 | 19:37:35] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:37:36] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:37:36] >>> [StartInfo]
+                    >>> All systems online. Start lasted 465 milliseconds. Smoke tests completed in 26 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:37:36] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:37:36] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:37:36] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:37:36] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:37:37] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:37:37] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:37:43] >>> [EXIT] 0
+
+[2026-11-22 | 19:38:02] >>> [START] build.21.11.2026
+[2026-11-22 | 19:38:02] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:38:02] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:38:02] >>> [StartInfo]
+                    >>> All systems online. Start lasted 484 milliseconds. Smoke tests completed in 24 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:38:03] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:38:04] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:38:04] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:38:10] >>> [EXIT] 0
+
+[2026-11-22 | 19:38:27] >>> [START] build.21.11.2026
+[2026-11-22 | 19:38:27] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:38:27] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:38:27] >>> [StartInfo]
+                    >>> All systems online. Start lasted 429 milliseconds. Smoke tests completed in 21 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:38:28] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:38:28] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:38:28] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:38:48] >>> [EXIT] 0
+
+[2026-11-22 | 19:39:49] >>> [START] build.21.11.2026
+[2026-11-22 | 19:39:49] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:39:50] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:39:50] >>> [StartInfo]
+                    >>> All systems online. Start lasted 438 milliseconds. Smoke tests completed in 27 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:39:51] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:39:51] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:39:51] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:40:00] >>> [EXIT] 0
+
+[2026-11-22 | 19:40:24] >>> [START] build.21.11.2026
+[2026-11-22 | 19:40:24] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:40:25] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:40:25] >>> [StartInfo]
+                    >>> All systems online. Start lasted 451 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:40:25] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:40:25] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:40:25] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:40:25] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:40:26] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:40:26] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:42:50] >>> [EXIT] 0
+
+[2026-11-22 | 19:47:07] >>> [START] build.21.11.2026
+[2026-11-22 | 19:47:07] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:47:07] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:47:07] >>> [StartInfo]
+                    >>> All systems online. Start lasted 433 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:47:09] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:47:09] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7491>
+[2026-11-22 | 19:47:09] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:48:21] >>> [EXIT] 0
+
+[2026-11-22 | 19:48:38] >>> [START] build.21.11.2026
+[2026-11-22 | 19:48:38] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:48:38] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:48:38] >>> [StartInfo]
+                    >>> All systems online. Start lasted 463 milliseconds. Smoke tests completed in 33 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 19:48:39] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:48:40] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:48:40] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:48:45] >>> [EXIT] 0
+
+[2026-11-22 | 19:48:50] >>> [START] build.21.11.2026
+[2026-11-22 | 19:48:50] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:48:50] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:48:50] >>> [StartInfo]
+                    >>> All systems online. Start lasted 439 milliseconds. Smoke tests completed in 21 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:48:50] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:48:50] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:48:50] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:48:51] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:48:52] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:48:52] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:50:10] >>> [EXIT] 0
+
+[2026-11-22 | 19:51:05] >>> [START] build.21.11.2026
+[2026-11-22 | 19:51:05] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:51:05] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:51:05] >>> [StartInfo]
+                    >>> All systems online. Start lasted 449 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 19:51:06] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:51:07] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:51:07] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:51:13] >>> [EXIT] 0
+
+[2026-11-22 | 19:51:14] >>> [START] build.21.11.2026
+[2026-11-22 | 19:51:14] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:51:15] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:51:15] >>> [StartInfo]
+                    >>> All systems online. Start lasted 516 milliseconds. Smoke tests completed in 22 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:51:15] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:51:15] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:51:15] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:51:15] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:51:16] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:51:16] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 19:51:53] >>> [EXIT] 0
+
+[2026-11-22 | 19:52:44] >>> [START] build.21.11.2026
+[2026-11-22 | 19:52:44] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:52:44] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:52:44] >>> [StartInfo]
+                    >>> All systems online. Start lasted 472 milliseconds. Smoke tests completed in 24 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 19:52:45] >>> [EXIT] 0
+
+[2026-11-22 | 19:52:47] >>> [START] build.21.11.2026
+[2026-11-22 | 19:52:47] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 19:52:47] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 19:52:47] >>> [StartInfo]
+                    >>> All systems online. Start lasted 417 milliseconds. Smoke tests completed in 20 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 19:52:47] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 19:52:47] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 19:52:47] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 19:52:48] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 19:52:50] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 19:52:50] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7494>
+[2026-11-22 | 19:53:19] >>> [EXIT] 0
+
+[2026-11-22 | 20:33:06] >>> [START] build.21.11.2026
+[2026-11-22 | 20:33:06] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:33:08] >>> [RuntimeError]
+                    >>> <World.__init__> - Traceback (most recent call last):
+                    >>>   File "D:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "D:\Payload\world\World.py", line 135, in __init__
+                    >>>     self.scene.addItem(self.shadow_group)
+                    >>>     ^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'addItem'
+                    >>> 
+[2026-11-22 | 20:33:08] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:33:08] >>> [StartError] ('World.__init__', AttributeError("'NoneType' object has no attribute 'addItem'"))
+
+[2026-11-22 | 20:33:52] >>> [START] build.21.11.2026
+[2026-11-22 | 20:33:52] >>> [WARNING] The previous launch failed
+[2026-11-22 | 20:33:52] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:33:52] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:33:52] >>> [StartInfo]
+                    >>> All systems online. Start lasted 521 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:33:53] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:33:57] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:33:57] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 20:34:03] >>> [EXIT] 0
+
+[2026-11-22 | 20:40:03] >>> [START] build.21.11.2026
+[2026-11-22 | 20:40:03] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:40:03] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:40:03] >>> [StartInfo]
+                    >>> All systems online. Start lasted 481 milliseconds. Smoke tests completed in 27 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:40:04] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:40:07] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:40:07] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 20:40:14] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:40:14] >>> [Loader] Loaded world <Plateau>, block len: <7491>
+[2026-11-22 | 20:40:14] >>> [INFO] Sound <beep_1> not exists at <D:\Payload\Assets\Sounds>
+[2026-11-22 | 20:40:22] >>> [EXIT] 0
+
+[2026-11-22 | 20:41:51] >>> [START] build.21.11.2026
+[2026-11-22 | 20:41:51] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:41:51] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:41:51] >>> [StartInfo]
+                    >>> All systems online. Start lasted 462 milliseconds. Smoke tests completed in 26 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:41:52] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:41:53] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:41:53] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 20:42:06] >>> [EXIT] 0
+
+[2026-11-22 | 20:43:38] >>> [START] build.21.11.2026
+[2026-11-22 | 20:43:38] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:43:38] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:43:38] >>> [StartInfo]
+                    >>> All systems online. Start lasted 478 milliseconds. Smoke tests completed in 30 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:43:39] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:43:39] >>> [RuntimeError]
+                    >>> <World.__init__> - Traceback (most recent call last):
+                    >>>   File "D:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "D:\Payload\world\World.py", line 137, in __init__
+                    >>>     self.shadow_item.setPos(0, 0)
+                    >>>     ^^^^^^^^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'NoneType' object has no attribute 'setPos'
+                    >>> 
+[2026-11-22 | 20:43:40] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:43:40] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 20:43:44] >>> [EXIT] 1
+
+[2026-11-22 | 20:44:18] >>> [START] build.21.11.2026
+[2026-11-22 | 20:44:18] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:44:19] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:44:19] >>> [StartInfo]
+                    >>> All systems online. Start lasted 432 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:44:19] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:44:20] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:44:20] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 20:46:19] >>> [EXIT] 0
+
+[2026-11-22 | 20:47:45] >>> [START] build.21.11.2026
+[2026-11-22 | 20:47:45] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:47:45] >>> [RuntimeError]
+                    >>> <World.__init__> - Traceback (most recent call last):
+                    >>>   File "D:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "D:\Payload\world\World.py", line 134, in __init__
+                    >>>     self.shadow_layer = QGraphicsItem()
+                    >>>                         ~~~~~~~~~~~~~^^
+                    >>> TypeError: PyQt6.QtWidgets.QGraphicsItem represents a C++ abstract class and cannot be instantiated
+                    >>> 
+[2026-11-22 | 20:47:45] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:47:45] >>> [StartError] ('World.__init__', TypeError('PyQt6.QtWidgets.QGraphicsItem represents a C++ abstract class and cannot be instantiated'))
+
+[2026-11-22 | 20:48:42] >>> [START] build.21.11.2026
+[2026-11-22 | 20:48:42] >>> [WARNING] The previous launch failed
+[2026-11-22 | 20:48:42] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:48:42] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:48:42] >>> [StartInfo]
+                    >>> All systems online. Start lasted 456 milliseconds. Smoke tests completed in 35 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:48:43] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:48:44] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:48:44] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 20:49:38] >>> [EXIT] 0
+
+[2026-11-22 | 20:52:20] >>> [START] build.21.11.2026
+[2026-11-22 | 20:52:20] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:52:20] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:52:20] >>> [StartInfo]
+                    >>> All systems online. Start lasted 482 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:52:21] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:52:22] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:52:22] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 20:52:48] >>> [EXIT] 0
+
+[2026-11-22 | 20:53:13] >>> [START] build.21.11.2026
+[2026-11-22 | 20:53:13] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:53:13] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:53:14] >>> [StartInfo]
+                    >>> All systems online. Start lasted 461 milliseconds. Smoke tests completed in 28 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:53:15] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:53:15] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:53:15] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7497>
+
+[2026-11-22 | 20:57:16] >>> [START] build.21.11.2026
+[2026-11-22 | 20:57:16] >>> [WARNING] The previous launch failed
+[2026-11-22 | 20:57:16] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:57:17] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:57:17] >>> [StartInfo]
+                    >>> All systems online. Start lasted 450 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:57:18] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:57:22] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:57:22] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7497>
+[2026-11-22 | 20:57:47] >>> [EXIT] 0
+
+[2026-11-22 | 20:58:58] >>> [START] build.21.11.2026
+[2026-11-22 | 20:58:58] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 20:58:59] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 20:58:59] >>> [StartInfo]
+                    >>> All systems online. Start lasted 460 milliseconds. Smoke tests completed in 34 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 20:58:59] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 20:59:00] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 20:59:00] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7494>
+[2026-11-22 | 20:59:06] >>> [EXIT] 0
+
+[2026-11-22 | 21:01:45] >>> [START] build.21.11.2026
+[2026-11-22 | 21:01:45] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:01:45] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:01:45] >>> [StartInfo]
+                    >>> All systems online. Start lasted 446 milliseconds. Smoke tests completed in 25 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 21:01:47] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:01:49] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:01:49] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7494>
+[2026-11-22 | 21:02:54] >>> [EXIT] 0
+
+[2026-11-22 | 21:08:15] >>> [START] build.21.11.2026
+[2026-11-22 | 21:08:15] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:08:16] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:08:16] >>> [StartInfo]
+                    >>> All systems online. Start lasted 514 milliseconds. Smoke tests completed in 32 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 21:08:18] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:08:19] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:08:19] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+
+[2026-11-22 | 21:09:15] >>> [START] build.21.11.2026
+[2026-11-22 | 21:09:15] >>> [WARNING] The previous launch failed
+[2026-11-22 | 21:09:15] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:09:16] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:09:16] >>> [StartInfo]
+                    >>> All systems online. Start lasted 578 milliseconds. Smoke tests completed in 30 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 21:09:17] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:09:19] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:09:19] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:09:41] >>> [EXIT] 0
+
+[2026-11-22 | 21:30:48] >>> [START] build.21.11.2026
+[2026-11-22 | 21:30:48] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:30:48] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:30:48] >>> [StartInfo]
+                    >>> All systems online. Start lasted 476 milliseconds. Smoke tests completed in 27 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 21:30:49] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:30:51] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:30:51] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:31:04] >>> [EXIT] 0
+
+[2026-11-22 | 21:31:10] >>> [START] build.21.11.2026
+[2026-11-22 | 21:31:10] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:31:10] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:31:10] >>> [StartInfo]
+                    >>> All systems online. Start lasted 479 milliseconds. Smoke tests completed in 26 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 21:31:11] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:31:13] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:31:13] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:31:23] >>> [EXIT] 0
+
+[2026-11-22 | 21:33:18] >>> [START] build.21.11.2026
+[2026-11-22 | 21:33:18] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:33:19] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:33:19] >>> [StartInfo]
+                    >>> All systems online. Start lasted 589 milliseconds. Smoke tests completed in 111 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 21:33:19] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:33:20] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:33:20] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:33:38] >>> [EXIT] 0
+
+[2026-11-22 | 21:33:46] >>> [START] build.21.11.2026
+[2026-11-22 | 21:33:46] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:33:47] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:33:47] >>> [StartInfo]
+                    >>> All systems online. Start lasted 530 milliseconds. Smoke tests completed in 105 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 21:33:47] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:33:49] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:33:49] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7494>
+[2026-11-22 | 21:34:06] >>> [EXIT] 0
+
+[2026-11-22 | 21:37:54] >>> [START] build.21.11.2026
+[2026-11-22 | 21:37:54] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:37:55] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:37:55] >>> [StartInfo]
+                    >>> All systems online. Start lasted 528 milliseconds. Smoke tests completed in 99 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 21:37:55] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:37:56] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:37:56] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:38:08] >>> [EXIT] 0
+
+[2026-11-22 | 21:43:28] >>> [START] build.21.11.2026
+[2026-11-22 | 21:43:28] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:43:28] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:43:28] >>> [StartInfo]
+                    >>> All systems online. Start lasted 564 milliseconds. Smoke tests completed in 119 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 21:43:29] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:43:30] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:43:30] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:44:36] >>> [EXIT] 0
+
+[2026-11-22 | 21:45:20] >>> [START] build.21.11.2026
+[2026-11-22 | 21:45:20] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:45:21] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:45:21] >>> [RuntimeError]
+                    >>> <Block.remove> - Traceback (most recent call last):
+                    >>>   File "D:\Payload\base\functions.py", line 21, in wrapper
+                    >>>     return func(*args, **kwargs)
+                    >>>   File "D:\Payload\composites\Block.py", line 92, in remove
+                    >>>     self.w.shadow_layer.remove_polygon(self.shadow_item)
+                    >>>                                        ^^^^^^^^^^^^^^^^
+                    >>> AttributeError: 'UseBlock' object has no attribute 'shadow_item'
+                    >>> 
+[2026-11-22 | 21:45:21] >>> [StartError] ('Block.remove', AttributeError("'UseBlock' object has no attribute 'shadow_item'"))
+
+[2026-11-22 | 21:45:50] >>> [START] build.21.11.2026
+[2026-11-22 | 21:45:50] >>> [WARNING] The previous launch failed
+[2026-11-22 | 21:45:50] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:45:51] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:45:51] >>> [StartInfo]
+                    >>> All systems online. Start lasted 546 milliseconds. Smoke tests completed in 100 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 21:45:51] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:45:53] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:45:53] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:46:21] >>> [EXIT] 0
+
+[2026-11-22 | 21:50:37] >>> [START] build.21.11.2026
+[2026-11-22 | 21:50:37] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:50:38] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:50:38] >>> [StartInfo]
+                    >>> All systems online. Start lasted 537 milliseconds. Smoke tests completed in 101 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 21:50:38] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:50:39] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:50:39] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:50:47] >>> [EXIT] 0
+
+[2026-11-22 | 21:52:08] >>> [START] build.21.11.2026
+[2026-11-22 | 21:52:08] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:52:09] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:52:09] >>> [StartInfo]
+                    >>> All systems online. Start lasted 563 milliseconds. Smoke tests completed in 105 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 21:52:09] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:52:11] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:52:11] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:52:19] >>> [EXIT] 0
+
+[2026-11-22 | 21:52:33] >>> [START] build.21.11.2026
+[2026-11-22 | 21:52:33] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:52:34] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:52:34] >>> [StartInfo]
+                    >>> All systems online. Start lasted 546 milliseconds. Smoke tests completed in 102 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 21:52:34] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:52:35] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:52:35] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:52:44] >>> [EXIT] 0
+
+[2026-11-22 | 21:53:47] >>> [START] build.21.11.2026
+[2026-11-22 | 21:53:47] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:53:48] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:53:48] >>> [StartInfo]
+                    >>> All systems online. Start lasted 522 milliseconds. Smoke tests completed in 98 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 21:53:48] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:53:49] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:53:49] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:54:13] >>> [EXIT] 0
+
+[2026-11-22 | 21:54:57] >>> [START] build.21.11.2026
+[2026-11-22 | 21:54:57] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:54:58] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:54:58] >>> [StartInfo]
+                    >>> All systems online. Start lasted 504 milliseconds. Smoke tests completed in 98 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-True
+[2026-11-22 | 21:54:58] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\none.png> not found
+[2026-11-22 | 21:54:58] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\turrel.png> not found
+[2026-11-22 | 21:54:58] >>> [TextureCache] Texture <D:\Payload\Assets\Textures\test.png> not found
+[2026-11-22 | 21:54:59] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:55:00] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:55:01] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 21:55:33] >>> [EXIT] 0
+
+[2026-11-22 | 21:57:45] >>> [START] build.21.11.2026
+[2026-11-22 | 21:57:45] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 21:57:46] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 21:57:46] >>> [StartInfo]
+                    >>> All systems online. Start lasted 588 milliseconds. Smoke tests completed in 106 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 21:57:47] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 21:57:48] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 21:57:48] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7493>
+[2026-11-22 | 22:02:28] >>> [EXIT] 0
+
+[2026-11-22 | 22:02:49] >>> [START] build.21.11.2026
+[2026-11-22 | 22:02:49] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 22:02:50] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 22:02:50] >>> [StartInfo]
+                    >>> All systems online. Start lasted 534 milliseconds. Smoke tests completed in 102 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 22:02:51] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 22:02:52] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 22:02:52] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 22:03:18] >>> [EXIT] 0
+
+[2026-11-22 | 22:04:02] >>> [START] build.21.11.2026
+[2026-11-22 | 22:04:02] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 22:04:02] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 22:04:02] >>> [StartInfo]
+                    >>> All systems online. Start lasted 537 milliseconds. Smoke tests completed in 104 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 22:04:03] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 22:04:04] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 22:04:04] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 22:04:17] >>> [EXIT] 0
+
+[2026-11-22 | 22:04:33] >>> [START] build.21.11.2026
+[2026-11-22 | 22:04:33] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 22:04:33] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 22:04:33] >>> [StartInfo]
+                    >>> All systems online. Start lasted 518 milliseconds. Smoke tests completed in 97 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 22:04:35] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 22:04:35] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 22:04:35] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 22:04:45] >>> [EXIT] 0
+
+[2026-11-22 | 22:07:23] >>> [START] build.21.11.2026
+[2026-11-22 | 22:07:23] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 22:07:23] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 22:07:23] >>> [StartInfo]
+                    >>> All systems online. Start lasted 525 milliseconds. Smoke tests completed in 105 milliseconds.
+                    >>> OpenGL-True
+                    >>> DevMode-False
+[2026-11-22 | 22:07:24] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 22:07:25] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 22:07:25] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 22:08:38] >>> [EXIT] 0
+
+[2026-11-22 | 22:10:25] >>> [START] build.21.11.2026
+[2026-11-22 | 22:10:25] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 22:10:25] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 22:10:25] >>> [StartInfo]
+                    >>> All systems online. Start lasted 522 milliseconds. Smoke tests completed in 101 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 22:10:26] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 22:10:27] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 22:10:27] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 22:12:39] >>> [EXIT] 0
+
+[2026-11-22 | 22:17:24] >>> [START] build.21.11.2026
+[2026-11-22 | 22:17:24] >>> [SYSTEM] Deleted 1 files from temp folder
+[2026-11-22 | 22:17:25] >>> [Loader] Loaded world <__TEST__>, block len: <1>
+[2026-11-22 | 22:17:25] >>> [StartInfo]
+                    >>> All systems online. Start lasted 510 milliseconds. Smoke tests completed in 97 milliseconds.
+                    >>> OpenGL-False
+                    >>> DevMode-False
+[2026-11-22 | 22:17:26] >>> [INFO] Successful retrieval releases from GitHub
+[2026-11-22 | 22:17:28] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 22:17:28] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 22:17:48] >>> [BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
+[2026-11-22 | 22:17:48] >>> [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
+[2026-11-22 | 22:18:42] >>> [EXIT] 0
 
