@@ -18,14 +18,14 @@ from base.folders import folder, block_config, unit_config, settings, opengl
 
 from ui.Widgets import Labels
 from ui.PauseMenu import PauseMenu
+from ui.Datapad import DatapadMenu
+from ui.ResourcePanel import ResourcePanel
 
 import time, math, psutil
 
 from world.WorldManager import WorldManager
 from world.WorldLoader import WorldLoader
 from world.World import World
-
-from ui.ResourcePanel import ResourcePanel
 
 from components.Storable import Storable
 from components.SceneObject import Cell, Various
@@ -283,6 +283,7 @@ class SandboxWindow(QWidget):
         self.sprint = False
 
         self.pause_menu = PauseMenu(self)
+        self.datapad_menu = DatapadMenu(self)
         self.menu_active:Menu|None = None
 
         self.fps_viewer = FPSViewer(self)
@@ -367,6 +368,13 @@ class SandboxWindow(QWidget):
             else:
                 self.pause_menu.Show()
 
+        if event.key() == Qt.Key.Key_Tab:
+            MusicPlayer.play("click-2")
+            if self.menu_active is not None:
+                self.menu_active.Back()
+            else:
+                self.datapad_menu.Show()
+
         key = event.nativeScanCode()
 
         self.keys_pressed.add(key)
@@ -380,6 +388,8 @@ class SandboxWindow(QWidget):
             self.sprint = True
             self.max_speed*=2
             self.acceleration*=2
+
+        super().keyPressEvent(event)
     
     def keyReleaseEvent(self, event):
         key = event.nativeScanCode()

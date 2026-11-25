@@ -160,3 +160,61 @@ QSpinBox:disabled {
 
 QSpinBox::up-button {width: 0px;}
 QSpinBox::down-button {width: 0px;}
+
+
+
+
+QTabWidget::pane {
+    background-color: #ffffff; 
+    border: 1px solid #2E3842;
+    border-radius: 6px;
+    top: -1px; 
+}
+
+QTabBar::tab {
+    background-color: #262E36; 
+    color: #D6DEE6;          
+    border: 1px solid #2E3842;
+    border-bottom: none;    
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 10px 24px;
+    margin-right: 2px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QTabBar::tab:hover {
+    background-color: #2E3842; 
+    color: #eef0f1;
+}
+
+QTabBar::tab:selected {
+    background-color: #1C2228; 
+    color: #eef0f1;         
+    border: 1px solid #2E3842;
+    border-bottom: 1px solid #1C2228; 
+
+    border-top: 3px solid #eef0f1; 
+}
+
+QTabBar::tab:disabled {
+    background-color: #1C2228;
+    color: #5A6470;
+    border-color: #2E3842;
+}
+QTabWidget::pane {
+    background-color: #1C2228;
+    border: 1px solid #2E3842;
+    border-radius: 6px;
+    top: -1px;
+}
+
+QTabWidget > QStackedWidget {
+    background-color: #1C2228;
+}
+
+QTabWidget > QStackedWidget > QWidget {
+    background-color: #1C2228;
+}

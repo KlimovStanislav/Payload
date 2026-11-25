@@ -1,11 +1,12 @@
 [Loader] Loaded world <__TEST__>, block len: <1>
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\air.png> (32x32)
 [StartInfo]
-   >All systems online. Start lasted 510 milliseconds. Smoke tests completed in 97 milliseconds.
+   >All systems online. Start lasted 511 milliseconds. Smoke tests completed in 104 milliseconds.
    >OpenGL-False
    >DevMode-False
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\icon.png> (64x64)
 [INFO] Successful retrieval releases from GitHub
+[LoadWarning] Different save versions
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\deepwater.png> (32x32)
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\water.png> (32x32)
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\mini-water.png> (32x32)
@@ -18,7 +19,7 @@
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\ore-titan2.png> (32x32)
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\ore-titan1.png> (32x32)
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\ore-titan3.png> (32x32)
-[TextureCache] Loaded: <D:\Payload\Assets\Textures\launch_pad.png> (96x96)
+[TextureCache] Loaded: <D:\Payload\Assets\Textures\base.png> (96x96)
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\stone-wall2.png> (32x32)
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\stone-wall1.png> (32x32)
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\stone-wall1-alpha1.png> (32x32)
@@ -32,8 +33,5 @@
 [Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\drill.png> (96x96)
 [TextureCache] Loaded: <D:\Payload\Assets\Textures\conveyor.png> (32x32)
-[BlockData] Block <stone-wall2-alpha0(x:198, y:256)> Located behind the world
-[Loader] Loaded world <__CAMPAIGN__>, block len: <7492>
-Playing: <D:\Payload\Assets\Music\game7.ogg>
-Playing: <D:\Payload\Assets\Music\menu.ogg>
+[TextureCache] Loaded: <D:\Payload\Assets\Textures\launch_pad.png> (96x96)
 [EXIT] 0

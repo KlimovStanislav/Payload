@@ -1940,11 +1940,13 @@
         "name": "ore-coal2"
     },
     {
-        "x": 212,
-        "y": 239,
-        "name": "launch_pad",
+        "x": 204,
+        "y": 237,
+        "name": "base",
         "Storable": {
-            "storage": {}
+            "storage": {
+                "titan": 30
+            }
         }
     },
     {

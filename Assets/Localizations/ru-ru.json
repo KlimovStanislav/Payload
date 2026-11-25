@@ -2,7 +2,11 @@
 "menu": {
     "general": {
         "techtree": "Дерево Технологий",
-        "settings": "Настройки"
+        "settings": "Настройки",
+        "datapad": "Датапад",
+        "market": "Рынок",
+        "various": "Разное",
+        "opened": "Открыто"
     },
     "label": {
         "music": "Музыка",

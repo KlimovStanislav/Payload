@@ -462,34 +462,26 @@ class Config:
         self.path = _os.path.abspath(path)
         self.defaults = copy.deepcopy(defaults) if defaults else {}
         self.autosave = autosave
-        self._data = copy.deepcopy(self.defaults)
-        self._dirty = False
+        self.data = copy.deepcopy(self.defaults)
         self.load()
 
     def load(self):
         if not _os.path.isfile(self.path):
-            self._data = copy.deepcopy(self.defaults)
-            return
-        try:
-            with open(self.path, "r", encoding="utf-8") as f:
-                loaded = json.load(f)
-            if isinstance(loaded, dict):
-                self._data = self._deep_merge(copy.deepcopy(self.defaults), loaded)
-            else:
-                self._data = copy.deepcopy(self.defaults)
-        except (json.JSONDecodeError, OSError):
-            self._data = copy.deepcopy(self.defaults)
+            raise FileNotFoundError(f"Path {self.path} not exists")
+        with open(self.path, "r", encoding="utf-8") as f:
+            loaded = json.load(f)
+        if isinstance(loaded, dict):
+            self.data = self.__update__(copy.deepcopy(self.defaults), loaded)
+        else:
+            self.data = copy.deepcopy(self.defaults)
 
     def save(self):
-        if not self._dirty:
-            return
         _os.makedirs(_os.path.dirname(self.path) or ".", exist_ok=True)
         fd, tmp = tempfile.mkstemp(dir=_os.path.dirname(self.path) or ".", suffix=".tmp")
         try:
             with _os.fdopen(fd, "w", encoding="utf-8") as f:
-                json.dump(self._data, f, ensure_ascii=False, indent=2)
+                json.dump(self.data, f, ensure_ascii=False, indent=2)
             _os.replace(tmp, self.path) 
-            self._dirty = False
         except Exception:
             try:
                 _os.remove(tmp)
@@ -498,19 +490,19 @@ class Config:
             raise
 
     def items(self):
-        return self._data.items()
+        return self.data.items()
 
     def __getitem__(self, key):
         return self.get(key)
 
     def __contains__(self, item):
-        return item in self._data
+        return item in self.data
 
     def __repr__(self):
-        return repr(self._data)
+        return repr(self.data)
 
     def get(self, dotted_key: str, default=None):
-        node = self._data
+        node = self.data
         for part in str(dotted_key).split("."):
             if isinstance(node, dict) and part in node:
                 node = node[part]
@@ -520,44 +512,36 @@ class Config:
 
     def set(self, dotted_key: str, value):
         parts = dotted_key.split(".")
-        node = self._data
+        node = self.data
         for part in parts[:-1]:
             if part not in node or not isinstance(node[part], dict):
                 node[part] = {}
             node = node[part]
         node[parts[-1]] = value
-        self._mark_dirty()
 
     def update(self, patch: dict):
-        self._data = self._deep_merge(self._data, patch)
-        self._mark_dirty()
+        self.data = self.__update__(self.data, patch)
 
     def delete(self, dotted_key: str):
         parts = dotted_key.split(".")
-        node = self._data
+        node = self.data
         for part in parts[:-1]:
             if not isinstance(node, dict) or part not in node:
                 return
             node = node[part]
         if isinstance(node, dict):
             node.pop(parts[-1], None)
-            self._mark_dirty()
 
     def all(self) -> dict:
-        return copy.deepcopy(self._data)
-
-    def _mark_dirty(self):
-        self._dirty = True
-        if self.autosave:
-            self.save()
+        return copy.deepcopy(self.data)
 
     @classmethod
-    def _deep_merge(cls, base: dict, patch: dict) -> dict:
-        for k, v in patch.items():
-            if k in base and isinstance(base[k], dict) and isinstance(v, dict):
-                cls._deep_merge(base[k], v)
+    def __update__(cls, base: dict, patch: dict) -> dict:
+        for key, value in patch.items():
+            if key in base and isinstance(base[key], dict) and isinstance(value, dict):
+                cls.__update__(base[key], value)
             else:
-                base[k] = v
+                base[key] = value
         return base
     
 class PluginLoader:

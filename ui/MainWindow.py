@@ -372,6 +372,9 @@ class MainWindow(QMainWindow):
         settings.set("fullscreen", self.fullscreen)
         return self.fullscreen
 
+    def focusNextPrevChild(self, *a):
+        return False
+
     def parsing(self, cmd:str):
         match cmd.lower().split():
             case ["help"]:
@@ -384,7 +387,7 @@ class MainWindow(QMainWindow):
                 try:
                     folder.log.write("Forced closure of the application")
                 finally:
-                    os._exit(0)
+                    os._exit(2)
 
             case ["refresh"]:
                 global TEXTURE_CACHE

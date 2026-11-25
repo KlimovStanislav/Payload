@@ -2,7 +2,10 @@
 "menu": {
     "general": {
         "techtree": "Technology Tree",
-        "settings": "Settings"
+        "settings": "Settings",
+        "market": "Market",
+        "various": "Various",
+        "opened": "Opened"
     },
     "label": {
         "music": "Music",

@@ -36,11 +36,11 @@ class Liquidable:
 
     @property
     def pressure(self) -> float:
-        return self.PRESSURE_FULL * self.fill_ratio
+        return self._pressure
 
     @pressure.setter
     def pressure(self, v: float):
-        self._pressure = v
+        self._pressure = max(0.0, v)
 
     @property
     def target_pressure(self) -> float:

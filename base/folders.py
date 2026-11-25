@@ -7,7 +7,9 @@ if getattr(sys, 'frozen', False):
 else:
     path = os.path.dirname(os.path.abspath(sys.argv[0]))
 
-folder = applib.AppDir(path=path, config=True, tee=True, defaults={"craft_coef": 1, "campaign_step": 0})
+CONFIG_DEFAFULTS = {"craft_coef": 1, "campaign_step": 0}
+
+folder = applib.AppDir(path=path, config=True, tee=True, defaults=CONFIG_DEFAFULTS)
 
 mainfolder = folder.mkdir("Assets")
 textures = mainfolder.mkdir("Textures")
@@ -48,7 +50,7 @@ localizations:dict[str, Dict] = {}
 for local in localizations_folder.list():
     if not local.endswith(".json"):
         continue
-    localizations[local[:-5]] = Dict(applib.Config(localizations_folder.path(local))._data)
+    localizations[local[:-5]] = Dict(applib.Config(localizations_folder.path(local)).data)
 
 settings = applib.Config(mainfolder.path("settings.json"), {"volume": 100, "music_volume": 100, "music": True, "fps": 60})
 

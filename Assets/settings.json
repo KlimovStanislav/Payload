@@ -1,8 +1,1 @@
-{
-  "volume": 100,
-  "music_volume": 0,
-  "music": true,
-  "fps": 240,
-  "fullscreen": false,
-  "localization": "ru-ru"
-}
+{"volume": 100, "music_volume": 100, "music": true, "fps": 60}

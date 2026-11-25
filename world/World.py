@@ -3,9 +3,10 @@ from __future__ import annotations
 from composites.Block import Block
 from composites.Unit import Unit
 
-from PyQt6.QtWidgets import QGraphicsItem, QGraphicsOpacityEffect
+from PyQt6.QtWidgets import QGraphicsItem
 
 from base.composites import composites
+from base.components import components
 from base.MusicPlayer import MusicPlayer
 from base.folders import folder, block_config, unit_config, devmode as mode
 from base.functions import safe_class
@@ -23,9 +24,6 @@ from components.Network import Network
 from components.PipeNetwork import PipeNetwork
 
 from components.SceneObject import Various
-
-from composites.Pipe import Pipe
-from composites.Pump import Pump
 
 import applib, random
 from functools import partialmethod
@@ -168,7 +166,7 @@ class World:
         self.unit_map:dict[Cell, list[Unit]] = {}
     
         self.networks:list[Network] = []
-        self.networks_generators:list[NetworkGenerator] = [NetworkGenerator(self, [Pipe, Pump], PipeNetwork)]
+        self.networks_generators:list[NetworkGenerator] = [NetworkGenerator(self, [components["Liquidable"]], PipeNetwork)]
         self.projectiles:list[Projectile] = []
 
         self.exported:Storage[str, int] = Storage(9999)

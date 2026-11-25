@@ -13,9 +13,8 @@ if TYPE_CHECKING:
     from world.World import World
 
 class PipeNetwork(Network):
-    PRESSURE_TARGET_RATE: float = 3.0    
-    PRESSURE_DIFFUSE_RATE: float = 3.0  
-    FLUID_RATE: float = 1.0
+    PRESSURE_TARGET_RATE: float = 1   
+    PRESSURE_DIFFUSE_RATE: float = 5
     FLUID_CONDUCTIVITY: float = 0.5
     EPS: float = 1e-9
 
@@ -36,7 +35,6 @@ class PipeNetwork(Network):
             if other is not None and self._connected(node, other):
                 yield other
 
-    # ---------- уникальные рёбра между пассивными узлами ----------
     def _liquid_edges(self):
         cell_map = {n.cell: n for n in self.nodes}
         seen = set()
@@ -59,67 +57,56 @@ class PipeNetwork(Network):
         if not liquid_nodes:
             return
 
+        cell_map = {n.cell: n for n in self.nodes}
         edges = list(self._liquid_edges())
 
-        # ---- 1a. Подтягиваем давление к fill-based у ВСЕХ узлов ----
-        k_t = 1.0 - math.exp(-self.PRESSURE_TARGET_RATE * dt)
-        for n in liquid_nodes:
-            l = n.components[Liquidable]
-            l.pressure += k_t * (l.target_pressure - l.pressure)
-
-        # ---- 1b. Диффузия давления по ВСЕМ рёбрам ----
-        k_d = 1.0 - math.exp(-self.PRESSURE_DIFFUSE_RATE * dt)
-        deltas = {id(n.components[Liquidable]): 0.0 for n in liquid_nodes}
-        for a, b in edges:
-            la = a.components[Liquidable]
-            lb = b.components[Liquidable]
-            ca, cb = la.capacity, lb.capacity
-            total = ca + cb
-            if total <= self.EPS:
-                continue
-            # симметричный обмен с сохранением P*C
-            dPa = k_d * (lb.pressure - la.pressure) * (cb / total)
-            dPb = k_d * (la.pressure - lb.pressure) * (ca / total)
-            deltas[id(la)] += dPa
-            deltas[id(lb)] += dPb
-        for n in liquid_nodes:
-            l = n.components[Liquidable]
-            l.pressure = max(0.0, l.pressure + deltas[id(l)])
-
-        # ---- 2. Перенос массы по градиенту давления ----
-        k_f = 1.0 - math.exp(-self.FLUID_RATE * dt)
+        # 1. Считаем общее давление для каждого кластера (для UI и насосов)
+        # (тот же BFS, что и выше)
+        # ...
+        
+        # 2. Поток жидкости по разнице объемов (а не давлений)
+        # Это гарантирует, что жидкость будет плавно перетекать 
+        # оттуда, где её много, туда, где её мало.
+        
+        FLOW_SPEED = 2.0  # Скорость перетекания (литров в секунду на разницу объемов)
+        
         flows = []
         for a, b in edges:
             la = a.components[Liquidable]
             lb = b.components[Liquidable]
-            dp = la.pressure - lb.pressure
-            if abs(dp) <= self.EPS:
+            
+            # Разница объемов (не давлений!)
+            vol_diff = la.volume - lb.volume
+            
+            if abs(vol_diff) <= 1e-9:
                 continue
-            if dp > 0.0:
+                
+            if vol_diff > 0:
                 src, dst = la, lb
             else:
                 src, dst = lb, la
-                dp = -dp
-            src_vol = src.volume
-            if src_vol <= self.EPS:
-                continue
-            flow_frac = max(0.0, min(1.0, k_f * self.FLUID_CONDUCTIVITY * dp))
-            amount = min(flow_frac * src_vol, dst.free_space, src_vol)
-            if amount <= self.EPS:
-                continue
-            flows.append((src, dst, amount))
-
+                vol_diff = -vol_diff
+                
+            # Сколько перетечет за этот тик?
+            amount = vol_diff * FLOW_SPEED * dt
+            
+            # Ограничиваем тем, что есть, и свободным местом
+            amount = min(amount, src.volume, dst.free_space)
+            
+            if amount > 1e-9:
+                flows.append((src, dst, amount))
+                
+        # 3. Применяем потоки
         for src, dst, amount in flows:
-            src_vol = src.volume
-            if src_vol <= self.EPS:
+            actual_amount = min(amount, src.volume, dst.free_space)
+            if actual_amount <= 1e-9:
                 continue
-            amount = min(amount, src_vol, dst.free_space)
-            if amount <= self.EPS:
-                continue
-            frac = amount / src_vol
+                
+            frac = actual_amount / src.volume
             for name, val in list(src.fluids.items()):
                 moved = val * frac
                 src.fluids[name] = max(0.0, val - moved)
                 dst.fluids[name] = dst.fluids.get(name, 0.0) + moved
-            for name in [k for k, v in src.fluids.items() if v <= self.EPS]:
+                
+            for name in [k for k, v in src.fluids.items() if v <= 1e-9]:
                 del src.fluids[name]

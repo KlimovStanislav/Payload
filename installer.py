@@ -51,7 +51,7 @@ class InstallPage(Page):
             with zipfile.ZipFile(os.path.join(sys._MEIPASS, "archive-win64.zip")) as z:
                 z.extractall(self.w.install_path)
 
-            exe_path = os.path.join(self.w.install_path, "Pays.exe")
+            exe_path = os.path.join(self.w.install_path, "Main.exe")
             shortcut_path = os.path.join(os.path.expanduser("~"), "Desktop", "Payload.lnk")
 
             shell = win32com.client.Dispatch("WScript.Shell")
