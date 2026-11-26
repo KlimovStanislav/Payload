@@ -61,7 +61,7 @@ class TechTreeMenu(Menu):
         
         self.scroll.setWidget(self.content)
         
-        coef = folder.config["craft_coef"]
+        coef = folder.config["craft-coef"]
         
         for name, value in branchs.items():
             text = "\n".join(f"{item.capitalize()}: {int(count*coef)}" for item, count in value["cost"].items())
@@ -80,7 +80,7 @@ class TechTreeMenu(Menu):
         layout.addWidget(btn_back)
 
     def open(self, names:list, cost:dict, btn:QtWidgets.QPushButton=None):
-        coef = folder.config["craft_coef"]
+        coef = folder.config["craft-coef"]
 
         for name, value in cost.items():
             v = self.Window.manager.current.operator.inventory.dict().get(name, 0)

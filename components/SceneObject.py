@@ -29,6 +29,7 @@ class Various(Enum):
     placing_block = auto()
     place_angle = auto()
     devmode = auto()
+    shadows = auto
 
 class Cell(NamedTuple):
     x:int

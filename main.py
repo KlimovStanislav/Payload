@@ -1,7 +1,7 @@
 import tkinter as tk, subprocess, sys, pymsgbox, os
 from dataclasses import dataclass
 
-CONFIGS_DEFAFULTS = {"config": {"craft_coef": 1, "campaign_step": 0}, "settings": {"volume": 100, "music_volume": 100, "music": True, "fps": 60}}
+CONFIGS_DEFAFULTS = {"config": {"craft-coef": 1, "campaign_step": 0, "time-speed": 360}, "settings": {"volume": 100, "music_volume": 100, "music": True, "fullscreen": True, "shadows": True, "fps": 60}}
 
 @dataclass
 class Mode:
@@ -76,6 +76,15 @@ def reset_config(root):
     else:
         pymsgbox.alert(f"Config restored successfully", "Successfull", root=root, icon=pymsgbox.INFO)
 
+def reset_cache(root):
+    try:
+        open(os.path.join(mode.path, "log.txt"), "w", encoding="UTF-8").close()
+        open(os.path.join(mode.path, "temp", "last_log.txt"), "w", encoding="UTF-8").close()
+    except Exception:
+        pymsgbox.alert(f"Unable to reset cache", "Failure", root=root, icon=pymsgbox.STOP)
+    else:
+        pymsgbox.alert(f"Cache restored successfully", "Successfull", root=root, icon=pymsgbox.INFO)
+
 class SupportToolsWindow(tk.Toplevel):
     def __init__(self, w):
         super().__init__(w)
@@ -97,6 +106,7 @@ class SupportToolsWindow(tk.Toplevel):
         menu.pack(fill="x", padx=20, pady=10)
         
         CsBtn(menu, "Reset Config", "Reset a application config", cmd=lambda: reset_config(self))
+        CsBtn(menu, "Reset Cache", "Reset a application cache", cmd=lambda: reset_cache(self))
 
 class Window(tk.Tk):
     def __init__(self):

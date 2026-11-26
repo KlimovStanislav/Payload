@@ -5,29 +5,43 @@ from composites.UseBlock import UseBlock
 from components.SceneObject import Cell
 
 from enum import Enum, auto
-
+from dataclasses import dataclass
 from time import perf_counter
 
-import applib, importlib, traceback, sys
+import applib, importlib, traceback, sys, os
+
+from typing import Callable
 
 from PyQt6.QtWidgets import QApplication
 import base.font
 from base.functions import safe
 import base.cursors
 
-FULL_TESTS = []
-SMOKE_TESTS = []
+@dataclass
+class Test:
+    func:Callable
+    def __call__(self, *args, **k) -> float:
+        st = perf_counter()
+        try:
+            self.func(*args, **k)
+        except Exception as e:
+            raise e
+        else:
+            return (perf_counter()-st)*1000
+
+FULL_TESTS:list[Test] = []
+SMOKE_TESTS:list[Test] = []
 
 class Mode(Enum):
     SMOKE = auto()
     FULL = auto()
 
 def full(func):
-    FULL_TESTS.append(func)
+    FULL_TESTS.append(Test(func))
     return func
 
 def smoke(func):
-    SMOKE_TESTS.append(func)
+    SMOKE_TESTS.append(Test(func))
     return func
 
 @full
@@ -85,17 +99,20 @@ def start(mode:Mode) -> list:
         application = QApplication(sys.argv)
         base.font.__dict__[...] = application
         base.cursors.__dict__[...] = application
-    world = World(devmode=True)
+    world = World(devmode=True, shadows=False)
+    times:dict[str, float] = {}
     failed = []
     critical = []
     for func in SMOKE_TESTS:
         try:
-            func(world)
+            time = func(world)
         except AssertionError as e:
-            failed.append(f"{func.__name__.replace("_", " ").title()}: {e}")
+            failed.append(f"{func.func.__name__.replace("_", " ").title()}: {e}")
         except Exception:
-            critical.append(f"{func.__name__.replace("_", " ").title()}: {traceback.format_exc()}")
+            critical.append(f"{func.func.__name__.replace("_", " ").title()}: {traceback.format_exc()}")
             break
+        else:
+            times[func.func.__name__.replace("_", " ").title()] = time
 
     if mode is Mode.FULL:
         application = QApplication(sys.argv)
@@ -103,26 +120,30 @@ def start(mode:Mode) -> list:
         base.cursors.__dict__[...] = application
         for func in FULL_TESTS:
             try:
-                func(world)
+                time = func(world)
             except AssertionError as e:
-                failed.append(f"{func.__name__.replace("_", " ").title()}: {e}")
+                failed.append(f"{func.func.__name__.replace("_", " ").title()}: {e}")
             except Exception:
-                critical.append(f"{func.__name__.replace("_", " ").title()}: {traceback.format_exc()}")
+                critical.append(f"{func.func.__name__.replace("_", " ").title()}: {traceback.format_exc()}")
                 break
+            else:
+                times[func.func.__name__.replace("_", " ").title()] = time
 
     critical.extend(safe.errors)
 
-    return failed, critical, (perf_counter()-start_time)*1000
+    return dict(sorted(times.items(), key=lambda x:x[1], reverse=True)), failed, critical, (perf_counter()-start_time)*1000
 
 if __name__ == "__main__":
-    failed, critical, time = start(Mode.FULL)
+    times, failed, critical, time = start(Mode.FULL)
     print(f"Full tests completed in {time:.0f} miliseconds")
+    print(times)
     if critical:
         print(f"Found {len(critical)} critical:", *critical, sep="\n---")
-        sys.exit(1)
+        os._exit(1)
     if failed:
         print(f"Found {len(failed)} failed tests:", *failed, sep="\n---")
-        sys.exit(1)
+        os._exit(1)
     else:
         print("All systems online")
+        os._exit(0)
         

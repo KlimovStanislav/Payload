@@ -24,8 +24,8 @@ class MusicPlayer():
                 pygame.mixer.music.set_volume(settings.get("music_volume"))
                 pygame.mixer.music.play(0)
                 while pygame.mixer.music.get_busy():
-                    if MusicPlayer.playing == False:
-                        break
+                    if MusicPlayer.playing is False:
+                        return
                     pygame.mixer.music.set_volume(settings.get("music_volume") if settings.get("music") is not False else 0)
                     time.sleep(0.1)
                 time.sleep(random.randint(40, 60))
@@ -36,6 +36,7 @@ class MusicPlayer():
 
     @staticmethod
     def stop():
+        print("stop")
         MusicPlayer.playing = False
 
     @staticmethod

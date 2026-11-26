@@ -11,7 +11,7 @@ from PyQt6.QtWidgets import QGraphicsPolygonItem, QGraphicsItemGroup
 from PyQt6.QtGui import QPolygonF, QColor, QBrush, QPen
 from PyQt6.QtCore import Qt, QPointF
 
-from components.SceneObject import SceneObject, Cell, Size
+from components.SceneObject import SceneObject, Cell, Size, Various
 from components.Clickable import Clickable
 from components.Rotatable import Rotatable
 
@@ -37,7 +37,7 @@ class Block(SceneObject):
         if self.exists and self.w.scene is not None:
             self.pixmap_item = self.w.scene.addPixmap(self.pixmap)
 
-            if block_config[self.name]["z"] >= 20:
+            if block_config[self.name]["z"] >= 20 and self.w.various[Various.shadows]:
                 const = (self.size.w+self.size.h)*2.5
                 polygon = QPolygonF([
                     QPointF(0, self.size.h*32),

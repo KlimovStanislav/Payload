@@ -18,7 +18,7 @@ from base.folders import folder, block_config, unit_config, settings, opengl
 
 from ui.Widgets import Labels
 from ui.PauseMenu import PauseMenu
-from ui.Datapad import DatapadMenu
+from ui.DatapadMenu import DatapadMenu
 from ui.ResourcePanel import ResourcePanel
 
 import time, math, psutil
@@ -296,7 +296,7 @@ class SandboxWindow(QWidget):
         
         self.tool_panel.clear()
         
-        coef = folder.config.get("craft_coef", 1)
+        coef = folder.config.get("craft-coef", 1)
 
         for name, i in self.tool_names.items():
                     if not self.manager.current.various[Various.devmode]:

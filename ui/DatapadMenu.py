@@ -85,7 +85,7 @@ class TechTreeComponent(QtWidgets.QWidget):
 
         self.btns = []
         
-        coef = folder.config["craft_coef"]
+        coef = folder.config["craft-coef"]
         
         for name, value in branchs.items():
             cost_lines = [f"{item.capitalize()}: {int(count * coef)}" for item, count in value["cost"].items()]
@@ -108,7 +108,7 @@ class TechTreeComponent(QtWidgets.QWidget):
         self.content_layout.addStretch()
 
     def _try_unlock(self, name, data:dict, btn:QtWidgets.QPushButton):
-        coef = folder.config["craft_coef"]
+        coef = folder.config["craft-coef"]
         cost = data["cost"]
         
         inv_dict = self.main_window.manager.current.operator.inventory.dict()

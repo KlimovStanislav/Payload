@@ -7,7 +7,7 @@ if getattr(sys, 'frozen', False):
 else:
     path = os.path.dirname(os.path.abspath(sys.argv[0]))
 
-CONFIG_DEFAFULTS = {"craft_coef": 1, "campaign_step": 0}
+CONFIG_DEFAFULTS = {"craft-coef": 1, "campaign_step": 0, "time-speed": 360}
 
 folder = applib.AppDir(path=path, config=True, tee=True, defaults=CONFIG_DEFAFULTS)
 
@@ -52,7 +52,7 @@ for local in localizations_folder.list():
         continue
     localizations[local[:-5]] = Dict(applib.Config(localizations_folder.path(local)).data)
 
-settings = applib.Config(mainfolder.path("settings.json"), {"volume": 100, "music_volume": 100, "music": True, "fps": 60})
+settings = applib.Config(mainfolder.path("settings.json"), {"volume": 100, "music_volume": 100, "music": True, "fullscreen": True, "shadows": True, "fps": 60})
 
 localization = Dict()
 if settings.get("localization") is not None:
@@ -77,4 +77,3 @@ else:
 
 block_config = applib.Config(mainfolder.path("block_config.json"))
 unit_config = applib.Config(mainfolder.path("unit_config.json"))
-

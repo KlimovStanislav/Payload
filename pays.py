@@ -46,7 +46,7 @@ except Exception:
 
 def main()->int:
     try:
-        failed, critical, time = testing.start(testing.Mode.SMOKE)
+        t, failed, critical, time = testing.start(testing.Mode.SMOKE)
 
         if critical:
             folder.log.write("\n".join(critical), type="StartError", set_error=True)

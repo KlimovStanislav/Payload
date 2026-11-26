@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import QGraphicsItem
 from base.composites import composites
 from base.components import components
 from base.MusicPlayer import MusicPlayer
-from base.folders import folder, block_config, unit_config, devmode as mode
+from base.folders import folder, block_config, unit_config, settings, devmode as mode
 from base.functions import safe_class
 
 from components.Clickable import Clickable
@@ -149,9 +149,11 @@ class NetworkGenerator:
 
 @safe_class
 class World:
-    def __init__(self, size:Size=Size(256, 256), scene:QGraphicsScene|None=None, window=None, devmode:bool=None, temperature=20):
+    def __init__(self, size:Size=Size(256, 256), scene:QGraphicsScene|None=None, window=None, devmode:bool=None, shadows:bool=None, temperature=20):
         if devmode is None:
-            devmode = mode.value
+            devmode:bool = mode.value
+        if shadows is None:
+            shadows:bool = settings["shadows"]
         self.size = size
 
         self.window = window
@@ -179,10 +181,12 @@ class World:
 
         self.opened:list[str] = []
 
-        self.various = {Various.placing_block: "air", Various.place_angle: 0, Various.devmode: devmode}
+        self.various = {Various.placing_block: "air", Various.place_angle: 0, Various.devmode: devmode, Various.shadows: shadows}
 
         self.scene = scene
-
+        if not shadows:
+            return
+    
         self.shadow_layer = ShadowLayer(size.w*32, size.h*32, opacity=0.4)
         self.shadow_layer.setZValue(5)
         
@@ -223,7 +227,7 @@ class World:
 
         if not self.various[Various.devmode]:
             cost:dict = block_config[block.name].get("cost")
-            coef = folder.config.get("craft_coef", 1)
+            coef = folder.config.get("craft-coef", 1)
             if cost is not None and self.Base is not None:
                 for name, value in cost.items():
                     self.Base.components[Storable].add(name, int(value*coef))
@@ -368,7 +372,7 @@ class World:
         
                 if cost is not None and not self.various[Various.devmode]:
                     for name, value in cost.items():
-                        coef = folder.config.get("craft_coef", 1)
+                        coef = folder.config.get("craft-coef", 1)
                         if self.operator.inventory.dict().get(name, 0) < int(value*coef):
                             MusicPlayer.play("error-2")
                             return
